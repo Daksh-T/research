@@ -39,9 +39,6 @@ research/
 ├── CITATION.cff               # Machine-readable repository citation
 ├── LICENSE                    # Dual license summary (MIT code / CC-BY-4.0 content)
 ├── templates/study-template/  # Boilerplate for adding a new study or discipline
-├── .github/
-│   ├── workflows/             # CI hygiene, manifest, and syntax checks
-│   └── scripts/               # Automated metadata, size, and privacy checks
 └── studies/
     └── <discipline>/
         └── <study-slug>/
@@ -54,21 +51,6 @@ research/
 ```
 
 Each study's `study.yaml` acts as the structured source of truth for external catalogs and discovery frontends.
-
----
-
-## CI Checks
-
-Pushes and pull requests run [`.github/workflows/verify-studies.yml`](.github/workflows/verify-studies.yml):
-
-1. **Repository Hygiene (`hygiene`):** Runs [`.github/scripts/check_hygiene.py`](.github/scripts/check_hygiene.py) to validate all `study.yaml` manifests, enforce file-size limits, and block accidental commits of credentials, personal local paths, raw/derived IPUMS microdata, or third-party PDFs.
-2. **Path-Filtered Syntax & Deliverable Checks:** For each changed study (or all studies on manual `workflow_dispatch`), verifies Python syntax (`compileall`) and checks that all required manuscripts and review logs are present.
-
-Run the hygiene check locally from the repository root:
-
-```bash
-python .github/scripts/check_hygiene.py
-```
 
 ---
 
