@@ -1,0 +1,534 @@
+{
+  "diagnostic": {
+    "n_occsoc_total": 786,
+    "n_occsoc_exact_aei26": 748,
+    "n_occ2018_total": 564,
+    "pearson_aei26_vs_openai_beta": 0.6425,
+    "spearman_aei26_vs_openai_beta": 0.7005,
+    "pearson_aei26_vs_felten_lm": 0.5392,
+    "spearman_aei26_vs_felten_lm": 0.6306,
+    "pearson_aei26_vs_robot_2026": -0.3939,
+    "share_zero_observed_aei26": 0.5428,
+    "share_zero_openai_beta": 0.0628,
+    "mean_observed_aei26": 0.0763,
+    "mean_openai_beta": 0.3254,
+    "top10_aei_2026_observed": [
+      {
+        "occsoc": "151251",
+        "occ_title": "Computer Programmers",
+        "aei_2026_obs_raw": 0.7451,
+        "openai_dv_beta": 0.95,
+        "robot_exposure_index": 0.0
+      },
+      {
+        "occsoc": "434051",
+        "occ_title": "Customer Service Representatives",
+        "aei_2026_obs_raw": 0.7011,
+        "openai_dv_beta": 0.5681818181818182,
+        "robot_exposure_index": 0.0
+      },
+      {
+        "occsoc": "439021",
+        "occ_title": "Data Entry Keyers",
+        "aei_2026_obs_raw": 0.6707,
+        "openai_dv_beta": 0.8928571428571428,
+        "robot_exposure_index": 0.1045
+      },
+      {
+        "occsoc": "292072",
+        "occ_title": "Medical Records Specialists",
+        "aei_2026_obs_raw": 0.6674,
+        "openai_dv_beta": 0.6176470588235294,
+        "robot_exposure_index": 0.0405
+      },
+      {
+        "occsoc": "131161",
+        "occ_title": "Market Research Analysts and Marketing Specialists",
+        "aei_2026_obs_raw": 0.6483,
+        "openai_dv_beta": 0.5245901639344263,
+        "robot_exposure_index": 0.0
+      },
+      {
+        "occsoc": "319094",
+        "occ_title": "Medical Transcriptionists",
+        "aei_2026_obs_raw": 0.6365,
+        "openai_dv_beta": 0.875,
+        "robot_exposure_index": 0.0278
+      },
+      {
+        "occsoc": "414012",
+        "occ_title": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+        "aei_2026_obs_raw": 0.6279,
+        "openai_dv_beta": 0.6206896551724138,
+        "robot_exposure_index": 0.1
+      },
+      {
+        "occsoc": "151243",
+        "occ_title": "Database Architects",
+        "aei_2026_obs_raw": 0.5787,
+        "openai_dv_beta": 0.9112466124661247,
+        "robot_exposure_index": 0.0
+      },
+      {
+        "occsoc": "151253",
+        "occ_title": "Software Quality Assurance Analysts and Testers",
+        "aei_2026_obs_raw": 0.5195,
+        "openai_dv_beta": 0.8771929824561403,
+        "robot_exposure_index": 0.0
+      },
+      {
+        "occsoc": "439111",
+        "occ_title": "Statistical Assistants",
+        "aei_2026_obs_raw": 0.5099,
+        "openai_dv_beta": 0.8913043478260869,
+        "robot_exposure_index": 0.0641
+      }
+    ],
+    "top10_aei_2026_writing_orth": [
+      {
+        "occsoc": "273091",
+        "occ_title": "Interpreters and Translators",
+        "aei_2026_writing_orth": 6.971647468594186,
+        "aei_2026_obs_raw": 0.4304
+      },
+      {
+        "occsoc": "319094",
+        "occ_title": "Medical Transcriptionists",
+        "aei_2026_writing_orth": 6.803955746640571,
+        "aei_2026_obs_raw": 0.6365
+      },
+      {
+        "occsoc": "251123",
+        "occ_title": "English Language and Literature Teachers, Postsecondary",
+        "aei_2026_writing_orth": 6.36813218275947,
+        "aei_2026_obs_raw": 0.3618
+      },
+      {
+        "occsoc": "273092",
+        "occ_title": "Court Reporters and Simultaneous Captioners",
+        "aei_2026_writing_orth": 5.165532540649149,
+        "aei_2026_obs_raw": 0.3431
+      },
+      {
+        "occsoc": "231023",
+        "occ_title": "Judges, Magistrate Judges, and Magistrates",
+        "aei_2026_writing_orth": 4.576530696182422,
+        "aei_2026_obs_raw": 0.3109
+      },
+      {
+        "occsoc": "253041",
+        "occ_title": "Tutors",
+        "aei_2026_writing_orth": 4.415916250559891,
+        "aei_2026_obs_raw": 0.4077
+      },
+      {
+        "occsoc": "273043",
+        "occ_title": "Writers and Authors",
+        "aei_2026_writing_orth": 4.13524734079731,
+        "aei_2026_obs_raw": 0.2462
+      },
+      {
+        "occsoc": "273041",
+        "occ_title": "Editors",
+        "aei_2026_writing_orth": 3.9362116154628866,
+        "aei_2026_obs_raw": 0.246
+      },
+      {
+        "occsoc": "131071",
+        "occ_title": "Human Resources Specialists",
+        "aei_2026_writing_orth": 3.7667973269687423,
+        "aei_2026_obs_raw": 0.4034
+      },
+      {
+        "occsoc": "434161",
+        "occ_title": "Human Resources Assistants, Except Payroll and Timekeeping",
+        "aei_2026_writing_orth": 3.6868532221156185,
+        "aei_2026_obs_raw": 0.4046
+      }
+    ],
+    "top10_overpredicted_by_legacy_openai": [
+      {
+        "occsoc": "432021",
+        "occ_title": "Telephone Operators",
+        "aei_2026_obs_raw": 0.0,
+        "openai_dv_beta": 0.894736842105263,
+        "divergence_2026_minus_openai": -3.1621227556894955
+      },
+      {
+        "occsoc": "433051",
+        "occ_title": "Payroll and Timekeeping Clerks",
+        "aei_2026_obs_raw": 0.0487,
+        "openai_dv_beta": 0.8378378378378379,
+        "divergence_2026_minus_openai": -2.5291001957607744
+      },
+      {
+        "occsoc": "436012",
+        "occ_title": "Legal Secretaries and Administrative Assistants",
+        "aei_2026_obs_raw": 0.0,
+        "openai_dv_beta": 0.6956521739130435,
+        "divergence_2026_minus_openai": -2.260846243540036
+      },
+      {
+        "occsoc": "439081",
+        "occ_title": "Proofreaders and Copy Markers",
+        "aei_2026_obs_raw": 0.1781,
+        "openai_dv_beta": 0.9750000000000001,
+        "divergence_2026_minus_openai": -2.152484861258206
+      },
+      {
+        "occsoc": "272041",
+        "occ_title": "Music Directors and Composers",
+        "aei_2026_obs_raw": 0.0368,
+        "openai_dv_beta": 0.7105263157894737,
+        "divergence_2026_minus_openai": -2.0444867400102207
+      },
+      {
+        "occsoc": "519162",
+        "occ_title": "Computer Numerically Controlled Tool Programmers",
+        "aei_2026_obs_raw": 0.1207,
+        "openai_dv_beta": 0.8035714285714285,
+        "divergence_2026_minus_openai": -1.8189147917631219
+      },
+      {
+        "occsoc": "434151",
+        "occ_title": "Order Clerks",
+        "aei_2026_obs_raw": 0.0748,
+        "openai_dv_beta": 0.7142857142857143,
+        "divergence_2026_minus_openai": -1.7685586995549234
+      },
+      {
+        "occsoc": "439041",
+        "occ_title": "Insurance Claims and Policy Processing Clerks",
+        "aei_2026_obs_raw": 0.1467,
+        "openai_dv_beta": 0.8333333333333333,
+        "divergence_2026_minus_openai": -1.753212386199869
+      },
+      {
+        "occsoc": "434061",
+        "occ_title": "Eligibility Interviewers, Government Programs",
+        "aei_2026_obs_raw": 0.0597,
+        "openai_dv_beta": 0.68,
+        "divergence_2026_minus_openai": -1.7297517628587293
+      },
+      {
+        "occsoc": "435031",
+        "occ_title": "Public Safety Telecommunicators",
+        "aei_2026_obs_raw": 0.0465,
+        "openai_dv_beta": 0.65625,
+        "divergence_2026_minus_openai": -1.723993713789115
+      }
+    ],
+    "top10_underpredicted_by_legacy_openai": [
+      {
+        "occsoc": "434051",
+        "occ_title": "Customer Service Representatives",
+        "aei_2026_obs_raw": 0.7011,
+        "openai_dv_beta": 0.5681818181818182,
+        "divergence_2026_minus_openai": 3.721101198151361
+      },
+      {
+        "occsoc": "131161",
+        "occ_title": "Market Research Analysts and Marketing Specialists",
+        "aei_2026_obs_raw": 0.6483,
+        "openai_dv_beta": 0.5245901639344263,
+        "divergence_2026_minus_openai": 3.5114025921233902
+      },
+      {
+        "occsoc": "292072",
+        "occ_title": "Medical Records Specialists",
+        "aei_2026_obs_raw": 0.6674,
+        "openai_dv_beta": 0.6176470588235294,
+        "divergence_2026_minus_openai": 3.2373691013696027
+      },
+      {
+        "occsoc": "414012",
+        "occ_title": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+        "aei_2026_obs_raw": 0.6279,
+        "openai_dv_beta": 0.6206896551724138,
+        "divergence_2026_minus_openai": 2.9190840334095767
+      },
+      {
+        "occsoc": "151251",
+        "occ_title": "Computer Programmers",
+        "aei_2026_obs_raw": 0.7451,
+        "openai_dv_beta": 0.95,
+        "divergence_2026_minus_openai": 2.331773554563158
+      },
+      {
+        "occsoc": "193094",
+        "occ_title": "Political Scientists",
+        "aei_2026_obs_raw": 0.452,
+        "openai_dv_beta": 0.47916666666666663,
+        "divergence_2026_minus_openai": 2.2037357159330773
+      },
+      {
+        "occsoc": "439021",
+        "occ_title": "Data Entry Keyers",
+        "aei_2026_obs_raw": 0.6707,
+        "openai_dv_beta": 0.8928571428571428,
+        "divergence_2026_minus_openai": 2.016905253581962
+      },
+      {
+        "occsoc": "192011",
+        "occ_title": "Astronomers",
+        "aei_2026_obs_raw": 0.3849,
+        "openai_dv_beta": 0.4375,
+        "divergence_2026_minus_openai": 1.8750818315349496
+      },
+      {
+        "occsoc": "319094",
+        "occ_title": "Medical Transcriptionists",
+        "aei_2026_obs_raw": 0.6365,
+        "openai_dv_beta": 0.875,
+        "divergence_2026_minus_openai": 1.8340938555554742
+      },
+      {
+        "occsoc": "412031",
+        "occ_title": "Retail Salespersons",
+        "aei_2026_obs_raw": 0.3222,
+        "openai_dv_beta": 0.3421052631578947,
+        "divergence_2026_minus_openai": 1.82358058183392
+      }
+    ],
+    "correlations": {
+      "aei_2026_observed": {
+        "aei_2026_observed": 1.0,
+        "llm_openai_beta": 0.6425,
+        "llm_felten_lm": 0.5392,
+        "aei_2026_writing_raw": 0.9908,
+        "aei_2026_writing_orth": 0.1805,
+        "aei_2026_coding_raw": 0.9746,
+        "aei_2026_task_writing": 0.5112,
+        "aei_2026_task_coding": 0.4369,
+        "aei_2025_auto_exp": 0.767,
+        "aei_2025_aug_exp": 0.7876,
+        "aei_2026_robot": -0.3939,
+        "face_to_face_social": 0.0938
+      },
+      "llm_openai_beta": {
+        "aei_2026_observed": 0.6425,
+        "llm_openai_beta": 1.0,
+        "llm_felten_lm": 0.8191,
+        "aei_2026_writing_raw": 0.6416,
+        "aei_2026_writing_orth": 0.075,
+        "aei_2026_coding_raw": 0.6404,
+        "aei_2026_task_writing": 0.4402,
+        "aei_2026_task_coding": 0.3638,
+        "aei_2025_auto_exp": 0.4836,
+        "aei_2025_aug_exp": 0.484,
+        "aei_2026_robot": -0.6512,
+        "face_to_face_social": 0.2683
+      },
+      "llm_felten_lm": {
+        "aei_2026_observed": 0.5392,
+        "llm_openai_beta": 0.8191,
+        "llm_felten_lm": 1.0,
+        "aei_2026_writing_raw": 0.5548,
+        "aei_2026_writing_orth": 0.1816,
+        "aei_2026_coding_raw": 0.5279,
+        "aei_2026_task_writing": 0.3818,
+        "aei_2026_task_coding": 0.3966,
+        "aei_2025_auto_exp": 0.4147,
+        "aei_2025_aug_exp": 0.5088,
+        "aei_2026_robot": -0.7411,
+        "face_to_face_social": 0.4805
+      },
+      "aei_2026_writing_raw": {
+        "aei_2026_observed": 0.9908,
+        "llm_openai_beta": 0.6416,
+        "llm_felten_lm": 0.5548,
+        "aei_2026_writing_raw": 1.0,
+        "aei_2026_writing_orth": 0.2141,
+        "aei_2026_coding_raw": 0.9766,
+        "aei_2026_task_writing": 0.5265,
+        "aei_2026_task_coding": 0.4472,
+        "aei_2025_auto_exp": 0.7563,
+        "aei_2025_aug_exp": 0.7883,
+        "aei_2026_robot": -0.4048,
+        "face_to_face_social": 0.1045
+      },
+      "aei_2026_writing_orth": {
+        "aei_2026_observed": 0.1805,
+        "llm_openai_beta": 0.075,
+        "llm_felten_lm": 0.1816,
+        "aei_2026_writing_raw": 0.2141,
+        "aei_2026_writing_orth": 1.0,
+        "aei_2026_coding_raw": -0.0009,
+        "aei_2026_task_writing": 0.3175,
+        "aei_2026_task_coding": -0.0165,
+        "aei_2025_auto_exp": 0.2866,
+        "aei_2025_aug_exp": 0.2384,
+        "aei_2026_robot": -0.1056,
+        "face_to_face_social": 0.1703
+      },
+      "aei_2026_coding_raw": {
+        "aei_2026_observed": 0.9746,
+        "llm_openai_beta": 0.6404,
+        "llm_felten_lm": 0.5279,
+        "aei_2026_writing_raw": 0.9766,
+        "aei_2026_writing_orth": -0.0009,
+        "aei_2026_coding_raw": 1.0,
+        "aei_2026_task_writing": 0.4691,
+        "aei_2026_task_coding": 0.4614,
+        "aei_2025_auto_exp": 0.7112,
+        "aei_2025_aug_exp": 0.7545,
+        "aei_2026_robot": -0.3912,
+        "face_to_face_social": 0.0695
+      },
+      "aei_2026_task_writing": {
+        "aei_2026_observed": 0.5112,
+        "llm_openai_beta": 0.4402,
+        "llm_felten_lm": 0.3818,
+        "aei_2026_writing_raw": 0.5265,
+        "aei_2026_writing_orth": 0.3175,
+        "aei_2026_coding_raw": 0.4691,
+        "aei_2026_task_writing": 1.0,
+        "aei_2026_task_coding": 0.3619,
+        "aei_2025_auto_exp": 0.6322,
+        "aei_2025_aug_exp": 0.5555,
+        "aei_2026_robot": -0.2637,
+        "face_to_face_social": 0.0613
+      },
+      "aei_2026_task_coding": {
+        "aei_2026_observed": 0.4369,
+        "llm_openai_beta": 0.3638,
+        "llm_felten_lm": 0.3966,
+        "aei_2026_writing_raw": 0.4472,
+        "aei_2026_writing_orth": -0.0165,
+        "aei_2026_coding_raw": 0.4614,
+        "aei_2026_task_writing": 0.3619,
+        "aei_2026_task_coding": 1.0,
+        "aei_2025_auto_exp": 0.5032,
+        "aei_2025_aug_exp": 0.5188,
+        "aei_2026_robot": -0.2827,
+        "face_to_face_social": 0.0912
+      },
+      "aei_2025_auto_exp": {
+        "aei_2026_observed": 0.767,
+        "llm_openai_beta": 0.4836,
+        "llm_felten_lm": 0.4147,
+        "aei_2026_writing_raw": 0.7563,
+        "aei_2026_writing_orth": 0.2866,
+        "aei_2026_coding_raw": 0.7112,
+        "aei_2026_task_writing": 0.6322,
+        "aei_2026_task_coding": 0.5032,
+        "aei_2025_auto_exp": 1.0,
+        "aei_2025_aug_exp": 0.7565,
+        "aei_2026_robot": -0.3027,
+        "face_to_face_social": 0.0912
+      },
+      "aei_2025_aug_exp": {
+        "aei_2026_observed": 0.7876,
+        "llm_openai_beta": 0.484,
+        "llm_felten_lm": 0.5088,
+        "aei_2026_writing_raw": 0.7883,
+        "aei_2026_writing_orth": 0.2384,
+        "aei_2026_coding_raw": 0.7545,
+        "aei_2026_task_writing": 0.5555,
+        "aei_2026_task_coding": 0.5188,
+        "aei_2025_auto_exp": 0.7565,
+        "aei_2025_aug_exp": 1.0,
+        "aei_2026_robot": -0.3369,
+        "face_to_face_social": 0.1841
+      },
+      "aei_2026_robot": {
+        "aei_2026_observed": -0.3939,
+        "llm_openai_beta": -0.6512,
+        "llm_felten_lm": -0.7411,
+        "aei_2026_writing_raw": -0.4048,
+        "aei_2026_writing_orth": -0.1056,
+        "aei_2026_coding_raw": -0.3912,
+        "aei_2026_task_writing": -0.2637,
+        "aei_2026_task_coding": -0.2827,
+        "aei_2025_auto_exp": -0.3027,
+        "aei_2025_aug_exp": -0.3369,
+        "aei_2026_robot": 1.0,
+        "face_to_face_social": -0.4865
+      },
+      "face_to_face_social": {
+        "aei_2026_observed": 0.0938,
+        "llm_openai_beta": 0.2683,
+        "llm_felten_lm": 0.4805,
+        "aei_2026_writing_raw": 0.1045,
+        "aei_2026_writing_orth": 0.1703,
+        "aei_2026_coding_raw": 0.0695,
+        "aei_2026_task_writing": 0.0613,
+        "aei_2026_task_coding": 0.0912,
+        "aei_2025_auto_exp": 0.0912,
+        "aei_2025_aug_exp": 0.1841,
+        "aei_2026_robot": -0.4865,
+        "face_to_face_social": 1.0
+      }
+    }
+  },
+  "acs_meta": {
+    "n_workers_total": 6546097,
+    "n_cells": 1774214,
+    "fluency": [
+      {
+        "subgroup": "Fluent_English_NonEng",
+        "task": "aei_2026_observed",
+        "coef": 0.0015372854265292765,
+        "se": 0.0016343285718597327,
+        "pval": 0.35142096117950716,
+        "mde80": 0.004578710768461906,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3553671
+      },
+      {
+        "subgroup": "Fluent_English_NonEng",
+        "task": "aei_2026_writing_orth",
+        "coef": -0.0022895170116990844,
+        "se": 0.0018212248633378467,
+        "pval": 0.21454717130425305,
+        "mde80": 0.005102316655987122,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3553671
+      },
+      {
+        "subgroup": "Fluent_English_NonEng",
+        "task": "aei_2026_coding_raw",
+        "coef": 0.001722927679714284,
+        "se": 0.0017459488196544784,
+        "pval": 0.32848501178347855,
+        "mde80": 0.004891424404725771,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3553671
+      },
+      {
+        "subgroup": "NonFluent_English_NonEng",
+        "task": "aei_2026_observed",
+        "coef": -0.0026636990054277982,
+        "se": 0.001836854411951744,
+        "pval": 0.15326341593213844,
+        "mde80": 0.005146104168349595,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3419487
+      },
+      {
+        "subgroup": "NonFluent_English_NonEng",
+        "task": "aei_2026_writing_orth",
+        "coef": 0.0031996634400685156,
+        "se": 0.00390461764783247,
+        "pval": 0.41641522643881435,
+        "mde80": 0.010939119084550475,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3419487
+      },
+      {
+        "subgroup": "NonFluent_English_NonEng",
+        "task": "aei_2026_coding_raw",
+        "coef": -0.0035369269866305877,
+        "se": 0.0018464886769511276,
+        "pval": 0.06115814617535831,
+        "mde80": 0.005173095382759251,
+        "se_type": "twoway_occsoc_statefip",
+        "n_workers": 3419487
+      }
+    ]
+  },
+  "cps_meta": {
+    "n_wage_ft": 634326,
+    "n_quarters": 27
+  }
+}

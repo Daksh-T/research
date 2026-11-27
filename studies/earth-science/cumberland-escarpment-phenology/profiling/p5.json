@@ -1,0 +1,674 @@
+{
+  "experiment": "P5_signalb_mechanism",
+  "elapsed_s": 1.4,
+  "n_pixels": 1400,
+  "raw_flat_minus_steep_d": 3.529,
+  "raw_p": 2.774e-58,
+  "test_5a_soils": {
+    "fragipan_vs_welldrained_within_flat": {
+      "n_wet_frag": 52,
+      "n_well_drained": 648,
+      "mean_sos_wet_frag": 115.345,
+      "mean_sos_well_drained": 115.028,
+      "diff_wet_minus_well_d": 0.317,
+      "p": 0.6592
+    },
+    "polaris_within_flat": {
+      "low_ksat_minus_high_ksat_d": 0.481,
+      "low_ksat_vs_high_ksat_p": 0.3222,
+      "r_ksat30_60_sos": -0.092,
+      "p_ksat": 0.01452,
+      "r_bd60_100_sos": 0.106,
+      "p_bd": 0.005143,
+      "r_clay30_60_sos": 0.121,
+      "p_clay": 0.001309
+    },
+    "flat_vs_steep_holding_well_drained": {
+      "n_flat_well": 648,
+      "n_steep_well": 551,
+      "flat_well_sos": 115.028,
+      "steep_well_sos": 111.877,
+      "diff_d": 3.151,
+      "p": 2.232e-41
+    },
+    "drainage_class_table": [
+      {
+        "drclass": "Excessively drained",
+        "is_flat": 0,
+        "n": 4,
+        "mean_sos": 109.9,
+        "mean_elev": 562.12,
+        "mean_slope": 17.91
+      },
+      {
+        "drclass": "Moderately well drained",
+        "is_flat": 0,
+        "n": 5,
+        "mean_sos": 114.19,
+        "mean_elev": 564.54,
+        "mean_slope": 16.54
+      },
+      {
+        "drclass": "Moderately well drained",
+        "is_flat": 1,
+        "n": 21,
+        "mean_sos": 116.79,
+        "mean_elev": 575.03,
+        "mean_slope": 3.46
+      },
+      {
+        "drclass": "Poorly drained",
+        "is_flat": 0,
+        "n": 16,
+        "mean_sos": 109.92,
+        "mean_elev": 556.58,
+        "mean_slope": 22.43
+      },
+      {
+        "drclass": "Poorly drained",
+        "is_flat": 1,
+        "n": 2,
+        "mean_sos": 115.26,
+        "mean_elev": 551.92,
+        "mean_slope": 5.03
+      },
+      {
+        "drclass": "Somewhat excessively drained",
+        "is_flat": 0,
+        "n": 371,
+        "mean_sos": 112.19,
+        "mean_elev": 568.68,
+        "mean_slope": 14.77
+      },
+      {
+        "drclass": "Somewhat excessively drained",
+        "is_flat": 1,
+        "n": 196,
+        "mean_sos": 114.14,
+        "mean_elev": 572.11,
+        "mean_slope": 5.06
+      },
+      {
+        "drclass": "Somewhat poorly drained",
+        "is_flat": 0,
+        "n": 15,
+        "mean_sos": 112.11,
+        "mean_elev": 570.15,
+        "mean_slope": 13.36
+      },
+      {
+        "drclass": "Somewhat poorly drained",
+        "is_flat": 1,
+        "n": 22,
+        "mean_sos": 113.93,
+        "mean_elev": 572.43,
+        "mean_slope": 4.03
+      },
+      {
+        "drclass": "Unknown",
+        "is_flat": 0,
+        "n": 1,
+        "mean_sos": 114.66,
+        "mean_elev": 564.19,
+        "mean_slope": 12.59
+      },
+      {
+        "drclass": "Well drained",
+        "is_flat": 0,
+        "n": 195,
+        "mean_sos": 111.17,
+        "mean_elev": 567.27,
+        "mean_slope": 18.99
+      },
+      {
+        "drclass": "Well drained",
+        "is_flat": 1,
+        "n": 453,
+        "mean_sos": 115.42,
+        "mean_elev": 577.23,
+        "mean_slope": 4.05
+      }
+    ],
+    "soil_series_table": [
+      {
+        "compname": "Bouldin",
+        "is_flat": 0,
+        "n": 18,
+        "mean_sos": 110.0,
+        "has_frag": 0
+      },
+      {
+        "compname": "Cotaco",
+        "is_flat": 1,
+        "n": 17,
+        "mean_sos": 116.22,
+        "has_frag": 0
+      },
+      {
+        "compname": "Hartsells",
+        "is_flat": 0,
+        "n": 91,
+        "mean_sos": 111.07,
+        "has_frag": 0
+      },
+      {
+        "compname": "Hartsells",
+        "is_flat": 1,
+        "n": 355,
+        "mean_sos": 115.3,
+        "has_frag": 0
+      },
+      {
+        "compname": "Jefferson",
+        "is_flat": 1,
+        "n": 16,
+        "mean_sos": 115.92,
+        "has_frag": 0
+      },
+      {
+        "compname": "Lawrence",
+        "is_flat": 1,
+        "n": 19,
+        "mean_sos": 114.05,
+        "has_frag": 1
+      },
+      {
+        "compname": "Lily",
+        "is_flat": 1,
+        "n": 37,
+        "mean_sos": 116.31,
+        "has_frag": 0
+      },
+      {
+        "compname": "Mimosa",
+        "is_flat": 0,
+        "n": 22,
+        "mean_sos": 112.11,
+        "has_frag": 0
+      },
+      {
+        "compname": "Nolichucky",
+        "is_flat": 0,
+        "n": 15,
+        "mean_sos": 109.36,
+        "has_frag": 0
+      },
+      {
+        "compname": "Ramsey",
+        "is_flat": 0,
+        "n": 371,
+        "mean_sos": 112.19,
+        "has_frag": 0
+      },
+      {
+        "compname": "Ramsey",
+        "is_flat": 1,
+        "n": 196,
+        "mean_sos": 114.14,
+        "has_frag": 0
+      },
+      {
+        "compname": "Rock outcrop",
+        "is_flat": 0,
+        "n": 90,
+        "mean_sos": 109.55,
+        "has_frag": 0
+      },
+      {
+        "compname": "Tasso",
+        "is_flat": 0,
+        "n": 19,
+        "mean_sos": 110.33,
+        "has_frag": 1
+      }
+    ]
+  },
+  "test_5b_25yr_precip_interaction": {
+    "n_years": 25,
+    "mean_dSOS_flat_minus_steep": 2.387,
+    "sd_dSOS_flat_minus_steep": 1.605,
+    "frac_yrs_gt0": 1.0,
+    "onesamp_p": 1.127e-07,
+    "r_mar_apr_precip": 0.202,
+    "p_mar_apr_precip": 0.3324,
+    "r_feb_apr_precip": 0.377,
+    "p_feb_apr_precip": 0.06318,
+    "r_mar_apr_tmin": -0.029,
+    "p_mar_apr_tmin": 0.8912,
+    "by_year": [
+      {
+        "yr": 2000,
+        "flat_sos": 124.193,
+        "steep_sos": 123.443,
+        "dSOS_flat_minus_steep": 0.75,
+        "dEOS_flat_minus_steep": -0.498,
+        "mar_apr_precip_mm": 353.7,
+        "feb_apr_precip_mm": 439.1,
+        "mar_apr_tmin_C": 7.31
+      },
+      {
+        "yr": 2001,
+        "flat_sos": 116.258,
+        "steep_sos": 114.731,
+        "dSOS_flat_minus_steep": 1.527,
+        "dEOS_flat_minus_steep": -1.673,
+        "mar_apr_precip_mm": 227.0,
+        "feb_apr_precip_mm": 399.5,
+        "mar_apr_tmin_C": 5.32
+      },
+      {
+        "yr": 2002,
+        "flat_sos": 117.926,
+        "steep_sos": 114.681,
+        "dSOS_flat_minus_steep": 3.245,
+        "dEOS_flat_minus_steep": 1.316,
+        "mar_apr_precip_mm": 296.4,
+        "feb_apr_precip_mm": 353.7,
+        "mar_apr_tmin_C": 6.47
+      },
+      {
+        "yr": 2003,
+        "flat_sos": 109.154,
+        "steep_sos": 106.3,
+        "dSOS_flat_minus_steep": 2.854,
+        "dEOS_flat_minus_steep": -0.699,
+        "mar_apr_precip_mm": 153.8,
+        "feb_apr_precip_mm": 447.7,
+        "mar_apr_tmin_C": 7.31
+      },
+      {
+        "yr": 2004,
+        "flat_sos": 113.457,
+        "steep_sos": 111.877,
+        "dSOS_flat_minus_steep": 1.58,
+        "dEOS_flat_minus_steep": -0.803,
+        "mar_apr_precip_mm": 253.5,
+        "feb_apr_precip_mm": 432.1,
+        "mar_apr_tmin_C": 6.95
+      },
+      {
+        "yr": 2005,
+        "flat_sos": 116.577,
+        "steep_sos": 111.456,
+        "dSOS_flat_minus_steep": 5.121,
+        "dEOS_flat_minus_steep": -0.497,
+        "mar_apr_precip_mm": 218.4,
+        "feb_apr_precip_mm": 357.8,
+        "mar_apr_tmin_C": 5.53
+      },
+      {
+        "yr": 2006,
+        "flat_sos": 104.832,
+        "steep_sos": 104.248,
+        "dSOS_flat_minus_steep": 0.584,
+        "dEOS_flat_minus_steep": 1.815,
+        "mar_apr_precip_mm": 211.7,
+        "feb_apr_precip_mm": 293.3,
+        "mar_apr_tmin_C": 8.34
+      },
+      {
+        "yr": 2007,
+        "flat_sos": 122.021,
+        "steep_sos": 120.755,
+        "dSOS_flat_minus_steep": 1.266,
+        "dEOS_flat_minus_steep": 0.022,
+        "mar_apr_precip_mm": 181.0,
+        "feb_apr_precip_mm": 226.9,
+        "mar_apr_tmin_C": 7.24
+      },
+      {
+        "yr": 2008,
+        "flat_sos": 119.378,
+        "steep_sos": 115.834,
+        "dSOS_flat_minus_steep": 3.544,
+        "dEOS_flat_minus_steep": 0.345,
+        "mar_apr_precip_mm": 291.0,
+        "feb_apr_precip_mm": 390.4,
+        "mar_apr_tmin_C": 5.87
+      },
+      {
+        "yr": 2009,
+        "flat_sos": 117.747,
+        "steep_sos": 114.597,
+        "dSOS_flat_minus_steep": 3.15,
+        "dEOS_flat_minus_steep": 0.577,
+        "mar_apr_precip_mm": 291.8,
+        "feb_apr_precip_mm": 352.5,
+        "mar_apr_tmin_C": 6.99
+      },
+      {
+        "yr": 2010,
+        "flat_sos": 105.055,
+        "steep_sos": 103.393,
+        "dSOS_flat_minus_steep": 1.662,
+        "dEOS_flat_minus_steep": -0.076,
+        "mar_apr_precip_mm": 233.0,
+        "feb_apr_precip_mm": 329.2,
+        "mar_apr_tmin_C": 7.15
+      },
+      {
+        "yr": 2011,
+        "flat_sos": 116.66,
+        "steep_sos": 112.86,
+        "dSOS_flat_minus_steep": 3.8,
+        "dEOS_flat_minus_steep": 0.986,
+        "mar_apr_precip_mm": 520.6,
+        "feb_apr_precip_mm": 585.0,
+        "mar_apr_tmin_C": 7.46
+      },
+      {
+        "yr": 2012,
+        "flat_sos": 100.764,
+        "steep_sos": 99.528,
+        "dSOS_flat_minus_steep": 1.236,
+        "dEOS_flat_minus_steep": 0.023,
+        "mar_apr_precip_mm": 104.6,
+        "feb_apr_precip_mm": 170.4,
+        "mar_apr_tmin_C": 10.06
+      },
+      {
+        "yr": 2013,
+        "flat_sos": 84.05,
+        "steep_sos": 83.297,
+        "dSOS_flat_minus_steep": 0.753,
+        "dEOS_flat_minus_steep": 0.438,
+        "mar_apr_precip_mm": 467.3,
+        "feb_apr_precip_mm": 524.9,
+        "mar_apr_tmin_C": 5.03
+      },
+      {
+        "yr": 2014,
+        "flat_sos": 120.372,
+        "steep_sos": 120.339,
+        "dSOS_flat_minus_steep": 0.033,
+        "dEOS_flat_minus_steep": 2.322,
+        "mar_apr_precip_mm": 307.5,
+        "feb_apr_precip_mm": 444.0,
+        "mar_apr_tmin_C": 5.79
+      },
+      {
+        "yr": 2015,
+        "flat_sos": 113.29,
+        "steep_sos": 109.661,
+        "dSOS_flat_minus_steep": 3.629,
+        "dEOS_flat_minus_steep": 1.798,
+        "mar_apr_precip_mm": 357.3,
+        "feb_apr_precip_mm": 463.2,
+        "mar_apr_tmin_C": 7.92
+      },
+      {
+        "yr": 2016,
+        "flat_sos": 112.932,
+        "steep_sos": 110.245,
+        "dSOS_flat_minus_steep": 2.687,
+        "dEOS_flat_minus_steep": 0.095,
+        "mar_apr_precip_mm": 163.5,
+        "feb_apr_precip_mm": 371.2,
+        "mar_apr_tmin_C": 8.24
+      },
+      {
+        "yr": 2017,
+        "flat_sos": 107.771,
+        "steep_sos": 106.727,
+        "dSOS_flat_minus_steep": 1.044,
+        "dEOS_flat_minus_steep": 1.159,
+        "mar_apr_precip_mm": 485.8,
+        "feb_apr_precip_mm": 582.8,
+        "mar_apr_tmin_C": 7.7
+      },
+      {
+        "yr": 2018,
+        "flat_sos": 121.892,
+        "steep_sos": 120.324,
+        "dSOS_flat_minus_steep": 1.568,
+        "dEOS_flat_minus_steep": 2.088,
+        "mar_apr_precip_mm": 323.8,
+        "feb_apr_precip_mm": 632.8,
+        "mar_apr_tmin_C": 4.25
+      },
+      {
+        "yr": 2019,
+        "flat_sos": 111.213,
+        "steep_sos": 109.415,
+        "dSOS_flat_minus_steep": 1.798,
+        "dEOS_flat_minus_steep": 1.607,
+        "mar_apr_precip_mm": 413.6,
+        "feb_apr_precip_mm": 705.2,
+        "mar_apr_tmin_C": 6.04
+      },
+      {
+        "yr": 2020,
+        "flat_sos": 113.676,
+        "steep_sos": 106.904,
+        "dSOS_flat_minus_steep": 6.772,
+        "dEOS_flat_minus_steep": 0.464,
+        "mar_apr_precip_mm": 549.2,
+        "feb_apr_precip_mm": 945.8,
+        "mar_apr_tmin_C": 7.37
+      },
+      {
+        "yr": 2021,
+        "flat_sos": 111.317,
+        "steep_sos": 110.43,
+        "dSOS_flat_minus_steep": 0.887,
+        "dEOS_flat_minus_steep": 0.946,
+        "mar_apr_precip_mm": 395.8,
+        "feb_apr_precip_mm": 544.6,
+        "mar_apr_tmin_C": 7.26
+      },
+      {
+        "yr": 2022,
+        "flat_sos": 115.355,
+        "steep_sos": 110.861,
+        "dSOS_flat_minus_steep": 4.494,
+        "dEOS_flat_minus_steep": 0.571,
+        "mar_apr_precip_mm": 276.3,
+        "feb_apr_precip_mm": 501.1,
+        "mar_apr_tmin_C": 6.21
+      },
+      {
+        "yr": 2023,
+        "flat_sos": 107.46,
+        "steep_sos": 104.433,
+        "dSOS_flat_minus_steep": 3.027,
+        "dEOS_flat_minus_steep": 0.008,
+        "mar_apr_precip_mm": 313.2,
+        "feb_apr_precip_mm": 479.6,
+        "mar_apr_tmin_C": 6.69
+      },
+      {
+        "yr": 2024,
+        "flat_sos": 111.113,
+        "steep_sos": 108.457,
+        "dSOS_flat_minus_steep": 2.656,
+        "dEOS_flat_minus_steep": -0.867,
+        "mar_apr_precip_mm": 343.0,
+        "feb_apr_precip_mm": 505.6,
+        "mar_apr_tmin_C": 7.55
+      }
+    ]
+  },
+  "test_5c_guild_and_pigment": {
+    "flat_vs_steep_features": {
+      "oct_mari": {
+        "flat_mean": 4.0378,
+        "steep_mean": 3.9174,
+        "diff": 0.1205,
+        "p": 0.0001322
+      },
+      "oct_ndvi": {
+        "flat_mean": 0.7485,
+        "steep_mean": 0.7465,
+        "diff": 0.002,
+        "p": 0.5099
+      },
+      "oct_ndre": {
+        "flat_mean": 0.4968,
+        "steep_mean": 0.4943,
+        "diff": 0.0025,
+        "p": 0.2917
+      },
+      "spr_ndre": {
+        "flat_mean": 0.3678,
+        "steep_mean": 0.4078,
+        "diff": -0.0401,
+        "p": 5.968e-63
+      },
+      "win_ndvi": {
+        "flat_mean": 0.4158,
+        "steep_mean": 0.4269,
+        "diff": -0.0111,
+        "p": 1.439e-05
+      },
+      "sum_ndvi": {
+        "flat_mean": 0.8818,
+        "steep_mean": 0.8884,
+        "diff": -0.0066,
+        "p": 2.671e-08
+      },
+      "STANDHT": {
+        "flat_mean": 75.4947,
+        "steep_mean": 78.1559,
+        "diff": -2.6612,
+        "p": 7.844e-06
+      },
+      "BALIVE": {
+        "flat_mean": 115.9969,
+        "steep_mean": 120.3953,
+        "diff": -4.3984,
+        "p": 1.402e-05
+      },
+      "CANOPYPCT": {
+        "flat_mean": 81.5611,
+        "steep_mean": 82.2099,
+        "diff": -0.6488,
+        "p": 0.004522
+      },
+      "ksat_30_60": {
+        "flat_mean": 0.4519,
+        "steep_mean": 0.6657,
+        "diff": -0.2137,
+        "p": 2.436e-47
+      },
+      "clay_30_60": {
+        "flat_mean": 18.4022,
+        "steep_mean": 13.2781,
+        "diff": 5.1241,
+        "p": 2.009e-58
+      },
+      "bd_60_100": {
+        "flat_mean": 1.5619,
+        "steep_mean": 1.473,
+        "diff": 0.0889,
+        "p": 2.472e-69
+      },
+      "tpi150": {
+        "flat_mean": 0.793,
+        "steep_mean": 2.8872,
+        "diff": -2.0943,
+        "p": 1.21e-13
+      }
+    },
+    "fortypcd_breakdown": [
+      {
+        "FORTYPCD": 502,
+        "name": "Chestnut oak",
+        "n_flat": 42,
+        "n_steep": 34,
+        "pct_of_flat": 6.0,
+        "pct_of_steep": 4.9,
+        "flat_sos": 115.29,
+        "steep_sos": 111.15,
+        "diff_d": 4.14,
+        "p": 1.953e-07
+      },
+      {
+        "FORTYPCD": 503,
+        "name": "White oak/red oak/hickory",
+        "n_flat": 140,
+        "n_steep": 281,
+        "pct_of_flat": 20.0,
+        "pct_of_steep": 40.1,
+        "flat_sos": 115.09,
+        "steep_sos": 110.81,
+        "diff_d": 4.28,
+        "p": 4.055e-18
+      },
+      {
+        "FORTYPCD": 504,
+        "name": "White oak",
+        "n_flat": 268,
+        "n_steep": 126,
+        "pct_of_flat": 38.3,
+        "pct_of_steep": 18.0,
+        "flat_sos": 115.06,
+        "steep_sos": 113.32,
+        "diff_d": 1.74,
+        "p": 8.433e-06
+      },
+      {
+        "FORTYPCD": 506,
+        "name": "Yellow-poplar/white oak/N. red oak",
+        "n_flat": 7,
+        "n_steep": 28,
+        "pct_of_flat": 1.0,
+        "pct_of_steep": 4.0,
+        "flat_sos": 110.42,
+        "steep_sos": 109.9,
+        "diff_d": null,
+        "p": null
+      },
+      {
+        "FORTYPCD": 515,
+        "name": "Chestnut oak/black oak/scarlet oak",
+        "n_flat": 201,
+        "n_steep": 174,
+        "pct_of_flat": 28.7,
+        "pct_of_steep": 24.9,
+        "flat_sos": 115.86,
+        "steep_sos": 112.03,
+        "diff_d": 3.83,
+        "p": 1.056e-19
+      }
+    ],
+    "nested_ols_beta_is_flat": {
+      "m1_unadjusted": {
+        "beta": 3.76,
+        "r2": 0.2021
+      },
+      "m2_elev_tpi": {
+        "beta": 2.6459,
+        "r2": 0.2711
+      },
+      "m3_plus_soils": {
+        "beta": 2.4847,
+        "r2": 0.2749
+      },
+      "m4_plus_guild_mari": {
+        "beta": 2.4295,
+        "r2": 0.3171,
+        "oct_mari_coef": {
+          "beta": 0.9152,
+          "se": 0.206,
+          "t": 4.442,
+          "p": 9.675e-06
+        }
+      },
+      "m5_full": {
+        "beta": 2.2852,
+        "r2": 0.3209
+      }
+    }
+  },
+  "gate_check": {
+    "fragipan_within_flat_diff_d": 0.317,
+    "r_25yr_mar_apr_precip": 0.202,
+    "flat_vs_steep_well_drained_d": 3.151,
+    "oct_mari_diff": 0.1205,
+    "oct_mari_p": 0.0001322,
+    "beta_is_flat_unadj": 3.76,
+    "beta_is_flat_full_controls": 2.2852,
+    "soil_inertia_verdict": "FAIL",
+    "guild_turnover_verdict": "PASS"
+  }
+}

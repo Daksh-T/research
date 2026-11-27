@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "us-immigrant-integration"
+version = "1.0.0"
+description = "Three empirical studies on immigrant socio-economic integration in the United States (1980-2026)"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.1",
+  "pandas>=2.1",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "scikit-learn>=1.4",
+  "statsmodels>=0.14",
+  "pyfixest>=0.25",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "openpyxl>=3.1",
+  "pyarrow>=16.0",
+  "requests>=2.31",
+  "ipumspy>=0.6",
+]
+
+[tool.setuptools]
+py-modules = []
+packages = []

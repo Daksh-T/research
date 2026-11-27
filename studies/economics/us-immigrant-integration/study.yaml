@@ -1,0 +1,109 @@
+id: "economics/us-immigrant-integration"
+slug: "us-immigrant-integration"
+discipline: "economics"
+type: "study-family"
+title: "Three Empirical Studies on Immigrant Socio-Economic Integration in the United States"
+authors:
+  - name: "Daksh Tyagi"
+    role: "Author / Research Director"
+provenance:
+  directed_by: "Daksh Tyagi"
+  executed_by: "Gemini 4 Neon agent swarm"
+  peer_review:
+    - "Independent adversarial peer review (review/peer_review.md) and Gemini response with follow-up code/equation audit (review/response_to_referee.md)"
+date: "2026-11"
+status: "working-paper"
+license:
+  code: "MIT"
+  content: "CC-BY-4.0"
+repository_path: "studies/economics/us-immigrant-integration"
+tags:
+  - labor-economics
+  - urban-economics
+  - immigration
+  - generative-ai
+  - intermarriage
+  - ethnic-enclaves
+  - ipums-acs
+  - cps
+data_availability: "aggregates-included-microdata-via-ipums-and-census-scripts"
+review_files:
+  - "review/peer_review.md"
+  - "review/response_to_referee.md"
+papers:
+  - id: "intermarriage-earnings-premium-1980-2024"
+    order: 1
+    title: "Reassessing the Rising Immigrant Intermarriage Earnings Premium (1980–2024): A Replication Note and 14-Year Extension"
+    pdf: "papers/paper2_intermarriage_comment/paper2_manuscript.pdf"
+    source: "papers/paper2_intermarriage_comment/paper2_manuscript.tex"
+    abstract: >-
+      Using harmonized U.S. Census and American Community Survey microdata
+      linked to O*NET and Autor-Dorn occupational task measures from 1980 to
+      2024, we replicate Furtado and Song (2015) with full-metropolitan
+      working-age enclave denominators, isolate true foreign-born immigrants,
+      and extend the series 14 years. Men's conditional differential peaks in
+      2012-2015 (0.115 log points) and plateaus in 2021-2024 (0.094; contrast
+      -0.021, p = 0.084), while joint Gelbach decompositions show O*NET
+      Math/Analytical tasks dominate Social/English tasks (45.4% vs. 14.2%).
+    keywords:
+      - immigrant intermarriage
+      - wage premium
+      - occupational sorting
+      - Gelbach decomposition
+      - replication
+    key_findings:
+      - "Confirms the 1980–2010 intermarriage premium rise (0.095*** to 0.115*** in 2012–15) followed by a post-2015 plateau (0.094*** in 2021–24)."
+      - "In joint 2000–2024 Gelbach decompositions, O*NET Math/Analytical tasks account for 45.4% of the rise vs. 14.2% for Social/English tasks."
+      - "Extending to married childhood-arrival women reveals college-graduate parity by 2021–2024."
+    doi: null
+  - id: "genai-exposure-native-immigrant-wage-gap"
+    order: 2
+    title: "Generative AI Exposure and the Native–Immigrant Wage Gap: Evidence Across Exposure Measures in U.S. Wage Surveys (2015–2026)"
+    pdf: "papers/paper1_genai_immigrants/paper1_manuscript.pdf"
+    source: "papers/paper1_genai_immigrants/paper1_manuscript.tex"
+    abstract: >-
+      We estimate the post-ChatGPT occupational-exposure wage gradient across
+      6.55 million individual full-time workers in the American Community Survey
+      (2015-2024) and 634,326 full-time earners in the Current Population Survey
+      (2020-2026), comparing O*NET task profiles, Eloundou et al. (2024) OpenAI
+      beta, Felten AIOE, and March 2026 Anthropic Economic Index observed usage.
+      Across specifications we find tightly estimated nulls in ACS (80% MDE =
+      0.0027-0.0047 log pts/SD) and no consistent post-2022 cross-occupation
+      writing-channel wage compression for non-English-origin immigrants so far.
+    keywords:
+      - generative AI
+      - native-immigrant wage gap
+      - occupational exposure
+      - ACS
+      - CPS
+    key_findings:
+      - "Authoritative 2021–2024 individual-worker ACS regressions show tight nulls under observed Claude usage (+0.0015 log pts/SD; 80% MDE 0.0027) and orthogonalized written-English exposure (-0.0012)."
+      - "Modest positive estimates under early OpenAI capability rubrics (+0.0048) load onto coding/math rather than writing and lose significance under pre-trend bounds."
+      - "Quarterly CPS estimates through late 2026 rule out large (>1.5–2% per SD) cross-occupation equalization."
+    doi: null
+  - id: "ethnic-enclaves-crowding-gateway-migration"
+    order: 3
+    title: "Ethnic Enclaves, Household Crowding, and Post-2020 Gateway Out-Migration: A Re-Examination (1980–2024)"
+    pdf: "papers/paper3_enclaves_wfh/paper3_manuscript.pdf"
+    source: "papers/paper3_enclaves_wfh/paper3_manuscript.tex"
+    abstract: >-
+      Using 17.71 million harmonized Census and ACS observations (1980-2024)
+      linked to FHFA, Zillow, and O*NET data, we re-examine Song and Xu (2020)
+      and Song (2017) across intra-metro housing adjustment, post-2020 gateway
+      mobility, and shift-share IV identification. Within-metro panels of unique
+      households show flat rent/home-value gradients alongside rising household
+      crowding and multigenerational living, Webb wild cluster bootstrap checks
+      find no consistent post-2020 enclave-arbitrage flight, and closed-form
+      Anderson-Rubin confidence sets confirm bounded positive adult clustering
+      under static Bartik IV in both 1980-2010 and 2010-2024.
+    keywords:
+      - ethnic enclaves
+      - household crowding
+      - remote work
+      - shift-share IV
+      - Anderson-Rubin inference
+    key_findings:
+      - "Within-metro unique-household panels show flat rent/value gradients alongside clear crowding and multigenerational (MULTGEN=3) absorption; lagged-level FE shows severe Nickell bias."
+      - "Webb wild cluster bootstrap inference finds no consistent differential Sunbelt relocation or enclave arbitrage among post-2020 gateway leavers."
+      - "Closed-form Anderson–Rubin 95% confidence sets confirm bounded positive out-of-state-born adult clustering in both 1980–2010 ([+0.013, +0.051]) and 2010–2024 ([+0.011, +0.041])."
+    doi: null

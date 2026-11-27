@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Simultaneous Task Horse Race: LLM Writing vs.\ LLM Coding/Math vs.\ Face-to-Face Social Skills}
+\label{tab:task_horserace}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+ & \shortstack{(1) Full\\2015--24} & \shortstack{(2) Post-COVID\\2021--24} & \shortstack{(3) OpenAI $\beta$\\2021--24} & \shortstack{(4) OpenAI $E1$\\2021--24} & \shortstack{(5) Felten LM\\2021--24} & \shortstack{(6) Immi-Only\\DDD 2021--24} \\
+\midrule
+Post $\times$ Treat $\times$ LLM Writing (Orth.) & -0.0006 & 0.0003 & --- & --- & --- & 0.0092 \\
+ & (0.0027) & (0.0026) &  &  &  & (0.0064) \\
+Post $\times$ Treat $\times$ LLM Coding \& Math & 0.0083*** & 0.0042*** & --- & --- & --- & -0.0110* \\
+ & (0.0016) & (0.0015) &  &  &  & (0.0060) \\
+Post $\times$ Treat $\times$ OpenAI LLM $\beta$ & --- & --- & 0.0049*** & --- & --- & --- \\
+ &  &  & (0.0015) &  &  &  \\
+Post $\times$ Treat $\times$ OpenAI LLM $E1$ & --- & --- & --- & 0.0029** & --- & --- \\
+ &  &  &  & (0.0014) &  &  \\
+Post $\times$ Treat $\times$ Felten LM AIOE & --- & --- & --- & --- & 0.0048** & --- \\
+ &  &  &  &  & (0.0021) &  \\
+Post $\times$ Treat $\times$ Face-to-Face Social & 0.0005 & -0.0012 & -0.0013 & 0.0007 & -0.0028 & -0.0147*** \\
+ & (0.0044) & (0.0044) & (0.0041) & (0.0043) & (0.0043) & (0.0043) \\
+\midrule
+Workers ($N$) & 6,458,113 & 3,788,812 & 3,788,812 & 3,788,812 & 3,788,812 & 655,697 \\
+Cells & 1,705,990 & 1,004,872 & 1,004,872 & 1,004,872 & 1,004,872 & 347,743 \\
+$R^2$ & 0.683 & 0.677 & 0.677 & 0.676 & 0.677 & 0.604 \\
+SE Clustering & Two-way & Two-way & Two-way & Two-way & Two-way & Two-way \\
+Comparison Group & \multicolumn{5}{c}{Non-English-Origin Immigrants vs.\ U.S.\ Natives} & NonEng vs.\ Eng \\
+Fixed Effects & \multicolumn{6}{c}{$\text{OCCSOC}\times\text{Year}$, $\text{State}\times\text{Year}$, $\text{Educ4}\times\text{Year}$, $\text{Origin}\times\text{Year}$, $\text{Sex}\times\text{Year}$} \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{4pt}
+\begin{minipage}{\textwidth}\scriptsize
+\textit{Notes:} Each column estimates a single simultaneous regression competing multiple occupation task exposures interacted with $\text{Treat}$ and $\text{Post} = \mathbf{1}[\text{Year}\ge 2023]$. Columns (1)--(5) compare Non-English-origin immigrants to U.S.\ natives; Column (6) restricts the sample to foreign-born immigrants only (Non-English-origin vs.\ English-origin). Because \texttt{LLM Writing (Orth.)} is the OLS residual of \texttt{LLM Writing} on \texttt{LLM Coding \& Math}, it has exact zero correlation with \texttt{LLM Coding \& Math} across occupations. Exact logged SE clustering (\texttt{OCCSOC} + state two-way CRV1, or one-way \texttt{OCCSOC} if a finite-sample two-way diagonal is non-positive) is reported explicitly for each column. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

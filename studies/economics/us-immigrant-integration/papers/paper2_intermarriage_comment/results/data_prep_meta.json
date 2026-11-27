@@ -1,0 +1,23 @@
+{
+  "n_base_15gen": 1746419,
+  "n_base_15gen_true_imm": 1527586,
+  "n_base_men": 904831,
+  "n_base_men_true_imm": 794621,
+  "n_base_women": 841588,
+  "n_base_women_true_imm": 732965,
+  "n_men_ftfy_married_all": 278125,
+  "n_men_ftfy_married_1980_2010_all": 158640,
+  "n_men_ftfy_married_nopr": 277986,
+  "n_men_ftfy_married_cit1": 34183,
+  "n_men_ftfy_married_true_imm": 243829,
+  "n_men_ftfy_married_true_imm_1980_2010": 139721,
+  "n_women_ftfy_married_all": 162586,
+  "n_women_ftfy_married_nopr": 162505,
+  "n_women_ftfy_married_cit1": 21021,
+  "n_women_ftfy_married_true_imm": 141507,
+  "fullpop_metro_match_rate": 1.0,
+  "mean_enclave_share_fullpop_men": 0.057533,
+  "mean_enclave_share_fb_men": 0.199488,
+  "n_men_cohab_ftfy_true_imm": 25282,
+  "n_women_cohab_ftfy_true_imm": 17549
+}

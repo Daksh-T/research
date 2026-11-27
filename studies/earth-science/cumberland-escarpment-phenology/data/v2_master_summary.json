@@ -1,0 +1,2123 @@
+{
+  "project": "Southern Cumberland Escarpment Karst Cold-Air Pooling & Plateau-Cap Phenology (v2 Revised)",
+  "hypothesis_ledger": [
+    {
+      "id": "H1_hopkins_baseline",
+      "claim": "50% deciduous escarpment green-up (MODIS MidGreenup_1) tracks Hopkins (1918) 3.28 d/100 m; 15% Greenup_1 lapses faster due to phenological threshold definition rather than QA/conifer artifacts",
+      "status": "SUPPORTED",
+      "key_metric": "Clean MODIS MidGreenup_1 (2001-2023, QA<=1, NLCD-41): lapse = 3.19 +/- 0.17 SE (0.82 SD) d/100 m (Hopkins = 3.28); 3-factor GEE decomposition: QA delta=0.0, NLCD-41 delta=0.007, 50%-vs-15% delta=-0.797 d/100 m; lapse trend = -0.047 d/100m/dec (p=0.8601); thermal sens = -2.40 +/- 0.65 SE d/C (r=-0.626, p=0.001403); unharmonized Landsat 2013 step non-identifiable due to collinearity (step=-0.42 +/- 3.69 SE d, p=0.91); raw GHCN-Daily Sewanee (unhomogenized for TOBS/hiatus): Mar-Apr +0.83 C (p=0.0292), frost-free +10.1 d (p=0.02124)"
+    },
+    {
+      "id": "H2_brdf_artifact_immunity",
+      "claim": "Signal A (Lost Cove) and Signal B (Plateau cap) are not solar-geometry/BRDF or timber-harvest artifacts (internal gate P2 = PARTIAL_OR_FAIL due to sigA_pass=false & decoupling fail)",
+      "status": "PARTIAL_OR_FAIL",
+      "internal_gate_verdict": "PARTIAL_OR_FAIL",
+      "key_metric": "Signal A SCS+C retention: 99.6% SOS / 98.1% EOS; HLS v2.0 NDVI dSOS=+3.33 d, NDRE dSOS=+3.10 d, dEOS=-2.45 d (internal gate P2 sigA_pass=False); Signal B persists across all 4 aspect quadrants (N/E/S/W: +2.30 to +2.61 d SCS+C NDRE; +2.77 to +3.32 d HLS NDVI) and after masking all 120 LAL harvest polygons (Sig A descriptive N=1 cove diff=+5.28 d; Sig B=+2.62 d, 1km block med p=5.481e-05, 2km block med p=0.00105)"
+    },
+    {
+      "id": "H3_regional_karst_compression",
+      "claim": "Closed karst basins regionally compress deciduous growing season vs. matched open gorges after relief adjustment and rim-free floor-vs-floor comparison, inside identical EVTs (internal gate P1 = PARTIAL_PASS)",
+      "status": "PARTIAL_PASS",
+      "internal_gate_verdict": "PARTIAL_PASS",
+      "key_metric": "11 regional closed-open pairs (NDRE): relief-adjusted 22-site CR1 OLS (df=10): dSOS=+4.28 +/- 1.13 SE d (p=0.003465), dEOS=-4.79 +/- 1.13 SE d (p=0.001727), dGSL=-9.07 +/- 1.81 SE d (p=0.0005266; unadjusted paired DiD=-11.14 d, inflated by 51.8 m relief imbalance); rim-free dz_floor-adjusted floor-vs-floor: dGSL=-8.75 +/- 1.85 SE d (p=0.001074); within-EVT dz_floor-adjusted: EVT 3317 dGSL=-11.17 +/- 2.61 SE d (p=0.002689), EVT 3321 dGSL=-6.78 +/- 1.87 SE d (p=0.006735); binary is_closed partial R2=54.4% over Relief (total R2=0.725, dAICc=-17.14 vs Relief+TPI300; no depth ramp >22 m, 0-22 m unobserved); P1 internal gate PARTIAL_PASS (open dEOS=-3.03 d, r_sigmaSOS=0.22)"
+    },
+    {
+      "id": "H4_ecostress_thermal_mechanism",
+      "claim": "Closed karst floors exhibit nocturnal cold-air pooling in cloud-leak-filtered ECOSTRESS TIR across seasons and 7/7 16SED coves, collapsing at Lost Cove over 2.5-3.0 m/s",
+      "status": "SUPPORTED_WITH_MANSKI_CAVEAT",
+      "key_metric": "Cloud-leak-filtered (|LST-ERA5_t2m|<=10 C, dropping 8 corrupted/cloud v002 scenes, 0/14 v003) n=52 clean / 157 in-swath nights: Spring=-0.96 +/- 0.22 SE C (n=19, t p=0.000423, Wilcoxon p=0.0003357); Autumn=-1.49 +/- 0.29 SE C (n=33, t p=1.068e-05); Lost Cove wind collapse (2.5-3.0 m/s only, n=0 >=3.0 m/s): calm (<2.5 m/s, n=44)=-1.52 +/- 0.20 SE C vs breezy (2.5-3.0 m/s, n=7)=+0.33 +/- 0.43 SE C (Welch p=0.004089, MW p=0.001884; does not replicate across 6 other 16SED coves using Sewanee wind, p=0.7718); Multi-cove 16SED replication: 7/7 coves individually significant (cove-level calm mean=-1.09 +/- 0.22 SE C, p=0.002385); CAVEAT: swath Manski bounds span 0 (combined cloud-only [-8.12, +6.28 C]; v002 [-7.12, +5.34 C]; v003 [-8.09, +6.05 C])"
+    },
+    {
+      "id": "H5_signalb_guild_vs_fragipan",
+      "claim": "Signal B (Flat Plateau spring lag vs Steep Rim) is consistent with upland oak guild turnover rather than modeled wet-fragipan soil thermal inertia",
+      "status": "FRAGIPAN_FALSIFIED_GUILD_CONSISTENT",
+      "key_metric": "Modeled fragipan soil inertia FALSIFIED: within-flat fragipan vs well-drained = +0.32 d (1km med p=0.6792, 2km med p=0.6614), 25-yr Mar-Apr precip r=0.202 (p=0.33); Plateau lag robust across all 25 grid origins at 1km & 2km: raw +3.53 d (2km p<=1.077e-05), well-drained +3.15 d (2km p<=7.13e-06), unharvested LAL +2.62 d (2km p<=0.003222), 25/25 Landsat yrs (+2.39 +/- 1.61 SD d); Consistent with oak guild turnover (no species-plot data): standardized oct_mari_z beta=+0.53 d/SD (single-var nested dR2=+0.020; oct_mari diff +0.120 is 2km grid-sensitive: p=0.01746..0.09352, 36% < 0.05)"
+    },
+    {
+      "id": "H6_s2_vertical_decoupling_gate",
+      "claim": "Internal-criterion S2 vertical canopy-understory decoupling (dSOS_NDVI - dSOS_NDRE) tracks April freeze severity",
+      "status": "FALSIFIED",
+      "key_metric": "Internal S2 April freeze gate FAILED (freeze vs mild p=0.762, r_AprTmin=-0.204); HLS showed r=-0.785 (p=0.036); post-hoc DOY>100 frost split (+1.70 vs -0.84 d, p=0.025) is exploratory only (n=7)"
+    },
+    {
+      "id": "H7_p4_25yr_calm_freeze_modulation",
+      "claim": "Interannual CalmOctFreeze nights amplify closed-cove early EOS across a 25-yr (2000-2024) 4-cove Landsat panel",
+      "status": "FALSIFIED",
+      "key_metric": "Lost Cove 25-yr medians +2.45 d SOS (88% >0) / -2.53 d EOS (80% <0), though OLS means are n.s. (+1.62 +/- 1.42 SE d p=0.27; -2.22 +/- 1.34 SE d p=0.11); 2018-2024 vs HLS EOS r=0.961 (p=0.00056) but spring SOS r=-0.041 (p=0.93); 4-cove panel CalmOctFreeze_z showed OPPOSITE sign (beta=+1.18 d, p=0.03451; HardRegionalFreeze beta=+1.85 d, p=0.014); Lost Cove OctNightWspd n.s. (r=0.374, p=0.065)"
+    },
+    {
+      "id": "H8_alphaearth_supplementary_audit",
+      "claim": "Standalone supplementary audit: AlphaEarth 64-d annual embeddings vs. matched-capacity Raw Sentinel-2 + 3DEP (excluded from main manuscript)",
+      "status": "SUPPLEMENTARY_SPLIT_VERDICT",
+      "key_metric": "Excluded from main manuscript per peer review; archived standalone in v2_alphaearth_symmetric_dynamic.py. Loses locally (800m buf CV: AE=0.578 vs Raw S2+3DEP=0.611); wins 4-fold LOCO (Fiery_Gizzard, Savage_Gulf, Sewanee_LostCove, Sinking_Cove: AE+3DEP=0.681 vs Raw S2+3DEP=0.514); dynamic first-diff LOYO: AE=0.352 vs best Raw S2 (40b)=0.244 (60f=0.087); two-way first-diff LOYO: AE=0.139 vs best Raw S2=-0.020; zero prior-year two-way lag skill (AE=-0.024)"
+    }
+  ],
+  "stage3_internal_gates": {
+    "P1": {
+      "n_pairs_valid_ge_8": true,
+      "n_pairs_valid": 11,
+      "n_pairs_strict_30m_ge25m": 9,
+      "mixed_dEOS_p_ndvi": 0.008986,
+      "mixed_dEOS_p_ndre": 0.003861,
+      "closed_frac_early_floor_EOS": 1.0,
+      "open_mean_dEOS_fl_rm": -3.028,
+      "r_sigmaSOS_filldepth": 0.22,
+      "verdict": "PARTIAL_PASS"
+    },
+    "P2": {
+      "sigA_scsc_ndre_dSOS": 3.841,
+      "sigA_scsc_ndre_dEOS": -2.922,
+      "sigA_scsc_retention_SOS_pct": 99.6,
+      "sigA_scsc_retention_EOS_pct": 98.1,
+      "sigA_hls_ndvi_dSOS": 3.334,
+      "sigA_hls_ndvi_dEOS": -2.19,
+      "sigA_hls_ndre_dSOS": 3.098,
+      "sigA_hls_ndre_dEOS": -2.452,
+      "sigA_pass": false,
+      "sigB_scsc_ndre_dSOS": 2.52,
+      "sigB_hls_ndre_dSOS": 2.569,
+      "sigB_aspect_scsc_ndre_dSOS": {
+        "N": 2.608,
+        "E": 2.368,
+        "S": 2.296,
+        "W": 2.558
+      },
+      "sigB_aspect_hls_ndvi_dSOS": {
+        "N": 3.153,
+        "E": 2.774,
+        "S": 3.079,
+        "W": 3.322
+      },
+      "sigB_pass": true,
+      "sigB_rejected_as_brdf": false,
+      "verdict": "PARTIAL_OR_FAIL"
+    },
+    "P3": {
+      "whiteman_085_100h_all_C": -0.938,
+      "whiteman_085_100h_sunlit_only_C": -0.903,
+      "whiteman_085_100h_sunlit_p": 0.06298,
+      "whiteman_085_100h_calm_sunlit_C": -1.303,
+      "whiteman_085_100h_calm_sunlit_p": 0.0199,
+      "whiteman_085_100h_icum_adj_C": -0.977,
+      "whiteman_085_100h_shadow_frac_lost": 0.101,
+      "whiteman_085_100h_icum_lost": 0.198,
+      "whiteman_085_100h_icum_openn": 0.1882,
+      "whiteman_lag_verdict": "INCONCLUSIVE_CALM_ONLY",
+      "v002_predawn_calm_C": -1.005,
+      "v002_predawn_windy_C": null,
+      "v003_spring_night_C": -0.129,
+      "v003_spring_night_n": 2,
+      "v003_autumn_night_C": -1.543,
+      "v003_autumn_night_n": 12,
+      "v003_oct_night_C": -1.449,
+      "v003_oct_night_n": 2,
+      "v003_mean_d_EmisWB": 0.00026,
+      "emis_pass": true
+    },
+    "P4": {
+      "beta_CalmOctFreeze_z": 1.1803,
+      "p_CalmOctFreeze_z": 0.03451,
+      "beta_WindyOctCold_z": 0.1648,
+      "t_WindyOctCold_z": 0.266,
+      "r2_CalmOctFreeze_annual_closed_dEOS": 0.145,
+      "beta_MarAprPrecip_on_dSOS": -0.2111,
+      "p_MarAprPrecip_on_dSOS": 0.7074,
+      "lost_openn_25yr_mean_dSOS": 1.616,
+      "lost_openn_25yr_mean_dEOS": -2.217,
+      "lost_openn_25yr_frac_dEOS_lt0": 0.8,
+      "verdict": "FAIL_STATIC_OR_NOISY"
+    },
+    "P5": {
+      "fragipan_within_flat_diff_d": 0.317,
+      "r_25yr_mar_apr_precip": 0.202,
+      "flat_vs_steep_well_drained_d": 3.151,
+      "oct_mari_diff": 0.1205,
+      "oct_mari_p": 0.0001322,
+      "beta_is_flat_unadj": 3.76,
+      "beta_is_flat_full_controls": 2.2852,
+      "soil_inertia_verdict": "FAIL",
+      "guild_turnover_verdict": "PASS"
+    },
+    "P6": {
+      "b800_best_C_Raw2017S2_3DEP_r2": 0.6108,
+      "b800_best_AE2017_DE_r2": 0.578,
+      "b800_delta_AE_minus_RawS2": -0.0328,
+      "loco_best_C_Raw2017S2_3DEP_r2": 0.5136,
+      "loco_best_AE2017_DE_r2": 0.681,
+      "loco_delta_AE_minus_RawS2": 0.1674,
+      "dyn_pixel_demeaned_LOYO_strict_r2": 0.1907,
+      "dyn_twoway_demeaned_LOYO_strict_r2": 0.1763,
+      "dyn_first_diff_LOYO_strict_r2": 0.3879,
+      "dyn_twoway_demeaned_GroupPixel_strict_r2": 0.1642,
+      "keep_spatial_pass": false,
+      "keep_dynamic_pass": true,
+      "verdict": "KEEP_ALPHAEARTH_SIDEBAR"
+    }
+  },
+  "stage4_closures": {
+    "4A_within_evt_relief_and_closure": {
+      "p1_gate_status": "PARTIAL_PASS",
+      "disqualified_basins_archive": {
+        "n_disqualified": 6,
+        "basins": [
+          {
+            "name": "Karst_TN_04",
+            "lat": 35.06273,
+            "lon": -85.19842,
+            "max_fill_90m": 56.1,
+            "area_90m_km2": 0.377,
+            "floor_nlcd41_90m_pct": 0.0,
+            "max_fill_30m": 75.1,
+            "area_30m_km2": 0.149,
+            "floor_nlcd41_30m_pct": 0.0,
+            "floor_pasture_30m_pct": 0.0,
+            "status": "DISQUALIFIED_WATER_QUARRY"
+          },
+          {
+            "name": "Karst_TN_06",
+            "lat": 36.07576,
+            "lon": -85.35365,
+            "max_fill_90m": 42.0,
+            "area_90m_km2": 0.794,
+            "floor_nlcd41_90m_pct": 37.2,
+            "max_fill_30m": 43.1,
+            "area_30m_km2": 0.715,
+            "floor_nlcd41_30m_pct": 35.4,
+            "floor_pasture_30m_pct": 58.1,
+            "status": "DISQUALIFIED_PASTURE_NONFOREST"
+          },
+          {
+            "name": "Karst_TN_13",
+            "lat": 35.34165,
+            "lon": -85.2057,
+            "max_fill_90m": 25.4,
+            "area_90m_km2": 0.311,
+            "floor_nlcd41_90m_pct": 27.3,
+            "max_fill_30m": 30.2,
+            "area_30m_km2": 0.358,
+            "floor_nlcd41_30m_pct": 24.2,
+            "floor_pasture_30m_pct": 0.0,
+            "status": "DISQUALIFIED_PASTURE_NONFOREST"
+          },
+          {
+            "name": "Lost_Cove_TN",
+            "lat": 35.12983,
+            "lon": -85.90585,
+            "max_fill_90m": 25.1,
+            "area_90m_km2": 1.522,
+            "floor_nlcd41_90m_pct": 47.7,
+            "max_fill_30m": 30.4,
+            "area_30m_km2": 1.774,
+            "floor_nlcd41_30m_pct": 48.7,
+            "floor_pasture_30m_pct": 38.4,
+            "status": "DISQUALIFIED_PASTURE_NONFOREST"
+          },
+          {
+            "name": "Karst_AL_15",
+            "lat": 34.83959,
+            "lon": -85.10626,
+            "max_fill_90m": 24.4,
+            "area_90m_km2": 3.124,
+            "floor_nlcd41_90m_pct": 34.2,
+            "max_fill_30m": 0.0,
+            "area_30m_km2": 0.0,
+            "floor_nlcd41_30m_pct": null,
+            "floor_pasture_30m_pct": null,
+            "status": "DISQUALIFIED_PASTURE_NONFOREST"
+          },
+          {
+            "name": "Sinking_Cove_TN",
+            "lat": 35.01422,
+            "lon": -85.99235,
+            "max_fill_90m": 23.3,
+            "area_90m_km2": 0.543,
+            "floor_nlcd41_90m_pct": 57.1,
+            "max_fill_30m": 26.8,
+            "area_30m_km2": 0.637,
+            "floor_nlcd41_30m_pct": 57.1,
+            "floor_pasture_30m_pct": 3.3,
+            "status": "DISQUALIFIED_PASTURE_NONFOREST"
+          }
+        ],
+        "note": "All 6 excluded regional basins are archived directly from profiling/p1.json. Specifically, Lost_Cove_TN (48.7% 30m NLCD-41, 38.4% pasture) and Sinking_Cove_TN (57.1% 30m NLCD-41) fell below the 60% deciduous-floor criterion and therefore sit outside the 11 P1 phenology pairs; both join 5 P1 basins in the 7-cove ECOSTRESS tile 16SED thermal replication. Karst_AL_15 collapsed to 0 m fill depth at 30 m."
+      },
+      "relief_diagnostics": {
+        "n_pairs": 11,
+        "closed_relief_mean_m": 126.51,
+        "closed_relief_sd_m": 41.2,
+        "open_relief_mean_m": 178.35,
+        "open_relief_sd_m": 53.61,
+        "open_minus_closed_relief_m": 51.84,
+        "open_minus_closed_relief_p": 0.004317,
+        "closed_rims_ge_535m": 2,
+        "open_rims_ge_535m": 7,
+        "closed_minus_open_floor_elev_mean_m": 12.26
+      },
+      "relief_adjusted_cr1_ndre": {
+        "dSOS": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.8186,
+          "adj_r2": 0.7995,
+          "is_closed": {
+            "beta": 4.2848,
+            "se": 1.1265,
+            "t": 3.804,
+            "p": 0.003465
+          },
+          "relief_m": {
+            "beta": -0.0541,
+            "se": 0.0084,
+            "t": -6.481,
+            "p": 7.063e-05
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": -0.0094,
+            "se": 0.0206,
+            "t": -0.454,
+            "p": 0.6594
+          }
+        },
+        "dEOS": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.3294,
+          "adj_r2": 0.2588,
+          "is_closed": {
+            "beta": -4.7858,
+            "se": 1.1297,
+            "t": -4.236,
+            "p": 0.001727
+          },
+          "relief_m": {
+            "beta": -0.0142,
+            "se": 0.0146,
+            "t": -0.978,
+            "p": 0.3512
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": 0.0061,
+            "se": 0.0338,
+            "t": 0.181,
+            "p": 0.8598
+          }
+        },
+        "dGSL": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.7247,
+          "adj_r2": 0.6958,
+          "is_closed": {
+            "beta": -9.0707,
+            "se": 1.8092,
+            "t": -5.014,
+            "p": 0.0005266
+          },
+          "relief_m": {
+            "beta": 0.0399,
+            "se": 0.0189,
+            "t": 2.105,
+            "p": 0.06158
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": 0.0155,
+            "se": 0.039,
+            "t": 0.397,
+            "p": 0.6998
+          }
+        }
+      },
+      "relief_adjusted_cr1_ndvi": {
+        "dSOS": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.7821,
+          "adj_r2": 0.7591,
+          "is_closed": {
+            "beta": 4.1982,
+            "se": 1.2056,
+            "t": 3.482,
+            "p": 0.005898
+          },
+          "relief_m": {
+            "beta": -0.051,
+            "se": 0.0079,
+            "t": -6.421,
+            "p": 7.629e-05
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": -0.0084,
+            "se": 0.0212,
+            "t": -0.396,
+            "p": 0.7003
+          }
+        },
+        "dEOS": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.3302,
+          "adj_r2": 0.2597,
+          "is_closed": {
+            "beta": -3.8407,
+            "se": 1.2609,
+            "t": -3.046,
+            "p": 0.01233
+          },
+          "relief_m": {
+            "beta": -0.0004,
+            "se": 0.0136,
+            "t": -0.026,
+            "p": 0.9795
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": 0.0055,
+            "se": 0.0347,
+            "t": 0.157,
+            "p": 0.8782
+          }
+        },
+        "dGSL": {
+          "n_sites": 22,
+          "n_pairs": 11,
+          "df": 10,
+          "r2": 0.7198,
+          "adj_r2": 0.6904,
+          "is_closed": {
+            "beta": -8.0388,
+            "se": 2.1046,
+            "t": -3.82,
+            "p": 0.003375
+          },
+          "relief_m": {
+            "beta": 0.0507,
+            "se": 0.0166,
+            "t": 3.059,
+            "p": 0.01206
+          },
+          "interaction_is_closed_x_relief": {
+            "beta": 0.0139,
+            "se": 0.0403,
+            "t": 0.344,
+            "p": 0.738
+          }
+        }
+      },
+      "rim_free_floor_vs_floor_ndre": {
+        "all_11_pairs": {
+          "dSOS": {
+            "paired_unadjusted": {
+              "n": 11,
+              "mean": 5.992,
+              "sd": 3.038,
+              "se": 0.916,
+              "t": 6.542,
+              "p": 6.537e-05,
+              "wilcoxon_p": 0.0009766,
+              "frac_neg": 0.0,
+              "frac_pos": 1.0
+            },
+            "dz_floor_adjusted": {
+              "n": 11,
+              "df": 9,
+              "raw_mean": 5.992,
+              "dz_mean_m": 12.26,
+              "dz_adj_mean": 5.561,
+              "dz_adj_se": 1.154,
+              "dz_adj_t": 4.821,
+              "dz_adj_p": 0.0009458,
+              "dz_slope_per_100m": 3.512,
+              "dz_slope_p": 0.5325
+            }
+          },
+          "dEOS": {
+            "paired_unadjusted": {
+              "n": 11,
+              "mean": -3.941,
+              "sd": 3.734,
+              "se": 1.126,
+              "t": -3.5,
+              "p": 0.005723,
+              "wilcoxon_p": 0.001953,
+              "frac_neg": 0.909,
+              "frac_pos": 0.091
+            },
+            "dz_floor_adjusted": {
+              "n": 11,
+              "df": 9,
+              "raw_mean": -3.941,
+              "dz_mean_m": 12.26,
+              "dz_adj_mean": -3.186,
+              "dz_adj_se": 1.383,
+              "dz_adj_t": -2.303,
+              "dz_adj_p": 0.04674,
+              "dz_slope_per_100m": -6.15,
+              "dz_slope_p": 0.3679
+            }
+          },
+          "dGSL": {
+            "paired_unadjusted": {
+              "n": 11,
+              "mean": -9.933,
+              "sd": 5.078,
+              "se": 1.531,
+              "t": -6.488,
+              "p": 7.002e-05,
+              "wilcoxon_p": 0.0009766,
+              "frac_neg": 1.0,
+              "frac_pos": 0.0
+            },
+            "dz_floor_adjusted": {
+              "n": 11,
+              "df": 9,
+              "raw_mean": -9.933,
+              "dz_mean_m": 12.26,
+              "dz_adj_mean": -8.748,
+              "dz_adj_se": 1.85,
+              "dz_adj_t": -4.73,
+              "dz_adj_p": 0.001074,
+              "dz_slope_per_100m": -9.662,
+              "dz_slope_p": 0.2942
+            }
+          }
+        },
+        "within_evt": {
+          "EVT3317_oak": {
+            "dSOS": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": 6.451,
+                "sd": 3.255,
+                "se": 1.029,
+                "t": 6.266,
+                "p": 0.0001468,
+                "wilcoxon_p": 0.001953,
+                "frac_neg": 0.0,
+                "frac_pos": 1.0
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": 6.451,
+                "dz_mean_m": 11.38,
+                "dz_adj_mean": 6.28,
+                "dz_adj_se": 1.288,
+                "dz_adj_t": 4.877,
+                "dz_adj_p": 0.001229,
+                "dz_slope_per_100m": 1.5,
+                "dz_slope_p": 0.8105
+              }
+            },
+            "dEOS": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": -5.559,
+                "sd": 6.174,
+                "se": 1.952,
+                "t": -2.847,
+                "p": 0.01917,
+                "wilcoxon_p": 0.001953,
+                "frac_neg": 1.0,
+                "frac_pos": 0.0
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": -5.559,
+                "dz_mean_m": 11.38,
+                "dz_adj_mean": -4.889,
+                "dz_adj_se": 2.411,
+                "dz_adj_t": -2.028,
+                "dz_adj_p": 0.07712,
+                "dz_slope_per_100m": -5.887,
+                "dz_slope_p": 0.6175
+              }
+            },
+            "dGSL": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": -12.01,
+                "sd": 6.721,
+                "se": 2.125,
+                "t": -5.651,
+                "p": 0.0003132,
+                "wilcoxon_p": 0.001953,
+                "frac_neg": 1.0,
+                "frac_pos": 0.0
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": -12.01,
+                "dz_mean_m": 11.38,
+                "dz_adj_mean": -11.169,
+                "dz_adj_se": 2.61,
+                "dz_adj_t": -4.28,
+                "dz_adj_p": 0.002689,
+                "dz_slope_per_100m": -7.387,
+                "dz_slope_p": 0.5637
+              }
+            }
+          },
+          "EVT3321_cove": {
+            "dSOS": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": 4.297,
+                "sd": 2.806,
+                "se": 0.887,
+                "t": 4.843,
+                "p": 0.0009178,
+                "wilcoxon_p": 0.003906,
+                "frac_neg": 0.1,
+                "frac_pos": 0.9
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": 4.297,
+                "dz_mean_m": 7.46,
+                "dz_adj_mean": 3.648,
+                "dz_adj_se": 1.104,
+                "dz_adj_t": 3.305,
+                "dz_adj_p": 0.01077,
+                "dz_slope_per_100m": 8.691,
+                "dz_slope_p": 0.351
+              }
+            },
+            "dEOS": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": -3.193,
+                "sd": 4.004,
+                "se": 1.266,
+                "t": -2.522,
+                "p": 0.03267,
+                "wilcoxon_p": 0.009766,
+                "frac_neg": 0.8,
+                "frac_pos": 0.2
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": -3.193,
+                "dz_mean_m": 7.46,
+                "dz_adj_mean": -3.128,
+                "dz_adj_se": 1.668,
+                "dz_adj_t": -1.875,
+                "dz_adj_p": 0.09759,
+                "dz_slope_per_100m": -0.865,
+                "dz_slope_p": 0.9496
+              }
+            },
+            "dGSL": {
+              "paired_unadjusted": {
+                "n": 10,
+                "mean": -7.49,
+                "sd": 4.6,
+                "se": 1.455,
+                "t": -5.149,
+                "p": 0.0006042,
+                "wilcoxon_p": 0.001953,
+                "frac_neg": 1.0,
+                "frac_pos": 0.0
+              },
+              "dz_floor_adjusted": {
+                "n": 10,
+                "df": 8,
+                "raw_mean": -7.49,
+                "dz_mean_m": 7.46,
+                "dz_adj_mean": -6.777,
+                "dz_adj_se": 1.87,
+                "dz_adj_t": -3.625,
+                "dz_adj_p": 0.006735,
+                "dz_slope_per_100m": -9.555,
+                "dz_slope_p": 0.5384
+              }
+            }
+          }
+        }
+      },
+      "relief_controlled_closure_dGSL_ndre": {
+        "M_relief": {
+          "n": 22,
+          "k_params": 3,
+          "r2": 0.3965,
+          "adj_r2": 0.3663,
+          "rmse": 5.346,
+          "aic": 142.19,
+          "aicc": 143.52,
+          "f_stat": 13.138,
+          "p": 0.001689,
+          "beta": [
+            -18.5862,
+            0.0826
+          ]
+        },
+        "M_relief_tpi300": {
+          "n": 22,
+          "k_params": 4,
+          "r2": 0.4001,
+          "adj_r2": 0.3369,
+          "rmse": 5.33,
+          "aic": 144.06,
+          "aicc": 146.41,
+          "f_stat": 6.335,
+          "p": 0.007798,
+          "beta": [
+            -17.6418,
+            0.0834,
+            0.0862
+          ]
+        },
+        "M_relief_is_closed": {
+          "n": 22,
+          "k_params": 4,
+          "r2": 0.7247,
+          "adj_r2": 0.6958,
+          "rmse": 3.61,
+          "aic": 126.92,
+          "aicc": 129.27,
+          "f_stat": 25.013,
+          "p": 4.759e-06,
+          "beta": [
+            -7.5349,
+            0.0399,
+            -9.0707
+          ]
+        },
+        "M_relief_tpi300_is_closed": {
+          "n": 22,
+          "k_params": 5,
+          "r2": 0.7368,
+          "adj_r2": 0.6929,
+          "rmse": 3.53,
+          "aic": 127.93,
+          "aicc": 131.68,
+          "f_stat": 16.797,
+          "p": 1.866e-05,
+          "beta": [
+            -8.7029,
+            0.0358,
+            -0.1649,
+            -9.5939
+          ]
+        },
+        "M_relief_fill_linear": {
+          "n": 22,
+          "k_params": 4,
+          "r2": 0.5798,
+          "adj_r2": 0.5356,
+          "rmse": 4.461,
+          "aic": 136.23,
+          "aicc": 138.58,
+          "f_stat": 13.109,
+          "p": 0.0002647,
+          "beta": [
+            -12.3821,
+            0.06,
+            -0.1207
+          ]
+        },
+        "delta_r2_tpi300_over_relief": 0.0036,
+        "delta_r2_is_closed_over_relief": 0.3282,
+        "partial_r2_is_closed_over_relief": 0.5438,
+        "partial_r2_is_closed_over_relief_tpi300": 0.5613,
+        "delta_aicc_relief_closed_minus_relief_tpi300": -17.14,
+        "delta_aicc_relief_closed_minus_relief": -14.25,
+        "delta_aicc_relief_tpi_closed_minus_relief_tpi": -14.73
+      },
+      "within_closed_depth_slope_ndre": {
+        "dSOS": {
+          "n": 11,
+          "r": -0.239,
+          "p": 0.4792
+        },
+        "dEOS": {
+          "n": 11,
+          "r": 0.255,
+          "p": 0.45
+        },
+        "dGSL": {
+          "n": 11,
+          "r": 0.439,
+          "p": 0.1764
+        }
+      },
+      "evt_composition": {
+        "closed": {
+          "n_sites": 11,
+          "floor_evt3321_mean_pct": 25.6,
+          "floor_evt3317_mean_pct": 57.7,
+          "rim_evt3321_mean_pct": 23.1,
+          "rim_evt3317_mean_pct": 66.5,
+          "floor_tpi300_mean_m": -13.36,
+          "floor_tpi900_mean_m": -52.05
+        },
+        "open": {
+          "n_sites": 11,
+          "floor_evt3321_mean_pct": 44.0,
+          "floor_evt3317_mean_pct": 34.1,
+          "rim_evt3321_mean_pct": 12.6,
+          "rim_evt3317_mean_pct": 80.6,
+          "floor_tpi300_mean_m": -11.45,
+          "floor_tpi900_mean_m": -41.65
+        }
+      }
+    },
+    "4B_ecostress_thermal_closure": {
+      "cloud_leak_filter": "|LST - ERA5_t2m| <= 10.0 C on both Lost Cove and OpenN",
+      "archive_counts": {
+        "v002_live_processed": 144,
+        "v003_live_night_merged": 21,
+        "combined_unique_night_in_swath": 157,
+        "combined_unique_night_clean_unfiltered": 60,
+        "dropped_v002_cloud_leaks": 8,
+        "combined_unique_night_clean": 52,
+        "clean_era5_matched_count": 51,
+        "clean_v002_count": 38,
+        "clean_v003_count": 14,
+        "v002_granules_flagged_for_multicove_screen": 10
+      },
+      "unfiltered_diagnostics": {
+        "n_unfiltered_clean": 60,
+        "n_dropped_cloud_leaks": 8,
+        "dropped_by_version": {
+          "v002": 8
+        },
+        "all_nights_unfiltered": {
+          "n": 60,
+          "mean_C": -1.126,
+          "median_C": -1.218,
+          "sd_C": 1.938,
+          "se_C": 0.25,
+          "p10_C": -3.292,
+          "t": -4.502,
+          "p": 3.231e-05,
+          "wilcoxon_p": 2.33e-06,
+          "frac_neg": 0.8
+        },
+        "spring_unfiltered": {
+          "n": 23,
+          "mean_C": -0.369,
+          "median_C": -0.545,
+          "sd_C": 2.159,
+          "se_C": 0.45,
+          "p10_C": -2.286,
+          "t": -0.82,
+          "p": 0.4208,
+          "wilcoxon_p": 0.03009,
+          "frac_neg": 0.739
+        },
+        "autumn_unfiltered": {
+          "n": 36,
+          "mean_C": -1.55,
+          "median_C": -1.654,
+          "sd_C": 1.646,
+          "se_C": 0.274,
+          "p10_C": -3.78,
+          "t": -5.652,
+          "p": 2.22e-06,
+          "wilcoxon_p": 2.054e-06,
+          "frac_neg": 0.833
+        },
+        "calm_lt2p5ms_unfiltered": {
+          "n": 48,
+          "mean_C": -1.418,
+          "median_C": -1.654,
+          "sd_C": 1.806,
+          "se_C": 0.261,
+          "p10_C": -3.395,
+          "t": -5.439,
+          "p": 1.881e-06,
+          "wilcoxon_p": 3.172e-07,
+          "frac_neg": 0.875
+        },
+        "breezy_ge2p5ms_unfiltered": {
+          "n": 11,
+          "mean_C": 0.313,
+          "median_C": 0.044,
+          "sd_C": 1.951,
+          "se_C": 0.588,
+          "p10_C": -1.135,
+          "t": 0.532,
+          "p": 0.6062,
+          "wilcoxon_p": 0.7002,
+          "frac_neg": 0.455
+        },
+        "note": "Applying a physical |LST - ERA5_t2m| <= 10 C screen removes 8 unflagged ECOv002 scenes (7 cloud-contaminated scenes with LST 11-22 C below ERA5 t2m and 1 calibration-corrupted pre-dawn scene at +46 to +48 C; 0/14 v003 scenes are flagged), including all 3 scenes with u10 >= 3.0 m/s. Filtering strengthens cooling across every season and makes spring cleanly significant on both parametric t-test and Wilcoxon."
+      },
+      "lost_cove_night_stats": {
+        "all_nights_combined": {
+          "n": 52,
+          "mean_C": -1.296,
+          "median_C": -1.218,
+          "sd_C": 1.445,
+          "se_C": 0.2,
+          "p10_C": -3.007,
+          "t": -6.467,
+          "p": 3.78e-08,
+          "wilcoxon_p": 3.161e-07,
+          "frac_neg": 0.827
+        },
+        "all_nights_era5_matched": {
+          "n": 51,
+          "mean_C": -1.263,
+          "median_C": -1.135,
+          "sd_C": 1.44,
+          "se_C": 0.202,
+          "p10_C": -3.01,
+          "t": -6.266,
+          "p": 8.448e-08,
+          "wilcoxon_p": 5.18e-07,
+          "frac_neg": 0.824
+        },
+        "all_nights_fd30": {
+          "n": 14,
+          "mean_C": -2.468,
+          "median_C": -2.384,
+          "sd_C": 2.432,
+          "se_C": 0.65,
+          "p10_C": -5.725,
+          "t": -3.796,
+          "p": 0.002224,
+          "wilcoxon_p": 0.002319,
+          "frac_neg": 0.857
+        },
+        "all_nights_fd40": {
+          "n": 0
+        },
+        "spring_feb_apr_night": {
+          "n": 19,
+          "mean_C": -0.961,
+          "median_C": -0.667,
+          "sd_C": 0.972,
+          "se_C": 0.223,
+          "p10_C": -2.384,
+          "t": -4.309,
+          "p": 0.000423,
+          "wilcoxon_p": 0.0003357,
+          "frac_neg": 0.842
+        },
+        "spring_feb_apr_v002_only": {
+          "n": 17,
+          "mean_C": -1.059,
+          "median_C": -0.979,
+          "sd_C": 0.979,
+          "se_C": 0.237,
+          "p10_C": -2.408,
+          "t": -4.46,
+          "p": 0.0003948,
+          "wilcoxon_p": 0.0002899,
+          "frac_neg": 0.882
+        },
+        "spring_feb_apr_calm_lt2p5ms": {
+          "n": 17,
+          "mean_C": -1.01,
+          "median_C": -0.667,
+          "sd_C": 0.998,
+          "se_C": 0.242,
+          "p10_C": -2.408,
+          "t": -4.173,
+          "p": 0.0007186,
+          "wilcoxon_p": 0.0006561,
+          "frac_neg": 0.882
+        },
+        "autumn_sep_nov_night": {
+          "n": 33,
+          "mean_C": -1.489,
+          "median_C": -1.627,
+          "sd_C": 1.641,
+          "se_C": 0.286,
+          "p10_C": -3.437,
+          "t": -5.214,
+          "p": 1.068e-05,
+          "wilcoxon_p": 1.02e-05,
+          "frac_neg": 0.818
+        },
+        "autumn_sep_nov_era5_matched": {
+          "n": 32,
+          "mean_C": -1.443,
+          "median_C": -1.575,
+          "sd_C": 1.645,
+          "se_C": 0.291,
+          "p10_C": -3.446,
+          "t": -4.961,
+          "p": 2.399e-05,
+          "wilcoxon_p": 2.023e-05,
+          "frac_neg": 0.812
+        },
+        "autumn_oct_only_night": {
+          "n": 7,
+          "mean_C": -2.073,
+          "median_C": -2.45,
+          "sd_C": 1.716,
+          "se_C": 0.649,
+          "p10_C": -3.714,
+          "t": -3.196,
+          "p": 0.0187,
+          "wilcoxon_p": 0.04688,
+          "frac_neg": 0.857
+        },
+        "autumn_calm_lt2p5ms": {
+          "n": 27,
+          "mean_C": -1.836,
+          "median_C": -1.735,
+          "sd_C": 1.416,
+          "se_C": 0.272,
+          "p10_C": -3.714,
+          "t": -6.738,
+          "p": 3.773e-07,
+          "wilcoxon_p": 6.407e-07,
+          "frac_neg": 0.889
+        },
+        "cold_t2m_lt5C_night": {
+          "n": 7,
+          "mean_C": -1.002,
+          "median_C": -1.735,
+          "sd_C": 1.675,
+          "se_C": 0.633,
+          "p10_C": -2.408,
+          "t": -1.584,
+          "p": 0.1644,
+          "wilcoxon_p": 0.1562,
+          "frac_neg": 0.857
+        }
+      },
+      "wind_placebo": {
+        "calm_lt2p5ms": {
+          "n": 44,
+          "mean_C": -1.517,
+          "median_C": -1.602,
+          "sd_C": 1.322,
+          "se_C": 0.199,
+          "p10_C": -3.262,
+          "t": -7.61,
+          "p": 1.703e-09,
+          "wilcoxon_p": 1.207e-07,
+          "frac_neg": 0.886
+        },
+        "breezy_ge2p5ms": {
+          "n": 7,
+          "mean_C": 0.329,
+          "median_C": 0.044,
+          "sd_C": 1.151,
+          "se_C": 0.435,
+          "p10_C": -0.684,
+          "t": 0.756,
+          "p": 0.478,
+          "wilcoxon_p": 0.6875,
+          "frac_neg": 0.429
+        },
+        "breezy_2p5_3p0ms": {
+          "n": 7,
+          "mean_C": 0.329,
+          "median_C": 0.044,
+          "sd_C": 1.151,
+          "se_C": 0.435,
+          "p10_C": -0.684,
+          "t": 0.756,
+          "p": 0.478,
+          "wilcoxon_p": 0.6875,
+          "frac_neg": 0.429
+        },
+        "windy_ge3p0ms": {
+          "n": 0
+        },
+        "windy_ge3p5ms": {
+          "n": 0
+        },
+        "windy_ge4p0ms": {
+          "n": 0
+        },
+        "continuous_wind_regression": {
+          "n": 51,
+          "wspd_max_clean_ms": 2.963,
+          "pearson_r": 0.105,
+          "pearson_p": 0.4647,
+          "spearman_rho": 0.104,
+          "spearman_p": 0.4678,
+          "ols_slope_C_per_ms": {
+            "beta": 0.2368,
+            "se": 0.3394,
+            "t": 0.698,
+            "p": 0.4886
+          },
+          "ols_intercept_C": {
+            "beta": -1.6808,
+            "se": 0.5951,
+            "t": -2.824,
+            "p": 0.006836
+          },
+          "calm_vs_breezy2p5_welch_t": -3.858,
+          "calm_vs_breezy2p5_welch_p": 0.004089,
+          "calm_vs_breezy2p5_mannwhitney_p": 0.001884,
+          "season_stratified_breezy2p5": {
+            "autumn": {
+              "calm_n": 27,
+              "calm_mean_C": -1.836,
+              "calm_se_C": 0.272,
+              "calm_median_C": -1.735,
+              "breezy_n": 5,
+              "breezy_mean_C": 0.679,
+              "breezy_se_C": 0.505,
+              "breezy_median_C": 0.342,
+              "welch_t": -4.379,
+              "welch_p": 0.003758,
+              "mannwhitney_p": 0.00149
+            },
+            "spring": {
+              "calm_n": 17,
+              "calm_mean_C": -1.01,
+              "calm_se_C": 0.242,
+              "calm_median_C": -0.667,
+              "breezy_n": 2,
+              "breezy_mean_C": -0.545,
+              "breezy_se_C": 0.59,
+              "breezy_median_C": -0.545,
+              "welch_t": -0.729,
+              "welch_p": 0.5707,
+              "mannwhitney_p": 0.5731
+            }
+          },
+          "season_controlled_ols_breezy2p5": {
+            "beta": 1.9038,
+            "se": 0.5219,
+            "t": 3.648,
+            "p": 0.0006497
+          },
+          "calm_vs_windy4p0_welch_t": null,
+          "calm_vs_windy4p0_welch_p": null,
+          "calm_vs_windy3p5_welch_t": null,
+          "calm_vs_windy3p5_welch_p": null,
+          "calm_vs_windy3p0_welch_t": null,
+          "calm_vs_windy3p0_welch_p": null,
+          "wind_collapse_scope_note": "All 7 clean breezy nights lie in 2.5 <= u10 < 3.0 m/s (0 clean nights >= 3.0 m/s once 3 cloud-leaked v002 scenes are removed). Wind-collapse inference is scoped strictly to Lost Cove over 2.5-3.0 m/s; it does not replicate across the 6 other 16SED coves when using Sewanee point ERA5 wind (paired calm vs. breezy p = 0.77)."
+        }
+      },
+      "multicove_16sed": {
+        "n_cove_pairs_incl_lost_cove": 7,
+        "cove_level_all_nights_mean_C": -1.063,
+        "cove_level_all_nights_se_C": 0.219,
+        "cove_level_all_nights_t": -4.844,
+        "cove_level_all_nights_p": 0.002869,
+        "cove_level_calm_mean_C": -1.089,
+        "cove_level_calm_se_C": 0.217,
+        "cove_level_calm_t": -5.028,
+        "cove_level_calm_p": 0.002385,
+        "frac_coves_negative_all": 1.0,
+        "frac_coves_negative_calm": 1.0,
+        "six_other_coves_calm_vs_breezy_paired_p": 0.7718,
+        "screen_rule": "Sewanee-verified clear v002 granules (lst_lost & lst_openn observed and |LST - ERA5_t2m| <= 10 C)"
+      },
+      "manski_all": {
+        "swath_conditioned": {
+          "naive_diff": -1.296,
+          "manski_lo": -8.12,
+          "manski_hi": 6.279,
+          "p_miss1": 0.2896,
+          "p_miss0": 0.2943,
+          "n_in_swath": 157,
+          "n_clean": 52,
+          "n_cloud_leak_in_swath": 12
+        },
+        "swath_raw_cloud_flag_only": {
+          "naive_diff": -1.296,
+          "manski_lo": -6.505,
+          "manski_hi": 4.492,
+          "p_miss1": 0.2236,
+          "p_miss0": 0.2224,
+          "n_in_swath": 157,
+          "n_clean": 52
+        },
+        "swath_total_invalid": {
+          "naive_diff": -1.296,
+          "manski_lo": -15.93,
+          "manski_hi": 14.946,
+          "p_miss1": 0.6196,
+          "p_miss0": 0.6325,
+          "n_in_swath": 157,
+          "n_clean": 52,
+          "n_cloud_leak_in_swath": 12
+        },
+        "clean_scene_pixel": {
+          "naive_diff": -1.296,
+          "manski_lo": -1.498,
+          "manski_hi": -1.076,
+          "p_miss1": 0.0071,
+          "p_miss0": 0.01
+        }
+      },
+      "manski_v002": {
+        "swath_conditioned": {
+          "naive_diff": -1.28,
+          "manski_lo": -7.121,
+          "manski_hi": 5.336,
+          "p_miss1": 0.2976,
+          "p_miss0": 0.3021,
+          "n_in_swath": 136,
+          "n_clean": 38,
+          "n_cloud_leak_in_swath": 9
+        },
+        "swath_raw_cloud_flag_only": {
+          "naive_diff": -1.28,
+          "manski_lo": -5.973,
+          "manski_hi": 4.028,
+          "p_miss1": 0.2412,
+          "p_miss0": 0.2402,
+          "n_in_swath": 136,
+          "n_clean": 38
+        },
+        "swath_total_invalid": {
+          "naive_diff": -1.28,
+          "manski_lo": -14.566,
+          "manski_hi": 13.761,
+          "p_miss1": 0.6784,
+          "p_miss0": 0.6852,
+          "n_in_swath": 136,
+          "n_clean": 38,
+          "n_cloud_leak_in_swath": 9
+        },
+        "clean_scene_pixel": {
+          "naive_diff": -1.28,
+          "manski_lo": -1.462,
+          "manski_hi": -1.076,
+          "p_miss1": 0.0097,
+          "p_miss0": 0.0089
+        }
+      },
+      "manski_v003": {
+        "swath_conditioned": {
+          "naive_diff": -1.341,
+          "manski_lo": -8.085,
+          "manski_hi": 6.05,
+          "p_miss1": 0.2381,
+          "p_miss0": 0.2433,
+          "n_in_swath": 21,
+          "n_clean": 14,
+          "n_cloud_leak_in_swath": 3
+        },
+        "swath_raw_cloud_flag_only": {
+          "naive_diff": -1.341,
+          "manski_lo": -4.365,
+          "manski_hi": 1.972,
+          "p_miss1": 0.109,
+          "p_miss0": 0.1068,
+          "n_in_swath": 21,
+          "n_clean": 14
+        },
+        "swath_total_invalid": {
+          "naive_diff": -1.341,
+          "manski_lo": -8.747,
+          "manski_hi": 6.787,
+          "p_miss1": 0.2381,
+          "p_miss0": 0.291,
+          "n_in_swath": 21,
+          "n_clean": 14,
+          "n_cloud_leak_in_swath": 3
+        },
+        "clean_scene_pixel": {
+          "naive_diff": -1.341,
+          "manski_lo": -1.522,
+          "manski_hi": -1.139,
+          "p_miss1": 0.0,
+          "p_miss0": 0.0131
+        }
+      },
+      "manski_autumn": {
+        "swath_conditioned": {
+          "naive_diff": -1.489,
+          "manski_lo": -6.881,
+          "manski_hi": 4.572,
+          "p_miss1": 0.2115,
+          "p_miss0": 0.2294,
+          "n_in_swath": 91,
+          "n_clean": 33,
+          "n_cloud_leak_in_swath": 4
+        },
+        "swath_raw_cloud_flag_only": {
+          "naive_diff": -1.489,
+          "manski_lo": -5.828,
+          "manski_hi": 3.391,
+          "p_miss1": 0.1694,
+          "p_miss0": 0.1855,
+          "n_in_swath": 91,
+          "n_clean": 33
+        },
+        "swath_total_invalid": {
+          "naive_diff": -1.489,
+          "manski_lo": -15.912,
+          "manski_hi": 14.713,
+          "p_miss1": 0.5738,
+          "p_miss0": 0.6051,
+          "n_in_swath": 91,
+          "n_clean": 33,
+          "n_cloud_leak_in_swath": 4
+        },
+        "clean_scene_pixel": {
+          "naive_diff": -1.489,
+          "manski_lo": -1.786,
+          "manski_hi": -1.15,
+          "p_miss1": 0.0087,
+          "p_miss0": 0.0158
+        }
+      }
+    },
+    "4C_hopkins_climate_lal": {
+      "clean_modis_midgreenup_trend": {
+        "n": 23,
+        "year_min": 2001,
+        "year_max": 2023,
+        "mean": 112.848,
+        "sd": 5.364,
+        "se": 1.118,
+        "ols_per_decade": -0.3796,
+        "ols_se_per_decade": 1.7237,
+        "ols_r2": 0.0023,
+        "ols_t": -0.22,
+        "ols_p": 0.8278,
+        "theilsen_per_decade": -0.1154,
+        "kendall_tau": -0.016,
+        "kendall_p": 0.9158
+      },
+      "clean_modis_lapse_rate": {
+        "n": 23,
+        "year_min": 2001,
+        "year_max": 2023,
+        "mean": 3.186,
+        "sd": 0.823,
+        "se": 0.172,
+        "ols_per_decade": -0.0472,
+        "ols_se_per_decade": 0.2646,
+        "ols_r2": 0.0015,
+        "ols_t": -0.178,
+        "ols_p": 0.8601,
+        "theilsen_per_decade": -0.0109,
+        "kendall_tau": -0.028,
+        "kendall_p": 0.8755
+      },
+      "modis_3factor_decomposition": {
+        "status": "COMPLETED_GEE",
+        "configs": {
+          "A_Greenup15_Hansen50_NoQA": {
+            "n": 23,
+            "mean_d_per_100m": 3.976,
+            "sd_d_per_100m": 1.168,
+            "se_d_per_100m": 0.243
+          },
+          "B_Greenup15_Hansen50_QA1": {
+            "n": 23,
+            "mean_d_per_100m": 3.976,
+            "sd_d_per_100m": 1.168,
+            "se_d_per_100m": 0.243
+          },
+          "C_Greenup15_NLCD41_QA1": {
+            "n": 23,
+            "mean_d_per_100m": 3.983,
+            "sd_d_per_100m": 1.156,
+            "se_d_per_100m": 0.241
+          },
+          "D_MidGreenup50_NLCD41_QA1": {
+            "n": 23,
+            "mean_d_per_100m": 3.186,
+            "sd_d_per_100m": 0.823,
+            "se_d_per_100m": 0.172
+          },
+          "E_MidGreenup50_Hansen50_NoQA": {
+            "n": 23,
+            "mean_d_per_100m": 3.214,
+            "sd_d_per_100m": 0.828,
+            "se_d_per_100m": 0.173
+          }
+        },
+        "sequential_deltas_d_per_100m": {
+          "delta_qa_filter_B_minus_A": 0.0,
+          "delta_nlcd41_mask_C_minus_B": 0.007,
+          "delta_50pct_vs_15pct_D_minus_C": -0.797,
+          "total_D_minus_A": -0.79
+        }
+      },
+      "legacy_landsat_step": {
+        "r2": 0.135,
+        "decade_slope_controlling_for_2013_step": {
+          "beta": -1.5765,
+          "se": 1.4606,
+          "t": -1.079,
+          "p": 0.2878
+        },
+        "oli_2013_step_d": {
+          "beta": -0.4192,
+          "se": 3.6929,
+          "t": -0.114,
+          "p": 0.9103
+        },
+        "interpretation": "Collinearity non-identifiability (r(year, I[year>=2013]) = 0.80, VIF = 2.7): neither the 2013 processor-era step (-0.42 +/- 3.69 d, p = 0.9103) nor the secular slope (-1.58 +/- 1.46 d/dec, p = 0.2878) can be separated cleanly in unharmonized Collection 2 Landsat."
+      },
+      "modis_thermal_sensitivity": {
+        "n_years": 23,
+        "days_per_degC_spring": -2.397,
+        "se_days_per_degC": 0.652,
+        "r": -0.626,
+        "r2": 0.3916,
+        "p": 0.001403,
+        "autumn_oct_days_per_degC": 0.448,
+        "autumn_oct_r": 0.132,
+        "autumn_oct_p": 0.5477
+      },
+      "noaa_modern_vs_hopkins_era": {
+        "spr_tmean_C": {
+          "hopkins_era_1895_1943_n": 40,
+          "hopkins_era_mean": 11.325,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 12.16,
+          "shift_modern_minus_hopkins": 0.835,
+          "welch_t": 2.239,
+          "welch_p": 0.0292
+        },
+        "spr_tmin_C": {
+          "hopkins_era_1895_1943_n": 40,
+          "hopkins_era_mean": 6.138,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 6.892,
+          "shift_modern_minus_hopkins": 0.754,
+          "welch_t": 2.104,
+          "welch_p": 0.03992
+        },
+        "spr_tmax_C": {
+          "hopkins_era_1895_1943_n": 40,
+          "hopkins_era_mean": 16.564,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 17.425,
+          "shift_modern_minus_hopkins": 0.861,
+          "welch_t": 2.102,
+          "welch_p": 0.04014
+        },
+        "spr_gdd5": {
+          "hopkins_era_1895_1943_n": 40,
+          "hopkins_era_mean": 410.302,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 449.244,
+          "shift_modern_minus_hopkins": 38.942,
+          "welch_t": 1.929,
+          "welch_p": 0.05914
+        },
+        "aut_tmean_C": {
+          "hopkins_era_1895_1943_n": 35,
+          "hopkins_era_mean": 15.373,
+          "modern_era_2000_2025_n": 26,
+          "modern_era_mean": 15.374,
+          "shift_modern_minus_hopkins": 0.002,
+          "welch_t": 0.006,
+          "welch_p": 0.9952
+        },
+        "aut_tmin_C": {
+          "hopkins_era_1895_1943_n": 35,
+          "hopkins_era_mean": 10.164,
+          "modern_era_2000_2025_n": 26,
+          "modern_era_mean": 10.298,
+          "shift_modern_minus_hopkins": 0.135,
+          "welch_t": 0.433,
+          "welch_p": 0.6663
+        },
+        "oct_tmean_C": {
+          "hopkins_era_1895_1943_n": 38,
+          "hopkins_era_mean": 15.759,
+          "modern_era_2000_2025_n": 26,
+          "modern_era_mean": 15.26,
+          "shift_modern_minus_hopkins": -0.499,
+          "welch_t": -1.169,
+          "welch_p": 0.2467
+        },
+        "oct_tmin_C": {
+          "hopkins_era_1895_1943_n": 38,
+          "hopkins_era_mean": 10.46,
+          "modern_era_2000_2025_n": 26,
+          "modern_era_mean": 10.003,
+          "shift_modern_minus_hopkins": -0.457,
+          "welch_t": -0.982,
+          "welch_p": 0.33
+        },
+        "last_spring_freeze_doy": {
+          "hopkins_era_1895_1943_n": 43,
+          "hopkins_era_mean": 100.977,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 93.44,
+          "shift_modern_minus_hopkins": -7.537,
+          "welch_t": -2.162,
+          "welch_p": 0.0356
+        },
+        "first_autumn_freeze_doy": {
+          "hopkins_era_1895_1943_n": 39,
+          "hopkins_era_mean": 304.795,
+          "modern_era_2000_2025_n": 26,
+          "modern_era_mean": 307.038,
+          "shift_modern_minus_hopkins": 2.244,
+          "welch_t": 0.695,
+          "welch_p": 0.4902
+        },
+        "frost_free_days": {
+          "hopkins_era_1895_1943_n": 37,
+          "hopkins_era_mean": 204.541,
+          "modern_era_2000_2025_n": 25,
+          "modern_era_mean": 214.6,
+          "shift_modern_minus_hopkins": 10.059,
+          "welch_t": 2.385,
+          "welch_p": 0.02124
+        }
+      },
+      "noaa_homogenization_caveat": "Raw GHCN-Daily station records are unhomogenized for time-of-observation bias (TOBS), sensor transitions (liquid-in-glass to MMTS/electronic), or micro-site relocations across the 1944-1999 hiatus; century-scale era shifts provide contextual background rather than formal climate-attribution estimates.",
+      "lal_access": "PUBLIC_ARCGIS_REST_NO_LOGIN_HTTP_200",
+      "lal_harvest_overlap": {
+        "domain_all_harvests_pct": 74.55,
+        "domain_ge1990_harvests_pct": 23.19,
+        "plateau_p5_all_harvests_pct": 68.93,
+        "plateau_p5_ge1990_harvests_pct": 8.0,
+        "lost_cove_330_385_all_harvests_pct": 65.29,
+        "openn_330_385_all_harvests_pct": 70.45
+      },
+      "signal_A_harvest_sens": {
+        "unmasked": {
+          "n_lost": 121,
+          "n_openn": 44,
+          "lost_mean_sos": 107.559,
+          "openn_mean_sos": 102.414,
+          "lost_sd_sos": 2.501,
+          "openn_sd_sos": 2.783,
+          "diff_lost_minus_openn_d": 5.145,
+          "inference_note": "Descriptive single-cove (N=1) harvest sensitivity; pixel-level p-value omitted due to spatial pseudoreplication."
+        },
+        "excluding_ge1990_harvests": {
+          "n_lost": 42,
+          "n_openn": 44,
+          "lost_mean_sos": 106.877,
+          "openn_mean_sos": 102.414,
+          "lost_sd_sos": 3.001,
+          "openn_sd_sos": 2.783,
+          "diff_lost_minus_openn_d": 4.463,
+          "inference_note": "Descriptive single-cove (N=1) harvest sensitivity; pixel-level p-value omitted due to spatial pseudoreplication."
+        },
+        "excluding_all_harvests": {
+          "n_lost": 42,
+          "n_openn": 13,
+          "lost_mean_sos": 106.877,
+          "openn_mean_sos": 101.595,
+          "lost_sd_sos": 3.001,
+          "openn_sd_sos": 3.489,
+          "diff_lost_minus_openn_d": 5.281,
+          "inference_note": "Descriptive single-cove (N=1) harvest sensitivity; pixel-level p-value omitted due to spatial pseudoreplication."
+        }
+      },
+      "signal_B_harvest_sens": {
+        "unmasked": {
+          "n_total": 1400,
+          "n_flat": 700,
+          "n_steep": 700,
+          "flat_mean_sos": 115.052,
+          "steep_mean_sos": 111.522,
+          "diff_flat_minus_steep_d": 3.529,
+          "welch_t": 16.931,
+          "welch_p": 2.774e-58
+        },
+        "excluding_ge1990_harvests": {
+          "n_total": 1288,
+          "n_flat": 631,
+          "n_steep": 657,
+          "flat_mean_sos": 114.775,
+          "steep_mean_sos": 111.588,
+          "diff_flat_minus_steep_d": 3.187,
+          "welch_t": 14.791,
+          "welch_p": 1.344e-45
+        },
+        "excluding_all_harvests": {
+          "n_total": 435,
+          "n_flat": 182,
+          "n_steep": 253,
+          "flat_mean_sos": 114.509,
+          "steep_mean_sos": 111.891,
+          "diff_flat_minus_steep_d": 2.618,
+          "welch_t": 7.048,
+          "welch_p": 9.506e-12
+        }
+      }
+    },
+    "4D_alphaearth_supplementary_audit": {
+      "manuscript_role": "Standalone supplementary audit script (removed from main manuscript per peer review)",
+      "alignment_audit": {
+        "cached": true
+      },
+      "n_pixels": 147,
+      "n_pixel_years": 900,
+      "loco_actual_cove_names": [
+        "Fiery_Gizzard",
+        "Savage_Gulf",
+        "Sewanee_LostCove",
+        "Sinking_Cove"
+      ],
+      "best_raw_s2_comparison": {
+        "pixel_demeaned_LOYO_r2": {
+          "AE_64d": 0.1907,
+          "Raw_S2_40b": -0.092,
+          "Raw_S2_60f": -0.0999,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_40b",
+          "best_raw_s2_r2": -0.092,
+          "delta_AE_minus_best_raw_s2": 0.2827
+        },
+        "twoway_demeaned_LOYO_r2": {
+          "AE_64d": 0.1763,
+          "Raw_S2_40b": 0.0021,
+          "Raw_S2_60f": 0.0115,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_idx_60f",
+          "best_raw_s2_r2": 0.0115,
+          "delta_AE_minus_best_raw_s2": 0.1648
+        },
+        "first_diff_LOYO_r2": {
+          "AE_64d": 0.3524,
+          "Raw_S2_40b": 0.2441,
+          "Raw_S2_60f": 0.087,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_40b",
+          "best_raw_s2_r2": 0.2441,
+          "delta_AE_minus_best_raw_s2": 0.1083
+        },
+        "first_diff_2w_LOYO_r2": {
+          "AE_64d": 0.1385,
+          "Raw_S2_40b": -0.02,
+          "Raw_S2_60f": -0.0196,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_idx_60f",
+          "best_raw_s2_r2": -0.0196,
+          "delta_AE_minus_best_raw_s2": 0.1581
+        },
+        "twoway_demeaned_GroupPixel_r2": {
+          "AE_64d": 0.1642,
+          "Raw_S2_40b": 0.057,
+          "Raw_S2_60f": 0.0527,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_40b",
+          "best_raw_s2_r2": 0.057,
+          "delta_AE_minus_best_raw_s2": 0.1072
+        },
+        "lagged_prev_year_twoway_LOYO_r2": {
+          "AE_64d": -0.0236,
+          "Raw_S2_40b": 0.017,
+          "Raw_S2_60f": -0.0099,
+          "best_raw_s2_model": "Raw_delta_S2_4seas_40b",
+          "best_raw_s2_r2": 0.017,
+          "delta_AE_minus_best_raw_s2": -0.0406
+        }
+      },
+      "dynamic_symmetric_summary": {
+        "AE_delta_emb_64d": {
+          "n_features": 64,
+          "pixel_demeaned_LOYO_r2": 0.1907,
+          "twoway_demeaned_LOYO_r2": 0.1763,
+          "first_diff_LOYO_r2": 0.3524,
+          "first_diff_2w_LOYO_r2": 0.1385,
+          "pixel_demeaned_GroupPixel_r2": 0.7336,
+          "twoway_demeaned_GroupPixel_r2": 0.1642,
+          "lagged_prev_year_twoway_LOYO_r2": -0.0236,
+          "lagged_prev_year_pixel_naive_r2": 0.1613
+        },
+        "Raw_delta_S2_4seas_40b": {
+          "n_features": 40,
+          "pixel_demeaned_LOYO_r2": -0.092,
+          "twoway_demeaned_LOYO_r2": 0.0021,
+          "first_diff_LOYO_r2": 0.2441,
+          "first_diff_2w_LOYO_r2": -0.02,
+          "pixel_demeaned_GroupPixel_r2": 0.5994,
+          "twoway_demeaned_GroupPixel_r2": 0.057,
+          "lagged_prev_year_twoway_LOYO_r2": 0.017,
+          "lagged_prev_year_pixel_naive_r2": -0.0641
+        },
+        "Raw_delta_S2_4seas_idx_60f": {
+          "n_features": 60,
+          "pixel_demeaned_LOYO_r2": -0.0999,
+          "twoway_demeaned_LOYO_r2": 0.0115,
+          "first_diff_LOYO_r2": 0.087,
+          "first_diff_2w_LOYO_r2": -0.0196,
+          "pixel_demeaned_GroupPixel_r2": 0.6037,
+          "twoway_demeaned_GroupPixel_r2": 0.0527,
+          "lagged_prev_year_twoway_LOYO_r2": -0.0099,
+          "lagged_prev_year_pixel_naive_r2": -0.1629
+        },
+        "Raw_delta_S2_nonspring_45f": {
+          "n_features": 45,
+          "pixel_demeaned_LOYO_r2": -0.0562,
+          "twoway_demeaned_LOYO_r2": -0.002,
+          "first_diff_LOYO_r2": 0.0435,
+          "first_diff_2w_LOYO_r2": -0.0097,
+          "pixel_demeaned_GroupPixel_r2": 0.5829,
+          "twoway_demeaned_GroupPixel_r2": 0.0333,
+          "lagged_prev_year_twoway_LOYO_r2": -0.0041,
+          "lagged_prev_year_pixel_naive_r2": -0.6786
+        },
+        "Combined_AE_plus_RawS2_104f": {
+          "n_features": 104,
+          "pixel_demeaned_LOYO_r2": 0.3627,
+          "twoway_demeaned_LOYO_r2": 0.1401,
+          "first_diff_LOYO_r2": 0.4341,
+          "first_diff_2w_LOYO_r2": 0.1198,
+          "pixel_demeaned_GroupPixel_r2": 0.7285,
+          "twoway_demeaned_GroupPixel_r2": 0.1508,
+          "lagged_prev_year_twoway_LOYO_r2": -0.0126,
+          "lagged_prev_year_pixel_naive_r2": 0.207
+        }
+      }
+    },
+    "4E_signalb_spatial_audit": {
+      "descriptives": {
+        "n_total": 1400,
+        "n_flat": 700,
+        "n_steep": 700,
+        "flat_elev_mean_m": 575.43,
+        "steep_elev_mean_m": 566.82,
+        "elev_diff_flat_minus_steep_m": 8.62,
+        "flat_win_ndvi_mean": 0.4158,
+        "steep_win_ndvi_mean": 0.4269,
+        "win_ndvi_diff": -0.0111,
+        "flat_oct_mari_mean": 4.0378,
+        "steep_oct_mari_mean": 3.9174,
+        "oct_mari_diff": 0.1205,
+        "oct_mari_sd_overall": 0.5909,
+        "p2_steep_sandstone_contact": {
+          "scsc_ndre_dSOS": 3.114,
+          "scsc_ndre_dEOS": -3.343,
+          "hls_ndre_dSOS": 3.118,
+          "hls_ndre_dEOS": -3.045,
+          "hls_ndvi_dSOS": 3.238,
+          "hls_ndvi_dEOS": -3.68
+        }
+      },
+      "spatial_clustered_contrasts": {
+        "raw_flat_vs_steep_sos": {
+          "block_1km": {
+            "n": 1400,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.5294,
+            "r2": 0.1702,
+            "hc1_se": 0.2085,
+            "hc1_p": 1.224e-58,
+            "n_clusters_min": 57,
+            "n_clusters_median": 60,
+            "n_clusters_max": 63,
+            "se_median": 0.3944,
+            "se_min": 0.3469,
+            "se_max": 0.4692,
+            "t_median": 8.95,
+            "p_median": 1.386e-12,
+            "p_min": 1.344e-14,
+            "p_max": 3.212e-10,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          },
+          "block_2km": {
+            "n": 1400,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.5294,
+            "r2": 0.1702,
+            "hc1_se": 0.2085,
+            "hc1_p": 1.224e-58,
+            "n_clusters_min": 20,
+            "n_clusters_median": 23,
+            "n_clusters_max": 26,
+            "se_median": 0.4323,
+            "se_min": 0.3309,
+            "se_max": 0.6233,
+            "t_median": 8.165,
+            "p_median": 5.39e-08,
+            "p_min": 2.888e-10,
+            "p_max": 1.077e-05,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "within_evt3317_flat_vs_steep_sos": {
+          "block_1km": {
+            "n": 1259,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.3139,
+            "r2": 0.1575,
+            "hc1_se": 0.2132,
+            "hc1_p": 6.018e-50,
+            "n_clusters_min": 57,
+            "n_clusters_median": 59,
+            "n_clusters_max": 61,
+            "se_median": 0.3883,
+            "se_min": 0.3583,
+            "se_max": 0.4339,
+            "t_median": 8.533,
+            "p_median": 9e-12,
+            "p_min": 4.405e-13,
+            "p_max": 2.483e-10,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          },
+          "block_2km": {
+            "n": 1259,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.3139,
+            "r2": 0.1575,
+            "hc1_se": 0.2132,
+            "hc1_p": 6.018e-50,
+            "n_clusters_min": 20,
+            "n_clusters_median": 23,
+            "n_clusters_max": 26,
+            "se_median": 0.4102,
+            "se_min": 0.2965,
+            "se_max": 0.5931,
+            "t_median": 8.078,
+            "p_median": 1.006e-07,
+            "p_min": 1.541e-10,
+            "p_max": 1.81e-05,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "well_drained_only_flat_vs_steep_sos": {
+          "block_1km": {
+            "n": 1199,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.1509,
+            "r2": 0.1364,
+            "hc1_se": 0.225,
+            "hc1_p": 2.166e-41,
+            "n_clusters_min": 57,
+            "n_clusters_median": 60,
+            "n_clusters_max": 63,
+            "se_median": 0.3888,
+            "se_min": 0.3487,
+            "se_max": 0.4626,
+            "t_median": 8.104,
+            "p_median": 4.095e-11,
+            "p_min": 1.583e-12,
+            "p_max": 4.546e-09,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          },
+          "block_2km": {
+            "n": 1199,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.1509,
+            "r2": 0.1364,
+            "hc1_se": 0.225,
+            "hc1_p": 2.166e-41,
+            "n_clusters_min": 20,
+            "n_clusters_median": 23,
+            "n_clusters_max": 26,
+            "se_median": 0.4668,
+            "se_min": 0.3424,
+            "se_max": 0.5398,
+            "t_median": 6.75,
+            "p_median": 1.12e-06,
+            "p_min": 5.359e-09,
+            "p_max": 7.13e-06,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "within_flat_fragipan_vs_welldrained_sos": {
+          "block_1km": {
+            "n": 700,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_wet_frag",
+            "beta": 0.3175,
+            "r2": 0.0004,
+            "hc1_se": 0.7106,
+            "hc1_p": 0.6552,
+            "n_clusters_min": 46,
+            "n_clusters_median": 51,
+            "n_clusters_max": 56,
+            "se_median": 0.7635,
+            "se_min": 0.6782,
+            "se_max": 0.9431,
+            "t_median": 0.416,
+            "p_median": 0.6792,
+            "p_min": 0.6416,
+            "p_max": 0.7379,
+            "frac_origins_p_lt_0p05": 0.0,
+            "frac_origins_p_lt_0p01": 0.0
+          },
+          "block_2km": {
+            "n": 700,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_wet_frag",
+            "beta": 0.3175,
+            "r2": 0.0004,
+            "hc1_se": 0.7106,
+            "hc1_p": 0.6552,
+            "n_clusters_min": 19,
+            "n_clusters_median": 21,
+            "n_clusters_max": 24,
+            "se_median": 0.7142,
+            "se_min": 0.5231,
+            "se_max": 0.9284,
+            "t_median": 0.445,
+            "p_median": 0.6614,
+            "p_min": 0.5507,
+            "p_max": 0.7355,
+            "frac_origins_p_lt_0p05": 0.0,
+            "frac_origins_p_lt_0p01": 0.0
+          }
+        },
+        "lal_excl_ge1990_flat_vs_steep_sos": {
+          "block_1km": {
+            "n": 1288,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.1871,
+            "r2": 0.1465,
+            "hc1_se": 0.2155,
+            "hc1_p": 7.775e-46,
+            "n_clusters_min": 51,
+            "n_clusters_median": 54,
+            "n_clusters_max": 59,
+            "se_median": 0.3886,
+            "se_min": 0.3609,
+            "se_max": 0.4404,
+            "t_median": 8.202,
+            "p_median": 5.3e-11,
+            "p_min": 5.383e-12,
+            "p_max": 1.17e-09,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          },
+          "block_2km": {
+            "n": 1288,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 3.1871,
+            "r2": 0.1465,
+            "hc1_se": 0.2155,
+            "hc1_p": 7.775e-46,
+            "n_clusters_min": 18,
+            "n_clusters_median": 21,
+            "n_clusters_max": 23,
+            "se_median": 0.4996,
+            "se_min": 0.3573,
+            "se_max": 0.5963,
+            "t_median": 6.379,
+            "p_median": 3.247e-06,
+            "p_min": 1.38e-08,
+            "p_max": 2.669e-05,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "lal_excl_all_harvests_flat_vs_steep_sos": {
+          "block_1km": {
+            "n": 435,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 2.6181,
+            "r2": 0.1073,
+            "hc1_se": 0.3714,
+            "hc1_p": 7.141e-12,
+            "n_clusters_min": 31,
+            "n_clusters_median": 35,
+            "n_clusters_max": 39,
+            "se_median": 0.563,
+            "se_min": 0.4953,
+            "se_max": 0.6957,
+            "t_median": 4.65,
+            "p_median": 5.481e-05,
+            "p_min": 7.949e-06,
+            "p_max": 0.0006346,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          },
+          "block_2km": {
+            "n": 435,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 2.6181,
+            "r2": 0.1073,
+            "hc1_se": 0.3714,
+            "hc1_p": 7.141e-12,
+            "n_clusters_min": 14,
+            "n_clusters_median": 17,
+            "n_clusters_max": 19,
+            "se_median": 0.6471,
+            "se_min": 0.4963,
+            "se_max": 0.7295,
+            "t_median": 4.046,
+            "p_median": 0.00105,
+            "p_min": 6.182e-05,
+            "p_max": 0.003222,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "flat_vs_steep_oct_mari": {
+          "block_1km": {
+            "n": 1400,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 0.1205,
+            "r2": 0.0104,
+            "hc1_se": 0.0314,
+            "hc1_p": 0.0001321,
+            "n_clusters_min": 57,
+            "n_clusters_median": 60,
+            "n_clusters_max": 63,
+            "se_median": 0.0511,
+            "se_min": 0.0464,
+            "se_max": 0.0561,
+            "t_median": 2.358,
+            "p_median": 0.02164,
+            "p_min": 0.0119,
+            "p_max": 0.03577,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 0.0
+          },
+          "block_2km": {
+            "n": 1400,
+            "block_km": 2.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 0.1205,
+            "r2": 0.0104,
+            "hc1_se": 0.0314,
+            "hc1_p": 0.0001321,
+            "n_clusters_min": 20,
+            "n_clusters_median": 23,
+            "n_clusters_max": 26,
+            "se_median": 0.0602,
+            "se_min": 0.047,
+            "se_max": 0.0684,
+            "t_median": 2.002,
+            "p_median": 0.05781,
+            "p_min": 0.01746,
+            "p_max": 0.09352,
+            "frac_origins_p_lt_0p05": 0.36,
+            "frac_origins_p_lt_0p01": 0.0
+          }
+        }
+      },
+      "true_nested_delta_r2": {
+        "soils_over_M2": 0.0038,
+        "oct_mari_alone_over_M2": 0.0197,
+        "guild_structure_alone_over_M2": 0.0321,
+        "oct_mari_over_guild_M4a": 0.0139,
+        "guild_plus_mari_over_M2": 0.046,
+        "full_over_M2": 0.0498
+      },
+      "regional_3site_plateau_replication": {
+        "Fiery_Gizzard": {
+          "n_flat": 244,
+          "n_steep": 15,
+          "flat_mean_sos": 117.531,
+          "steep_mean_sos": 115.137,
+          "diff_flat_minus_steep_d": 2.394,
+          "pixel_welch_p_unclustered": 0.03171,
+          "block_1km": {
+            "n": 259,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 2.3943,
+            "r2": 0.0143,
+            "hc1_se": 0.9939,
+            "hc1_p": 0.0167,
+            "n_clusters_min": 41,
+            "n_clusters_median": 44,
+            "n_clusters_max": 48,
+            "se_median": 0.9242,
+            "se_min": 0.7577,
+            "se_max": 1.0949,
+            "t_median": 2.591,
+            "p_median": 0.01279,
+            "p_min": 0.002853,
+            "p_max": 0.03438,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 0.4
+          }
+        },
+        "Savage_Gulf": {
+          "n_flat": 218,
+          "n_steep": 31,
+          "flat_mean_sos": 123.598,
+          "steep_mean_sos": 119.51,
+          "diff_flat_minus_steep_d": 4.088,
+          "pixel_welch_p_unclustered": 4.725e-05,
+          "block_1km": {
+            "n": 249,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 4.0881,
+            "r2": 0.0734,
+            "hc1_se": 0.8864,
+            "hc1_p": 6.41e-06,
+            "n_clusters_min": 39,
+            "n_clusters_median": 41,
+            "n_clusters_max": 43,
+            "se_median": 0.9429,
+            "se_min": 0.8426,
+            "se_max": 1.0889,
+            "t_median": 4.336,
+            "p_median": 9.544e-05,
+            "p_min": 1.997e-05,
+            "p_max": 0.0005527,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "Sewanee_LostCove": {
+          "n_flat": 230,
+          "n_steep": 38,
+          "flat_mean_sos": 115.025,
+          "steep_mean_sos": 112.363,
+          "diff_flat_minus_steep_d": 2.661,
+          "pixel_welch_p_unclustered": 5.468e-05,
+          "block_1km": {
+            "n": 268,
+            "block_km": 1.0,
+            "n_grid_origins": 25,
+            "target": "is_flat",
+            "beta": 2.6614,
+            "r2": 0.0518,
+            "hc1_se": 0.6052,
+            "hc1_p": 1.585e-05,
+            "n_clusters_min": 44,
+            "n_clusters_median": 47,
+            "n_clusters_max": 51,
+            "se_median": 0.7027,
+            "se_min": 0.6316,
+            "se_max": 0.801,
+            "t_median": 3.788,
+            "p_median": 0.0004487,
+            "p_min": 0.0001101,
+            "p_max": 0.001802,
+            "frac_origins_p_lt_0p05": 1.0,
+            "frac_origins_p_lt_0p01": 1.0
+          }
+        },
+        "Sinking_Cove": {
+          "n_flat": 2,
+          "n_steep": 0,
+          "note": "Insufficient plateau-cap pixels (>=550 m) for flat-vs-steep contrast."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cumberland-escarpment-phenology"
+version = "2.0.0"
+description = "Closed-karst cold-air pooling and plateau-cap phenology on the Southern Cumberland Escarpment"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+  "scikit-image>=0.22",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+  "pillow>=10.0",
+  "nbformat>=5.9",
+  "requests>=2.31",
+  "rasterio>=1.3",
+  "shapely>=2.0",
+  "pyproj>=3.6",
+  "earthengine-api>=0.1.380",
+]
+
+[tool.setuptools]
+py-modules = ["eslib"]
+packages = []

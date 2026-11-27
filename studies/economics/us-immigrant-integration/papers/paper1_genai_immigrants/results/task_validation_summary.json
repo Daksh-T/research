@@ -1,0 +1,272 @@
+{
+  "n_occsoc": 786,
+  "n_occsoc4": 110,
+  "n_occ2010": 470,
+  "n_occ2018": 564,
+  "correlations": {
+    "llm_openai_beta": {
+      "llm_openai_beta": 1.0,
+      "llm_writing_raw": 0.975,
+      "llm_coding_math_raw": 0.943,
+      "llm_writing_orth": 0.258,
+      "llm_coding_math_orth": 0.062,
+      "face_to_face_social": 0.268
+    },
+    "llm_writing_raw": {
+      "llm_openai_beta": 0.975,
+      "llm_writing_raw": 1.0,
+      "llm_coding_math_raw": 0.946,
+      "llm_writing_orth": 0.324,
+      "llm_coding_math_orth": 0.0,
+      "face_to_face_social": 0.32
+    },
+    "llm_coding_math_raw": {
+      "llm_openai_beta": 0.943,
+      "llm_writing_raw": 0.946,
+      "llm_coding_math_raw": 1.0,
+      "llm_writing_orth": -0.0,
+      "llm_coding_math_orth": 0.324,
+      "face_to_face_social": 0.227
+    },
+    "llm_writing_orth": {
+      "llm_openai_beta": 0.258,
+      "llm_writing_raw": 0.324,
+      "llm_coding_math_raw": -0.0,
+      "llm_writing_orth": 1.0,
+      "llm_coding_math_orth": -0.946,
+      "face_to_face_social": 0.326
+    },
+    "llm_coding_math_orth": {
+      "llm_openai_beta": 0.062,
+      "llm_writing_raw": 0.0,
+      "llm_coding_math_raw": 0.324,
+      "llm_writing_orth": -0.946,
+      "llm_coding_math_orth": 1.0,
+      "face_to_face_social": -0.235
+    },
+    "face_to_face_social": {
+      "llm_openai_beta": 0.268,
+      "llm_writing_raw": 0.32,
+      "llm_coding_math_raw": 0.227,
+      "llm_writing_orth": 0.326,
+      "llm_coding_math_orth": -0.235,
+      "face_to_face_social": 1.0
+    }
+  },
+  "top10_llm_writing_orth": [
+    {
+      "occsoc": "273043",
+      "occ_title": "Writers and Authors",
+      "llm_writing_orth": 5.655664160006924,
+      "llm_coding_math_orth": -4.976093409346321,
+      "openai_dv_beta": 0.8771367521367521
+    },
+    {
+      "occsoc": "273092",
+      "occ_title": "Court Reporters and Simultaneous Captioners",
+      "llm_writing_orth": 5.533286571997288,
+      "llm_coding_math_orth": -4.824961607377956,
+      "openai_dv_beta": 0.9583333333333333
+    },
+    {
+      "occsoc": "273091",
+      "occ_title": "Interpreters and Translators",
+      "llm_writing_orth": 5.419654067539357,
+      "llm_coding_math_orth": -4.741503636109111,
+      "openai_dv_beta": 0.88
+    },
+    {
+      "occsoc": "273041",
+      "occ_title": "Editors",
+      "llm_writing_orth": 4.022676202155089,
+      "llm_coding_math_orth": -3.4073553627177673,
+      "openai_dv_beta": 0.6470588235294118
+    },
+    {
+      "occsoc": "319094",
+      "occ_title": "Medical Transcriptionists",
+      "llm_writing_orth": 3.6547907814438156,
+      "llm_coding_math_orth": -2.9772089089660843,
+      "openai_dv_beta": 0.875
+    },
+    {
+      "occsoc": "439081",
+      "occ_title": "Proofreaders and Copy Markers",
+      "llm_writing_orth": 3.5161009779411714,
+      "llm_coding_math_orth": -2.901385278664565,
+      "openai_dv_beta": 0.9750000000000001
+    },
+    {
+      "occsoc": "251123",
+      "occ_title": "English Language and Literature Teachers, Postsecondary",
+      "llm_writing_orth": 3.3886884597179794,
+      "llm_coding_math_orth": -3.080474692571032,
+      "openai_dv_beta": 0.5267857142857143
+    },
+    {
+      "occsoc": "273011",
+      "occ_title": "Broadcast Announcers and Radio Disc Jockeys",
+      "llm_writing_orth": 3.2708182536245682,
+      "llm_coding_math_orth": -2.9365977150337983,
+      "openai_dv_beta": 0.65
+    },
+    {
+      "occsoc": "273023",
+      "occ_title": "News Analysts, Reporters, and Journalists",
+      "llm_writing_orth": 3.209579359584828,
+      "llm_coding_math_orth": -2.6726672912375684,
+      "openai_dv_beta": 0.65
+    },
+    {
+      "occsoc": "251125",
+      "occ_title": "History Teachers, Postsecondary",
+      "llm_writing_orth": 2.7125991164951198,
+      "llm_coding_math_orth": -2.4319444078810664,
+      "openai_dv_beta": 0.5111111111111112
+    }
+  ],
+  "top10_llm_coding_math_orth": [
+    {
+      "occsoc": "519162",
+      "occ_title": "Computer Numerically Controlled Tool Programmers",
+      "llm_coding_math_orth": 4.937838865926846,
+      "llm_writing_orth": -4.25508053358092,
+      "openai_dv_beta": 0.8035714285714285
+    },
+    {
+      "occsoc": "152021",
+      "occ_title": "Mathematicians",
+      "llm_coding_math_orth": 4.557356563900427,
+      "llm_writing_orth": -3.3082272820227154,
+      "openai_dv_beta": 1.0
+    },
+    {
+      "occsoc": "192012",
+      "occ_title": "Physicists",
+      "llm_coding_math_orth": 4.137958957171322,
+      "llm_writing_orth": -3.160328296079789,
+      "openai_dv_beta": 0.75
+    },
+    {
+      "occsoc": "173013",
+      "occ_title": "Mechanical Drafters",
+      "llm_coding_math_orth": 3.7044826198191,
+      "llm_writing_orth": -3.4084300831401606,
+      "openai_dv_beta": 0.5
+    },
+    {
+      "occsoc": "439111",
+      "occ_title": "Statistical Assistants",
+      "llm_coding_math_orth": 3.6329198899141066,
+      "llm_writing_orth": -2.544358358030894,
+      "openai_dv_beta": 0.8913043478260869
+    },
+    {
+      "occsoc": "152099",
+      "occ_title": "Mathematical Science Occupations, All Other",
+      "llm_coding_math_orth": 3.28147102574658,
+      "llm_writing_orth": -2.2949032107370613,
+      "openai_dv_beta": 0.8666666666666667
+    },
+    {
+      "occsoc": "172011",
+      "occ_title": "Aerospace Engineers",
+      "llm_coding_math_orth": 3.2075914829101233,
+      "llm_writing_orth": -2.5777814894299778,
+      "openai_dv_beta": 0.5714285714285714
+    },
+    {
+      "occsoc": "172061",
+      "occ_title": "Computer Hardware Engineers",
+      "llm_coding_math_orth": 3.161208568519487,
+      "llm_writing_orth": -2.395403815472695,
+      "openai_dv_beta": 0.7272727272727273
+    },
+    {
+      "occsoc": "151243",
+      "occ_title": "Database Architects",
+      "llm_coding_math_orth": 3.0471420838411007,
+      "llm_writing_orth": -2.144259883965201,
+      "openai_dv_beta": 0.9112466124661247
+    },
+    {
+      "occsoc": "151251",
+      "occ_title": "Computer Programmers",
+      "llm_coding_math_orth": 2.859983106699036,
+      "llm_writing_orth": -1.8878654770368501,
+      "openai_dv_beta": 0.95
+    }
+  ],
+  "top10_face_to_face_social": [
+    {
+      "occsoc": "112022",
+      "occ_title": "Sales Managers",
+      "face_to_face_social": 2.6154175200285263,
+      "llm_writing_orth": 0.31504840851191646,
+      "openai_dv_beta": 0.45
+    },
+    {
+      "occsoc": "119032",
+      "occ_title": "Education Administrators, Kindergarten through Secondary",
+      "face_to_face_social": 2.5331227461032175,
+      "llm_writing_orth": 0.8375940181470911,
+      "openai_dv_beta": 0.41818181818181815
+    },
+    {
+      "occsoc": "111011",
+      "occ_title": "Chief Executives",
+      "face_to_face_social": 2.2953822880967714,
+      "llm_writing_orth": 0.38099685607658557,
+      "openai_dv_beta": 0.5077777777777778
+    },
+    {
+      "occsoc": "292081",
+      "occ_title": "Opticians, Dispensing",
+      "face_to_face_social": 2.25575887842903,
+      "llm_writing_orth": 0.07077261150445943,
+      "openai_dv_beta": 0.2857142857142857
+    },
+    {
+      "occsoc": "113121",
+      "occ_title": "Human Resources Managers",
+      "face_to_face_social": 2.206991604991811,
+      "llm_writing_orth": 1.0179628477799494,
+      "openai_dv_beta": 0.48
+    },
+    {
+      "occsoc": "119179",
+      "occ_title": "Personal Service Managers, All Other",
+      "face_to_face_social": 2.133840694835981,
+      "llm_writing_orth": -0.02807021892848691,
+      "openai_dv_beta": 0.45212215320910965
+    },
+    {
+      "occsoc": "119171",
+      "occ_title": "Funeral Home Managers",
+      "face_to_face_social": 2.1033611489377178,
+      "llm_writing_orth": 0.8571165064802739,
+      "openai_dv_beta": 0.42857142857142855
+    },
+    {
+      "occsoc": "531044",
+      "occ_title": "First-Line Supervisors of Passenger Attendants",
+      "face_to_face_social": 2.0728816030394546,
+      "llm_writing_orth": -0.006768503705699921,
+      "openai_dv_beta": 0.2894736842105263
+    },
+    {
+      "occsoc": "291181",
+      "occ_title": "Audiologists",
+      "face_to_face_social": 2.0698336484496296,
+      "llm_writing_orth": 0.9097478366262994,
+      "openai_dv_beta": 0.4545454545454546
+    },
+    {
+      "occsoc": "291211",
+      "occ_title": "Anesthesiologists",
+      "face_to_face_social": 1.9875388745243217,
+      "llm_writing_orth": 0.213276384354721,
+      "openai_dv_beta": 0.25
+    }
+  ]
+}

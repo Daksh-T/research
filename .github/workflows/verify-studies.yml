@@ -1,0 +1,169 @@
+name: Verify Studies
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      studies:
+        description: "Studies to verify ('all' or comma-separated slugs)"
+        required: false
+        default: "all"
+
+permissions:
+  contents: read
+
+jobs:
+  hygiene:
+    name: Repository Hygiene & Manifest Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PyYAML
+        run: python -m pip install --quiet pyyaml
+      - name: Run repository hygiene and study.yaml validation
+        run: python .github/scripts/check_hygiene.py
+
+  detect-changes:
+    name: Detect Changed Studies
+    runs-on: ubuntu-latest
+    outputs:
+      escarpment: ${{ steps.filter.outputs.escarpment }}
+      plateau: ${{ steps.filter.outputs.plateau }}
+      economics: ${{ steps.filter.outputs.economics }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        if: github.event_name != 'workflow_dispatch'
+        with:
+          filters: |
+            escarpment:
+              - 'studies/earth-science/cumberland-escarpment-phenology/**'
+            plateau:
+              - 'studies/earth-science/cumberland-plateau-lidar-fire/**'
+            economics:
+              - 'studies/economics/us-immigrant-integration/**'
+
+  verify-escarpment:
+    name: Check Cumberland Escarpment Phenology
+    needs: [hygiene, detect-changes]
+    if: >-
+      needs.hygiene.result == 'success' && (
+        (
+          github.event_name == 'workflow_dispatch' &&
+          (inputs.studies == 'all' || contains(inputs.studies, 'cumberland-escarpment-phenology'))
+        ) || (
+          needs.detect-changes.outputs.escarpment == 'true'
+        )
+      )
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studies/earth-science/cumberland-escarpment-phenology
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Byte-compile Python scripts
+        run: python -m compileall -q .
+      - name: Verify required deliverables exist
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          required = [
+              "paper/main.pdf",
+              "paper/main.tex",
+              "Escarpment_Hopkins_Karst_v2.ipynb",
+              "review/peer_review.md",
+          ]
+          missing = [p for p in required if not Path(p).is_file()]
+          assert not missing, f"Missing required deliverables: {missing}"
+          print(f"Verified all {len(required)} required escarpment deliverables.")
+          PY
+
+  verify-plateau:
+    name: Check Cumberland Plateau LiDAR & Fire
+    needs: [hygiene, detect-changes]
+    if: >-
+      needs.hygiene.result == 'success' && (
+        (
+          github.event_name == 'workflow_dispatch' &&
+          (inputs.studies == 'all' || contains(inputs.studies, 'cumberland-plateau-lidar-fire'))
+        ) || (
+          needs.detect-changes.outputs.plateau == 'true'
+        )
+      )
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studies/earth-science/cumberland-plateau-lidar-fire
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Byte-compile Python scripts
+        run: python -m compileall -q .
+      - name: Verify required deliverables exist
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          required = [
+              "paper/cumberland_plateau_lidar_fire.pdf",
+              "paper/main.typ",
+              "explorer.html",
+              "review/peer_review.md",
+              "review/response_to_referee.md",
+          ]
+          missing = [p for p in required if not Path(p).is_file()]
+          assert not missing, f"Missing required deliverables: {missing}"
+          print(f"Verified all {len(required)} required plateau deliverables.")
+          PY
+
+  verify-economics:
+    name: Check U.S. Immigrant Integration
+    needs: [hygiene, detect-changes]
+    if: >-
+      needs.hygiene.result == 'success' && (
+        (
+          github.event_name == 'workflow_dispatch' &&
+          (inputs.studies == 'all' || contains(inputs.studies, 'us-immigrant-integration'))
+        ) || (
+          needs.detect-changes.outputs.economics == 'true'
+        )
+      )
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studies/economics/us-immigrant-integration
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Byte-compile Python scripts
+        run: python -m compileall -q scripts data/ipums papers
+      - name: Verify required deliverables exist
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          required = [
+              "papers/paper1_genai_immigrants/paper1_manuscript.pdf",
+              "papers/paper1_genai_immigrants/paper1_manuscript.tex",
+              "papers/paper2_intermarriage_comment/paper2_manuscript.pdf",
+              "papers/paper2_intermarriage_comment/paper2_manuscript.tex",
+              "papers/paper3_enclaves_wfh/paper3_manuscript.pdf",
+              "papers/paper3_enclaves_wfh/paper3_manuscript.tex",
+              "review/peer_review.md",
+              "review/response_to_referee.md",
+          ]
+          missing = [p for p in required if not Path(p).is_file()]
+          assert not missing, f"Missing required deliverables: {missing}"
+          print(f"Verified all {len(required)} required economics deliverables.")
+          PY

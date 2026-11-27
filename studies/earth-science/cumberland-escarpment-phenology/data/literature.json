@@ -1,0 +1,26 @@
+{
+ "novelty_verdict": {
+  "hopkins_satellite_test": "DONE BEFORE (general). Jiang et al. 2022 tested Hopkins with satellite phenology along an altitudinal gradient in SW China; Richardson 2019 used PhenoCam. Our novelty rests on the single-escarpment scale + thermal-belt twist + AlphaEarth angle, NOT on 'testing Hopkins from satellite' per se.",
+  "coldair_drainage_phenology_from_satellite": "APPEARS NOVEL (strongest claim). Cold-air pooling's effect on forest COMPOSITION is documented (Kemppinen et al.), and cold-air pools are detectable in satellite LST, but no paper maps a thermal-belt inversion in satellite-derived spring GREEN-UP timing.",
+  "alphaearth_unsupervised_forest_gradient": "PARTIALLY DONE. AlphaEarth clustering exists (urban/wetland); embeddings shown to encode elevation/temperature (R2~0.97). But unsupervised recovery of a xeric-ridge->mesic-cove forest-community moisture gradient looks novel."
+ },
+ "comparison_numbers": {
+  "jiang_2022_china": "growing-SEASON-LENGTH shortens 15.2-25 days per km elevation (not SOS; not apples-to-apples with our 4.3 d/100m SOS lapse)",
+  "our_sos_lapse_d_per_1000m": 43,
+  "fu_2018_EPS": "elevation-phenology-shift weakened ~34 d/1000m (1960s) -> ~22 d/1000m (now) under differential warming; our ~43 d/1000m is on the HIGH end and the literature predicts it should be weakening",
+  "kemppinen_coldair_inversion": "0.5-1.7 C per 100 m inversion strength, up to 16.2 C across a transect (New England, ground iButtons) -> magnitude to compare our MODIS night-LST result against",
+  "lei_smokies_cove_ridge": "14-18 day leaf-out difference between xeric ridge and mesic cove (ground) -> validates our aspect/moisture-gradient phenology twist"
+ },
+ "references": [
+  {"authors": "Jiang, S. et al.", "year": 2022, "title": "Effect of altitudinal climate change on growing season length for deciduous broadleaved forest in SW China", "venue": "Science of the Total Environment 828", "relation": "PREDATES/OVERLAPS: satellite test of Hopkins on an elevation gradient (season-length metric)"},
+  {"authors": "Richardson, A.D. et al.", "year": 2019, "title": "Testing Hopkins' Bioclimatic Law with PhenoCam data", "venue": "Applications in Plant Sciences (PMC6426166)", "relation": "PREDATES: ground-camera (not satellite) test; supports spring green-up"},
+  {"authors": "Tourville, J. et al.", "year": 2024, "title": "Distinct latitudinal patterns of shifting spring phenology across the Appalachian Trail Corridor", "venue": "Ecology", "relation": "Regional ground/citizen-science Hopkins context; ~5-10 days/C sensitivity"},
+  {"authors": "Kemppinen, J. et al.", "year": 2024, "title": "Frequent and strong cold-air pooling drives temperate forest composition", "venue": "(PMC10985370)", "relation": "VALIDATION-SUPPORT for cold-air magnitude: inversions 0.5-1.7 C/100m; composition not phenology"},
+  {"authors": "Harnik, P. et al.", "year": null, "title": "Spring and autumn phenological variability across environmental gradients of Great Smoky Mountains NP", "venue": "USFS Treesearch 54132", "relation": "CLOSEST ANALOG: MODIS NDVI across elevation/moisture/TPI in S. Appalachians; elevation dominates; no day/elev rate, no cold-air -> gaps we fill"},
+  {"authors": "Lei, T. et al.", "year": null, "title": "Leaf phenology in relation to canopy closure in southern Appalachian trees", "venue": "Smithsonian repository", "relation": "VALIDATION: 14-18 day xeric-ridge vs mesic-cove leaf-out difference (ground)"},
+  {"authors": "Brown, C. et al.", "year": 2025, "title": "AlphaEarth Foundations: an embedding field model for global mapping from sparse labels", "venue": "arXiv:2507.22291", "relation": "The dataset paper; clustering/typology discovery (general)"},
+  {"authors": "(interpretability)", "year": 2025, "title": "Physically Interpretable AlphaEarth Embeddings Enable LLM-Based Land Surface Intelligence", "venue": "arXiv:2602.10354", "relation": "Embedding dims encode elevation/temperature R2~0.97 -> supports why our clusters track the topo-moisture gradient"},
+  {"authors": "Abdelrahim, N.A.M. et al.", "year": 2025, "title": "A Self-Supervised Seasonal Anomaly Embedding ViT for Label-Free Drought Mapping in the Horn of Africa", "venue": "Earth & Space Science 12", "relation": "METHOD ANALOG: embeddings + unsupervised k-means recover real environmental regimes (different domain)"},
+  {"authors": "Fu, Y. et al.", "year": 2018, "title": "Global warming leads to more uniform spring phenology across elevations", "venue": "PNAS", "relation": "CONTEXT/CAVEAT: elevation-phenology-shift weakening 34->22 d/1000m; predicts our lapse should be bending (our 23-40 yr window underpowered to see it)"}
+ ]
+}

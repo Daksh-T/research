@@ -1,0 +1,38 @@
+\begin{table}[t!]
+\centering
+\caption{Inter-MSA Mover Destinations (\texttt{MIGMET131}, 2015--2024) with Webb 6-Point Wild Cluster Bootstrap $p$-Values}
+\label{tab:enclave_arbitrage}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{3}{c}{$\text{Teleworkable} \times \text{Post}$} & \multicolumn{3}{c}{Realized $\text{WFH} \times \text{Post}$} & \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Destination Outcome ($\text{Dest} - \text{Orig}$) & Coef. & (SE) & [$p_{\text{WCB}}$] & Coef. & (SE) & [$p_{\text{WCB}}$] & $N$ \\
+\midrule
+\multicolumn{8}{l}{\textit{Panel A: All Inter-MSA Co-Ethnic Native Movers ($G = 259$--$266$ Origin MSAs)}} \\
+$\Delta \ln(\text{ZORI Rent})$ & +0.0084 & (0.0053) & [0.128] & +0.0297*** & (0.0104) & [0.005] & 94,921 \\
+$\Delta \ln(\text{Co-Ethnic Share})$ & -0.0106 & (0.0114) & [0.358] & +0.0362* & (0.0185) & [0.067] & 99,074 \\
+$P(\text{Sunbelt Hub})$ & -0.0086 & (0.0077) & [0.273] & -0.0094 & (0.0137) & [0.503] & 99,074 \\
+$P(\text{Enclave Arbitrage})$ & +0.0066 & (0.0040) & [0.102] & +0.0100 & (0.0072) & [0.172] & 99,074 \\
+$P(\text{Enclave Abandonment})$ & -0.0093 & (0.0063) & [0.150] & -0.0202 & (0.0126) & [0.126] & 99,074 \\
+\midrule
+\multicolumn{8}{l}{\textit{Panel B: Movers Exiting Top-8 High-Cost Gateway MSAs ($G = 8$ Origin Clusters)}} \\
+$\Delta \ln(\text{ZORI Rent})$ & -0.0047 & (0.0117) & [0.762] & +0.0230 & (0.0196) & [0.330] & 23,761 \\
+$\Delta \text{Co-Ethnic Share}$ (pp) & -0.0257 & (0.1620) & [0.889] & +0.2224* & (0.0991) & [0.054] & 24,129 \\
+$\Delta \ln(\text{Co-Ethnic Share})$ & -0.0230 & (0.0266) & [0.402] & +0.0716* & (0.0349) & [0.072] & 24,129 \\
+$P(\text{Sunbelt Hub})$ & -0.0097 & (0.0165) & [0.574] & -0.0406 & (0.0263) & [0.174] & 24,129 \\
+$P(\text{Enclave Arbitrage})$ & +0.0057 & (0.0075) & [0.430] & +0.0088 & (0.0105) & [0.405] & 24,129 \\
+$P(\text{Enclave Abandonment})$ & -0.0117 & (0.0091) & [0.241] & -0.0333 & (0.0259) & [0.280] & 24,129 \\
+\midrule
+\multicolumn{8}{l}{\textit{Panel C: High-Enclave Gateway Exits (Origin Co-Ethnic Share $\ge 1.0$ pp; $G = 8$ Clusters)}} \\
+$\Delta \text{Co-Ethnic Share}$ (pp) & +0.1719 & (0.5910) & [0.855] & +1.2517 & (0.7336) & [0.084] & 5,181 \\
+$P(\text{Sunbelt Hub})$ & +0.0293 & (0.0276) & [0.301] & -0.0041 & (0.0572) & [0.944] & 5,181 \\
+$P(\text{Enclave Arbitrage})$ & -0.0153 & (0.0335) & [0.725] & -0.0225 & (0.0406) & [0.620] & 5,181 \\
+$P(\text{Enclave Abandonment})$ & +0.0123 & (0.0205) & [0.708] & -0.0494* & (0.0221) & [0.102] & 5,181 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.98\linewidth}
+\footnotesize\textit{Notes:} Inter-MSA native co-ethnic movers (\texttt{MIGMET131} $\ne$ \texttt{MET2013}, 2015--2024), controlling for Eth$\times$Yr and Origin-MSA FEs, age, education, and sex, weighted by \texttt{PERWT}. Standard errors clustered by Origin MSA; brackets report two-sided restricted wild cluster bootstrap $p$-values using Webb (2023) 6-point weights ($9{,}999$ draws; Cameron, Gelbach, and Miller 2008). Stars reflect asymptotic clustered $p$-values ($^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$). Under Webb WCB, high-enclave gateway abandonment ($-0.0494$) rises to $p_{\text{WCB}} = 0.102$, and both Sunbelt and enclave-arbitrage estimates are negative or null.
+\end{minipage}
+\end{table}

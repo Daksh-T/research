@@ -1,0 +1,796 @@
+{
+  "experiment": "P4_25yr_weather_panel",
+  "elapsed_s": 3.1,
+  "weather_thresholds": {
+    "oct_calm_night_thresh_ms": 1.483,
+    "oct_windy_night_thresh_ms": 2.116
+  },
+  "weather_cov_corr": {
+    "CalmOctFreeze": {
+      "CalmOctFreeze": 1.0,
+      "WindyOctCold": 0.391,
+      "AprLateFrost": 0.228,
+      "MarAprPrecip": 0.188
+    },
+    "WindyOctCold": {
+      "CalmOctFreeze": 0.391,
+      "WindyOctCold": 1.0,
+      "AprLateFrost": -0.285,
+      "MarAprPrecip": 0.129
+    },
+    "AprLateFrost": {
+      "CalmOctFreeze": 0.228,
+      "WindyOctCold": -0.285,
+      "AprLateFrost": 1.0,
+      "MarAprPrecip": 0.179
+    },
+    "MarAprPrecip": {
+      "CalmOctFreeze": 0.188,
+      "WindyOctCold": 0.129,
+      "AprLateFrost": 0.179,
+      "MarAprPrecip": 1.0
+    }
+  },
+  "panel_results": {
+    "qc80": {
+      "closed_cove_years": 100,
+      "open_cove_years": 73,
+      "closed_mean_dEOS": -6.804,
+      "open_mean_dEOS": -0.782,
+      "closed_mean_dSOS": -3.851,
+      "open_mean_dSOS": -10.109,
+      "fe_eos_closed": {
+        "n": 100,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0452,
+        "adj_r2": 0.0255,
+        "rmse": 6.478,
+        "coefs": {
+          "CalmOctFreeze_z": {
+            "beta": 1.1803,
+            "se": 0.5266,
+            "t": 2.241,
+            "p": 0.03451
+          },
+          "WindyOctCold_z": {
+            "beta": 0.1648,
+            "se": 0.6201,
+            "t": 0.266,
+            "p": 0.7927
+          },
+          "MarAprPrecip_z": {
+            "beta": 0.5027,
+            "se": 0.686,
+            "t": 0.733,
+            "p": 0.4708
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_eos_open": {
+        "n": 73,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0639,
+        "adj_r2": 0.0371,
+        "rmse": 3.8044,
+        "coefs": {
+          "CalmOctFreeze_z": {
+            "beta": -0.1023,
+            "se": 0.5524,
+            "t": -0.185,
+            "p": 0.8547
+          },
+          "WindyOctCold_z": {
+            "beta": 0.8558,
+            "se": 0.6604,
+            "t": 1.296,
+            "p": 0.2073
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.6789,
+            "se": 0.5613,
+            "t": -1.21,
+            "p": 0.2382
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "fe_eos_closed_threshold_model": {
+        "n": 100,
+        "k": 3,
+        "df": 24,
+        "r2": 0.041,
+        "adj_r2": 0.0212,
+        "rmse": 6.4922,
+        "coefs": {
+          "CalmCapOnlyNights_z": {
+            "beta": -0.098,
+            "se": 0.5242,
+            "t": -0.187,
+            "p": 0.8533
+          },
+          "HardRegionalFreezeNights_z": {
+            "beta": 1.8515,
+            "se": 0.7006,
+            "t": 2.643,
+            "p": 0.01426
+          },
+          "WindyOctCold_z": {
+            "beta": -0.7209,
+            "se": 0.8175,
+            "t": -0.882,
+            "p": 0.3866
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_eos_open_threshold_model": {
+        "n": 73,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0418,
+        "adj_r2": 0.0144,
+        "rmse": 3.8491,
+        "coefs": {
+          "CalmCapOnlyNights_z": {
+            "beta": 0.0566,
+            "se": 0.5625,
+            "t": 0.101,
+            "p": 0.9207
+          },
+          "HardRegionalFreezeNights_z": {
+            "beta": 0.5531,
+            "se": 0.5213,
+            "t": 1.061,
+            "p": 0.2992
+          },
+          "WindyOctCold_z": {
+            "beta": 0.3016,
+            "se": 0.7018,
+            "t": 0.43,
+            "p": 0.6712
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "wald_calm_vs_windy_closed": {
+        "beta_calm_minus_windy": 1.0155,
+        "se": 0.8373,
+        "t": 1.213,
+        "p": 0.237
+      },
+      "fe_sos_closed": {
+        "n": 100,
+        "k": 2,
+        "df": 24,
+        "r2": 0.024,
+        "adj_r2": 0.014,
+        "rmse": 6.9827,
+        "coefs": {
+          "AprLateFrost_z": {
+            "beta": -1.0597,
+            "se": 0.6984,
+            "t": -1.517,
+            "p": 0.1422
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.2111,
+            "se": 0.5556,
+            "t": -0.38,
+            "p": 0.7074
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_sos_open": {
+        "n": 73,
+        "k": 2,
+        "df": 24,
+        "r2": 0.0035,
+        "adj_r2": -0.0105,
+        "rmse": 9.2962,
+        "coefs": {
+          "AprLateFrost_z": {
+            "beta": -0.1911,
+            "se": 0.8726,
+            "t": -0.219,
+            "p": 0.8285
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.4927,
+            "se": 0.9994,
+            "t": -0.493,
+            "p": 0.6265
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "annual_closed_corr": {
+        "n_yrs": 25,
+        "r_CalmOctFreeze_dEOS": 0.38,
+        "r2_CalmOctFreeze_dEOS": 0.145,
+        "p_CalmOctFreeze": 0.0608,
+        "r_WindyOctCold_dEOS": 0.196,
+        "p_WindyOctCold": 0.3472,
+        "r_OctNightWspd_dEOS": 0.074,
+        "p_OctNightWspd": 0.7234,
+        "r_AprLateFrost_dSOS": -0.397,
+        "p_AprLateFrost": 0.04944,
+        "r_MarAprPrecip_dSOS": -0.145,
+        "p_MarAprPrecip": 0.4891
+      },
+      "annual_DiD_closed_minus_open_corr": {
+        "n_yrs": 25,
+        "mean_DiD_dEOS": -6.016,
+        "r_CalmOctFreeze_DiD_dEOS": 0.26,
+        "r2_CalmOctFreeze_DiD_dEOS": 0.068,
+        "p_Calm": 0.2087,
+        "r_WindyOctCold_DiD_dEOS": -0.008,
+        "p_Windy": 0.9683,
+        "r_OctNightWspd_DiD_dEOS": 0.206,
+        "p_OctNightWspd": 0.3234
+      }
+    },
+    "qc85": {
+      "closed_cove_years": 100,
+      "open_cove_years": 73,
+      "closed_mean_dEOS": -6.804,
+      "open_mean_dEOS": -0.782,
+      "closed_mean_dSOS": -3.851,
+      "open_mean_dSOS": -10.109,
+      "fe_eos_closed": {
+        "n": 100,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0452,
+        "adj_r2": 0.0255,
+        "rmse": 6.478,
+        "coefs": {
+          "CalmOctFreeze_z": {
+            "beta": 1.1803,
+            "se": 0.5266,
+            "t": 2.241,
+            "p": 0.03451
+          },
+          "WindyOctCold_z": {
+            "beta": 0.1648,
+            "se": 0.6201,
+            "t": 0.266,
+            "p": 0.7927
+          },
+          "MarAprPrecip_z": {
+            "beta": 0.5027,
+            "se": 0.686,
+            "t": 0.733,
+            "p": 0.4708
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_eos_open": {
+        "n": 73,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0639,
+        "adj_r2": 0.0371,
+        "rmse": 3.8044,
+        "coefs": {
+          "CalmOctFreeze_z": {
+            "beta": -0.1023,
+            "se": 0.5524,
+            "t": -0.185,
+            "p": 0.8547
+          },
+          "WindyOctCold_z": {
+            "beta": 0.8558,
+            "se": 0.6604,
+            "t": 1.296,
+            "p": 0.2073
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.6789,
+            "se": 0.5613,
+            "t": -1.21,
+            "p": 0.2382
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "fe_eos_closed_threshold_model": {
+        "n": 100,
+        "k": 3,
+        "df": 24,
+        "r2": 0.041,
+        "adj_r2": 0.0212,
+        "rmse": 6.4922,
+        "coefs": {
+          "CalmCapOnlyNights_z": {
+            "beta": -0.098,
+            "se": 0.5242,
+            "t": -0.187,
+            "p": 0.8533
+          },
+          "HardRegionalFreezeNights_z": {
+            "beta": 1.8515,
+            "se": 0.7006,
+            "t": 2.643,
+            "p": 0.01426
+          },
+          "WindyOctCold_z": {
+            "beta": -0.7209,
+            "se": 0.8175,
+            "t": -0.882,
+            "p": 0.3866
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_eos_open_threshold_model": {
+        "n": 73,
+        "k": 3,
+        "df": 24,
+        "r2": 0.0418,
+        "adj_r2": 0.0144,
+        "rmse": 3.8491,
+        "coefs": {
+          "CalmCapOnlyNights_z": {
+            "beta": 0.0566,
+            "se": 0.5625,
+            "t": 0.101,
+            "p": 0.9207
+          },
+          "HardRegionalFreezeNights_z": {
+            "beta": 0.5531,
+            "se": 0.5213,
+            "t": 1.061,
+            "p": 0.2992
+          },
+          "WindyOctCold_z": {
+            "beta": 0.3016,
+            "se": 0.7018,
+            "t": 0.43,
+            "p": 0.6712
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "wald_calm_vs_windy_closed": {
+        "beta_calm_minus_windy": 1.0155,
+        "se": 0.8373,
+        "t": 1.213,
+        "p": 0.237
+      },
+      "fe_sos_closed": {
+        "n": 100,
+        "k": 2,
+        "df": 24,
+        "r2": 0.024,
+        "adj_r2": 0.014,
+        "rmse": 6.9827,
+        "coefs": {
+          "AprLateFrost_z": {
+            "beta": -1.0597,
+            "se": 0.6984,
+            "t": -1.517,
+            "p": 0.1422
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.2111,
+            "se": 0.5556,
+            "t": -0.38,
+            "p": 0.7074
+          }
+        },
+        "n_years": 25,
+        "n_coves": 4
+      },
+      "fe_sos_open": {
+        "n": 73,
+        "k": 2,
+        "df": 24,
+        "r2": 0.0035,
+        "adj_r2": -0.0105,
+        "rmse": 9.2962,
+        "coefs": {
+          "AprLateFrost_z": {
+            "beta": -0.1911,
+            "se": 0.8726,
+            "t": -0.219,
+            "p": 0.8285
+          },
+          "MarAprPrecip_z": {
+            "beta": -0.4927,
+            "se": 0.9994,
+            "t": -0.493,
+            "p": 0.6265
+          }
+        },
+        "n_years": 25,
+        "n_coves": 3
+      },
+      "annual_closed_corr": {
+        "n_yrs": 25,
+        "r_CalmOctFreeze_dEOS": 0.38,
+        "r2_CalmOctFreeze_dEOS": 0.145,
+        "p_CalmOctFreeze": 0.0608,
+        "r_WindyOctCold_dEOS": 0.196,
+        "p_WindyOctCold": 0.3472,
+        "r_OctNightWspd_dEOS": 0.074,
+        "p_OctNightWspd": 0.7234,
+        "r_AprLateFrost_dSOS": -0.397,
+        "p_AprLateFrost": 0.04944,
+        "r_MarAprPrecip_dSOS": -0.145,
+        "p_MarAprPrecip": 0.4891
+      },
+      "annual_DiD_closed_minus_open_corr": {
+        "n_yrs": 25,
+        "mean_DiD_dEOS": -6.016,
+        "r_CalmOctFreeze_DiD_dEOS": 0.26,
+        "r2_CalmOctFreeze_DiD_dEOS": 0.068,
+        "p_Calm": 0.2087,
+        "r_WindyOctCold_DiD_dEOS": -0.008,
+        "p_Windy": 0.9683,
+        "r_OctNightWspd_DiD_dEOS": 0.206,
+        "p_OctNightWspd": 0.3234
+      }
+    }
+  },
+  "lost_minus_openn_25yr": {
+    "n_years": 25,
+    "mean_dSOS": 1.616,
+    "mean_dEOS": -2.217,
+    "mean_dGSL": -3.833,
+    "frac_yrs_dSOS_gt0": 0.88,
+    "frac_yrs_dEOS_lt0": 0.8,
+    "r_OctNightWspd_dEOS": 0.374,
+    "p_OctNightWspd": 0.06541,
+    "r_OctDailyWspd_dEOS": 0.443,
+    "p_OctDailyWspd": 0.02659,
+    "cross_sensor_2018_2024_vs_HLS": {
+      "n_yrs": 7,
+      "r_landsat_vs_hls_dSOS": -0.041,
+      "p_dSOS": 0.9313,
+      "r_landsat_vs_hls_dEOS": 0.961,
+      "p_dEOS": 0.0005614
+    },
+    "eos_ols": {
+      "n": 25,
+      "k": 4,
+      "df": 21,
+      "r2": 0.0595,
+      "adj_r2": -0.0748,
+      "rmse": 6.1329,
+      "coefs": {
+        "intercept": {
+          "beta": -2.2169,
+          "se": 1.3383,
+          "t": -1.656,
+          "p": 0.1125
+        },
+        "CalmOctFreeze_z": {
+          "beta": -0.8127,
+          "se": 0.7501,
+          "t": -1.083,
+          "p": 0.2909
+        },
+        "WindyOctCold_z": {
+          "beta": -0.0286,
+          "se": 1.0963,
+          "t": -0.026,
+          "p": 0.9794
+        },
+        "MarAprPrecip_z": {
+          "beta": -1.1945,
+          "se": 1.4087,
+          "t": -0.848,
+          "p": 0.406
+        }
+      }
+    },
+    "sos_ols": {
+      "n": 25,
+      "k": 3,
+      "df": 22,
+      "r2": 0.1248,
+      "adj_r2": 0.0452,
+      "rmse": 6.6535,
+      "coefs": {
+        "intercept": {
+          "beta": 1.616,
+          "se": 1.4185,
+          "t": 1.139,
+          "p": 0.2669
+        },
+        "AprLateFrost_z": {
+          "beta": -1.526,
+          "se": 2.247,
+          "t": -0.679,
+          "p": 0.5041
+        },
+        "MarAprPrecip_z": {
+          "beta": -1.8047,
+          "se": 1.6467,
+          "t": -1.096,
+          "p": 0.285
+        }
+      }
+    },
+    "by_year": [
+      {
+        "yr": 2000,
+        "dSOS_lost_minus_openn": 0.04,
+        "dEOS_lost_minus_openn": -2.53,
+        "CalmOctFreeze": 0.6,
+        "WindyOctCold": 17.8,
+        "OctNightWspd": 1.75,
+        "AprLateFrost": 1.99,
+        "MarAprPrecip": 353.7
+      },
+      {
+        "yr": 2001,
+        "dSOS_lost_minus_openn": 3.41,
+        "dEOS_lost_minus_openn": -0.63,
+        "CalmOctFreeze": 5.6,
+        "WindyOctCold": 8.4,
+        "OctNightWspd": 2.09,
+        "AprLateFrost": 9.9,
+        "MarAprPrecip": 227.0
+      },
+      {
+        "yr": 2002,
+        "dSOS_lost_minus_openn": 4.26,
+        "dEOS_lost_minus_openn": -6.25,
+        "CalmOctFreeze": 2.2,
+        "WindyOctCold": 0.0,
+        "OctNightWspd": 1.77,
+        "AprLateFrost": 16.7,
+        "MarAprPrecip": 296.4
+      },
+      {
+        "yr": 2003,
+        "dSOS_lost_minus_openn": 8.06,
+        "dEOS_lost_minus_openn": -6.07,
+        "CalmOctFreeze": 2.8,
+        "WindyOctCold": 0.0,
+        "OctNightWspd": 1.71,
+        "AprLateFrost": 6.9,
+        "MarAprPrecip": 153.8
+      },
+      {
+        "yr": 2004,
+        "dSOS_lost_minus_openn": 1.25,
+        "dEOS_lost_minus_openn": -5.83,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 0.6,
+        "OctNightWspd": 1.79,
+        "AprLateFrost": 5.8,
+        "MarAprPrecip": 253.5
+      },
+      {
+        "yr": 2005,
+        "dSOS_lost_minus_openn": 3.5,
+        "dEOS_lost_minus_openn": -2.41,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 6.1,
+        "OctNightWspd": 1.93,
+        "AprLateFrost": 0.0,
+        "MarAprPrecip": 218.4
+      },
+      {
+        "yr": 2006,
+        "dSOS_lost_minus_openn": 2.77,
+        "dEOS_lost_minus_openn": -4.84,
+        "CalmOctFreeze": 9.4,
+        "WindyOctCold": 4.5,
+        "OctNightWspd": 2.03,
+        "AprLateFrost": 4.7,
+        "MarAprPrecip": 211.7
+      },
+      {
+        "yr": 2007,
+        "dSOS_lost_minus_openn": 7.77,
+        "dEOS_lost_minus_openn": 23.63,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 1.1,
+        "OctNightWspd": 1.92,
+        "AprLateFrost": 12.3,
+        "MarAprPrecip": 181.0
+      },
+      {
+        "yr": 2008,
+        "dSOS_lost_minus_openn": 2.4,
+        "dEOS_lost_minus_openn": -0.58,
+        "CalmOctFreeze": 3.9,
+        "WindyOctCold": 7.8,
+        "OctNightWspd": 1.76,
+        "AprLateFrost": 12.4,
+        "MarAprPrecip": 291.0
+      },
+      {
+        "yr": 2009,
+        "dSOS_lost_minus_openn": 1.44,
+        "dEOS_lost_minus_openn": -1.29,
+        "CalmOctFreeze": 6.6,
+        "WindyOctCold": 7.3,
+        "OctNightWspd": 1.94,
+        "AprLateFrost": 3.0,
+        "MarAprPrecip": 291.8
+      },
+      {
+        "yr": 2010,
+        "dSOS_lost_minus_openn": -0.49,
+        "dEOS_lost_minus_openn": 0.07,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 3.3,
+        "OctNightWspd": 1.8,
+        "AprLateFrost": 1.9,
+        "MarAprPrecip": 233.0
+      },
+      {
+        "yr": 2011,
+        "dSOS_lost_minus_openn": 3.8,
+        "dEOS_lost_minus_openn": -10.64,
+        "CalmOctFreeze": 6.7,
+        "WindyOctCold": 8.4,
+        "OctNightWspd": 1.7,
+        "AprLateFrost": 11.4,
+        "MarAprPrecip": 520.6
+      },
+      {
+        "yr": 2012,
+        "dSOS_lost_minus_openn": 1.18,
+        "dEOS_lost_minus_openn": -6.64,
+        "CalmOctFreeze": 1.7,
+        "WindyOctCold": 10.6,
+        "OctNightWspd": 1.9,
+        "AprLateFrost": 0.0,
+        "MarAprPrecip": 104.6
+      },
+      {
+        "yr": 2013,
+        "dSOS_lost_minus_openn": -30.84,
+        "dEOS_lost_minus_openn": -5.06,
+        "CalmOctFreeze": 8.9,
+        "WindyOctCold": 3.3,
+        "OctNightWspd": 1.68,
+        "AprLateFrost": 15.4,
+        "MarAprPrecip": 467.3
+      },
+      {
+        "yr": 2014,
+        "dSOS_lost_minus_openn": 6.15,
+        "dEOS_lost_minus_openn": -4.74,
+        "CalmOctFreeze": 1.7,
+        "WindyOctCold": 6.7,
+        "OctNightWspd": 1.89,
+        "AprLateFrost": 7.3,
+        "MarAprPrecip": 307.5
+      },
+      {
+        "yr": 2015,
+        "dSOS_lost_minus_openn": -0.97,
+        "dEOS_lost_minus_openn": 4.53,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 0.0,
+        "OctNightWspd": 1.9,
+        "AprLateFrost": 6.9,
+        "MarAprPrecip": 357.3
+      },
+      {
+        "yr": 2016,
+        "dSOS_lost_minus_openn": 0.79,
+        "dEOS_lost_minus_openn": -2.53,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 1.7,
+        "OctNightWspd": 1.81,
+        "AprLateFrost": 1.3,
+        "MarAprPrecip": 163.5
+      },
+      {
+        "yr": 2017,
+        "dSOS_lost_minus_openn": 1.51,
+        "dEOS_lost_minus_openn": 2.74,
+        "CalmOctFreeze": 6.7,
+        "WindyOctCold": 16.1,
+        "OctNightWspd": 1.96,
+        "AprLateFrost": 0.0,
+        "MarAprPrecip": 485.8
+      },
+      {
+        "yr": 2018,
+        "dSOS_lost_minus_openn": 9.73,
+        "dEOS_lost_minus_openn": 0.84,
+        "CalmOctFreeze": 3.3,
+        "WindyOctCold": 4.0,
+        "OctNightWspd": 1.92,
+        "AprLateFrost": 4.7,
+        "MarAprPrecip": 323.8
+      },
+      {
+        "yr": 2019,
+        "dSOS_lost_minus_openn": 2.55,
+        "dEOS_lost_minus_openn": -3.99,
+        "CalmOctFreeze": 1.1,
+        "WindyOctCold": 11.1,
+        "OctNightWspd": 1.82,
+        "AprLateFrost": 5.5,
+        "MarAprPrecip": 413.6
+      },
+      {
+        "yr": 2020,
+        "dSOS_lost_minus_openn": 4.32,
+        "dEOS_lost_minus_openn": -5.13,
+        "CalmOctFreeze": 2.2,
+        "WindyOctCold": 0.0,
+        "OctNightWspd": 1.84,
+        "AprLateFrost": 3.9,
+        "MarAprPrecip": 549.2
+      },
+      {
+        "yr": 2021,
+        "dSOS_lost_minus_openn": 2.59,
+        "dEOS_lost_minus_openn": -2.18,
+        "CalmOctFreeze": 0.0,
+        "WindyOctCold": 0.0,
+        "OctNightWspd": 1.64,
+        "AprLateFrost": 9.8,
+        "MarAprPrecip": 395.8
+      },
+      {
+        "yr": 2022,
+        "dSOS_lost_minus_openn": 1.14,
+        "dEOS_lost_minus_openn": -2.22,
+        "CalmOctFreeze": 13.9,
+        "WindyOctCold": 16.3,
+        "OctNightWspd": 2.0,
+        "AprLateFrost": 7.7,
+        "MarAprPrecip": 276.3
+      },
+      {
+        "yr": 2023,
+        "dSOS_lost_minus_openn": 1.62,
+        "dEOS_lost_minus_openn": -2.95,
+        "CalmOctFreeze": 1.1,
+        "WindyOctCold": 12.2,
+        "OctNightWspd": 1.86,
+        "AprLateFrost": 6.5,
+        "MarAprPrecip": 313.2
+      },
+      {
+        "yr": 2024,
+        "dSOS_lost_minus_openn": 2.45,
+        "dEOS_lost_minus_openn": -10.73,
+        "CalmOctFreeze": 1.2,
+        "WindyOctCold": 3.9,
+        "OctNightWspd": 1.63,
+        "AprLateFrost": 0.8,
+        "MarAprPrecip": 343.0
+      }
+    ]
+  },
+  "gate_check": {
+    "beta_CalmOctFreeze_z": 1.1803,
+    "p_CalmOctFreeze_z": 0.03451,
+    "beta_WindyOctCold_z": 0.1648,
+    "t_WindyOctCold_z": 0.266,
+    "r2_CalmOctFreeze_annual_closed_dEOS": 0.145,
+    "beta_MarAprPrecip_on_dSOS": -0.2111,
+    "p_MarAprPrecip_on_dSOS": 0.7074,
+    "lost_openn_25yr_mean_dSOS": 1.616,
+    "lost_openn_25yr_mean_dEOS": -2.217,
+    "lost_openn_25yr_frac_dEOS_lt0": 0.8,
+    "verdict": "FAIL_STATIC_OR_NOISY"
+  }
+}

@@ -1,0 +1,33 @@
+id: "<discipline>/<study-slug>"
+slug: "<study-slug>"
+discipline: "<discipline>"
+type: "single-paper" # or "study-family"
+title: "<Study Title>"
+authors:
+  - name: "Daksh Tyagi"
+    role: "Author / Research Director"
+provenance:
+  directed_by: "Daksh Tyagi"
+  executed_by: "<model / agent swarm>"
+  peer_review:
+    - "Independent adversarial code and manuscript audit (see review/)"
+date: "YYYY-MM"
+status: "working-paper"
+license:
+  code: "MIT"
+  content: "CC-BY-4.0"
+repository_path: "studies/<discipline>/<study-slug>"
+tags: []
+data_availability: "open-summary-with-fetch-scripts"
+review_files:
+  - "review/peer_review.md"
+papers:
+  - id: "<paper-slug>"
+    title: "<Paper Title>"
+    pdf: "paper/main.pdf"
+    source: "paper/main.tex"
+    abstract: >-
+      <Paper abstract>
+    keywords: []
+    key_findings: []
+    doi: null

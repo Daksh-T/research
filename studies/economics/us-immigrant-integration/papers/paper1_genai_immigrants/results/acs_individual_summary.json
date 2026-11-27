@@ -1,0 +1,9 @@
+{
+  "n_workers_2021_2024": 3840043,
+  "n_workers_2015_2024": 6546097,
+  "max_abs_diff_b_noneng": 0.00024601730740167493,
+  "max_abs_diff_se_noneng": 8.388853144622281e-05,
+  "max_abs_diff_b_eng": 0.00011974812910654602,
+  "max_abs_diff_ddd": 0.00034849221333160384,
+  "all_twoway_clustered": true
+}

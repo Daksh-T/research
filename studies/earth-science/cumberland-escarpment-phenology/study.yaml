@@ -1,0 +1,62 @@
+id: "earth-science/cumberland-escarpment-phenology"
+slug: "cumberland-escarpment-phenology"
+discipline: "earth-science"
+type: "single-paper"
+title: "Where Hopkins' 1918 Bioclimatic Law Bends: Closed-Karst Cold-Air Pooling and Plateau-Cap Phenology on the Southern Cumberland Escarpment"
+authors:
+  - name: "Daksh Tyagi"
+    role: "Author / Research Director"
+provenance:
+  directed_by: "Daksh Tyagi"
+  executed_by: "Gemini 4 Neon agent swarm"
+  peer_review:
+    - "Independent adversarial code and manuscript audit (review/peer_review.md)"
+date: "2026-11"
+status: "working-paper"
+license:
+  code: "MIT"
+  content: "CC-BY-4.0"
+repository_path: "studies/earth-science/cumberland-escarpment-phenology"
+tags:
+  - forest-phenology
+  - hopkins-bioclimatic-law
+  - cold-air-pooling
+  - karst-geomorphology
+  - ecostress
+  - sentinel-2
+  - google-earth-engine
+data_availability: "derived-summaries-included-raw-via-gee-and-appeears"
+review_files:
+  - "review/peer_review.md"
+notebooks:
+  - "Escarpment_Hopkins_Karst_v2.ipynb"
+papers:
+  - id: "cumberland-escarpment-phenology"
+    title: "Where Hopkins' 1918 Bioclimatic Law Bends: Closed-Karst Cold-Air Pooling and Plateau-Cap Phenology on the Southern Cumberland Escarpment"
+    pdf: "paper/main.pdf"
+    source: "paper/main.tex"
+    abstract: >-
+      Hopkins' 1918 bioclimatic law predicts that deciduous spring green-up lags
+      smoothly with elevation at 3.28 days per 100 meters. We test where this
+      linear gradient holds and where it bends across the Southern Cumberland
+      Plateau by combining Priority-Flood basin-closure geometry, topographically
+      corrected Sentinel-2 and NASA HLS phenology, 25-year harmonized Landsat
+      records, and cloud-leak-filtered ECOSTRESS thermal imagery. Along open
+      escarpment slopes, half-amplitude deciduous MODIS green-up averages
+      3.19 days per 100 meters, while 11 forested closed-karst blind valleys
+      matched with open-drainage gorges compress the growing season by 9.1 days
+      after adjusting for pair relief imbalance, and flat sandstone benches lag
+      steep rims by 2.6 days on unharvested stands.
+    keywords:
+      - forest phenology
+      - Hopkins' bioclimatic law
+      - cold-air pooling
+      - karst geomorphology
+      - ECOSTRESS
+      - Sentinel-2
+    key_findings:
+      - "Open-slope half-amplitude MODIS deciduous green-up averages 3.19 days per 100 m, closely matching Hopkins' 3.28 d/100 m law."
+      - "11 forested closed-karst blind valleys compress the growing season by 9.1 days (relief-adjusted) relative to paired open-drainage gorges."
+      - "Cloud-leak-filtered ECOSTRESS passes confirm nocturnal cooling across all seven closed basins in tile 16SED, while worst-case swath Manski bounds span zero."
+      - "Flat sandstone plateau benches lag steep rims by 2.6 days on unharvested stands with no effect from modeled fragipan soils."
+    doi: null

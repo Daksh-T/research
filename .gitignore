@@ -1,0 +1,66 @@
+# Credentials, API keys & local secrets (must never be committed)
+.env
+.env.*
+**/.api_key
+**/*.key
+**/*.pem
+**/secrets.*
+**/.netrc
+
+# Restricted-redistribution microdata & raw extracts
+**/data/ipums/raw/
+**/usa_*.csv.gz
+**/cps_org_clean.parquet
+**/papers/*/results/*.parquet
+
+# Large geospatial caches, rasters & third-party bulk dumps
+**/profiling/cache/
+**/data/ecostress/
+**/data/facts/
+**/data/aux/onet/
+**/data/aux/housing/
+**/data/aux/anthropic_openai_2026/
+**/*.tif
+**/*.tiff
+**/*.laz
+**/*.las
+**/*.hdf
+**/*.h5
+**/*.nc
+
+# Local toolchains, virtual environments & caches
+.venv/
+venv/
+**/.venv/
+**/.latex/
+**/.tools/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# LaTeX / Typst intermediate build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

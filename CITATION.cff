@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Daksh-T/research: Open Reproducible Research Studies"
+message: "If you use code, manuscripts, or derived datasets from this repository, please cite either the specific study's CITATION.bib or this repository."
+type: software
+authors:
+  - family-names: Tyagi
+    given-names: Daksh
+repository-code: "https://github.com/Daksh-T/research"
+abstract: >-
+  Open, reproducible cross-disciplinary research studies directed by Daksh Tyagi
+  and executed with agent swarms, published alongside full analysis pipelines
+  and independent adversarial peer-review records.
+keywords:
+  - open-science
+  - reproducibility
+  - remote-sensing
+  - forest-ecology
+  - labor-economics
+  - urban-economics
+license: MIT
+date-released: "2026-11-25"

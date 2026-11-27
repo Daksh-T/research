@@ -1,0 +1,280 @@
+{
+ "n_years": 38,
+ "years": [
+  1984,
+  1986,
+  1988,
+  1990,
+  1991,
+  1992,
+  1993,
+  1994,
+  1995,
+  1996,
+  1997,
+  1998,
+  1999,
+  2000,
+  2001,
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009,
+  2010,
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024
+ ],
+ "mean_lapse_d_per_100m": 3.458,
+ "spring_trend_days_per_decade": -1.715,
+ "spring_trend_r2": 0.135,
+ "spring_trend_t": -2.37,
+ "lapse_trend_d_per_100m_per_decade": -0.1586,
+ "lapse_trend_r2": 0.006,
+ "lapse_trend_t": -0.46,
+ "per_year": [
+  {
+   "year": 1984,
+   "mean_sos": 119.41,
+   "lapse_d_per_100m": 4.527,
+   "n_bands": 6
+  },
+  {
+   "year": 1986,
+   "mean_sos": 114.54,
+   "lapse_d_per_100m": 2.712,
+   "n_bands": 6
+  },
+  {
+   "year": 1988,
+   "mean_sos": 106.23,
+   "lapse_d_per_100m": 8.802,
+   "n_bands": 6
+  },
+  {
+   "year": 1990,
+   "mean_sos": 109.1,
+   "lapse_d_per_100m": 3.425,
+   "n_bands": 6
+  },
+  {
+   "year": 1991,
+   "mean_sos": 108.72,
+   "lapse_d_per_100m": 0.588,
+   "n_bands": 6
+  },
+  {
+   "year": 1992,
+   "mean_sos": 108.74,
+   "lapse_d_per_100m": 1.297,
+   "n_bands": 6
+  },
+  {
+   "year": 1993,
+   "mean_sos": 121.34,
+   "lapse_d_per_100m": 8.269,
+   "n_bands": 6
+  },
+  {
+   "year": 1994,
+   "mean_sos": 109.88,
+   "lapse_d_per_100m": 5.477,
+   "n_bands": 6
+  },
+  {
+   "year": 1995,
+   "mean_sos": 113.42,
+   "lapse_d_per_100m": 1.831,
+   "n_bands": 6
+  },
+  {
+   "year": 1996,
+   "mean_sos": 111.79,
+   "lapse_d_per_100m": 8.164,
+   "n_bands": 6
+  },
+  {
+   "year": 1997,
+   "mean_sos": 112.49,
+   "lapse_d_per_100m": -2.439,
+   "n_bands": 6
+  },
+  {
+   "year": 1998,
+   "mean_sos": 109.43,
+   "lapse_d_per_100m": 0.657,
+   "n_bands": 6
+  },
+  {
+   "year": 1999,
+   "mean_sos": 106.11,
+   "lapse_d_per_100m": 1.314,
+   "n_bands": 6
+  },
+  {
+   "year": 2000,
+   "mean_sos": 112.45,
+   "lapse_d_per_100m": 3.373,
+   "n_bands": 6
+  },
+  {
+   "year": 2001,
+   "mean_sos": 106.17,
+   "lapse_d_per_100m": 2.548,
+   "n_bands": 6
+  },
+  {
+   "year": 2002,
+   "mean_sos": 114.76,
+   "lapse_d_per_100m": 3.797,
+   "n_bands": 6
+  },
+  {
+   "year": 2003,
+   "mean_sos": 104.51,
+   "lapse_d_per_100m": 5.813,
+   "n_bands": 6
+  },
+  {
+   "year": 2004,
+   "mean_sos": 115.1,
+   "lapse_d_per_100m": 1.691,
+   "n_bands": 6
+  },
+  {
+   "year": 2005,
+   "mean_sos": 106.1,
+   "lapse_d_per_100m": 4.911,
+   "n_bands": 6
+  },
+  {
+   "year": 2006,
+   "mean_sos": 117.8,
+   "lapse_d_per_100m": 5.397,
+   "n_bands": 6
+  },
+  {
+   "year": 2007,
+   "mean_sos": 118.97,
+   "lapse_d_per_100m": 5.435,
+   "n_bands": 6
+  },
+  {
+   "year": 2008,
+   "mean_sos": 115.7,
+   "lapse_d_per_100m": 3.536,
+   "n_bands": 6
+  },
+  {
+   "year": 2009,
+   "mean_sos": 115.18,
+   "lapse_d_per_100m": 2.659,
+   "n_bands": 6
+  },
+  {
+   "year": 2010,
+   "mean_sos": 105.94,
+   "lapse_d_per_100m": 2.139,
+   "n_bands": 6
+  },
+  {
+   "year": 2011,
+   "mean_sos": 108.3,
+   "lapse_d_per_100m": 4.243,
+   "n_bands": 6
+  },
+  {
+   "year": 2012,
+   "mean_sos": 97.79,
+   "lapse_d_per_100m": 3.049,
+   "n_bands": 6
+  },
+  {
+   "year": 2013,
+   "mean_sos": 106.28,
+   "lapse_d_per_100m": -1.195,
+   "n_bands": 6
+  },
+  {
+   "year": 2014,
+   "mean_sos": 120.02,
+   "lapse_d_per_100m": 0.848,
+   "n_bands": 6
+  },
+  {
+   "year": 2015,
+   "mean_sos": 104.07,
+   "lapse_d_per_100m": 4.201,
+   "n_bands": 6
+  },
+  {
+   "year": 2016,
+   "mean_sos": 105.7,
+   "lapse_d_per_100m": 4.942,
+   "n_bands": 6
+  },
+  {
+   "year": 2017,
+   "mean_sos": 104.06,
+   "lapse_d_per_100m": 2.889,
+   "n_bands": 6
+  },
+  {
+   "year": 2018,
+   "mean_sos": 110.01,
+   "lapse_d_per_100m": 5.173,
+   "n_bands": 6
+  },
+  {
+   "year": 2019,
+   "mean_sos": 109.86,
+   "lapse_d_per_100m": 5.47,
+   "n_bands": 6
+  },
+  {
+   "year": 2020,
+   "mean_sos": 107.12,
+   "lapse_d_per_100m": 3.888,
+   "n_bands": 6
+  },
+  {
+   "year": 2021,
+   "mean_sos": 104.96,
+   "lapse_d_per_100m": 2.455,
+   "n_bands": 6
+  },
+  {
+   "year": 2022,
+   "mean_sos": 105.44,
+   "lapse_d_per_100m": 2.656,
+   "n_bands": 6
+  },
+  {
+   "year": 2023,
+   "mean_sos": 106.64,
+   "lapse_d_per_100m": 3.351,
+   "n_bands": 6
+  },
+  {
+   "year": 2024,
+   "mean_sos": 108.26,
+   "lapse_d_per_100m": 3.503,
+   "n_bands": 6
+  }
+ ]
+}

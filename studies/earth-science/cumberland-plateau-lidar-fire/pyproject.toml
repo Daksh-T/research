@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cumberland-plateau-lidar-fire"
+version = "2.0.0"
+description = "Multi-epoch USGS 3DEP airborne LiDAR evaluation of leaf-off Landsat proxies and prescribed fire on the Cumberland Plateau"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+  "pyproj>=3.6",
+  "shapely>=2.0",
+  "laspy[lazrs]>=2.5",
+  "matplotlib>=3.8",
+  "nbformat>=5.9",
+  "requests>=2.31",
+  "earthengine-api>=0.1.380",
+]
+
+[tool.setuptools]
+py-modules = ["plateau_lib"]
+packages = []

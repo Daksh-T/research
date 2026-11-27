@@ -1,0 +1,47 @@
+\begin{table}[t!]\centering
+\caption{Gender Convergence, Household Specialization, Cohabitation Pooling, IPW Selection Correction, and Oster (2019) Bounds}
+\label{tab:gender_ipw}
+\scriptsize
+\renewcommand{\arraystretch}{0.95}
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{1.5-Gen Men (Clean)} & \multicolumn{3}{c}{1.5-Gen Women (Clean)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Specification / Subsample (Total Premium) & 2008--10 & 2012--15 & 2021--24 & 2008--10 & 2012--15 & 2021--24 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel A: Education Heterogeneity (College+ vs.\ Non-College)}} \\
+College Degree+ & 0.143*** & 0.134*** & 0.105*** & 0.087*** & 0.082*** & 0.111*** \\
+ & (0.021) & (0.019) & (0.015) & (0.021) & (0.019) & (0.015) \\
+Non-College ($<$ BA) & 0.088*** & 0.098*** & 0.084*** & 0.083*** & 0.083*** & 0.077*** \\
+ & (0.010) & (0.010) & (0.010) & (0.013) & (0.013) & (0.014) \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel B: Household Specialization Controls (Spouse Hours, Employment, Children $\times$ Period)}} \\
+Baseline (Origin$\times$Yr + MSA$\times$Yr FEs) & 0.101*** & 0.115*** & 0.094*** & 0.088*** & 0.091*** & 0.101*** \\
+ & (0.010) & (0.011) & (0.011) & (0.014) & (0.011) & (0.016) \\
++ Spouse Hours, Emp., Children $\times$ Yr & 0.109*** & 0.121*** & 0.099*** & 0.087*** & 0.091*** & 0.100*** \\
+ & (0.010) & (0.014) & (0.012) & (0.014) & (0.011) & (0.017) \\
++ Spouse Educ. \& Earnings $\times$ Yr & 0.090*** & 0.091*** & 0.077*** & 0.070*** & 0.065*** & 0.083*** \\
+ & (0.010) & (0.014) & (0.012) & (0.015) & (0.011) & (0.018) \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel C: Cohabitation Pooling (1990--2024) \& IPW Selection-into-(Marriage$\times$FTFY) Correction}} \\
+Married Only (1990--2024) & 0.099*** & 0.113*** & 0.093*** & 0.087*** & 0.090*** & 0.100*** \\
+ & (0.010) & (0.011) & (0.011) & (0.013) & (0.011) & (0.016) \\
+Pooled Married + Cohabiting (1990--2024) & 0.096*** & 0.109*** & 0.086*** & 0.091*** & 0.090*** & 0.090*** \\
+ & (0.009) & (0.010) & (0.008) & (0.014) & (0.011) & (0.014) \\
+IPW Selection-Corrected (1980--2024) & 0.083*** & 0.100*** & 0.088*** & 0.081*** & 0.092*** & 0.080*** \\
+ & (0.009) & (0.007) & (0.009) & (0.011) & (0.010) & (0.014) \\
+IPW + Full Mechanism Controls & 0.075*** & 0.078*** & 0.074*** & 0.059*** & 0.066*** & 0.071*** \\
+ & (0.011) & (0.012) & (0.010) & (0.011) & (0.013) & (0.015) \\
+\midrule
+\multicolumn{7}{l}{\textbf{Panel D: Oster (2019) Coefficient-Stability Bounds ($\delta$ / $\beta^*(\delta=1)$, $R_{\max}=1.3 R^2$)}} \\
+Baseline: $\delta$ / $\beta^*(\delta=1)$ & -47.6 / 0.105 & -7.9 / 0.132 & -3.0 / 0.129 & 4.1 / 0.080 & 4.5 / 0.084 & 9.7 / 0.106 \\
+IPW-Corrected: $\delta$ / $\beta^*(\delta=1)$ & -25.5 / 0.089 & -3.9 / 0.129 & -1.9 / 0.138 & 3.8 / 0.079 & 6.7 / 0.100 & $>50$ / 0.106 \\
+\bottomrule
+\end{tabular}%
+}
+\begin{minipage}{0.98\textwidth}\vspace{2pt}\scriptsize
+\textit{Notes:} Total log hourly wage premiums for clean true-immigrant 1.5-generation workers (\texttt{CITIZEN} $\in \{2,3\}$). IPW weights predict selection into Married$\times$FTFY$\times$Valid-Wage separately by sex and period from the 1.53M true-immigrant 1.5-generation universe (logit AUC = 0.80--0.82 for men, 0.65--0.71 for women), stabilized and trimmed at the 1st/99th percentiles. Negative Oster $\delta$ indicates controls raise the estimated trend relative to the raw gap. Two-way clustered SEs in parentheses. Significance: $^{*} p<0.10$, $^{**} p<0.05$, $^{***} p<0.01$.
+\end{minipage}
+\end{table}

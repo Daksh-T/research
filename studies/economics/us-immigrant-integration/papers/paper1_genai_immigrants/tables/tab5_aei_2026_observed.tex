@@ -1,0 +1,65 @@
+\begin{table}[htbp]
+\centering
+\caption{Capability-Rubric vs.\ Observed Usage (AEI 2026) Exposure: ACS Individual-Worker and CPS ORG Estimates with 80\% MDEs}
+\label{tab:aei_2026_observed}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{4}{c}{ACS Post-COVID (2021--2024; $N = 3.84\text{M}$ workers)} & \multicolumn{4}{c}{CPS ORG Mature GenAI (2025 Q1--2026 Q3)} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+Occupation Exposure Index & Non-Eng & 80\% MDE & Eng (Comp.) & DDD & Non-Eng & 80\% MDE & Eng (Comp.) & DDD \\
+(Standardized, Mean 0, SD 1) & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) \\
+\midrule
+\multicolumn{9}{l}{\textit{Panel A: O*NET 31.0, Capability Rubrics, and March 2026 Anthropic Economic Index Observed Usage}} \\
+\addlinespace[3pt]
+O*NET 31.0 Written-English Intensity & 0.0017 & 0.0084 & 0.0141** & -0.0124* & 0.0041 & 0.0133 & -0.0069 & 0.0111 \\
+ & (0.0030) & & (0.0068) & (0.0072) & (0.0048) & & (0.0209) & (0.0219) \\
+OpenAI $\beta$ (Eloundou et al. 2024) & 0.0048*** & 0.0045 & 0.0121 & -0.0074 & 0.0059 & 0.0131 & 0.0312* & -0.0253 \\
+ & (0.0016) & & (0.0077) & (0.0079) & (0.0047) & & (0.0162) & (0.0181) \\
+Felten LM AIOE (2023) & 0.0038 & 0.0068 & 0.0196*** & -0.0158** & --- & --- & --- & --- \\
+ & (0.0024) & & (0.0067) & (0.0062) &  & &  &  \\
+AEI 2026 Observed Exposure (Mar 2026) & 0.0015 & 0.0027 & 0.0068** & -0.0053 & 0.0041 & 0.0114 & 0.0286*** & -0.0245** \\
+ & (0.0010) & & (0.0032) & (0.0037) & (0.0041) & & (0.0094) & (0.0119) \\
+AEI 2026 Writing (Orthogonalized) & -0.0012 & 0.0047 & -0.0130* & 0.0118 & -0.0002 & 0.0171 & 0.0086 & -0.0088 \\
+ & (0.0017) & & (0.0077) & (0.0082) & (0.0061) & & (0.0118) & (0.0136) \\
+AEI 2026 Coding \& Math & 0.0015 & 0.0029 & 0.0091** & -0.0076* & 0.0038 & 0.0109 & 0.0273** & -0.0236* \\
+ & (0.0010) & & (0.0035) & (0.0039) & (0.0039) & & (0.0107) & (0.0129) \\
+AEI 2026 Task Writing (Orth.)$^\ddagger$ & 0.0028 & 0.0057 & 0.0104 & -0.0077 & --- & --- & --- & --- \\
+ & (0.0020) & & (0.0082) & (0.0081) &  & &  &  \\
+AEI 2025 Automation Exposure$^{\dagger\ddagger}$ & 0.0005 & 0.0024 & 0.0027 & -0.0022 & -0.0008 & 0.0133 & 0.0156 & -0.0164 \\
+ & (0.0008) & & (0.0066) & (0.0072) & (0.0047) & & (0.0099) & (0.0100) \\
+AEI 2025 Augmentation Exposure$^{\dagger\ddagger}$ & 0.0013* & 0.0018 & 0.0078*** & -0.0065*** & 0.0049 & 0.0096 & 0.0182*** & -0.0133 \\
+ & (0.0006) & & (0.0028) & (0.0024) & (0.0034) & & (0.0067) & (0.0095) \\
+AEI 2026 Robot Exposure (Manual/Physical) & -0.0022 & 0.0072 & -0.0116** & 0.0094 & -0.0034 & 0.0125 & 0.0175 & -0.0210 \\
+ & (0.0026) & & (0.0049) & (0.0062) & (0.0045) & & (0.0193) & (0.0205) \\
+\midrule
+\multicolumn{9}{l}{\textit{Panel B: CPS ORG 2026 Observed Exposure Across Wage Harmonizations (Early 2023--24 vs.\ Mature 2025--26)}} \\
+\addlinespace[3pt]
+ & \multicolumn{2}{c}{Non-Eng Origin} & 80\% MDE & \multicolumn{2}{c}{Eng Origin (Comp.)} & \multicolumn{3}{c}{DDD (NonEng $-$ Eng)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){5-6} \cmidrule(lr){7-9}
+CPS Wage Harmonization & 2023--24 & 2025--26 & (25--26) & 2023--24 & 2025--26 & 2023--24 & \multicolumn{2}{c}{2025--26} \\
+\addlinespace[2pt]
+Log Weekly Wage (Uniform \$2,884.61 Cap) & 0.0023 & 0.0041 & 0.0114 & -0.0062 & 0.0286*** & 0.0085 & \multicolumn{2}{c}{-0.0245**} \\
+ & (0.0031) & (0.0041) & & (0.0144) & (0.0094) & (0.0157) & \multicolumn{2}{c}{(0.0119)} \\
+Log Weekly Wage (Q93 Winsorized) & 0.0027 & 0.0046 & 0.0120 & -0.0050 & 0.0332*** & 0.0076 & \multicolumn{2}{c}{-0.0287**} \\
+ & (0.0031) & (0.0043) & & (0.0149) & (0.0083) & (0.0160) & \multicolumn{2}{c}{(0.0113)} \\
+Log Hourly Wage (Harmonized Cap) & 0.0007 & 0.0030 & 0.0140 & -0.0051 & 0.0231*** & 0.0058 & \multicolumn{2}{c}{-0.0201**} \\
+ & (0.0023) & (0.0050) & & (0.0116) & (0.0077) & (0.0135) & \multicolumn{2}{c}{(0.0092)} \\
+Log Weekly Wage (Uncapped Raw) & 0.0040 & 0.0048 & 0.0141 & 0.0043 & 0.0486*** & -0.0003 & \multicolumn{2}{c}{-0.0438***} \\
+ & (0.0031) & (0.0050) & & (0.0198) & (0.0043) & (0.0203) & \multicolumn{2}{c}{(0.0089)} \\
+\midrule
+\multicolumn{9}{l}{\textit{Panel C: ACS 2021--2024 Simultaneous Horse Races (Non-English Immigrants vs.\ U.S.\ Natives; $N = 3,788,812$)}} \\
+\addlinespace[3pt]
+Horse Race 1 (2026 Tasks): & \multicolumn{3}{l}{AEI 2026 Writing (Orth.): -0.0010 (0.0019)} & \multicolumn{2}{l}{AEI 2026 Coding: 0.0001 (0.0016)} & \multicolumn{3}{l}{AEI 2026 Robot: -0.0032 (0.0027)} \\
+Horse Race 2 (2026 vs.\ Rubric): & \multicolumn{3}{l}{AEI 2026 Observed: -0.0026 (0.0018)} & \multicolumn{2}{l}{OpenAI $\beta$: 0.0073*** (0.0026)} & \multicolumn{3}{l}{Face-to-Face: -0.0013 (0.0039)} \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{4pt}
+\begin{minipage}{\textwidth}\scriptsize
+\textit{Notes:} Columns (1)--(4) of Panel A report authoritative individual-level ACS worker regressions ($N = 3{,}840{,}043$) for all headline exposure indices ($^\ddagger$auxiliary rows use cell-grouped ACS regressions; side-by-side worker vs.\ cell-grouped comparisons are reported in Table~\ref{tab:acs_origin_placebo} and agree within $\le 0.00025$ log points across 2015--2024 and $\le 0.0001$ in 2021--2024). O*NET 31.0 (2026 release) task ratings are refreshed on rolling cycles; Eloundou et al.\ (2024) OpenAI $\beta$ was constructed in early 2023 based on GPT-4 capabilities; \citet{MassenkoffMcCrory2026} (Anthropic Economic Index, March 2026) measures post-treatment single-provider Claude usage (54.3\% zeros). Columns (2) and (6) report 80\%-power MDEs ($2.8016 \times \text{SE}$) for the occupational-exposure wage gradient among Non-English-origin immigrants. $^{\dagger}$AEI 2025 Automation and Augmentation shares \citep{Handa2025} are interim March 2025 snapshots. All specifications include occupation$\times$time, state$\times$time, education$\times$time, origin$\times$time, and sex$\times$time fixed effects, individual controls, and two-way clustered SEs (occupation + state). $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

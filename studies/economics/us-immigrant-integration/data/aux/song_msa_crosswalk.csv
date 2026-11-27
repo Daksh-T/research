@@ -1,0 +1,334 @@
+metarea_gen,metarea_det,metarea_label,met2013,metarea_match_method,met2013_label,fhfa_name,fhfa_cbsa_codes,is_msad_parent,fhfa_first_year,fhfa_last_year,zillow_region_id,zillow_region_name,zillow_size_rank,in_fhfa,in_zhvi,in_zori,has_fhfa_1980,has_fhfa_1990,has_fhfa_2000,has_fhfa_2010,has_fhfa_2019,has_fhfa_2024
+4,40,"Abilene, TX",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+6,60,"Aguadilla, PR",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+8,80,"Akron, OH",10420.0,primary_city_state,"Akron, OH","Akron, OH",10420,False,1976.0,2026.0,394304.0,"Akron, OH",83.0,True,True,True,True,True,True,True,True,True
+12,120,"Albany, GA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+16,160,"Albany-Schenectady-Troy, NY",10580.0,primary_city_state,"Albany-Schenectady-Troy, NY","Albany-Schenectady-Troy, NY",10580,False,1979.0,2026.0,394308.0,"Albany, NY",64.0,True,True,True,True,True,True,True,True,True
+20,200,"Albuquerque, NM",10740.0,primary_city_state,"Albuquerque, NM","Albuquerque, NM",10740,False,1977.0,2026.0,394312.0,"Albuquerque, NM",62.0,True,True,True,True,True,True,True,True,True
+22,220,"Alexandria, LA",10780.0,primary_city_state,"Alexandria, LA","Alexandria, LA",10780,False,1986.0,2026.0,394314.0,"Alexandria, LA",286.0,True,True,True,False,True,True,True,True,True
+24,240,"Allentown-Bethlehem-Easton, PA/NJ",10900.0,primary_city_state,"Allentown-Bethlehem-Easton, PA-NJ","Allentown-Bethlehem-Easton, PA-NJ",10900,False,1978.0,2026.0,394318.0,"Allentown, PA",70.0,True,True,True,True,True,True,True,True,True
+28,280,"Altoona, PA",11020.0,primary_city_state,"Altoona, PA","Altoona, PA",11020,False,1993.0,2026.0,394321.0,"Altoona, PA",340.0,True,True,True,False,False,True,True,True,True
+32,320,"Amarillo, TX",11100.0,primary_city_state,"Amarillo, TX","Amarillo, TX",11100,False,1979.0,2026.0,394323.0,"Amarillo, TX",186.0,True,True,True,True,True,True,True,True,True
+38,380,"Anchorage, AK",11260.0,primary_city_state,"Anchorage, AK","Anchorage, AK",11260,False,1978.0,2026.0,394327.0,"Anchorage, AK",139.0,True,True,True,False,True,True,True,True,True
+40,400,"Anderson, IN",26900.0,any_city_state,"Indianapolis-Carmel-Anderson, IN","Indianapolis-Carmel-Greenwood, IN",26900,False,1976.0,2026.0,394705.0,"Indianapolis, IN",34.0,True,True,True,True,True,True,True,True,True
+44,440,"Ann Arbor, MI",11460.0,primary_city_state,"Ann Arbor, MI","Ann Arbor, MI",11460,False,1978.0,2026.0,394332.0,"Ann Arbor, MI",148.0,True,True,True,True,True,True,True,True,True
+45,450,"Anniston, AL",11500.0,primary_city_state,"Anniston-Oxford-Jacksonville, AL","Anniston-Oxford, AL",11500,False,1992.0,2026.0,394333.0,"Anniston, AL",357.0,True,True,True,False,False,True,True,True,True
+46,460,"Appleton-Oshkosh-Neenah, WI",36780.0,any_city_state,"Oshkosh-Neenah, WI","Oshkosh-Neenah, WI",36780,False,1985.0,2026.0,394944.0,"Oshkosh, WI",257.0,True,True,True,False,True,True,True,True,True
+47,470,"Arecibo, PR",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+48,480,"Asheville, NC",11700.0,primary_city_state,"Asheville, NC","Asheville, NC",11700,False,1984.0,2026.0,394338.0,"Asheville, NC",121.0,True,True,True,False,True,True,True,True,True
+50,500,"Athens, GA",12020.0,primary_city_state,"Athens-Clarke County, GA","Athens-Clarke County, GA",12020,False,1985.0,2026.0,394346.0,"Athens, GA",217.0,True,True,True,False,True,True,True,True,True
+52,520,"Atlanta, GA",12060.0,primary_city_state,"Atlanta-Sandy Springs-Roswell, GA","Atlanta-Sandy Springs-Roswell, GA",12054;31924,True,1976.0,2026.0,394347.0,"Atlanta, GA",9.0,True,True,True,True,True,True,True,True,True
+56,560,"Atlantic City, NJ",12100.0,manual,"Atlantic City-Hammonton, NJ","Atlantic City-Hammonton, NJ",12100,False,1979.0,2026.0,394348.0,"Atlantic City, NJ",180.0,True,True,True,True,True,True,True,True,True
+58,580,"Auburn-Opekika, AL",12220.0,primary_city_state,"Auburn-Opelika, AL","Auburn-Opelika, AL",12220,False,1987.0,2026.0,394351.0,"Auburn, AL",253.0,True,True,True,False,True,True,True,True,True
+60,600,"Augusta-Aiken, GA/SC",12260.0,primary_city_state,"Augusta-Richmond County, GA-SC","Augusta-Richmond County, GA-SC",12260,False,1979.0,2026.0,394352.0,"Augusta, GA",96.0,True,True,True,True,True,True,True,True,True
+64,640,"Austin, TX",12420.0,primary_city_state,"Austin-Round Rock, TX","Austin-Round Rock-San Marcos, TX",12420,False,1977.0,2026.0,394355.0,"Austin, TX",29.0,True,True,True,True,True,True,True,True,True
+68,680,"Bakersfield, CA",12540.0,primary_city_state,"Bakersfield, CA","Bakersfield-Delano, CA",12540,False,1977.0,2026.0,394357.0,"Bakersfield, CA",63.0,True,True,True,True,True,True,True,True,True
+72,720,"Baltimore, MD",12580.0,primary_city_state,"Baltimore-Columbia-Towson, MD","Baltimore-Columbia-Towson, MD",12580,False,1976.0,2026.0,394358.0,"Baltimore, MD",20.0,True,True,True,True,True,True,True,True,True
+73,730,"Bangor, ME",12620.0,primary_city_state,"Bangor, ME","Bangor, ME",12620,False,1988.0,2026.0,394359.0,"Bangor, ME",288.0,True,True,True,False,True,True,True,True,True
+74,740,"Barnstable-Yarmouth, MA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+76,760,"Baton Rouge, LA",12940.0,primary_city_state,"Baton Rouge, LA","Baton Rouge, LA",12940,False,1978.0,2026.0,394367.0,"Baton Rouge, LA",66.0,True,True,True,True,True,True,True,True,True
+78,780,"Battle Creek, MI",12980.0,primary_city_state,"Battle Creek, MI","Battle Creek, MI",12980,False,1986.0,2026.0,394368.0,"Battle Creek, MI",318.0,True,True,True,False,True,True,True,True,True
+84,840,"Beaumont-Port Arthur-Orange, TX",13140.0,primary_city_state,"Beaumont-Port Arthur, TX","Beaumont-Port Arthur, TX",13140,False,1978.0,2026.0,394372.0,"Beaumont, TX",140.0,True,True,True,True,True,True,True,True,True
+86,860,"Bellingham, WA",13380.0,primary_city_state,"Bellingham, WA","Bellingham, WA",13380,False,1978.0,2026.0,394378.0,"Bellingham, WA",205.0,True,True,True,True,True,True,True,True,True
+87,870,"Benton Harbor, MI",35660.0,any_city_state,"Niles-Benton Harbor, MI","Niles, MI",35660,False,1980.0,2026.0,394917.0,"Niles, MI",282.0,True,True,True,True,True,True,True,True,True
+88,880,"Billings, MT",13740.0,primary_city_state,"Billings, MT","Billings, MT",13740,False,1985.0,2026.0,394386.0,"Billings, MT",239.0,True,True,True,False,True,True,True,True,True
+92,920,"Biloxi-Gulfport, MS",25060.0,any_city_state,"Gulfport-Biloxi-Pascagoula, MS","Gulfport-Biloxi, MS",25060,False,1986.0,2026.0,394658.0,"Gulfport, MS",133.0,True,True,True,False,True,True,True,True,True
+96,960,"Binghamton, NY",13780.0,primary_city_state,"Binghamton, NY","Binghamton, NY",13780,False,1983.0,2026.0,394387.0,"Binghamton, NY",195.0,True,True,True,False,True,True,True,True,True
+100,1000,"Birmingham, AL",13820.0,primary_city_state,"Birmingham-Hoover, AL","Birmingham, AL",13820,False,1978.0,2026.0,394388.0,"Birmingham, AL",51.0,True,True,True,True,True,True,True,True,True
+102,1020,"Bloomington, IN",14020.0,primary_city_state,"Bloomington, IN","Bloomington, IN",14020,False,1986.0,2026.0,394393.0,"Bloomington, IN",270.0,True,True,True,False,True,True,True,True,True
+104,1040,"Bloomington-Normal, IL",14010.0,primary_city_state,"Bloomington, IL","Bloomington, IL",14010,False,1985.0,2026.0,753869.0,"Bloomington, IL",255.0,True,True,True,False,True,True,True,True,True
+108,1080,"Boise City, ID",14260.0,primary_city_state,"Boise City, ID","Boise City, ID",14260,False,1979.0,2026.0,394399.0,"Boise City, ID",79.0,True,True,True,True,True,True,True,True,True
+112,1120,"Boston, MA/NH",14460.0,manual,"Boston-Cambridge-Newton, MA-NH","Boston-Cambridge-Newton, MA-NH",14454;15764;40484,True,1976.0,2026.0,394404.0,"Boston, MA",10.0,True,True,True,True,True,True,True,True,True
+114,1140,"Bradenton, FL",35840.0,any_city_state,"North Port-Sarasota-Bradenton, FL","North Port-Bradenton-Sarasota, FL",35840,False,1977.0,2026.0,753906.0,"North Port, FL",73.0,True,True,True,True,True,True,True,True,True
+115,1150,"Bremerton, WA",14740.0,primary_city_state,"Bremerton-Silverdale, WA","Bremerton-Silverdale-Port Orchard, WA",14740,False,1979.0,2026.0,394412.0,"Bremerton, WA",181.0,True,True,True,True,True,True,True,True,True
+116,1160,"Bridgeport, CT",14860.0,manual,"Bridgeport-Stamford-Norwalk, CT","Bridgeport-Stamford-Danbury, CT",14860,False,1976.0,2026.0,394415.0,"Bridgeport, CT",60.0,True,True,True,True,True,True,True,True,True
+120,1200,"Brockton, MA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+124,1240,"Brownsville-Harlingen-San Benito, TX",15180.0,primary_city_state,"Brownsville-Harlingen, TX","Brownsville-Harlingen, TX",15180,False,1988.0,2026.0,394421.0,"Brownsville, TX",130.0,True,True,True,False,True,True,True,True,True
+126,1260,"Bryan-College Station, TX",17780.0,any_city_state,"College Station-Bryan, TX","College Station-Bryan, TX",17780,False,1983.0,2026.0,394483.0,"College Station, TX",189.0,True,True,True,False,True,True,True,True,True
+128,1280,"Buffalo-Niagara Falls, NY",15380.0,primary_city_state,"Buffalo-Cheektowaga-Niagara Falls, NY","Buffalo-Cheektowaga, NY",15380,False,1977.0,2026.0,394425.0,"Buffalo, NY",50.0,True,True,True,True,True,True,True,True,True
+130,1300,"Burlington, NC",15500.0,primary_city_state,"Burlington, NC","Burlington, NC",15500,False,1987.0,2026.0,394428.0,"Burlington, NC",260.0,True,True,True,False,True,True,True,True,True
+131,1310,"Burlington, VT",15540.0,primary_city_state,"Burlington-South Burlington, VT","Burlington-South Burlington, VT",15540,False,1985.0,2026.0,394429.0,"Burlington, VT",206.0,True,True,True,False,True,True,True,True,True
+132,1320,"Canton, OH",15940.0,primary_city_state,"Canton-Massillon, OH","Canton-Massillon, OH",15940,False,1977.0,2026.0,394439.0,"Canton, OH",137.0,True,True,True,True,True,True,True,True,True
+133,1330,"Caguas, PR",41980.0,any_city_state,"San Juan-Carolina-Caguas, PR",,,,,,,,,False,False,False,False,False,False,False,False,False
+135,1350,"Casper, WY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+136,1360,"Cedar Rapids, IA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+140,1400,"Champaign-Urbana-Rantoul, IL",16580.0,primary_city_state,"Champaign-Urbana, IL","Champaign-Urbana, IL",16580,False,1985.0,2026.0,394454.0,"Champaign, IL",209.0,True,True,True,False,True,True,True,True,True
+144,1440,"Charleston-N. Charleston, SC",16700.0,primary_city_state,"Charleston-North Charleston, SC","Charleston-North Charleston, SC",16700,False,1978.0,2026.0,394457.0,"Charleston, SC",75.0,True,True,True,True,True,True,True,True,True
+148,1480,"Charleston, WV",16620.0,primary_city_state,"Charleston, WV","Charleston, WV",16620,False,1986.0,2026.0,394455.0,"Charleston, WV",192.0,True,True,True,False,True,True,True,True,True
+152,1520,"Charlotte-Gastonia-Rock Hill, NC/SC",16740.0,primary_city_state,"Charlotte-Concord-Gastonia, NC-SC","Charlotte-Concord-Gastonia, NC-SC",16740,False,1977.0,2026.0,394458.0,"Charlotte, NC",23.0,True,True,True,True,True,True,True,True,True
+154,1540,"Charlottesville, VA",16820.0,primary_city_state,"Charlottesville, VA","Charlottesville, VA",16820,False,1983.0,2026.0,394459.0,"Charlottesville, VA",212.0,True,True,True,False,True,True,True,True,True
+156,1560,"Chattanooga, TN/GA",16860.0,primary_city_state,"Chattanooga, TN-GA","Chattanooga, TN-GA",16860,False,1980.0,2026.0,394460.0,"Chattanooga, TN",102.0,True,True,True,True,True,True,True,True,True
+158,1580,"Cheyenne, WY",16940.0,primary_city_state,"Cheyenne, WY","Cheyenne, WY",16940,False,1979.0,2026.0,394462.0,"Cheyenne, WY",391.0,True,True,True,True,True,True,True,True,True
+160,1600,"Chicago, IL",16980.0,manual,"Chicago-Naperville-Elgin, IL-IN-WI","Chicago-Naperville-Elgin, IL-IN-WI",16984;20994;29404;29414,True,1975.0,2026.0,394463.0,"Chicago, IL",3.0,True,True,True,True,True,True,True,True,True
+162,1620,"Chico, CA",17020.0,primary_city_state,"Chico, CA","Chico, CA",17020,False,1979.0,2026.0,394464.0,"Chico, CA",215.0,True,True,True,True,True,True,True,True,True
+164,1640,"Cincinnati-Hamilton, OH/KY/IN",17140.0,manual,"Cincinnati, OH-KY-IN","Cincinnati, OH-KY-IN",17140,False,1976.0,2026.0,394466.0,"Cincinnati, OH",28.0,True,True,True,True,True,True,True,True,True
+166,1660,"Clarksville- Hopkinsville, TN/KY",17300.0,primary_city_state,"Clarksville, TN-KY","Clarksville, TN-KY",17300,False,1992.0,2026.0,394471.0,"Clarksville, TN",163.0,True,True,True,False,False,True,True,True,True
+168,1680,"Cleveland, OH",17460.0,manual,"Cleveland-Elyria, OH","Cleveland, OH",17410,False,1975.0,2026.0,394475.0,"Cleveland, OH",35.0,True,True,True,True,True,True,True,True,True
+172,1720,"Colorado Springs, CO",17820.0,primary_city_state,"Colorado Springs, CO","Colorado Springs, CO",17820,False,1979.0,2026.0,394484.0,"Colorado Springs, CO",80.0,True,True,True,True,True,True,True,True,True
+174,1740,"Columbia, MO",17860.0,primary_city_state,"Columbia, MO","Columbia, MO",17860,False,1984.0,2026.0,394485.0,"Columbia, MO",219.0,True,True,True,False,True,True,True,True,True
+176,1760,"Columbia, SC",17900.0,primary_city_state,"Columbia, SC","Columbia, SC",17900,False,1978.0,2026.0,394486.0,"Columbia, SC",72.0,True,True,True,True,True,True,True,True,True
+180,1800,"Columbus, GA/AL",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+184,1840,"Columbus, OH",18140.0,manual,"Columbus, OH","Columbus, OH",18140,False,1976.0,2026.0,394492.0,"Columbus, OH",32.0,True,True,True,True,True,True,True,True,True
+188,1880,"Corpus Christi, TX",18580.0,primary_city_state,"Corpus Christi, TX","Corpus Christi, TX",18580,False,1979.0,2026.0,394502.0,"Corpus Christi, TX",129.0,True,True,True,True,True,True,True,True,True
+190,1900,"Cumberland, MD/WV",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+192,1920,"Dallas-Fort Worth, TX",19100.0,manual,"Dallas-Fort Worth-Arlington, TX","Dallas-Fort Worth-Arlington, TX",19124;23104,True,1975.0,2026.0,394514.0,"Dallas, TX",4.0,True,True,True,True,True,True,True,True,True
+193,1930,"Danbury, CT",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+195,1950,"Danville, VA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+196,1960,"Davenport, IA - Rock Island-Moline, IL",19340.0,any_city_state,"Davenport-Moline-Rock Island, IA-IL","Davenport-Moline-Rock Island, IA-IL",19340,False,1978.0,2026.0,394520.0,"Davenport, IA",144.0,True,True,True,True,True,True,True,True,True
+200,2000,"Dayton-Springfield, OH",19380.0,manual,"Dayton, OH","Dayton-Kettering-Beavercreek, OH",19430,False,1977.0,2026.0,845158.0,"Dayton, OH",74.0,True,False,True,True,True,True,True,True,True
+202,2020,"Daytona Beach, FL",19660.0,any_city_state,"Deltona-Daytona Beach-Ormond Beach, FL","Deltona-Daytona Beach-Ormond Beach, FL",19660,False,1978.0,2026.0,394528.0,"Deltona, FL",90.0,True,True,True,True,True,True,True,True,True
+203,2030,"Decatur, AL",19460.0,primary_city_state,"Decatur, AL","Decatur, AL",19460,False,1987.0,2026.0,394523.0,"Decatur, AL",276.0,True,True,True,False,True,True,True,True,True
+204,2040,"Decatur, IL",19500.0,primary_city_state,"Decatur, IL","Decatur, IL",19500,False,1986.0,2026.0,394524.0,"Decatur, IL",378.0,True,True,True,False,True,True,True,True,True
+208,2080,"Denver-Boulder, CO",19740.0,manual,"Denver-Aurora-Lakewood, CO","Denver-Aurora-Centennial, CO",19740,False,1976.0,2026.0,394530.0,"Denver, CO",19.0,True,True,True,True,True,True,True,True,True
+212,2120,"Des Moines, IA",19780.0,primary_city_state,"Des Moines-West Des Moines, IA","Des Moines-West Des Moines, IA",19780,False,1977.0,2026.0,394531.0,"Des Moines, IA",84.0,True,True,True,True,True,True,True,True,True
+216,2160,"Detroit, MI",19820.0,manual,"Detroit-Warren-Dearborn, MI","Detroit-Warren-Dearborn, MI",19804;47664,True,1975.0,2026.0,394532.0,"Detroit, MI",14.0,True,True,True,True,True,True,True,True,True
+218,2180,"Dothan, AL",20020.0,primary_city_state,"Dothan, AL","Dothan, AL",20020,False,1989.0,2026.0,394537.0,"Dothan, AL",293.0,True,True,True,False,True,True,True,True,True
+219,2190,"Dover, DE",20100.0,primary_city_state,"Dover, DE","Dover, DE",20100,False,1987.0,2026.0,394539.0,"Dover, DE",244.0,True,True,True,False,True,True,True,True,True
+220,2200,"Dubuque, IA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+224,2240,"Duluth-Superior, MN/WI",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+228,2281,"Dutchess Co., NY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+229,2290,"Eau Claire, WI",20740.0,primary_city_state,"Eau Claire, WI","Eau Claire, WI",20740,False,1983.0,2026.0,394555.0,"Eau Claire, WI",258.0,True,True,True,False,True,True,True,True,True
+231,2310,"El Paso, TX",21340.0,primary_city_state,"El Paso, TX","El Paso, TX",21340,False,1981.0,2026.0,394561.0,"El Paso, TX",69.0,True,True,True,False,True,True,True,True,True
+232,2320,"Elkhart-Goshen, IN",21340.0,manual,"El Paso, TX","El Paso, TX",21340,False,1981.0,2026.0,394561.0,"El Paso, TX",69.0,True,True,True,False,True,True,True,True,True
+233,2330,"Elmira, NY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+234,2340,"Enid, OK",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+236,2360,"Erie, PA",21500.0,primary_city_state,"Erie, PA","Erie, PA",21500,False,1984.0,2026.0,394572.0,"Erie, PA",184.0,True,True,True,False,True,True,True,True,True
+240,2400,"Eugene-Springfield, OR",21660.0,primary_city_state,"Eugene, OR","Eugene-Springfield, OR",21660,False,1977.0,2026.0,394576.0,"Eugene, OR",146.0,True,True,True,True,True,True,True,True,True
+244,2440,"Evansville, IN/KY",21780.0,primary_city_state,"Evansville, IN-KY","Evansville, IN",21780,False,1981.0,2026.0,394579.0,"Evansville, IN",165.0,True,True,True,False,True,True,True,True,True
+252,2520,"Fargo-Morehead, ND/MN",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+256,2560,"Fayetteville, NC",22180.0,primary_city_state,"Fayetteville, NC","Fayetteville, NC",22180,False,1987.0,2026.0,394589.0,"Fayetteville, NC",109.0,True,True,True,False,True,True,True,True,True
+258,2580,"Fayetteville-Springdale, AR",22220.0,primary_city_state,"Fayetteville-Springdale-Rogers, AR-MO","Fayetteville-Springdale-Rogers, AR",22220,False,1979.0,2026.0,394590.0,"Fayetteville, AR",108.0,True,True,True,True,True,True,True,True,True
+260,2600,"Fitchburg-Leominster, MA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+262,2620,"Flagstaff, AZ/UT",22380.0,primary_city_state,"Flagstaff, AZ","Flagstaff, AZ",22380,False,1986.0,2026.0,394595.0,"Flagstaff, AZ",302.0,True,True,True,False,True,True,True,True,True
+264,2640,"Flint, MI",22420.0,primary_city_state,"Flint, MI","Flint, MI",22420,False,1977.0,2026.0,394596.0,"Flint, MI",135.0,True,True,True,True,True,True,True,True,True
+265,2650,"Florence, AL",22520.0,primary_city_state,"Florence-Muscle Shoals, AL","Florence-Muscle Shoals, AL",22520,False,1992.0,2026.0,394598.0,"Florence, AL",292.0,True,True,True,False,False,True,True,True,True
+266,2660,"Florence, SC",22500.0,primary_city_state,"Florence, SC","Florence, SC",22500,False,1986.0,2026.0,394597.0,"Florence, SC",228.0,True,True,True,False,True,True,True,True,True
+267,2670,"Fort Collins-Loveland, CO",22660.0,primary_city_state,"Fort Collins, CO","Fort Collins-Loveland, CO",22660,False,1977.0,2026.0,394602.0,"Fort Collins, CO",152.0,True,True,True,True,True,True,True,True,True
+268,2680,"Fort Lauderdale-Hollywood-Pompano Beach, FL",33100.0,manual,"Miami-Fort Lauderdale-West Palm Beach, FL","Miami-Fort Lauderdale-West Palm Beach, FL",22744;33124;48424,True,1975.0,2026.0,394856.0,"Miami, FL",8.0,True,True,True,True,True,True,True,True,True
+270,2700,"Fort Myers-Cape Coral, FL",15980.0,any_city_state,"Cape Coral-Fort Myers, FL","Cape Coral-Fort Myers, FL",15980,False,1981.0,2026.0,394440.0,"Cape Coral, FL",78.0,True,True,True,False,True,True,True,True,True
+271,2710,"Fort Pierce, FL",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+272,2720,"Fort Smith, AR/OK",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+275,2750,"Fort Walton Beach, FL",18880.0,any_city_state,"Crestview-Fort Walton Beach-Destin, FL","Crestview-Fort Walton Beach-Destin, FL",18880,False,1986.0,2026.0,753875.0,"Crestview, FL",176.0,True,True,True,False,True,True,True,True,True
+276,2760,"Fort Wayne, IN",23060.0,primary_city_state,"Fort Wayne, IN","Fort Wayne, IN",23060,False,1977.0,2026.0,394612.0,"Fort Wayne, IN",132.0,True,True,True,True,True,True,True,True,True
+284,2840,"Fresno, CA",23420.0,primary_city_state,"Fresno, CA","Fresno, CA",23420,False,1976.0,2026.0,394619.0,"Fresno, CA",57.0,True,True,True,True,True,True,True,True,True
+288,2880,"Gadsden, AL",23460.0,primary_city_state,"Gadsden, AL","Gadsden, AL",23460,False,1993.0,2026.0,394620.0,"Gadsden, AL",383.0,True,True,True,False,False,True,True,True,True
+290,2900,"Gainesville, FL",23540.0,primary_city_state,"Gainesville, FL","Gainesville, FL",23540,False,1984.0,2026.0,394622.0,"Gainesville, FL",155.0,True,True,True,False,True,True,True,True,True
+292,2920,"Galveston-Texas City, TX",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+297,2970,"Glens Falls, NY",24020.0,primary_city_state,"Glens Falls, NY","Glens Falls, NY",24020,False,1991.0,2026.0,394633.0,"Glens Falls, NY",331.0,True,True,True,False,False,True,True,True,True
+298,2980,"Goldsboro, NC",24140.0,primary_city_state,"Goldsboro, NC","Goldsboro, NC",24140,False,1990.0,2026.0,394635.0,"Goldsboro, NC",350.0,True,True,True,False,True,True,True,True,True
+299,2990,"Grand Forks, ND",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+300,3000,"Grand Rapids, MI",24340.0,primary_city_state,"Grand Rapids-Wyoming, MI","Grand Rapids-Wyoming-Kentwood, MI",24340,False,1978.0,2026.0,394640.0,"Grand Rapids, MI",53.0,True,True,True,True,True,True,True,True,True
+301,3010,"Grand Junction, CO",24300.0,primary_city_state,"Grand Junction, CO","Grand Junction, CO",24300,False,1979.0,2026.0,394639.0,"Grand Junction, CO",280.0,True,True,True,True,True,True,True,True,True
+304,3040,"Great Falls, MT",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+306,3060,"Greeley, CO",24540.0,primary_city_state,"Greeley, CO","Greeley, CO",24540,False,1983.0,2026.0,394645.0,"Greeley, CO",161.0,True,True,True,False,True,True,True,True,True
+308,3080,"Green Bay, WI",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+312,3120,"Greensboro-Winston Salem-High Point, NC",24660.0,manual,"Greensboro-High Point, NC","Greensboro-High Point, NC",24660,False,1978.0,2026.0,394648.0,"Greensboro, NC",76.0,True,True,True,True,True,True,True,True,True
+315,3150,"Greenville, NC",24780.0,primary_city_state,"Greenville, NC","Greenville, NC",24780,False,1986.0,2026.0,394651.0,"Greenville, NC",259.0,True,True,True,False,True,True,True,True,True
+316,3160,"Greenville-Spartenburg-Anderson, SC",24860.0,primary_city_state,"Greenville-Anderson-Mauldin, SC","Greenville-Anderson-Greer, SC",24860,False,1979.0,2026.0,394653.0,"Greenville, SC",61.0,True,True,True,True,True,True,True,True,True
+318,3180,"Hagerstown, MD",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+320,3200,"Hamilton-Middleton, OH",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+324,3240,"Harrisburg-Lebanon--Carlisle, PA",25420.0,primary_city_state,"Harrisburg-Carlisle, PA","Harrisburg-Carlisle, PA",25420,False,1979.0,2026.0,394666.0,"Harrisburg, PA",99.0,True,True,True,True,True,True,True,True,True
+328,3280,"Hartford-Bristol-Middleton- New Britain, CT",25540.0,manual,"Hartford-West Hartford-East Hartford, CT","Hartford-West Hartford-East Hartford, CT",25540,False,1977.0,2026.0,394669.0,"Hartford, CT",49.0,True,True,True,True,True,True,True,True,True
+329,3290,"Hickory-Morganton, NC",25860.0,primary_city_state,"Hickory-Lenoir-Morganton, NC","Hickory-Lenoir-Morganton, NC",25860,False,1986.0,2026.0,394679.0,"Hickory, NC",150.0,True,True,True,False,True,True,True,True,True
+330,3300,"Hattiesburg, MS",25620.0,primary_city_state,"Hattiesburg, MS","Hattiesburg, MS",25620,False,1986.0,2026.0,394671.0,"Hattiesburg, MS",255.0,True,True,True,False,True,True,True,True,True
+332,3320,"Honolulu, HI",46520.0,manual,"Urban Honolulu, HI","Urban Honolulu, HI",46520,False,1977.0,2026.0,753924.0,"Urban Honolulu, HI",55.0,True,True,True,True,True,True,True,True,True
+335,3350,"Houma-Thibodoux, LA",26380.0,primary_city_state,"Houma-Thibodaux, LA","Houma-Bayou Cane-Thibodaux, LA",26380,False,1985.0,2026.0,394691.0,"Houma, LA",221.0,True,True,True,False,True,True,True,True,True
+336,3360,"Houston-Brazoria, TX",26420.0,manual,"Houston-The Woodlands-Sugar Land, TX","Houston-Pasadena-The Woodlands, TX",26420,False,1976.0,2026.0,394692.0,"Houston, TX",5.0,True,True,True,True,True,True,True,True,True
+340,3400,"Huntington-Ashland, WV/KY/OH",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+344,3440,"Huntsville, AL",26620.0,primary_city_state,"Huntsville, AL","Huntsville, AL",26620,False,1984.0,2026.0,394698.0,"Huntsville, AL",114.0,True,True,True,False,True,True,True,True,True
+348,3480,"Indianapolis, IN",26900.0,manual,"Indianapolis-Carmel-Anderson, IN","Indianapolis-Carmel-Greenwood, IN",26900,False,1976.0,2026.0,394705.0,"Indianapolis, IN",34.0,True,True,True,True,True,True,True,True,True
+350,3500,"Iowa City, IA",26980.0,primary_city_state,"Iowa City, IA","Iowa City, IA",26980,False,1986.0,2026.0,394707.0,"Iowa City, IA",252.0,True,True,True,False,True,True,True,True,True
+352,3520,"Jackson, MI",27100.0,primary_city_state,"Jackson, MI","Jackson, MI",27100,False,1986.0,2026.0,394710.0,"Jackson, MI",272.0,True,True,True,False,True,True,True,True,True
+356,3560,"Jackson, MS",27140.0,primary_city_state,"Jackson, MS","Jackson, MS",27140,False,1980.0,2026.0,394711.0,"Jackson, MS",98.0,True,True,True,True,True,True,True,True,True
+358,3580,"Jackson, TN",27180.0,primary_city_state,"Jackson, TN","Jackson, TN",27180,False,1988.0,2026.0,394712.0,"Jackson, TN",246.0,True,True,True,False,True,True,True,True,True
+359,3590,"Jacksonville, FL",27260.0,primary_city_state,"Jacksonville, FL","Jacksonville, FL",27260,False,1978.0,2026.0,394714.0,"Jacksonville, FL",40.0,True,True,True,True,True,True,True,True,True
+360,3600,"Jacksonville, NC",27340.0,primary_city_state,"Jacksonville, NC","Jacksonville, NC",27340,False,1993.0,2026.0,394716.0,"Jacksonville, NC",227.0,True,True,True,False,False,True,True,True,True
+361,3610,"Jamestown-Dunkirk, NY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+362,3620,"Janesville-Beloit, WI",27500.0,primary_city_state,"Janesville-Beloit, WI","Janesville-Beloit, WI",27500,False,1983.0,2026.0,394720.0,"Janesville, WI",268.0,True,True,True,False,True,True,True,True,True
+366,3660,"Johnson City-Kingsport--Bristol, TN/VA",27740.0,manual,"Johnson City, TN","Johnson City, TN",27740,False,1992.0,2026.0,394726.0,"Johnson City, TN",224.0,True,True,True,False,False,True,True,True,True
+368,3680,"Johnstown, PA",27780.0,primary_city_state,"Johnstown, PA","Johnstown, PA",27780,False,1994.0,2026.0,394727.0,"Johnstown, PA",322.0,True,True,True,False,False,True,True,True,True
+371,3710,"Joplin, MO",27900.0,primary_city_state,"Joplin, MO","Joplin, MO-KS",27900,False,1987.0,2026.0,394729.0,"Joplin, MO",243.0,True,True,True,False,True,True,True,True,True
+372,3720,"Kalamazoo-Portage, MI",28020.0,primary_city_state,"Kalamazoo-Portage, MI","Kalamazoo-Portage, MI",28020,False,1978.0,2026.0,394732.0,"Kalamazoo, MI",190.0,True,True,True,True,True,True,True,True,True
+374,3740,"Kankakee, IL",28100.0,primary_city_state,"Kankakee, IL","Kankakee, IL",28100,False,1987.0,2026.0,394734.0,"Kankakee, IL",370.0,True,True,True,False,True,True,True,True,True
+376,3760,"Kansas City, MO/KS",28140.0,manual,"Kansas City, MO-KS","Kansas City, MO-KS",28140,False,1976.0,2026.0,394735.0,"Kansas City, MO",31.0,True,True,True,True,True,True,True,True,True
+380,3800,"Kenosha, WI",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+381,3810,"Kileen-Temple, TX",28660.0,manual,"Killeen-Temple, TX","Killeen-Temple, TX",28660,False,1985.0,2026.0,394746.0,"Killeen, TX",120.0,True,True,True,False,True,True,True,True,True
+384,3840,"Knoxville, TN",28940.0,primary_city_state,"Knoxville, TN","Knoxville, TN",28940,False,1983.0,2026.0,394753.0,"Knoxville, TN",65.0,True,True,True,False,True,True,True,True,True
+385,3850,"Kokomo, IN",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+387,3870,"LaCrosse, WI",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+388,3880,"Lafayette, LA",29180.0,primary_city_state,"Lafayette, LA","Lafayette, LA",29180,False,1980.0,2026.0,394761.0,"Lafayette, LA",116.0,True,True,True,True,True,True,True,True,True
+392,3920,"Lafayette-W. Lafayette, IN",29200.0,primary_city_state,"Lafayette-West Lafayette, IN","Lafayette-West Lafayette, IN",29200,False,1984.0,2026.0,753895.0,"Lafayette, IN",208.0,True,True,True,False,True,True,True,True,True
+396,3960,"Lake Charles, LA",29340.0,primary_city_state,"Lake Charles, LA","Lake Charles, LA",29340,False,1987.0,2026.0,394763.0,"Lake Charles, LA",213.0,True,True,True,False,True,True,True,True,True
+398,3980,"Lakeland-Winterhaven, FL",29460.0,primary_city_state,"Lakeland-Winter Haven, FL","Lakeland-Winter Haven, FL",29460,False,1981.0,2026.0,394766.0,"Lakeland, FL",82.0,True,True,True,False,True,True,True,True,True
+400,4000,"Lancaster, PA",29540.0,primary_city_state,"Lancaster, PA","Lancaster, PA",29540,False,1979.0,2026.0,394768.0,"Lancaster, PA",104.0,True,True,True,True,True,True,True,True,True
+404,4040,"Lansing-E. Lansing, MI",29620.0,primary_city_state,"Lansing-East Lansing, MI","Lansing-East Lansing, MI",29620,False,1978.0,2026.0,394770.0,"Lansing, MI",107.0,True,True,True,True,True,True,True,True,True
+408,4080,"Laredo, TX",29700.0,primary_city_state,"Laredo, TX","Laredo, TX",29700,False,1992.0,2026.0,394772.0,"Laredo, TX",187.0,True,True,True,False,False,True,True,True,True
+410,4100,"Las Cruces, NM",29740.0,primary_city_state,"Las Cruces, NM","Las Cruces, NM",29740,False,1984.0,2026.0,394773.0,"Las Cruces, NM",214.0,True,True,True,False,True,True,True,True,True
+412,4120,"Las Vegas, NV",29820.0,primary_city_state,"Las Vegas-Henderson-Paradise, NV","Las Vegas-Henderson-North Las Vegas, NV",29820,False,1978.0,2026.0,394775.0,"Las Vegas, NV",30.0,True,True,True,True,True,True,True,True,True
+415,4150,"Lawrence, KS",29940.0,primary_city_state,"Lawrence, KS","Lawrence, KS",29940,False,1985.0,2026.0,394778.0,"Lawrence, KS",349.0,True,True,True,False,True,True,True,True,True
+420,4200,"Lawton, OK",30020.0,primary_city_state,"Lawton, OK","Lawton, OK",30020,False,1992.0,2026.0,394780.0,"Lawton, OK",332.0,True,True,True,False,False,True,True,True,True
+424,4240,"Lewiston-Auburn, ME",30340.0,primary_city_state,"Lewiston-Auburn, ME","Lewiston-Auburn, ME",30340,False,1987.0,2026.0,394788.0,"Lewiston, ME",367.0,True,True,True,False,True,True,True,True,True
+428,4280,"Lexington-Fayette, KY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+432,4320,"Lima, OH",30620.0,primary_city_state,"Lima, OH","Lima, OH",30620,False,1982.0,2026.0,394794.0,"Lima, OH",387.0,True,True,True,False,True,True,True,True,True
+436,4360,"Lincoln, NE",30700.0,primary_city_state,"Lincoln, NE","Lincoln, NE",30700,False,1979.0,2026.0,394796.0,"Lincoln, NE",154.0,True,True,True,True,True,True,True,True,True
+440,4400,"Little Rock-N. Little Rock, AR",30780.0,primary_city_state,"Little Rock-North Little Rock-Conway, AR","Little Rock-North Little Rock-Conway, AR",30780,False,1977.0,2026.0,394798.0,"Little Rock, AR",81.0,True,True,True,True,True,True,True,True,True
+441,4410,"Long Branch-Asbury Park, NJ",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+442,4420,"Longview-Marshall, TX",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+444,4440,"Lorain-Elyria, OH",17460.0,any_city_state,"Cleveland-Elyria, OH","Cleveland, OH",17410,False,1975.0,2026.0,394475.0,"Cleveland, OH",35.0,True,True,True,True,True,True,True,True,True
+448,4480,"Los Angeles-Long Beach, CA",31080.0,manual,"Los Angeles-Long Beach-Anaheim, CA","Los Angeles-Long Beach-Anaheim, CA",11244;31084,True,1975.0,2026.0,753899.0,"Los Angeles, CA",2.0,True,True,True,True,True,True,True,True,True
+452,4520,"Louisville, KY/IN",31140.0,manual,"Louisville/Jefferson County, KY-IN","Louisville/Jefferson County, KY-IN",31140,False,1976.0,2026.0,394807.0,"Louisville, KY",46.0,True,True,True,True,True,True,True,True,True
+460,4600,"Lubbock, TX",31180.0,primary_city_state,"Lubbock, TX","Lubbock, TX",31180,False,1979.0,2026.0,394808.0,"Lubbock, TX",162.0,True,True,True,True,True,True,True,True,True
+464,4640,"Lynchburg, VA",31340.0,primary_city_state,"Lynchburg, VA","Lynchburg, VA",31340,False,1986.0,2026.0,394811.0,"Lynchburg, VA",191.0,True,True,True,False,True,True,True,True,True
+468,4680,"Macon-Warner Robins, GA",47580.0,any_city_state,"Warner Robins, GA","Warner Robins, GA",47580,False,1986.0,2026.0,395202.0,"Warner Robins, GA",234.0,True,True,True,False,True,True,True,True,True
+472,4720,"Madison, WI",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+476,4760,"Manchester, NH",31700.0,primary_city_state,"Manchester-Nashua, NH","Manchester-Nashua, NH",31700,False,1980.0,2026.0,394820.0,"Manchester, NH",131.0,True,True,True,True,True,True,True,True,True
+480,4800,"Mansfield, OH",31900.0,primary_city_state,"Mansfield, OH","Mansfield, OH",31900,False,1983.0,2026.0,394824.0,"Mansfield, OH",337.0,True,True,True,False,True,True,True,True,True
+484,4840,"Mayaguez, PR",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+488,4880,"McAllen-Edinburg-Pharr-Mission, TX",32580.0,manual,"McAllen-Edinburg-Mission, TX","McAllen-Edinburg-Mission, TX",32580,False,1986.0,2026.0,394843.0,"McAllen, TX",67.0,True,True,True,False,True,True,True,True,True
+489,4890,"Medford, OR",32780.0,primary_city_state,"Medford, OR","Medford, OR",32780,False,1979.0,2026.0,394848.0,"Medford, OR",210.0,True,True,True,True,True,True,True,True,True
+490,4900,"Melbourne-Titusville-Cocoa-Palm Bay, FL",37340.0,any_city_state,"Palm Bay-Melbourne-Titusville, FL","Palm Bay-Melbourne-Titusville, FL",37340,False,1979.0,2026.0,394957.0,"Palm Bay, FL",97.0,True,True,True,True,True,True,True,True,True
+492,4920,"Memphis, TN/AR/MS",32820.0,primary_city_state,"Memphis, TN-MS-AR","Memphis, TN-MS-AR",32820,False,1977.0,2026.0,394849.0,"Memphis, TN",44.0,True,True,True,True,True,True,True,True,True
+494,4940,"Merced, CA",32900.0,primary_city_state,"Merced, CA","Merced, CA",32900,False,1979.0,2026.0,394851.0,"Merced, CA",177.0,True,True,True,True,True,True,True,True,True
+500,5000,"Miami-Hialeah, FL",33100.0,manual,"Miami-Fort Lauderdale-West Palm Beach, FL","Miami-Fort Lauderdale-West Palm Beach, FL",22744;33124;48424,True,1975.0,2026.0,394856.0,"Miami, FL",8.0,True,True,True,True,True,True,True,True,True
+504,5040,"Midland, TX",33260.0,primary_city_state,"Midland, TX","Midland, TX",33260,False,1980.0,2026.0,394860.0,"Midland, TX",254.0,True,True,True,True,True,True,True,True,True
+508,5080,"Milwaukee, WI",33340.0,manual,"Milwaukee-Waukesha-West Allis, WI","Milwaukee-Waukesha, WI",33340,False,1977.0,2026.0,394862.0,"Milwaukee, WI",41.0,True,True,True,True,True,True,True,True,True
+512,5120,"Minneapolis-St. Paul, MN",33460.0,manual,"Minneapolis-St. Paul-Bloomington, MN-WI","Minneapolis-St. Paul-Bloomington, MN-WI",33460,False,1976.0,2026.0,394865.0,"Minneapolis, MN",16.0,True,True,True,True,True,True,True,True,True
+514,5140,"Missoula, MT",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+516,5160,"Mobile, AL",33660.0,primary_city_state,"Mobile, AL","Mobile, AL",33660,False,1983.0,2026.0,394870.0,"Mobile, AL",127.0,True,True,True,False,True,True,True,True,True
+517,5170,"Modesto, CA",33700.0,primary_city_state,"Modesto, CA","Modesto, CA",33700,False,1977.0,2026.0,394871.0,"Modesto, CA",103.0,True,True,True,True,True,True,True,True,True
+519,5190,"Monmouth-Ocean, NJ",35620.0,manual,"New York-Newark-Jersey City, NY-NJ-PA","New York-Newark-Jersey City, NY-NJ-PA",29484;35004;35084;35614,True,1975.0,2026.0,394913.0,"New York, NY",1.0,True,True,True,True,True,True,True,True,True
+520,5200,"Monroe, LA",33740.0,primary_city_state,"Monroe, LA","Monroe, LA",33740,False,1984.0,2026.0,394872.0,"Monroe, LA",222.0,True,True,True,False,True,True,True,True,True
+524,5240,"Montgomery, AL",33860.0,primary_city_state,"Montgomery, AL","Montgomery, AL",33860,False,1986.0,2026.0,394875.0,"Montgomery, AL",143.0,True,True,True,False,True,True,True,True,True
+528,5280,"Muncie, IN",34620.0,primary_city_state,"Muncie, IN","Muncie, IN",34620,False,1990.0,2026.0,394893.0,"Muncie, IN",364.0,True,True,True,False,True,True,True,True,True
+532,5320,"Muskegon-Norton Shores-Muskegon Heights, MI",34740.0,primary_city_state,"Muskegon, MI","Muskegon-Norton Shores, MI",34740,False,1985.0,2026.0,394896.0,"Muskegon, MI",250.0,True,True,True,False,True,True,True,True,True
+533,5330,"Myrtle Beach, SC",34820.0,primary_city_state,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC","Myrtle Beach-Conway-North Myrtle Beach, SC",34820,False,1987.0,2026.0,394898.0,"Myrtle Beach, SC",117.0,True,True,True,False,True,True,True,True,True
+534,5340,"Naples, FL",34940.0,primary_city_state,"Naples-Immokalee-Marco Island, FL","Naples-Marco Island, FL",34940,False,1984.0,2026.0,394901.0,"Naples, FL",147.0,True,True,True,False,True,True,True,True,True
+535,5350,"Nashua, NH",31700.0,any_city_state,"Manchester-Nashua, NH","Manchester-Nashua, NH",31700,False,1980.0,2026.0,394820.0,"Manchester, NH",131.0,True,True,True,True,True,True,True,True,True
+536,5360,"Nashville, TN",34980.0,primary_city_state,"Nashville-Davidson--Murfreesboro--Franklin, TN","Nashville-Davidson--Murfreesboro--Franklin, TN",34980,False,1979.0,2026.0,394902.0,"Nashville, TN",37.0,True,True,True,True,True,True,True,True,True
+540,5400,"New Bedford, MA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+546,5460,"New Brunswick-Perth Amboy-Sayreville, NJ",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+548,5480,"New Haven-Meriden, CT",35300.0,manual,"New Haven-Milford, CT","New Haven, CT",35300,False,1977.0,2026.0,394908.0,"New Haven, CT",68.0,True,True,True,True,True,True,True,True,True
+552,5520,"New London-Norwich, CT/RI",35980.0,any_city_state,"Norwich-New London, CT","Norwich-New London-Willimantic, CT",35980,False,1985.0,2026.0,394924.0,"Norwich, CT",185.0,True,True,True,False,True,True,True,True,True
+556,5560,"New Orleans, LA",35380.0,manual,"New Orleans-Metairie, LA","New Orleans-Metairie, LA",35380,False,1977.0,2026.0,394910.0,"New Orleans, LA",47.0,True,True,True,True,True,True,True,True,True
+560,5600,"New York, NY-Northeastern NJ",35620.0,manual,"New York-Newark-Jersey City, NY-NJ-PA","New York-Newark-Jersey City, NY-NJ-PA",29484;35004;35084;35614,True,1975.0,2026.0,394913.0,"New York, NY",1.0,True,True,True,True,True,True,True,True,True
+564,5640,"Newark, OH",35620.0,manual,"New York-Newark-Jersey City, NY-NJ-PA","New York-Newark-Jersey City, NY-NJ-PA",29484;35004;35084;35614,True,1975.0,2026.0,394913.0,"New York, NY",1.0,True,True,True,True,True,True,True,True,True
+566,5660,"Newburgh-Middletown, NY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+572,5720,"Norfolk-VA Beach--Newport News, VA",47260.0,manual,"Virginia Beach-Norfolk-Newport News, VA-NC","Virginia Beach-Chesapeake-Norfolk, VA-NC",47260,False,1976.0,2026.0,395194.0,"Virginia Beach, VA",38.0,True,True,True,True,True,True,True,True,True
+576,5760,"Norwalk, CT",14860.0,any_city_state,"Bridgeport-Stamford-Norwalk, CT","Bridgeport-Stamford-Danbury, CT",14860,False,1976.0,2026.0,394415.0,"Bridgeport, CT",60.0,True,True,True,True,True,True,True,True,True
+579,5790,"Ocala, FL",36100.0,primary_city_state,"Ocala, FL","Ocala, FL",36100,False,1986.0,2026.0,394927.0,"Ocala, FL",149.0,True,True,True,False,True,True,True,True,True
+580,5800,"Odessa, TX",36220.0,primary_city_state,"Odessa, TX","Odessa, TX",36220,False,1982.0,2026.0,394930.0,"Odessa, TX",271.0,True,True,True,False,True,True,True,True,True
+588,5880,"Oklahoma City, OK",36420.0,manual,"Oklahoma City, OK","Oklahoma City, OK",36420,False,1977.0,2026.0,394935.0,"Oklahoma City, OK",42.0,True,True,True,True,True,True,True,True,True
+591,5910,"Olympia, WA",36500.0,primary_city_state,"Olympia-Tumwater, WA","Olympia-Lacey-Tumwater, WA",36500,False,1980.0,2026.0,394937.0,"Olympia, WA",172.0,True,True,True,True,True,True,True,True,True
+592,5920,"Omaha, NE/IA",36540.0,manual,"Omaha-Council Bluffs, NE-IA","Omaha, NE-IA",36540,False,1977.0,2026.0,394938.0,"Omaha, NE",59.0,True,True,True,True,True,True,True,True,True
+595,5950,"Orange, NY",35620.0,manual,"New York-Newark-Jersey City, NY-NJ-PA","New York-Newark-Jersey City, NY-NJ-PA",29484;35004;35084;35614,True,1975.0,2026.0,394913.0,"New York, NY",1.0,True,True,True,True,True,True,True,True,True
+596,5960,"Orlando, FL",36740.0,manual,"Orlando-Kissimmee-Sanford, FL","Orlando-Kissimmee-Sanford, FL",36740,False,1978.0,2026.0,394943.0,"Orlando, FL",22.0,True,True,True,True,True,True,True,True,True
+599,5990,"Owensboro, KY",36980.0,primary_city_state,"Owensboro, KY","Owensboro, KY",36980,False,1986.0,2026.0,394949.0,"Owensboro, KY",346.0,True,True,True,False,True,True,True,True,True
+601,6010,"Panama City, FL",37460.0,primary_city_state,"Panama City, FL","Panama City-Panama City Beach, FL",37460,False,1986.0,2026.0,394960.0,"Panama City, FL",242.0,True,True,True,False,True,True,True,True,True
+602,6020,"Parkersburg-Marietta,WV/OH",37620.0,primary_city_state,"Parkersburg-Vienna, WV","Parkersburg-Vienna, WV",37620,False,1990.0,2026.0,394964.0,"Parkersburg, WV",419.0,True,True,True,False,True,True,True,True,True
+603,6030,"Pascagoula-Moss Point, MS",25060.0,any_city_state,"Gulfport-Biloxi-Pascagoula, MS","Gulfport-Biloxi, MS",25060,False,1986.0,2026.0,394658.0,"Gulfport, MS",133.0,True,True,True,False,True,True,True,True,True
+608,6080,"Pensacola, FL",37860.0,primary_city_state,"Pensacola-Ferry Pass-Brent, FL","Pensacola-Ferry Pass-Brent, FL",37860,False,1983.0,2026.0,394971.0,"Pensacola, FL",111.0,True,True,True,False,True,True,True,True,True
+612,6120,"Peoria, IL",37900.0,primary_city_state,"Peoria, IL","Peoria, IL",37900,False,1979.0,2026.0,394972.0,"Peoria, IL",136.0,True,True,True,True,True,True,True,True,True
+616,6160,"Philadelphia, PA/NJ",37980.0,manual,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD","Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",15804;33874;37964;48864,True,1976.0,2026.0,394974.0,"Philadelphia, PA",7.0,True,True,True,True,True,True,True,True,True
+620,6200,"Phoenix, AZ",38060.0,manual,"Phoenix-Mesa-Scottsdale, AZ","Phoenix-Mesa-Chandler, AZ",38060,False,1977.0,2026.0,394976.0,"Phoenix, AZ",11.0,True,True,True,True,True,True,True,True,True
+628,6280,"Pittsburgh, PA",38300.0,manual,"Pittsburgh, PA","Pittsburgh, PA",38300,False,1976.0,2026.0,394982.0,"Pittsburgh, PA",27.0,True,True,True,True,True,True,True,True,True
+632,6320,"Pittsfield, MA",38340.0,primary_city_state,"Pittsfield, MA","Pittsfield, MA",38340,False,1986.0,2026.0,394983.0,"Pittsfield, MA",326.0,True,True,True,False,True,True,True,True,True
+636,6360,"Ponce, PR",38660.0,primary_city_state,"Ponce, PR",,,,,,,,,False,False,False,False,False,False,False,False,False
+640,6400,"Portland, ME",38860.0,primary_city_state,"Portland-South Portland, ME","Portland-South Portland, ME",38860,False,1982.0,2026.0,394997.0,"Portland, ME",105.0,True,True,True,False,True,True,True,True,True
+644,6440,"Portland, OR/WA",38900.0,manual,"Portland-Vancouver-Hillsboro, OR-WA","Portland-Vancouver-Hillsboro, OR-WA",38900,False,1976.0,2026.0,394998.0,"Portland, OR",25.0,True,True,True,True,True,True,True,True,True
+645,6450,"Portsmouth-Dover--Rochester, NH/ME",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+646,6460,"Poughkeepsie, NY",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+648,6480,"Providence-Fall River-Pawtucket, MA/RI",39300.0,manual,"Providence-Warwick, RI-MA","Providence-Warwick, RI-MA",39300,False,1976.0,2026.0,395005.0,"Providence, RI",39.0,True,True,True,True,True,True,True,True,True
+652,6520,"Provo-Orem, UT",39340.0,primary_city_state,"Provo-Orem, UT","Provo-Orem-Lehi, UT",39340,False,1982.0,2026.0,395006.0,"Provo, UT",92.0,True,True,True,False,True,True,True,True,True
+656,6560,"Pueblo, CO",39380.0,primary_city_state,"Pueblo, CO","Pueblo, CO",39380,False,1978.0,2026.0,395007.0,"Pueblo, CO",264.0,True,True,True,True,True,True,True,True,True
+658,6580,"Punta Gorda, FL",39460.0,primary_city_state,"Punta Gorda, FL","Punta Gorda, FL",39460,False,1987.0,2026.0,395009.0,"Punta Gorda, FL",237.0,True,True,True,False,True,True,True,True,True
+660,6600,"Racine, WI",39540.0,primary_city_state,"Racine, WI","Racine-Mount Pleasant, WI",39540,False,1981.0,2026.0,395011.0,"Racine, WI",231.0,True,True,True,False,True,True,True,True,True
+664,6640,"Raleigh-Durham, NC",39580.0,manual,"Raleigh, NC","Raleigh-Cary, NC",39580,False,1977.0,2026.0,395012.0,"Raleigh, NC",43.0,True,True,True,True,True,True,True,True,True
+666,6660,"Rapid City, SD",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+668,6680,"Reading, PA",39740.0,primary_city_state,"Reading, PA","Reading, PA",39740,False,1979.0,2026.0,395015.0,"Reading, PA",128.0,True,True,True,True,True,True,True,True,True
+669,6690,"Redding, CA",39820.0,primary_city_state,"Redding, CA","Redding, CA",39820,False,1980.0,2026.0,395018.0,"Redding, CA",240.0,True,True,True,True,True,True,True,True,True
+672,6720,"Reno, NV",39900.0,primary_city_state,"Reno, NV","Reno, NV",39900,False,1978.0,2026.0,395019.0,"Reno, NV",113.0,True,True,True,True,True,True,True,True,True
+674,6740,"Richland-Kennewick-Pasco, WA",28420.0,any_city_state,"Kennewick-Richland, WA","Kennewick-Richland, WA",28420,False,1979.0,2026.0,394741.0,"Kennewick, WA",168.0,True,True,True,True,True,True,True,True,True
+676,6760,"Richmond-Petersburg, VA",40060.0,manual,"Richmond, VA","Richmond, VA",40060,False,1976.0,2026.0,395022.0,"Richmond, VA",45.0,True,True,True,True,True,True,True,True,True
+678,6780,"Riverside-San Bernardino, CA",40140.0,manual,"Riverside-San Bernardino-Ontario, CA","Riverside-San Bernardino-Ontario, CA",40140,False,1976.0,2026.0,395025.0,"Riverside, CA",13.0,True,True,True,True,True,True,True,True,True
+680,6800,"Roanoke, VA",40220.0,primary_city_state,"Roanoke, VA","Roanoke, VA",40220,False,1979.0,2026.0,395028.0,"Roanoke, VA",164.0,True,True,True,True,True,True,True,True,True
+682,6820,"Rochester, MN",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+684,6840,"Rochester, NY",40380.0,manual,"Rochester, NY","Rochester, NY",40380,False,1978.0,2026.0,395031.0,"Rochester, NY",52.0,True,True,True,True,True,True,True,True,True
+688,6880,"Rockford, IL",40420.0,manual,"Rockford, IL","Rockford, IL",40420,False,1978.0,2026.0,395033.0,"Rockford, IL",153.0,True,True,True,True,True,True,True,True,True
+689,6895,"Rocky Mount, NC",40580.0,primary_city_state,"Rocky Mount, NC","Rocky Mount, NC",40580,False,1985.0,2026.0,395036.0,"Rocky Mount, NC",303.0,True,True,True,False,True,True,True,True,True
+692,6920,"Sacramento, CA",40900.0,manual,"Sacramento--Roseville--Arden-Arcade, CA","Sacramento-Roseville-Folsom, CA",40900,False,1976.0,2026.0,395045.0,"Sacramento, CA",26.0,True,True,True,True,True,True,True,True,True
+696,6960,"Saginaw-Bay City-Midland, MI",40980.0,primary_city_state,"Saginaw, MI","Saginaw, MI",40980,False,1980.0,2026.0,395047.0,"Saginaw, MI",233.0,True,True,True,True,True,True,True,True,True
+698,6980,"St. Cloud, MN",41060.0,primary_city_state,"St. Cloud, MN","St. Cloud, MN",41060,False,1987.0,2026.0,395118.0,"St. Cloud, MN",230.0,True,True,True,False,True,True,True,True,True
+700,7000,"St. Joseph, MO",41140.0,primary_city_state,"St. Joseph, MO-KS","St. Joseph, MO-KS",41140,False,1986.0,2026.0,395120.0,"St. Joseph, MO",343.0,True,True,True,False,True,True,True,True,True
+704,7040,"St. Louis, MO/IL",41180.0,manual,"St. Louis, MO-IL","St. Louis, MO-IL",41180,False,1975.0,2026.0,395121.0,"St. Louis, MO",21.0,True,True,True,True,True,True,True,True,True
+708,7080,"Salem, OR",41420.0,primary_city_state,"Salem, OR","Salem, OR",41420,False,1978.0,2026.0,395048.0,"Salem, OR",126.0,True,True,True,True,True,True,True,True,True
+712,7120,"Salinas-Sea Side-Monterey, CA",41500.0,primary_city_state,"Salinas, CA","Salinas, CA",41500,False,1977.0,2026.0,395050.0,"Salinas, CA",125.0,True,True,True,True,True,True,True,True,True
+714,7140,"Salisbury-Concord, NC",16740.0,any_city_state,"Charlotte-Concord-Gastonia, NC-SC","Charlotte-Concord-Gastonia, NC-SC",16740,False,1977.0,2026.0,394458.0,"Charlotte, NC",23.0,True,True,True,True,True,True,True,True,True
+716,7160,"Salt Lake City-Ogden, UT",41620.0,manual,"Salt Lake City, UT","Salt Lake City-Murray, UT",41620,False,1977.0,2026.0,395053.0,"Salt Lake City, UT",48.0,True,True,True,True,True,True,True,True,True
+720,7200,"San Angelo, TX",41660.0,primary_city_state,"San Angelo, TX","San Angelo, TX",41660,False,1984.0,2026.0,395054.0,"San Angelo, TX",344.0,True,True,True,False,True,True,True,True,True
+724,7240,"San Antonio, TX",41700.0,manual,"San Antonio-New Braunfels, TX","San Antonio-New Braunfels, TX",41700,False,1979.0,2026.0,395055.0,"San Antonio, TX",24.0,True,True,True,True,True,True,True,True,True
+732,7320,"San Diego, CA",41740.0,manual,"San Diego-Carlsbad, CA","San Diego-Chula Vista-Carlsbad, CA",41740,False,1975.0,2026.0,395056.0,"San Diego, CA",17.0,True,True,True,True,True,True,True,True,True
+736,7360,"San Francisco-Oakland-Vallejo, CA",41860.0,manual,"San Francisco-Oakland-Hayward, CA","San Francisco-Oakland-Hayward, CA",36084;41884;42034,True,1975.0,2026.0,395057.0,"San Francisco, CA",12.0,True,True,True,True,True,True,True,True,True
+740,7400,"San Jose, CA",41940.0,manual,"San Jose-Sunnyvale-Santa Clara, CA","San Jose-Sunnyvale-Santa Clara, CA",41940,False,1975.0,2026.0,395059.0,"San Jose, CA",36.0,True,True,True,True,True,True,True,True,True
+744,7440,"San Juan-Bayamon, PR",41980.0,primary_city_state,"San Juan-Carolina-Caguas, PR",,,,,,,,,False,False,False,False,False,False,False,False,False
+746,7460,"San Luis Obispo-Atascad-P Robles, CA",42020.0,primary_city_state,"San Luis Obispo-Paso Robles-Arroyo Grande, CA","San Luis Obispo-Paso Robles, CA",42020,False,1977.0,2026.0,395061.0,"San Luis Obispo, CA",175.0,True,True,True,True,True,True,True,True,True
+747,7470,"Santa Barbara-Santa Maria-Lompoc, CA",42200.0,any_city_state,"Santa Maria-Santa Barbara, CA","Santa Maria-Santa Barbara, CA",42200,False,1977.0,2026.0,753917.0,"Santa Maria, CA",124.0,True,True,True,True,True,True,True,True,True
+748,7480,"Santa Cruz, CA",42200.0,manual,"Santa Maria-Santa Barbara, CA","Santa Maria-Santa Barbara, CA",42200,False,1977.0,2026.0,753917.0,"Santa Maria, CA",124.0,True,True,True,True,True,True,True,True,True
+749,7490,"Santa Fe, NM",42140.0,primary_city_state,"Santa Fe, NM","Santa Fe, NM",42140,False,1983.0,2026.0,395066.0,"Santa Fe, NM",284.0,True,True,True,False,True,True,True,True,True
+750,7500,"Santa Rosa-Petaluma, CA",42220.0,primary_city_state,"Santa Rosa, CA","Santa Rosa-Petaluma, CA",42220,False,1976.0,2026.0,395068.0,"Santa Rosa, CA",112.0,True,True,True,True,True,True,True,True,True
+751,7510,"Sarasota, FL",35840.0,manual,"North Port-Sarasota-Bradenton, FL","North Port-Bradenton-Sarasota, FL",35840,False,1977.0,2026.0,753906.0,"North Port, FL",73.0,True,True,True,True,True,True,True,True,True
+752,7520,"Savannah, GA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+756,7560,"Scranton-Wilkes-Barre, PA",42540.0,manual,"Scranton--Wilkes-Barre--Hazleton, PA","Scranton--Wilkes-Barre, PA",42540,False,1983.0,2026.0,395075.0,"Scranton, PA",101.0,True,True,True,False,True,True,True,True,True
+760,7600,"Seattle-Everett, WA",42660.0,manual,"Seattle-Tacoma-Bellevue, WA","Seattle-Tacoma-Bellevue, WA",21794;42644;45104,True,1975.0,2026.0,395078.0,"Seattle, WA",15.0,True,True,True,True,True,True,True,True,True
+761,7610,"Sharon, PA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+762,7620,"Sheboygan, WI",43100.0,primary_city_state,"Sheboygan, WI","Sheboygan, WI",43100,False,1986.0,2026.0,395089.0,"Sheboygan, WI",352.0,True,True,True,False,True,True,True,True,True
+764,7640,"Sherman-Davidson, TX",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+768,7680,"Shreveport, LA",43340.0,manual,"Shreveport-Bossier City, LA","Shreveport-Bossier City, LA",43340,False,1984.0,2026.0,395096.0,"Shreveport, LA",141.0,True,True,True,False,True,True,True,True,True
+772,7720,"Sioux City, IA/NE",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+776,7760,"Sioux Falls, SD",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+780,7800,"South Bend-Mishawaka, IN",43780.0,manual,,"South Bend-Mishawaka, IN-MI",43780,False,1982.0,2026.0,395107.0,"South Bend, IN",159.0,True,True,True,False,True,True,True,True,True
+784,7840,"Spokane, WA",44060.0,primary_city_state,"Spokane-Spokane Valley, WA","Spokane-Spokane Valley, WA",44060,False,1977.0,2026.0,395113.0,"Spokane, WA",100.0,True,True,True,True,True,True,True,True,True
+788,7880,"Springfield, IL",44100.0,primary_city_state,"Springfield, IL","Springfield, IL",44100,False,1984.0,2026.0,395114.0,"Springfield, IL",220.0,True,True,True,False,True,True,True,True,True
+792,7920,"Springfield, MO",44180.0,primary_city_state,"Springfield, MO","Springfield, MO",44180,False,1984.0,2026.0,395116.0,"Springfield, MO",118.0,True,True,True,False,True,True,True,True,True
+800,8000,"Springfield-Holyoke-Chicopee, MA",44140.0,primary_city_state,"Springfield, MA","Springfield, MA",44140,False,1979.0,2026.0,395115.0,"Springfield, MA",85.0,True,True,True,True,True,True,True,True,True
+804,8040,"Stamford, CT",14860.0,manual,"Bridgeport-Stamford-Norwalk, CT","Bridgeport-Stamford-Danbury, CT",14860,False,1976.0,2026.0,394415.0,"Bridgeport, CT",60.0,True,True,True,True,True,True,True,True,True
+805,8050,"State College, PA",44300.0,primary_city_state,"State College, PA","State College, PA",44300,False,1989.0,2026.0,395125.0,"State College, PA",273.0,True,True,True,False,True,True,True,True,True
+808,8080,"Steubenville-Weirton,OH/WV",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+812,8120,"Stockton, CA",44700.0,manual,"Stockton-Lodi, CA","Stockton-Lodi, CA",44700,False,1977.0,2026.0,395134.0,"Stockton, CA",77.0,True,True,True,True,True,True,True,True,True
+814,8140,"Sumter, SC",44940.0,primary_city_state,"Sumter, SC","Sumter, SC",44940,False,1990.0,2026.0,395139.0,"Sumter, SC",314.0,True,True,True,False,True,True,True,True,True
+816,8160,"Syracuse, NY",45060.0,manual,"Syracuse, NY","Syracuse, NY",45060,False,1977.0,2026.0,395143.0,"Syracuse, NY",91.0,True,True,True,True,True,True,True,True,True
+820,8200,"Tacoma, WA",42660.0,manual,"Seattle-Tacoma-Bellevue, WA","Seattle-Tacoma-Bellevue, WA",21794;42644;45104,True,1975.0,2026.0,395078.0,"Seattle, WA",15.0,True,True,True,True,True,True,True,True,True
+824,8240,"Tallahassee, FL",45220.0,primary_city_state,"Tallahassee, FL","Tallahassee, FL",45220,False,1980.0,2026.0,395146.0,"Tallahassee, FL",145.0,True,True,True,True,True,True,True,True,True
+828,8280,"Tampa-St. Petersburg-Clearwater, FL",45300.0,manual,"Tampa-St. Petersburg-Clearwater, FL","Tampa-St. Petersburg-Clearwater, FL",41304;45294,True,1976.0,2026.0,395148.0,"Tampa, FL",18.0,True,True,True,True,True,True,True,True,True
+832,8320,"Terre Haute, IN",45460.0,primary_city_state,"Terre Haute, IN","Terre Haute, IN",45460,False,1992.0,2026.0,395151.0,"Terre Haute, IN",235.0,True,True,True,False,False,True,True,True,True
+836,8360,"Texarkana, TX/AR",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+840,8400,"Toledo, OH/MI",45780.0,manual,"Toledo, OH","Toledo, OH",45780,False,1978.0,2026.0,395160.0,"Toledo, OH",93.0,True,True,True,True,True,True,True,True,True
+844,8440,"Topeka, KS",45820.0,primary_city_state,"Topeka, KS","Topeka, KS",45820,False,1978.0,2026.0,395161.0,"Topeka, KS",199.0,True,True,True,True,True,True,True,True,True
+848,8480,"Trenton, NJ",45940.0,primary_city_state,"Trenton, NJ","Trenton-Princeton, NJ",45940,False,1979.0,2026.0,395164.0,"Trenton, NJ",142.0,True,True,True,True,True,True,True,True,True
+852,8520,"Tucson, AZ",46060.0,manual,"Tucson, AZ","Tucson, AZ",46060,False,1977.0,2026.0,395167.0,"Tucson, AZ",54.0,True,True,True,True,True,True,True,True,True
+856,8560,"Tulsa, OK",46140.0,manual,"Tulsa, OK","Tulsa, OK",46140,False,1977.0,2026.0,395169.0,"Tulsa, OK",56.0,True,True,True,True,True,True,True,True,True
+860,8600,"Tuscaloosa, AL",46220.0,primary_city_state,"Tuscaloosa, AL","Tuscaloosa, AL",46220,False,1990.0,2026.0,395171.0,"Tuscaloosa, AL",188.0,True,True,True,False,True,True,True,True,True
+864,8640,"Tyler, TX",46340.0,primary_city_state,"Tyler, TX","Tyler, TX",46340,False,1985.0,2026.0,395174.0,"Tyler, TX",201.0,True,True,True,False,True,True,True,True,True
+868,8680,"Utica-Rome, NY",46540.0,manual,"Utica-Rome, NY","Utica-Rome, NY",46540,False,1985.0,2026.0,395179.0,"Utica, NY",169.0,True,True,True,False,True,True,True,True,True
+873,8730,"Ventura-Oxnard-Simi Valley, CA",37100.0,any_city_state,"Oxnard-Thousand Oaks-Ventura, CA","Oxnard-Thousand Oaks-Ventura, CA",37100,False,1976.0,2026.0,394952.0,"Oxnard, CA",71.0,True,True,True,True,True,True,True,True,True
+875,8750,"Victoria, TX",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+876,8760,"Vineland-Milville-Bridgetown, NJ",47220.0,primary_city_state,"Vineland-Bridgeton, NJ","Vineland, NJ",47220,False,1986.0,2026.0,395193.0,"Vineland, NJ",278.0,True,True,True,False,True,True,True,True,True
+878,8780,"Visalia-Tulare-Porterville, CA",47300.0,manual,"Visalia-Porterville, CA","Visalia, CA",47300,False,1978.0,2026.0,395195.0,"Visalia, CA",119.0,True,True,True,True,True,True,True,True,True
+880,8800,"Waco, TX",47380.0,primary_city_state,"Waco, TX","Waco, TX",47380,False,1986.0,2026.0,395197.0,"Waco, TX",178.0,True,True,True,False,True,True,True,True,True
+884,8840,"Washington, DC/MD/VA",47900.0,manual,"Washington-Arlington-Alexandria, DC-VA-MD-WV","Washington-Arlington-Alexandria, DC-VA-MD-WV",11694;23224;47764,True,1975.0,2026.0,395209.0,"Washington, DC",6.0,True,True,True,True,True,True,True,True,True
+888,8880,"Waterbury, CT",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+892,8920,"Waterloo-Cedar Falls, IA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+894,8940,"Wausau, WI",48140.0,primary_city_state,"Wausau, WI","Wausau, WI",48140,False,1986.0,2026.0,395215.0,"Wausau, WI",266.0,True,True,True,False,True,True,True,True,True
+896,8960,"West Palm Beach-Boca Raton-Delray Beach, FL",33100.0,manual,"Miami-Fort Lauderdale-West Palm Beach, FL","Miami-Fort Lauderdale-West Palm Beach, FL",22744;33124;48424,True,1975.0,2026.0,394856.0,"Miami, FL",8.0,True,True,True,True,True,True,True,True,True
+900,9000,"Wheeling, WV/OH",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+904,9040,"Wichita, KS",48620.0,manual,"Wichita, KS","Wichita, KS",48620,False,1976.0,2026.0,395224.0,"Wichita, KS",94.0,True,True,True,True,True,True,True,True,True
+908,9080,"Wichita Falls, TX",48660.0,primary_city_state,"Wichita Falls, TX","Wichita Falls, TX",48660,False,1986.0,2026.0,395223.0,"Wichita Falls, TX",298.0,True,True,True,False,True,True,True,True,True
+914,9140,"Williamsport, PA",48700.0,primary_city_state,"Williamsport, PA","Williamsport, PA",48700,False,1990.0,2026.0,395225.0,"Williamsport, PA",359.0,True,True,True,False,True,True,True,True,True
+916,9160,"Wilmington, DE/NJ/MD",37980.0,manual,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD","Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",15804;33874;37964;48864,True,1976.0,2026.0,394974.0,"Philadelphia, PA",7.0,True,True,True,True,True,True,True,True,True
+920,9200,"Wilmington, NC",48900.0,primary_city_state,"Wilmington, NC","Wilmington, NC",48900,False,1984.0,2026.0,395229.0,"Wilmington, NC",174.0,True,True,True,False,True,True,True,True,True
+924,9240,"Worcester, MA",49340.0,manual,"Worcester, MA-CT","Worcester, MA",49340,False,1979.0,2026.0,395238.0,"Worcester, MA",58.0,True,True,True,True,True,True,True,True,True
+926,9260,"Yakima, WA",49420.0,primary_city_state,"Yakima, WA","Yakima, WA",49420,False,1985.0,2026.0,395240.0,"Yakima, WA",193.0,True,True,True,False,True,True,True,True,True
+927,9270,"Yolo, CA",,,,,,,,,,,,False,False,False,False,False,False,False,False,False
+928,9280,"York, PA",49620.0,primary_city_state,"York-Hanover, PA","York-Hanover, PA",49620,False,1983.0,2026.0,395244.0,"York, PA",122.0,True,True,True,False,True,True,True,True,True
+932,9320,"Youngstown-Warren, OH/PA",49660.0,manual,"Youngstown-Warren-Boardman, OH-PA","Youngstown-Warren, OH",49660,False,1985.0,2026.0,395245.0,"Youngstown, OH",106.0,True,True,True,False,True,True,True,True,True
+934,9340,"Yuba City, CA",49700.0,primary_city_state,"Yuba City, CA","Yuba City, CA",49700,False,1986.0,2026.0,395246.0,"Yuba City, CA",247.0,True,True,True,False,True,True,True,True,True
+936,9360,"Yuma, AZ",49740.0,primary_city_state,"Yuma, AZ","Yuma, AZ",49740,False,1988.0,2026.0,395247.0,"Yuma, AZ",225.0,True,True,True,False,True,True,True,True,True

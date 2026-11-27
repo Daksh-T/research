@@ -1,0 +1,2439 @@
+{
+  "experiment": "P1_karst_census",
+  "elapsed_s": 136.5,
+  "region_bbox": [
+    -86.7,
+    34.25,
+    -84.95,
+    36.15
+  ],
+  "census_counts": {
+    "total_closed_90m_ge22p5m_ge030km2": 17,
+    "total_closed_30m_ge25m_ge035km2": 13,
+    "forested_karst_nlcd41_ge60pct": 11,
+    "forested_karst_strict_30m_ge25m": 9,
+    "forested_karst_strict_90m_ge25m": 10,
+    "disqualified_basins": 6,
+    "matched_1to1_pairs_total": 11,
+    "evaluated_pairs": 11
+  },
+  "forested_basins": [
+    {
+      "lbl": 319,
+      "lat": 36.05635,
+      "lon": -85.29382,
+      "max_fill_m": 70.3,
+      "area_km2": 2.025,
+      "n_floor_px": 173,
+      "floor_nlcd41_frac": 0.948,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 417.0,
+      "z_floor_med": 427.4,
+      "z_spill": 487.3,
+      "z_rim_med": 544.7,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.30353,
+        36.04423,
+        -85.28412,
+        36.06767
+      ],
+      "hull": [
+        [
+          -85.29948,
+          36.06282
+        ],
+        [
+          -85.30353,
+          36.04504
+        ],
+        [
+          -85.30272,
+          36.04423
+        ],
+        [
+          -85.30029,
+          36.04504
+        ],
+        [
+          -85.28816,
+          36.05393
+        ],
+        [
+          -85.28736,
+          36.05474
+        ],
+        [
+          -85.28412,
+          36.06282
+        ],
+        [
+          -85.28412,
+          36.06363
+        ],
+        [
+          -85.29302,
+          36.06767
+        ],
+        [
+          -85.29706,
+          36.06767
+        ],
+        [
+          -85.29948,
+          36.06282
+        ]
+      ],
+      "name": "Karst_TN_01",
+      "verify_30m": {
+        "max_fill_30m": 62.4,
+        "area_30m_km2": 1.714,
+        "floor_nlcd41_30m": 0.923,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 2842,
+      "lat": 35.04979,
+      "lon": -86.0158,
+      "max_fill_m": 68.8,
+      "area_km2": 0.516,
+      "n_floor_px": 35,
+      "floor_nlcd41_frac": 1.0,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 300.8,
+      "z_floor_med": 322.0,
+      "z_spill": 369.6,
+      "z_rim_med": 464.6,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -86.02227,
+        35.04575,
+        -86.01176,
+        35.05383
+      ],
+      "hull": [
+        [
+          -86.02146,
+          35.04656
+        ],
+        [
+          -86.02065,
+          35.04575
+        ],
+        [
+          -86.01984,
+          35.04575
+        ],
+        [
+          -86.01257,
+          35.04818
+        ],
+        [
+          -86.01176,
+          35.0506
+        ],
+        [
+          -86.01176,
+          35.05222
+        ],
+        [
+          -86.01418,
+          35.05383
+        ],
+        [
+          -86.01742,
+          35.05303
+        ],
+        [
+          -86.02146,
+          35.04979
+        ],
+        [
+          -86.02227,
+          35.04898
+        ],
+        [
+          -86.02227,
+          35.04818
+        ],
+        [
+          -86.02146,
+          35.04656
+        ]
+      ],
+      "name": "Karst_TN_02",
+      "verify_30m": {
+        "max_fill_30m": 74.0,
+        "area_30m_km2": 0.476,
+        "floor_nlcd41_30m": 1.0,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 383,
+      "lat": 36.03857,
+      "lon": -85.39084,
+      "max_fill_m": 67.5,
+      "area_km2": 0.616,
+      "n_floor_px": 54,
+      "floor_nlcd41_frac": 0.981,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 442.0,
+      "z_floor_med": 454.1,
+      "z_spill": 509.5,
+      "z_rim_med": 514.2,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.39488,
+        36.03614,
+        -85.38599,
+        36.04342
+      ],
+      "hull": [
+        [
+          -85.39165,
+          36.03614
+        ],
+        [
+          -85.38761,
+          36.03614
+        ],
+        [
+          -85.38599,
+          36.03857
+        ],
+        [
+          -85.38599,
+          36.04099
+        ],
+        [
+          -85.38842,
+          36.04342
+        ],
+        [
+          -85.39084,
+          36.04342
+        ],
+        [
+          -85.39408,
+          36.0418
+        ],
+        [
+          -85.39488,
+          36.04099
+        ],
+        [
+          -85.39488,
+          36.03776
+        ],
+        [
+          -85.39165,
+          36.03614
+        ]
+      ],
+      "name": "Karst_TN_03",
+      "verify_30m": {
+        "max_fill_30m": 79.4,
+        "area_30m_km2": 0.6,
+        "floor_nlcd41_30m": 0.97,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 3118,
+      "lat": 34.80563,
+      "lon": -86.32626,
+      "max_fill_m": 45.6,
+      "area_km2": 0.635,
+      "n_floor_px": 47,
+      "floor_nlcd41_frac": 1.0,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 294.8,
+      "z_floor_med": 307.0,
+      "z_spill": 340.4,
+      "z_rim_med": 446.9,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -86.33434,
+        34.8024,
+        -86.32302,
+        34.81291
+      ],
+      "hull": [
+        [
+          -86.33434,
+          34.80886
+        ],
+        [
+          -86.33353,
+          34.80482
+        ],
+        [
+          -86.32626,
+          34.8024
+        ],
+        [
+          -86.32464,
+          34.8024
+        ],
+        [
+          -86.32302,
+          34.8121
+        ],
+        [
+          -86.32383,
+          34.81291
+        ],
+        [
+          -86.33434,
+          34.80886
+        ]
+      ],
+      "name": "Karst_AL_05",
+      "verify_30m": {
+        "max_fill_30m": 52.7,
+        "area_30m_km2": 0.754,
+        "floor_nlcd41_30m": 1.0,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 1608,
+      "lat": 35.75722,
+      "lon": -85.41833,
+      "max_fill_m": 40.4,
+      "area_km2": 0.397,
+      "n_floor_px": 31,
+      "floor_nlcd41_frac": 0.968,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 406.1,
+      "z_floor_med": 416.4,
+      "z_spill": 446.5,
+      "z_rim_med": 492.4,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.42318,
+        35.75398,
+        -85.4159,
+        35.76207
+      ],
+      "hull": [
+        [
+          -85.42318,
+          35.76045
+        ],
+        [
+          -85.42237,
+          35.75398
+        ],
+        [
+          -85.42076,
+          35.75398
+        ],
+        [
+          -85.41833,
+          35.75479
+        ],
+        [
+          -85.41752,
+          35.7556
+        ],
+        [
+          -85.4159,
+          35.75883
+        ],
+        [
+          -85.41914,
+          35.76207
+        ],
+        [
+          -85.42237,
+          35.76126
+        ],
+        [
+          -85.42318,
+          35.76045
+        ]
+      ],
+      "name": "Karst_TN_07",
+      "verify_30m": {
+        "max_fill_30m": 44.3,
+        "area_30m_km2": 0.416,
+        "floor_nlcd41_30m": 0.979,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 1973,
+      "lat": 35.58824,
+      "lon": -85.67704,
+      "max_fill_m": 40.4,
+      "area_km2": 1.059,
+      "n_floor_px": 91,
+      "floor_nlcd41_frac": 0.868,
+      "floor_forest_all_frac": 0.879,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.011,
+      "z_floor_min": 333.9,
+      "z_floor_med": 345.9,
+      "z_spill": 374.2,
+      "z_rim_med": 443.3,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.67866,
+        35.58016,
+        -85.66573,
+        35.59309
+      ],
+      "hull": [
+        [
+          -85.66573,
+          35.58258
+        ],
+        [
+          -85.66734,
+          35.59228
+        ],
+        [
+          -85.67139,
+          35.59309
+        ],
+        [
+          -85.67462,
+          35.59309
+        ],
+        [
+          -85.67866,
+          35.58905
+        ],
+        [
+          -85.67866,
+          35.58663
+        ],
+        [
+          -85.67785,
+          35.58501
+        ],
+        [
+          -85.67462,
+          35.58016
+        ],
+        [
+          -85.67219,
+          35.58016
+        ],
+        [
+          -85.66573,
+          35.58177
+        ],
+        [
+          -85.66573,
+          35.58258
+        ]
+      ],
+      "name": "Karst_TN_08",
+      "verify_30m": {
+        "max_fill_30m": 43.8,
+        "area_30m_km2": 1.125,
+        "floor_nlcd41_30m": 0.823,
+        "floor_forest_all_30m": 0.839,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 637,
+      "lat": 35.97793,
+      "lon": -85.36335,
+      "max_fill_m": 34.4,
+      "area_km2": 0.602,
+      "n_floor_px": 50,
+      "floor_nlcd41_frac": 0.88,
+      "floor_forest_all_frac": 0.9,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.1,
+      "z_floor_min": 337.2,
+      "z_floor_med": 347.6,
+      "z_spill": 371.6,
+      "z_rim_med": 402.0,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.36497,
+        35.97308,
+        -85.35365,
+        35.98278
+      ],
+      "hull": [
+        [
+          -85.36254,
+          35.98278
+        ],
+        [
+          -85.36497,
+          35.97874
+        ],
+        [
+          -85.36497,
+          35.97389
+        ],
+        [
+          -85.36254,
+          35.97308
+        ],
+        [
+          -85.35365,
+          35.97793
+        ],
+        [
+          -85.35365,
+          35.97874
+        ],
+        [
+          -85.35446,
+          35.98036
+        ],
+        [
+          -85.35608,
+          35.98197
+        ],
+        [
+          -85.36254,
+          35.98278
+        ]
+      ],
+      "name": "Karst_TN_09",
+      "verify_30m": {
+        "max_fill_30m": 37.3,
+        "area_30m_km2": 0.567,
+        "floor_nlcd41_30m": 0.823,
+        "floor_forest_all_30m": 0.887,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 3065,
+      "lat": 34.86546,
+      "lon": -86.32464,
+      "max_fill_m": 29.7,
+      "area_km2": 0.556,
+      "n_floor_px": 45,
+      "floor_nlcd41_frac": 0.8,
+      "floor_forest_all_frac": 0.822,
+      "floor_pasture_frac": 0.111,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.022,
+      "z_floor_min": 278.2,
+      "z_floor_med": 285.3,
+      "z_spill": 307.9,
+      "z_rim_med": 420.2,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -86.32868,
+        34.8598,
+        -86.3206,
+        34.87516
+      ],
+      "hull": [
+        [
+          -86.32383,
+          34.87435
+        ],
+        [
+          -86.32868,
+          34.86061
+        ],
+        [
+          -86.32707,
+          34.8598
+        ],
+        [
+          -86.32545,
+          34.8598
+        ],
+        [
+          -86.32383,
+          34.86061
+        ],
+        [
+          -86.32302,
+          34.86142
+        ],
+        [
+          -86.3206,
+          34.86788
+        ],
+        [
+          -86.32141,
+          34.87193
+        ],
+        [
+          -86.32221,
+          34.87516
+        ],
+        [
+          -86.32302,
+          34.87516
+        ],
+        [
+          -86.32383,
+          34.87435
+        ]
+      ],
+      "name": "Karst_AL_10",
+      "verify_30m": {
+        "max_fill_30m": 30.3,
+        "area_30m_km2": 0.48,
+        "floor_nlcd41_30m": 0.715,
+        "floor_forest_all_30m": 0.743,
+        "floor_pasture_30m": 0.188,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 2072,
+      "lat": 35.53084,
+      "lon": -85.71666,
+      "max_fill_m": 26.9,
+      "area_km2": 0.702,
+      "n_floor_px": 53,
+      "floor_nlcd41_frac": 0.736,
+      "floor_forest_all_frac": 0.755,
+      "floor_pasture_frac": 0.245,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 344.2,
+      "z_floor_med": 352.6,
+      "z_spill": 371.1,
+      "z_rim_med": 420.1,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -85.72879,
+        35.52195,
+        -85.71585,
+        35.53165
+      ],
+      "hull": [
+        [
+          -85.71585,
+          35.52922
+        ],
+        [
+          -85.71585,
+          35.53165
+        ],
+        [
+          -85.72313,
+          35.53165
+        ],
+        [
+          -85.72879,
+          35.53084
+        ],
+        [
+          -85.72879,
+          35.53003
+        ],
+        [
+          -85.72717,
+          35.52599
+        ],
+        [
+          -85.72475,
+          35.52195
+        ],
+        [
+          -85.71666,
+          35.52841
+        ],
+        [
+          -85.71585,
+          35.52922
+        ]
+      ],
+      "name": "Karst_TN_11",
+      "verify_30m": {
+        "max_fill_30m": 27.2,
+        "area_30m_km2": 0.621,
+        "floor_nlcd41_30m": 0.612,
+        "floor_forest_all_30m": 0.639,
+        "floor_pasture_30m": 0.352,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 3384,
+      "lat": 34.53075,
+      "lon": -86.27532,
+      "max_fill_m": 26.4,
+      "area_km2": 0.477,
+      "n_floor_px": 35,
+      "floor_nlcd41_frac": 0.686,
+      "floor_forest_all_frac": 0.914,
+      "floor_pasture_frac": 0.086,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 212.5,
+      "z_floor_med": 222.1,
+      "z_spill": 238.9,
+      "z_rim_med": 276.6,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -86.28422,
+        34.52589,
+        -86.26805,
+        34.53398
+      ],
+      "hull": [
+        [
+          -86.26805,
+          34.5267
+        ],
+        [
+          -86.27451,
+          34.53398
+        ],
+        [
+          -86.27775,
+          34.53398
+        ],
+        [
+          -86.28341,
+          34.52913
+        ],
+        [
+          -86.28422,
+          34.5267
+        ],
+        [
+          -86.28422,
+          34.52589
+        ],
+        [
+          -86.26966,
+          34.52589
+        ],
+        [
+          -86.26805,
+          34.5267
+        ]
+      ],
+      "name": "Karst_AL_12",
+      "verify_30m": {
+        "max_fill_30m": 29.1,
+        "area_30m_km2": 0.072,
+        "floor_nlcd41_30m": 1.0,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 2860,
+      "lat": 35.01988,
+      "lon": -86.06593,
+      "max_fill_m": 22.6,
+      "area_km2": 0.496,
+      "n_floor_px": 45,
+      "floor_nlcd41_frac": 0.667,
+      "floor_forest_all_frac": 0.778,
+      "floor_pasture_frac": 0.2,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 378.5,
+      "z_floor_med": 384.1,
+      "z_spill": 401.1,
+      "z_rim_med": 489.2,
+      "status": "FORESTED_KARST",
+      "bbox": [
+        -86.06835,
+        35.01422,
+        -86.05542,
+        35.03201
+      ],
+      "hull": [
+        [
+          -86.05542,
+          35.02635
+        ],
+        [
+          -86.06027,
+          35.03201
+        ],
+        [
+          -86.06673,
+          35.01988
+        ],
+        [
+          -86.06835,
+          35.01584
+        ],
+        [
+          -86.06835,
+          35.01503
+        ],
+        [
+          -86.06754,
+          35.01422
+        ],
+        [
+          -86.05542,
+          35.02635
+        ]
+      ],
+      "name": "Karst_TN_17",
+      "verify_30m": {
+        "max_fill_30m": 22.2,
+        "area_30m_km2": 0.482,
+        "floor_nlcd41_30m": 0.669,
+        "floor_forest_all_30m": 0.747,
+        "floor_pasture_30m": 0.238,
+        "floor_water_30m": 0.0
+      }
+    }
+  ],
+  "disqualified_basins": [
+    {
+      "lbl": 2826,
+      "lat": 35.06273,
+      "lon": -85.19842,
+      "max_fill_m": 56.1,
+      "area_km2": 0.377,
+      "n_floor_px": 35,
+      "floor_nlcd41_frac": 0.0,
+      "floor_forest_all_frac": 0.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 1.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 153.0,
+      "z_floor_med": 159.5,
+      "z_spill": 209.2,
+      "z_rim_med": 212.0,
+      "status": "DISQUALIFIED_WATER_QUARRY",
+      "bbox": [
+        -85.20489,
+        35.05707,
+        -85.19761,
+        35.06434
+      ],
+      "hull": [
+        [
+          -85.20246,
+          35.06434
+        ],
+        [
+          -85.20489,
+          35.06192
+        ],
+        [
+          -85.20489,
+          35.0603
+        ],
+        [
+          -85.20166,
+          35.05707
+        ],
+        [
+          -85.20085,
+          35.05707
+        ],
+        [
+          -85.19923,
+          35.05949
+        ],
+        [
+          -85.19761,
+          35.06273
+        ],
+        [
+          -85.20166,
+          35.06434
+        ],
+        [
+          -85.20246,
+          35.06434
+        ]
+      ],
+      "name": "Karst_TN_04",
+      "verify_30m": {
+        "max_fill_30m": 75.1,
+        "area_30m_km2": 0.149,
+        "floor_nlcd41_30m": 0.0,
+        "floor_forest_all_30m": 0.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 268,
+      "lat": 36.07576,
+      "lon": -85.35365,
+      "max_fill_m": 42.0,
+      "area_km2": 0.794,
+      "n_floor_px": 78,
+      "floor_nlcd41_frac": 0.372,
+      "floor_forest_all_frac": 0.385,
+      "floor_pasture_frac": 0.551,
+      "floor_water_frac": 0.013,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.038,
+      "z_floor_min": 420.1,
+      "z_floor_med": 428.5,
+      "z_spill": 462.1,
+      "z_rim_med": 484.2,
+      "status": "DISQUALIFIED_PASTURE_NONFOREST",
+      "bbox": [
+        -85.36174,
+        36.07172,
+        -85.34799,
+        36.0798
+      ],
+      "hull": [
+        [
+          -85.34961,
+          36.07172
+        ],
+        [
+          -85.34799,
+          36.07576
+        ],
+        [
+          -85.34961,
+          36.07737
+        ],
+        [
+          -85.35123,
+          36.07818
+        ],
+        [
+          -85.35608,
+          36.0798
+        ],
+        [
+          -85.36093,
+          36.07576
+        ],
+        [
+          -85.36174,
+          36.07495
+        ],
+        [
+          -85.35769,
+          36.07172
+        ],
+        [
+          -85.34961,
+          36.07172
+        ]
+      ],
+      "name": "Karst_TN_06",
+      "verify_30m": {
+        "max_fill_30m": 43.1,
+        "area_30m_km2": 0.715,
+        "floor_nlcd41_30m": 0.354,
+        "floor_forest_all_30m": 0.369,
+        "floor_pasture_30m": 0.581,
+        "floor_water_30m": 0.006
+      }
+    },
+    {
+      "lbl": 2376,
+      "lat": 35.34165,
+      "lon": -85.2057,
+      "max_fill_m": 25.4,
+      "area_km2": 0.311,
+      "n_floor_px": 22,
+      "floor_nlcd41_frac": 0.273,
+      "floor_forest_all_frac": 1.0,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.0,
+      "z_floor_min": 450.5,
+      "z_floor_med": 459.2,
+      "z_spill": 475.9,
+      "z_rim_med": 515.7,
+      "status": "DISQUALIFIED_PASTURE_NONFOREST",
+      "bbox": [
+        -85.21298,
+        35.34085,
+        -85.20246,
+        35.34812
+      ],
+      "hull": [
+        [
+          -85.20246,
+          35.34812
+        ],
+        [
+          -85.21298,
+          35.34812
+        ],
+        [
+          -85.21298,
+          35.34731
+        ],
+        [
+          -85.20732,
+          35.34085
+        ],
+        [
+          -85.20327,
+          35.34085
+        ],
+        [
+          -85.20246,
+          35.3457
+        ],
+        [
+          -85.20246,
+          35.34812
+        ]
+      ],
+      "name": "Karst_TN_13",
+      "verify_30m": {
+        "max_fill_30m": 30.2,
+        "area_30m_km2": 0.358,
+        "floor_nlcd41_30m": 0.242,
+        "floor_forest_all_30m": 1.0,
+        "floor_pasture_30m": 0.0,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 2687,
+      "lat": 35.12983,
+      "lon": -85.90585,
+      "max_fill_m": 25.1,
+      "area_km2": 1.522,
+      "n_floor_px": 149,
+      "floor_nlcd41_frac": 0.477,
+      "floor_forest_all_frac": 0.483,
+      "floor_pasture_frac": 0.423,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.094,
+      "z_floor_min": 293.9,
+      "z_floor_med": 301.2,
+      "z_spill": 319.0,
+      "z_rim_med": 413.0,
+      "status": "DISQUALIFIED_PASTURE_NONFOREST",
+      "bbox": [
+        -85.91474,
+        35.12498,
+        -85.89614,
+        35.15166
+      ],
+      "hull": [
+        [
+          -85.91474,
+          35.14438
+        ],
+        [
+          -85.91312,
+          35.13711
+        ],
+        [
+          -85.90827,
+          35.12579
+        ],
+        [
+          -85.90746,
+          35.12498
+        ],
+        [
+          -85.90585,
+          35.1266
+        ],
+        [
+          -85.89614,
+          35.13711
+        ],
+        [
+          -85.89614,
+          35.13792
+        ],
+        [
+          -85.89695,
+          35.13873
+        ],
+        [
+          -85.9107,
+          35.15166
+        ],
+        [
+          -85.91231,
+          35.15004
+        ],
+        [
+          -85.91312,
+          35.14843
+        ],
+        [
+          -85.91474,
+          35.14438
+        ]
+      ],
+      "name": "Lost_Cove_TN",
+      "verify_30m": {
+        "max_fill_30m": 30.4,
+        "area_30m_km2": 1.774,
+        "floor_nlcd41_30m": 0.487,
+        "floor_forest_all_30m": 0.504,
+        "floor_pasture_30m": 0.384,
+        "floor_water_30m": 0.0
+      }
+    },
+    {
+      "lbl": 3086,
+      "lat": 34.83959,
+      "lon": -85.10626,
+      "max_fill_m": 24.4,
+      "area_km2": 3.124,
+      "n_floor_px": 114,
+      "floor_nlcd41_frac": 0.342,
+      "floor_forest_all_frac": 0.816,
+      "floor_pasture_frac": 0.07,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.079,
+      "z_floor_min": 258.4,
+      "z_floor_med": 267.1,
+      "z_spill": 282.9,
+      "z_rim_med": 315.6,
+      "status": "DISQUALIFIED_PASTURE_NONFOREST",
+      "bbox": [
+        -85.11919,
+        34.79835,
+        -85.10464,
+        34.8501
+      ],
+      "hull": [
+        [
+          -85.10464,
+          34.84444
+        ],
+        [
+          -85.10949,
+          34.84929
+        ],
+        [
+          -85.11191,
+          34.8501
+        ],
+        [
+          -85.11353,
+          34.84929
+        ],
+        [
+          -85.11596,
+          34.84282
+        ],
+        [
+          -85.11757,
+          34.82827
+        ],
+        [
+          -85.11919,
+          34.81291
+        ],
+        [
+          -85.11919,
+          34.80725
+        ],
+        [
+          -85.11757,
+          34.79835
+        ],
+        [
+          -85.11515,
+          34.80078
+        ],
+        [
+          -85.11434,
+          34.8024
+        ],
+        [
+          -85.11353,
+          34.80482
+        ],
+        [
+          -85.10464,
+          34.8412
+        ],
+        [
+          -85.10464,
+          34.84444
+        ]
+      ],
+      "name": "Karst_AL_15",
+      "verify_30m": {
+        "max_fill_30m": 0.0,
+        "area_30m_km2": 0.0,
+        "floor_nlcd41_30m": null
+      }
+    },
+    {
+      "lbl": 2872,
+      "lat": 35.01422,
+      "lon": -85.99235,
+      "max_fill_m": 23.3,
+      "area_km2": 0.543,
+      "n_floor_px": 42,
+      "floor_nlcd41_frac": 0.571,
+      "floor_forest_all_frac": 0.69,
+      "floor_pasture_frac": 0.0,
+      "floor_water_frac": 0.0,
+      "floor_dev_bar_frac": 0.0,
+      "floor_road_open_frac": 0.19,
+      "z_floor_min": 279.1,
+      "z_floor_med": 285.2,
+      "z_spill": 302.4,
+      "z_rim_med": 388.6,
+      "status": "DISQUALIFIED_PASTURE_NONFOREST",
+      "bbox": [
+        -85.99882,
+        35.00694,
+        -85.9875,
+        35.01988
+      ],
+      "hull": [
+        [
+          -85.99801,
+          35.01988
+        ],
+        [
+          -85.99882,
+          35.01503
+        ],
+        [
+          -85.99154,
+          35.00775
+        ],
+        [
+          -85.98912,
+          35.00694
+        ],
+        [
+          -85.9875,
+          35.00694
+        ],
+        [
+          -85.9875,
+          35.00775
+        ],
+        [
+          -85.99154,
+          35.01584
+        ],
+        [
+          -85.99397,
+          35.01907
+        ],
+        [
+          -85.99559,
+          35.01988
+        ],
+        [
+          -85.99801,
+          35.01988
+        ]
+      ],
+      "name": "Sinking_Cove_TN",
+      "verify_30m": {
+        "max_fill_30m": 26.8,
+        "area_30m_km2": 0.637,
+        "floor_nlcd41_30m": 0.571,
+        "floor_forest_all_30m": 0.705,
+        "floor_pasture_30m": 0.033,
+        "floor_water_30m": 0.0
+      }
+    }
+  ],
+  "strict_threshold_sensitivity": {
+    "strict_30m_ge25m": {
+      "n_pairs": 9,
+      "ndvi": {
+        "n_pairs": 9,
+        "DiD_dEOS_mean": -3.35,
+        "DiD_dEOS_p": 0.007185,
+        "DiD_dSOS_mean": 8.114,
+        "DiD_dSOS_p": 3.392e-05,
+        "DiD_dGSL_mean": -11.464,
+        "DiD_dGSL_p": 0.0001203
+      },
+      "ndre": {
+        "n_pairs": 9,
+        "DiD_dEOS_mean": -3.323,
+        "DiD_dEOS_p": 0.008915,
+        "DiD_dSOS_mean": 8.18,
+        "DiD_dSOS_p": 8.373e-05,
+        "DiD_dGSL_mean": -11.502,
+        "DiD_dGSL_p": 9.631e-05
+      }
+    },
+    "strict_90m_ge25m": {
+      "n_pairs": 10,
+      "ndvi": {
+        "n_pairs": 10,
+        "DiD_dEOS_mean": -4.237,
+        "DiD_dEOS_p": 0.007001,
+        "DiD_dSOS_mean": 7.74,
+        "DiD_dSOS_p": 1.957e-05,
+        "DiD_dGSL_mean": -11.977,
+        "DiD_dGSL_p": 3.15e-05
+      },
+      "ndre": {
+        "n_pairs": 10,
+        "DiD_dEOS_mean": -4.138,
+        "DiD_dEOS_p": 0.006938,
+        "DiD_dSOS_mean": 7.862,
+        "DiD_dSOS_p": 3.767e-05,
+        "DiD_dGSL_mean": -12.0,
+        "DiD_dGSL_p": 2.473e-05
+      }
+    }
+  },
+  "pairs_evaluated": [
+    {
+      "closed": "Karst_TN_01",
+      "open": "OpenPair_Karst_TN_01",
+      "closed_fill_90m": 70.3,
+      "closed_fill_30m": 62.4,
+      "dist_km": 7.5,
+      "z_floor_closed": 427.4,
+      "z_floor_open": 411.9
+    },
+    {
+      "closed": "Karst_TN_02",
+      "open": "OpenPair_Karst_TN_02",
+      "closed_fill_90m": 68.8,
+      "closed_fill_30m": 74.0,
+      "dist_km": 4.5,
+      "z_floor_closed": 322.0,
+      "z_floor_open": 336.2
+    },
+    {
+      "closed": "Karst_TN_03",
+      "open": "OpenPair_Karst_TN_03",
+      "closed_fill_90m": 67.5,
+      "closed_fill_30m": 79.4,
+      "dist_km": 5.9,
+      "z_floor_closed": 454.1,
+      "z_floor_open": 397.9
+    },
+    {
+      "closed": "Karst_AL_05",
+      "open": "OpenPair_Karst_AL_05",
+      "closed_fill_90m": 45.6,
+      "closed_fill_30m": 52.7,
+      "dist_km": 5.1,
+      "z_floor_closed": 307.0,
+      "z_floor_open": 307.6
+    },
+    {
+      "closed": "Karst_TN_07",
+      "open": "OpenPair_Karst_TN_07",
+      "closed_fill_90m": 40.4,
+      "closed_fill_30m": 44.3,
+      "dist_km": 11.8,
+      "z_floor_closed": 416.4,
+      "z_floor_open": 421.5
+    },
+    {
+      "closed": "Karst_TN_08",
+      "open": "OpenPair_Karst_TN_08",
+      "closed_fill_90m": 40.4,
+      "closed_fill_30m": 43.8,
+      "dist_km": 5.2,
+      "z_floor_closed": 345.9,
+      "z_floor_open": 333.7
+    },
+    {
+      "closed": "Karst_TN_09",
+      "open": "OpenPair_Karst_TN_09",
+      "closed_fill_90m": 34.4,
+      "closed_fill_30m": 37.3,
+      "dist_km": 5.7,
+      "z_floor_closed": 347.6,
+      "z_floor_open": 343.1
+    },
+    {
+      "closed": "Karst_AL_10",
+      "open": "OpenPair_Karst_AL_10",
+      "closed_fill_90m": 29.7,
+      "closed_fill_30m": 30.3,
+      "dist_km": 4.8,
+      "z_floor_closed": 285.3,
+      "z_floor_open": 290.2
+    },
+    {
+      "closed": "Karst_TN_11",
+      "open": "OpenPair_Karst_TN_11",
+      "closed_fill_90m": 26.9,
+      "closed_fill_30m": 27.2,
+      "dist_km": 4.3,
+      "z_floor_closed": 352.6,
+      "z_floor_open": 344.0
+    },
+    {
+      "closed": "Karst_AL_12",
+      "open": "OpenPair_Karst_AL_12",
+      "closed_fill_90m": 26.4,
+      "closed_fill_30m": 29.1,
+      "dist_km": 4.6,
+      "z_floor_closed": 222.1,
+      "z_floor_open": 217.3
+    },
+    {
+      "closed": "Karst_TN_17",
+      "open": "OpenPair_Karst_TN_17",
+      "closed_fill_90m": 22.6,
+      "closed_fill_30m": 22.2,
+      "dist_km": 5.1,
+      "z_floor_closed": 384.1,
+      "z_floor_open": 378.3
+    }
+  ],
+  "site_meta_30m": {
+    "Karst_TN_01": {
+      "n_floor": 1038,
+      "n_mid": 1628,
+      "n_rim": 6072,
+      "z_floor_30m": 427.4,
+      "z_rim_30m": 556.2
+    },
+    "OpenPair_Karst_TN_01": {
+      "n_floor": 589,
+      "n_mid": 1544,
+      "n_rim": 1907,
+      "z_floor_30m": 416.1,
+      "z_rim_30m": 550.6
+    },
+    "Karst_TN_02": {
+      "n_floor": 173,
+      "n_mid": 502,
+      "n_rim": 4278,
+      "z_floor_30m": 315.1,
+      "z_rim_30m": 508.2
+    },
+    "OpenPair_Karst_TN_02": {
+      "n_floor": 798,
+      "n_mid": 1976,
+      "n_rim": 2518,
+      "z_floor_30m": 319.1,
+      "z_rim_30m": 541.5
+    },
+    "Karst_TN_03": {
+      "n_floor": 289,
+      "n_mid": 312,
+      "n_rim": 3539,
+      "z_floor_30m": 453.0,
+      "z_rim_30m": 537.9
+    },
+    "OpenPair_Karst_TN_03": {
+      "n_floor": 634,
+      "n_mid": 1350,
+      "n_rim": 1542,
+      "z_floor_30m": 394.9,
+      "z_rim_30m": 537.5
+    },
+    "Karst_AL_05": {
+      "n_floor": 343,
+      "n_mid": 599,
+      "n_rim": 5548,
+      "z_floor_30m": 304.9,
+      "z_rim_30m": 480.2
+    },
+    "OpenPair_Karst_AL_05": {
+      "n_floor": 723,
+      "n_mid": 1862,
+      "n_rim": 1237,
+      "z_floor_30m": 303.8,
+      "z_rim_30m": 484.4
+    },
+    "Karst_TN_07": {
+      "n_floor": 270,
+      "n_mid": 219,
+      "n_rim": 3321,
+      "z_floor_30m": 414.5,
+      "z_rim_30m": 504.3
+    },
+    "OpenPair_Karst_TN_07": {
+      "n_floor": 895,
+      "n_mid": 1400,
+      "n_rim": 2633,
+      "z_floor_30m": 424.3,
+      "z_rim_30m": 539.4
+    },
+    "Karst_TN_08": {
+      "n_floor": 510,
+      "n_mid": 887,
+      "n_rim": 4643,
+      "z_floor_30m": 344.6,
+      "z_rim_30m": 486.4
+    },
+    "OpenPair_Karst_TN_08": {
+      "n_floor": 1227,
+      "n_mid": 1418,
+      "n_rim": 1196,
+      "z_floor_30m": 324.2,
+      "z_rim_30m": 555.7
+    },
+    "Karst_TN_09": {
+      "n_floor": 313,
+      "n_mid": 376,
+      "n_rim": 5416,
+      "z_floor_30m": 347.8,
+      "z_rim_30m": 451.5
+    },
+    "OpenPair_Karst_TN_09": {
+      "n_floor": 843,
+      "n_mid": 1761,
+      "n_rim": 1763,
+      "z_floor_30m": 329.0,
+      "z_rim_30m": 558.3
+    },
+    "Karst_AL_10": {
+      "n_floor": 330,
+      "n_mid": 393,
+      "n_rim": 5565,
+      "z_floor_30m": 289.8,
+      "z_rim_30m": 465.6
+    },
+    "OpenPair_Karst_AL_10": {
+      "n_floor": 686,
+      "n_mid": 1721,
+      "n_rim": 1815,
+      "z_floor_30m": 267.3,
+      "z_rim_30m": 516.0
+    },
+    "Karst_TN_11": {
+      "n_floor": 418,
+      "n_mid": 297,
+      "n_rim": 5855,
+      "z_floor_30m": 356.4,
+      "z_rim_30m": 452.9
+    },
+    "OpenPair_Karst_TN_11": {
+      "n_floor": 752,
+      "n_mid": 1895,
+      "n_rim": 1602,
+      "z_floor_30m": 347.9,
+      "z_rim_30m": 569.4
+    },
+    "Karst_AL_12": {
+      "n_floor": 334,
+      "n_mid": 348,
+      "n_rim": 5209,
+      "z_floor_30m": 222.9,
+      "z_rim_30m": 294.8
+    },
+    "OpenPair_Karst_AL_12": {
+      "n_floor": 741,
+      "n_mid": 1016,
+      "n_rim": 1349,
+      "z_floor_30m": 217.7,
+      "z_rim_30m": 331.8
+    },
+    "Karst_TN_17": {
+      "n_floor": 407,
+      "n_mid": 391,
+      "n_rim": 6415,
+      "z_floor_30m": 387.4,
+      "z_rim_30m": 517.4
+    },
+    "OpenPair_Karst_TN_17": {
+      "n_floor": 520,
+      "n_mid": 1599,
+      "n_rim": 2142,
+      "z_floor_30m": 384.6,
+      "z_rim_30m": 506.1
+    }
+  },
+  "phenology_power": {
+    "ndvi": {
+      "n_closed_valid": 11,
+      "n_open_valid": 11,
+      "n_pairs_valid": 11,
+      "closed_mean_dEOS_fl_rm": -6.851,
+      "closed_sd_dEOS_fl_rm": 2.553,
+      "closed_dEOS_onesamp_t": -8.9,
+      "closed_dEOS_onesamp_p": 4.573e-06,
+      "closed_frac_early_floor_EOS": 1.0,
+      "open_mean_dEOS_fl_rm": -3.028,
+      "open_sd_dEOS_fl_rm": 3.128,
+      "closed_mean_dSOS_fl_rm": 2.077,
+      "open_mean_dSOS_fl_rm": -4.766,
+      "closed_mean_dGSL_fl_rm": -8.927,
+      "open_mean_dGSL_fl_rm": 1.737,
+      "paired_DiD_dEOS_mean": -3.822,
+      "paired_DiD_dEOS_t": -3.243,
+      "paired_DiD_dEOS_p": 0.008826,
+      "paired_DiD_dEOS_wilcoxon_p": 0.006836,
+      "paired_DiD_dSOS_mean": 6.843,
+      "paired_DiD_dSOS_t": 5.502,
+      "paired_DiD_dSOS_p": 0.0002611,
+      "paired_DiD_dGSL_mean": -10.665,
+      "paired_DiD_dGSL_t": -5.526,
+      "paired_DiD_dGSL_p": 0.0002525,
+      "cluster_mixed_dEOS": {
+        "beta": -3.8224,
+        "se": 1.1825,
+        "t": -3.232,
+        "p": 0.008986
+      },
+      "cluster_mixed_dSOS": {
+        "beta": 6.8427,
+        "se": 1.2478,
+        "t": 5.484,
+        "p": 0.0002678
+      },
+      "cluster_mixed_dGSL": {
+        "beta": -10.665,
+        "se": 1.9364,
+        "t": -5.508,
+        "p": 0.000259
+      },
+      "r_sigmaSOS_filldepth_all": 0.22,
+      "r_sigmaSOS_filldepth_closed": 0.412,
+      "r_dEOS_filldepth_closed": 0.178,
+      "p_dEOS_filldepth_closed": 0.6001,
+      "per_cove_table": [
+        {
+          "site": "Karst_AL_05",
+          "pair": "Karst_AL_05",
+          "kind": "closed",
+          "max_fill_m": 45.6,
+          "n_yrs": 7,
+          "dSOS": -1.175,
+          "dEOS": -5.968,
+          "dGSL": -4.793,
+          "sigma_SOS": 4.367,
+          "mean_fl_sos": 103.683,
+          "mean_fl_eos": 304.604,
+          "mean_rm_eos": 310.572
+        },
+        {
+          "site": "Karst_AL_10",
+          "pair": "Karst_AL_10",
+          "kind": "closed",
+          "max_fill_m": 29.7,
+          "n_yrs": 7,
+          "dSOS": -0.951,
+          "dEOS": -9.299,
+          "dGSL": -8.348,
+          "sigma_SOS": 4.347,
+          "mean_fl_sos": 103.624,
+          "mean_fl_eos": 301.086,
+          "mean_rm_eos": 310.385
+        },
+        {
+          "site": "Karst_AL_12",
+          "pair": "Karst_AL_12",
+          "kind": "closed",
+          "max_fill_m": 26.4,
+          "n_yrs": 7,
+          "dSOS": 3.947,
+          "dEOS": -12.755,
+          "dGSL": -16.703,
+          "sigma_SOS": 4.488,
+          "mean_fl_sos": 103.64,
+          "mean_fl_eos": 297.225,
+          "mean_rm_eos": 309.98
+        },
+        {
+          "site": "Karst_TN_01",
+          "pair": "Karst_TN_01",
+          "kind": "closed",
+          "max_fill_m": 70.3,
+          "n_yrs": 7,
+          "dSOS": 5.69,
+          "dEOS": -6.378,
+          "dGSL": -12.068,
+          "sigma_SOS": 8.166,
+          "mean_fl_sos": 120.264,
+          "mean_fl_eos": 301.295,
+          "mean_rm_eos": 307.673
+        },
+        {
+          "site": "Karst_TN_02",
+          "pair": "Karst_TN_02",
+          "kind": "closed",
+          "max_fill_m": 68.8,
+          "n_yrs": 7,
+          "dSOS": -2.532,
+          "dEOS": -7.023,
+          "dGSL": -4.49,
+          "sigma_SOS": 4.043,
+          "mean_fl_sos": 105.729,
+          "mean_fl_eos": 301.087,
+          "mean_rm_eos": 308.109
+        },
+        {
+          "site": "Karst_TN_03",
+          "pair": "Karst_TN_03",
+          "kind": "closed",
+          "max_fill_m": 67.5,
+          "n_yrs": 7,
+          "dSOS": 3.113,
+          "dEOS": -6.121,
+          "dGSL": -9.234,
+          "sigma_SOS": 4.806,
+          "mean_fl_sos": 113.092,
+          "mean_fl_eos": 300.384,
+          "mean_rm_eos": 306.506
+        },
+        {
+          "site": "Karst_TN_07",
+          "pair": "Karst_TN_07",
+          "kind": "closed",
+          "max_fill_m": 40.4,
+          "n_yrs": 7,
+          "dSOS": 6.922,
+          "dEOS": -6.833,
+          "dGSL": -13.755,
+          "sigma_SOS": 4.888,
+          "mean_fl_sos": 116.286,
+          "mean_fl_eos": 300.94,
+          "mean_rm_eos": 307.773
+        },
+        {
+          "site": "Karst_TN_08",
+          "pair": "Karst_TN_08",
+          "kind": "closed",
+          "max_fill_m": 40.4,
+          "n_yrs": 7,
+          "dSOS": 4.644,
+          "dEOS": -5.848,
+          "dGSL": -10.492,
+          "sigma_SOS": 5.143,
+          "mean_fl_sos": 111.752,
+          "mean_fl_eos": 302.393,
+          "mean_rm_eos": 308.241
+        },
+        {
+          "site": "Karst_TN_09",
+          "pair": "Karst_TN_09",
+          "kind": "closed",
+          "max_fill_m": 34.4,
+          "n_yrs": 7,
+          "dSOS": 0.601,
+          "dEOS": -5.426,
+          "dGSL": -6.027,
+          "sigma_SOS": 6.356,
+          "mean_fl_sos": 106.827,
+          "mean_fl_eos": 303.439,
+          "mean_rm_eos": 308.865
+        },
+        {
+          "site": "Karst_TN_11",
+          "pair": "Karst_TN_11",
+          "kind": "closed",
+          "max_fill_m": 26.9,
+          "n_yrs": 7,
+          "dSOS": 4.873,
+          "dEOS": -2.431,
+          "dGSL": -7.304,
+          "sigma_SOS": 4.869,
+          "mean_fl_sos": 109.559,
+          "mean_fl_eos": 304.456,
+          "mean_rm_eos": 306.887
+        },
+        {
+          "site": "Karst_TN_17",
+          "pair": "Karst_TN_17",
+          "kind": "closed",
+          "max_fill_m": 22.6,
+          "n_yrs": 7,
+          "dSOS": -2.287,
+          "dEOS": -7.275,
+          "dGSL": -4.988,
+          "sigma_SOS": 3.432,
+          "mean_fl_sos": 105.098,
+          "mean_fl_eos": 302.686,
+          "mean_rm_eos": 309.962
+        },
+        {
+          "site": "OpenPair_Karst_AL_05",
+          "pair": "Karst_AL_05",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -5.017,
+          "dEOS": -6.575,
+          "dGSL": -1.558,
+          "sigma_SOS": 5.013,
+          "mean_fl_sos": 99.481,
+          "mean_fl_eos": 305.804,
+          "mean_rm_eos": 312.379
+        },
+        {
+          "site": "OpenPair_Karst_AL_10",
+          "pair": "Karst_AL_10",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -10.317,
+          "dEOS": -5.886,
+          "dGSL": 4.431,
+          "sigma_SOS": 4.467,
+          "mean_fl_sos": 97.3,
+          "mean_fl_eos": 302.397,
+          "mean_rm_eos": 308.283
+        },
+        {
+          "site": "OpenPair_Karst_AL_12",
+          "pair": "Karst_AL_12",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -0.422,
+          "dEOS": -0.534,
+          "dGSL": -0.112,
+          "sigma_SOS": 4.506,
+          "mean_fl_sos": 98.505,
+          "mean_fl_eos": 311.02,
+          "mean_rm_eos": 311.554
+        },
+        {
+          "site": "OpenPair_Karst_TN_01",
+          "pair": "Karst_TN_01",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -1.231,
+          "dEOS": -2.911,
+          "dGSL": -1.68,
+          "sigma_SOS": 5.466,
+          "mean_fl_sos": 111.801,
+          "mean_fl_eos": 305.212,
+          "mean_rm_eos": 308.123
+        },
+        {
+          "site": "OpenPair_Karst_TN_02",
+          "pair": "Karst_TN_02",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -5.687,
+          "dEOS": -4.781,
+          "dGSL": 0.906,
+          "sigma_SOS": 4.638,
+          "mean_fl_sos": 103.683,
+          "mean_fl_eos": 302.189,
+          "mean_rm_eos": 306.97
+        },
+        {
+          "site": "OpenPair_Karst_TN_03",
+          "pair": "Karst_TN_03",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -5.152,
+          "dEOS": -1.046,
+          "dGSL": 4.107,
+          "sigma_SOS": 4.913,
+          "mean_fl_sos": 105.533,
+          "mean_fl_eos": 307.798,
+          "mean_rm_eos": 308.843
+        },
+        {
+          "site": "OpenPair_Karst_TN_07",
+          "pair": "Karst_TN_07",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -4.819,
+          "dEOS": -1.178,
+          "dGSL": 3.64,
+          "sigma_SOS": 5.85,
+          "mean_fl_sos": 106.538,
+          "mean_fl_eos": 303.829,
+          "mean_rm_eos": 305.007
+        },
+        {
+          "site": "OpenPair_Karst_TN_08",
+          "pair": "Karst_TN_08",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -4.816,
+          "dEOS": -3.857,
+          "dGSL": 0.96,
+          "sigma_SOS": 4.471,
+          "mean_fl_sos": 105.473,
+          "mean_fl_eos": 306.177,
+          "mean_rm_eos": 310.034
+        },
+        {
+          "site": "OpenPair_Karst_TN_09",
+          "pair": "Karst_TN_09",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -9.382,
+          "dEOS": 3.127,
+          "dGSL": 12.509,
+          "sigma_SOS": 5.274,
+          "mean_fl_sos": 104.711,
+          "mean_fl_eos": 306.193,
+          "mean_rm_eos": 303.066
+        },
+        {
+          "site": "OpenPair_Karst_TN_11",
+          "pair": "Karst_TN_11",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -5.42,
+          "dEOS": -2.069,
+          "dGSL": 3.351,
+          "sigma_SOS": 5.303,
+          "mean_fl_sos": 104.603,
+          "mean_fl_eos": 305.43,
+          "mean_rm_eos": 307.499
+        },
+        {
+          "site": "OpenPair_Karst_TN_17",
+          "pair": "Karst_TN_17",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -0.162,
+          "dEOS": -7.603,
+          "dGSL": -7.441,
+          "sigma_SOS": 4.257,
+          "mean_fl_sos": 106.829,
+          "mean_fl_eos": 302.313,
+          "mean_rm_eos": 309.917
+        }
+      ]
+    },
+    "ndre": {
+      "n_closed_valid": 11,
+      "n_open_valid": 11,
+      "n_pairs_valid": 11,
+      "closed_mean_dEOS_fl_rm": -9.28,
+      "closed_sd_dEOS_fl_rm": 2.572,
+      "closed_dEOS_onesamp_t": -11.969,
+      "closed_dEOS_onesamp_p": 2.994e-07,
+      "closed_frac_early_floor_EOS": 1.0,
+      "open_mean_dEOS_fl_rm": -5.233,
+      "open_sd_dEOS_fl_rm": 3.813,
+      "closed_mean_dSOS_fl_rm": 2.28,
+      "open_mean_dSOS_fl_rm": -4.81,
+      "closed_mean_dGSL_fl_rm": -11.561,
+      "open_mean_dGSL_fl_rm": -0.423,
+      "paired_DiD_dEOS_mean": -4.047,
+      "paired_DiD_dEOS_t": -3.75,
+      "paired_DiD_dEOS_p": 0.003784,
+      "paired_DiD_dEOS_wilcoxon_p": 0.001953,
+      "paired_DiD_dSOS_mean": 7.091,
+      "paired_DiD_dSOS_t": 5.791,
+      "paired_DiD_dSOS_p": 0.0001751,
+      "paired_DiD_dGSL_mean": -11.138,
+      "paired_DiD_dGSL_t": -6.86,
+      "paired_DiD_dGSL_p": 4.406e-05,
+      "cluster_mixed_dEOS": {
+        "beta": -4.0474,
+        "se": 1.0829,
+        "t": -3.738,
+        "p": 0.003861
+      },
+      "cluster_mixed_dSOS": {
+        "beta": 7.0906,
+        "se": 1.2285,
+        "t": 5.772,
+        "p": 0.0001797
+      },
+      "cluster_mixed_dGSL": {
+        "beta": -11.1379,
+        "se": 1.629,
+        "t": -6.837,
+        "p": 4.528e-05
+      },
+      "r_sigmaSOS_filldepth_all": 0.441,
+      "r_sigmaSOS_filldepth_closed": 0.49,
+      "r_dEOS_filldepth_closed": 0.242,
+      "p_dEOS_filldepth_closed": 0.4727,
+      "per_cove_table": [
+        {
+          "site": "Karst_AL_05",
+          "pair": "Karst_AL_05",
+          "kind": "closed",
+          "max_fill_m": 45.6,
+          "n_yrs": 7,
+          "dSOS": -0.592,
+          "dEOS": -10.751,
+          "dGSL": -10.16,
+          "sigma_SOS": 3.777,
+          "mean_fl_sos": 113.49,
+          "mean_fl_eos": 291.016,
+          "mean_rm_eos": 301.767
+        },
+        {
+          "site": "Karst_AL_10",
+          "pair": "Karst_AL_10",
+          "kind": "closed",
+          "max_fill_m": 29.7,
+          "n_yrs": 7,
+          "dSOS": -0.817,
+          "dEOS": -11.921,
+          "dGSL": -11.104,
+          "sigma_SOS": 4.07,
+          "mean_fl_sos": 112.182,
+          "mean_fl_eos": 289.779,
+          "mean_rm_eos": 301.7
+        },
+        {
+          "site": "Karst_AL_12",
+          "pair": "Karst_AL_12",
+          "kind": "closed",
+          "max_fill_m": 26.4,
+          "n_yrs": 7,
+          "dSOS": 4.681,
+          "dEOS": -13.819,
+          "dGSL": -18.5,
+          "sigma_SOS": 4.061,
+          "mean_fl_sos": 112.102,
+          "mean_fl_eos": 285.763,
+          "mean_rm_eos": 299.581
+        },
+        {
+          "site": "Karst_TN_01",
+          "pair": "Karst_TN_01",
+          "kind": "closed",
+          "max_fill_m": 70.3,
+          "n_yrs": 7,
+          "dSOS": 3.798,
+          "dEOS": -9.232,
+          "dGSL": -13.029,
+          "sigma_SOS": 7.494,
+          "mean_fl_sos": 128.711,
+          "mean_fl_eos": 292.581,
+          "mean_rm_eos": 301.813
+        },
+        {
+          "site": "Karst_TN_02",
+          "pair": "Karst_TN_02",
+          "kind": "closed",
+          "max_fill_m": 68.8,
+          "n_yrs": 7,
+          "dSOS": -3.474,
+          "dEOS": -8.966,
+          "dGSL": -5.492,
+          "sigma_SOS": 3.633,
+          "mean_fl_sos": 113.723,
+          "mean_fl_eos": 291.594,
+          "mean_rm_eos": 300.56
+        },
+        {
+          "site": "Karst_TN_03",
+          "pair": "Karst_TN_03",
+          "kind": "closed",
+          "max_fill_m": 67.5,
+          "n_yrs": 7,
+          "dSOS": 2.489,
+          "dEOS": -7.716,
+          "dGSL": -10.205,
+          "sigma_SOS": 8.54,
+          "mean_fl_sos": 121.15,
+          "mean_fl_eos": 292.226,
+          "mean_rm_eos": 299.942
+        },
+        {
+          "site": "Karst_TN_07",
+          "pair": "Karst_TN_07",
+          "kind": "closed",
+          "max_fill_m": 40.4,
+          "n_yrs": 7,
+          "dSOS": 5.597,
+          "dEOS": -8.726,
+          "dGSL": -14.323,
+          "sigma_SOS": 6.673,
+          "mean_fl_sos": 125.289,
+          "mean_fl_eos": 292.317,
+          "mean_rm_eos": 301.043
+        },
+        {
+          "site": "Karst_TN_08",
+          "pair": "Karst_TN_08",
+          "kind": "closed",
+          "max_fill_m": 40.4,
+          "n_yrs": 7,
+          "dSOS": 5.704,
+          "dEOS": -7.238,
+          "dGSL": -12.942,
+          "sigma_SOS": 5.788,
+          "mean_fl_sos": 120.466,
+          "mean_fl_eos": 292.65,
+          "mean_rm_eos": 299.889
+        },
+        {
+          "site": "Karst_TN_09",
+          "pair": "Karst_TN_09",
+          "kind": "closed",
+          "max_fill_m": 34.4,
+          "n_yrs": 7,
+          "dSOS": 2.206,
+          "dEOS": -6.612,
+          "dGSL": -8.818,
+          "sigma_SOS": 7.019,
+          "mean_fl_sos": 118.178,
+          "mean_fl_eos": 295.356,
+          "mean_rm_eos": 301.968
+        },
+        {
+          "site": "Karst_TN_11",
+          "pair": "Karst_TN_11",
+          "kind": "closed",
+          "max_fill_m": 26.9,
+          "n_yrs": 7,
+          "dSOS": 6.519,
+          "dEOS": -5.296,
+          "dGSL": -11.814,
+          "sigma_SOS": 4.77,
+          "mean_fl_sos": 119.467,
+          "mean_fl_eos": 293.436,
+          "mean_rm_eos": 298.732
+        },
+        {
+          "site": "Karst_TN_17",
+          "pair": "Karst_TN_17",
+          "kind": "closed",
+          "max_fill_m": 22.6,
+          "n_yrs": 7,
+          "dSOS": -1.028,
+          "dEOS": -11.807,
+          "dGSL": -10.779,
+          "sigma_SOS": 3.245,
+          "mean_fl_sos": 115.296,
+          "mean_fl_eos": 288.953,
+          "mean_rm_eos": 300.76
+        },
+        {
+          "site": "OpenPair_Karst_AL_05",
+          "pair": "Karst_AL_05",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -5.997,
+          "dEOS": -10.793,
+          "dGSL": -4.796,
+          "sigma_SOS": 4.857,
+          "mean_fl_sos": 107.453,
+          "mean_fl_eos": 291.748,
+          "mean_rm_eos": 302.541
+        },
+        {
+          "site": "OpenPair_Karst_AL_10",
+          "pair": "Karst_AL_10",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -9.505,
+          "dEOS": -10.295,
+          "dGSL": -0.791,
+          "sigma_SOS": 3.794,
+          "mean_fl_sos": 106.541,
+          "mean_fl_eos": 289.704,
+          "mean_rm_eos": 299.999
+        },
+        {
+          "site": "OpenPair_Karst_AL_12",
+          "pair": "Karst_AL_12",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -0.326,
+          "dEOS": -2.345,
+          "dGSL": -2.019,
+          "sigma_SOS": 4.486,
+          "mean_fl_sos": 107.019,
+          "mean_fl_eos": 298.655,
+          "mean_rm_eos": 301.0
+        },
+        {
+          "site": "OpenPair_Karst_TN_01",
+          "pair": "Karst_TN_01",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -0.336,
+          "dEOS": -4.862,
+          "dGSL": -4.526,
+          "sigma_SOS": 5.53,
+          "mean_fl_sos": 119.287,
+          "mean_fl_eos": 296.582,
+          "mean_rm_eos": 301.445
+        },
+        {
+          "site": "OpenPair_Karst_TN_02",
+          "pair": "Karst_TN_02",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -6.68,
+          "dEOS": -7.028,
+          "dGSL": -0.347,
+          "sigma_SOS": 3.677,
+          "mean_fl_sos": 111.273,
+          "mean_fl_eos": 293.331,
+          "mean_rm_eos": 300.359
+        },
+        {
+          "site": "OpenPair_Karst_TN_03",
+          "pair": "Karst_TN_03",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -4.623,
+          "dEOS": -0.754,
+          "dGSL": 3.869,
+          "sigma_SOS": 5.727,
+          "mean_fl_sos": 112.582,
+          "mean_fl_eos": 300.802,
+          "mean_rm_eos": 301.556
+        },
+        {
+          "site": "OpenPair_Karst_TN_07",
+          "pair": "Karst_TN_07",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -4.854,
+          "dEOS": -2.9,
+          "dGSL": 1.955,
+          "sigma_SOS": 5.407,
+          "mean_fl_sos": 114.47,
+          "mean_fl_eos": 295.406,
+          "mean_rm_eos": 298.306
+        },
+        {
+          "site": "OpenPair_Karst_TN_08",
+          "pair": "Karst_TN_08",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -6.184,
+          "dEOS": -6.255,
+          "dGSL": -0.072,
+          "sigma_SOS": 4.493,
+          "mean_fl_sos": 112.827,
+          "mean_fl_eos": 296.65,
+          "mean_rm_eos": 302.905
+        },
+        {
+          "site": "OpenPair_Karst_TN_09",
+          "pair": "Karst_TN_09",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -9.842,
+          "dEOS": 0.972,
+          "dGSL": 10.813,
+          "sigma_SOS": 5.677,
+          "mean_fl_sos": 114.504,
+          "mean_fl_eos": 298.486,
+          "mean_rm_eos": 297.514
+        },
+        {
+          "site": "OpenPair_Karst_TN_11",
+          "pair": "Karst_TN_11",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -4.165,
+          "dEOS": -4.637,
+          "dGSL": -0.473,
+          "sigma_SOS": 3.85,
+          "mean_fl_sos": 113.499,
+          "mean_fl_eos": 295.144,
+          "mean_rm_eos": 299.781
+        },
+        {
+          "site": "OpenPair_Karst_TN_17",
+          "pair": "Karst_TN_17",
+          "kind": "open",
+          "max_fill_m": 0.0,
+          "n_yrs": 7,
+          "dSOS": -0.401,
+          "dEOS": -8.664,
+          "dGSL": -8.263,
+          "sigma_SOS": 3.292,
+          "mean_fl_sos": 114.687,
+          "mean_fl_eos": 292.51,
+          "mean_rm_eos": 301.174
+        }
+      ]
+    }
+  },
+  "swagerty_diagnostic": {
+    "found_in_census": false,
+    "targeted_audit": {
+      "evt_top5": {
+        "3321": 5011.8901960784315,
+        "3317": 4219.282352941176,
+        "3977": 143.93725490196078,
+        "3299": 131.70588235294116,
+        "3909": 78
+      },
+      "mid_slope_nlcd_hist": {
+        "21": 214.3372549019608,
+        "22": 44.180392156862744,
+        "23": 17,
+        "41": 5696.721568627447,
+        "42": 41,
+        "43": 379.8627450980392,
+        "52": 90.79607843137256,
+        "71": 17,
+        "81": 2153.1137254901964
+      },
+      "per_year_mid_ndvi": [
+        {
+          "yr": 2018,
+          "fl_sos": 121.921,
+          "fl_eos": 311.082,
+          "fl_qc": true,
+          "md_sos": 118.051,
+          "md_eos": 307.857,
+          "md_r2": 0.9613,
+          "md_qc": true,
+          "rm_sos": 120.083,
+          "rm_eos": 307.311,
+          "rm_qc": true
+        },
+        {
+          "yr": 2019,
+          "fl_sos": 132.425,
+          "fl_eos": 301.879,
+          "fl_qc": true,
+          "md_sos": 106.825,
+          "md_eos": 308.494,
+          "md_r2": 0.9783,
+          "md_qc": true,
+          "rm_sos": 106.33,
+          "rm_eos": 314.578,
+          "rm_qc": true
+        },
+        {
+          "yr": 2020,
+          "fl_sos": 110.417,
+          "fl_eos": 302.117,
+          "fl_qc": true,
+          "md_sos": 113.396,
+          "md_eos": 300.092,
+          "md_r2": 0.912,
+          "md_qc": true,
+          "rm_sos": 122.369,
+          "rm_eos": 304.31,
+          "rm_qc": true
+        },
+        {
+          "yr": 2021,
+          "fl_sos": 115.024,
+          "fl_eos": 303.549,
+          "fl_qc": true,
+          "md_sos": 100.781,
+          "md_eos": 310.54,
+          "md_r2": 0.9801,
+          "md_qc": true,
+          "rm_sos": 100.875,
+          "rm_eos": 309.689,
+          "rm_qc": true
+        },
+        {
+          "yr": 2022,
+          "fl_sos": 115.002,
+          "fl_eos": 301.99,
+          "fl_qc": true,
+          "md_sos": 112.758,
+          "md_eos": 304.961,
+          "md_r2": 0.9558,
+          "md_qc": true,
+          "rm_sos": 113.911,
+          "rm_eos": 304.602,
+          "rm_qc": true
+        },
+        {
+          "yr": 2023,
+          "fl_sos": 106.953,
+          "fl_eos": 292.493,
+          "fl_qc": true,
+          "md_sos": 102.042,
+          "md_eos": 300.9,
+          "md_r2": 0.9647,
+          "md_qc": true,
+          "rm_sos": 103.089,
+          "rm_eos": 301.376,
+          "rm_qc": true
+        },
+        {
+          "yr": 2024,
+          "fl_sos": 108.308,
+          "fl_eos": 295.1,
+          "fl_qc": true,
+          "md_sos": 106.532,
+          "md_eos": 303.577,
+          "md_r2": 0.9657,
+          "md_qc": true,
+          "rm_sos": 106.693,
+          "rm_eos": 310.246,
+          "rm_qc": true
+        }
+      ]
+    }
+  },
+  "gate_check": {
+    "n_pairs_valid_ge_8": true,
+    "n_pairs_valid": 11,
+    "n_pairs_strict_30m_ge25m": 9,
+    "mixed_dEOS_p_ndvi": 0.008986,
+    "mixed_dEOS_p_ndre": 0.003861,
+    "closed_frac_early_floor_EOS": 1.0,
+    "open_mean_dEOS_fl_rm": -3.028,
+    "r_sigmaSOS_filldepth": 0.22,
+    "verdict": "PARTIAL_PASS"
+  }
+}

@@ -1,0 +1,151 @@
+{
+ "region_buffer_km": 12,
+ "n_years": 23,
+ "per_year": [
+  {
+   "year": 2001,
+   "slope_d_per_100m": 3.389,
+   "mean_doy": 86.19,
+   "n": 3618
+  },
+  {
+   "year": 2002,
+   "slope_d_per_100m": 3.206,
+   "mean_doy": 90.94,
+   "n": 3616
+  },
+  {
+   "year": 2003,
+   "slope_d_per_100m": 4.537,
+   "mean_doy": 85.32,
+   "n": 3618
+  },
+  {
+   "year": 2004,
+   "slope_d_per_100m": 3.516,
+   "mean_doy": 91.3,
+   "n": 3617
+  },
+  {
+   "year": 2005,
+   "slope_d_per_100m": 3.648,
+   "mean_doy": 89.25,
+   "n": 3618
+  },
+  {
+   "year": 2006,
+   "slope_d_per_100m": 3.303,
+   "mean_doy": 85.62,
+   "n": 3618
+  },
+  {
+   "year": 2007,
+   "slope_d_per_100m": 7.76,
+   "mean_doy": 87.96,
+   "n": 3614
+  },
+  {
+   "year": 2008,
+   "slope_d_per_100m": 5.723,
+   "mean_doy": 91.41,
+   "n": 3613
+  },
+  {
+   "year": 2009,
+   "slope_d_per_100m": 4.154,
+   "mean_doy": 91.71,
+   "n": 3618
+  },
+  {
+   "year": 2010,
+   "slope_d_per_100m": 2.629,
+   "mean_doy": 85.44,
+   "n": 3618
+  },
+  {
+   "year": 2011,
+   "slope_d_per_100m": 4.673,
+   "mean_doy": 85.29,
+   "n": 3617
+  },
+  {
+   "year": 2012,
+   "slope_d_per_100m": 3.056,
+   "mean_doy": 69.51,
+   "n": 3618
+  },
+  {
+   "year": 2013,
+   "slope_d_per_100m": 4.482,
+   "mean_doy": 92.57,
+   "n": 3618
+  },
+  {
+   "year": 2014,
+   "slope_d_per_100m": 2.988,
+   "mean_doy": 92.8,
+   "n": 3618
+  },
+  {
+   "year": 2015,
+   "slope_d_per_100m": 3.168,
+   "mean_doy": 86.87,
+   "n": 3618
+  },
+  {
+   "year": 2016,
+   "slope_d_per_100m": 3.969,
+   "mean_doy": 88.63,
+   "n": 3616
+  },
+  {
+   "year": 2017,
+   "slope_d_per_100m": 3.88,
+   "mean_doy": 86.34,
+   "n": 3617
+  },
+  {
+   "year": 2018,
+   "slope_d_per_100m": 5.066,
+   "mean_doy": 93.42,
+   "n": 3618
+  },
+  {
+   "year": 2019,
+   "slope_d_per_100m": 3.509,
+   "mean_doy": 86.42,
+   "n": 3618
+  },
+  {
+   "year": 2020,
+   "slope_d_per_100m": 6.413,
+   "mean_doy": 84.46,
+   "n": 3617
+  },
+  {
+   "year": 2021,
+   "slope_d_per_100m": 3.438,
+   "mean_doy": 88.66,
+   "n": 3618
+  },
+  {
+   "year": 2022,
+   "slope_d_per_100m": 3.364,
+   "mean_doy": 89.72,
+   "n": 3618
+  },
+  {
+   "year": 2023,
+   "slope_d_per_100m": 4.321,
+   "mean_doy": 83.16,
+   "n": 3618
+  }
+ ],
+ "lapse_rate_mean_d_per_100m": 4.095,
+ "lapse_rate_trend_d_per_100m_per_decade": 0.0581,
+ "lapse_rate_trend_r2": 0.001,
+ "lapse_rate_trend_t": 0.15,
+ "mean_greenup_trend_days_per_decade": -0.543,
+ "mean_greenup_trend_r2": 0.006,
+ "mean_greenup_trend_t": -0.34
+}

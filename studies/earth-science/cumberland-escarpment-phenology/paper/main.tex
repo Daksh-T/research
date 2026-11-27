@@ -1,0 +1,94 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=1.0in,top=0.95in,bottom=0.95in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.08}
+\setlength{\parskip}{3pt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf,skip=6pt]{caption}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+
+\usepackage[authoryear,round]{natbib}
+\usepackage[colorlinks=true,linkcolor=black!75!blue,citecolor=black!75!blue,urlcolor=black!75!blue]{hyperref}
+\usepackage[capitalise,nameinlink,noabbrev]{cleveref}
+
+\renewcommand{\topfraction}{0.88}
+\renewcommand{\bottomfraction}{0.80}
+\renewcommand{\textfraction}{0.10}
+\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.55em}{}
+\titlespacing*{\section}{0pt}{14pt plus 3pt minus 2pt}{5pt plus 1pt}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{10pt plus 2pt minus 1pt}{3pt plus 1pt}
+
+\newtcolorbox{readerbox}[1][]{
+  colback=black!2.5,
+  colframe=black!22,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=9pt,right=9pt,top=6pt,bottom=6pt,
+  fonttitle=\small\bfseries,
+  coltitle=black,
+  title=#1
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries
+    Where Hopkins' 1918 Bioclimatic Law Bends:\\[0.20em]
+    Closed-Karst Cold-Air Pooling and Plateau-Cap Phenology\\[0.20em]
+    on the Southern Cumberland Escarpment\par}
+  \vspace{1.05em}
+  {\large\scshape Daksh Tyagi\par}
+  \vspace{0.25em}
+  {\large\scshape Gemini 4 Neon\par}
+  \vspace{0.55em}
+  {\normalsize\color{black!70} November 2026\par}
+\end{center}
+\vspace{0.55em}
+
+\input{sections/0_abstract}
+
+\vspace{0.4em}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.2em}
+
+\input{sections/1_intro}
+\input{sections/fig1}
+\input{sections/2_data_methods}
+\input{sections/3_baseline_brdf}
+\input{sections/4_regional_karst}
+\input{sections/5_thermal_25yr}
+\input{sections/6_plateau_guild}
+\input{sections/8_discussion_limitations}
+\input{sections/9_conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

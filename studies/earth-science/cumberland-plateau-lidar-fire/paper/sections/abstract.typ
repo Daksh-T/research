@@ -1,0 +1,9 @@
+#block(inset: (x: 10pt, y: 0pt))[
+  #set text(size: 9.7pt)
+  #set par(leading: 0.63em, justify: true, first-line-indent: 0pt)
+  #smallcaps[Abstract.] Decades of fire exclusion across eastern North American oak--hickory forests have allowed shade-tolerant hardwoods like red maple and American beech to fill in beneath mature oaks, a shift known as mesophication. Can satellite greenness track this subcanopy crowding and measure whether prescribed fire slows it? Across the Cumberland Plateau in Alabama, Tennessee, and Kentucky, we pair a four-decade Landsat radiometric audit with 689 intact deciduous plots scanned by USGS airborne LiDAR and official prescribed-fire perimeters. Extending unharmonized winter Landsat NDVI to deciduous mesophication fails. Empirical overlap calibration removes 79% of the apparent regional winter trend, and across paired repeat-scanned plots, neither winter ($r = -0.00$) nor early-spring ($r = -0.05$) NDVI tracks multi-year subcanopy change. Repeat airborne LiDAR, evaluated via burned-minus-unburned differences to control for inter-flight sensor shifts, identifies large midstory reductions under prescribed fire in Bankhead National Forest, whereas a single burn in steeper Daniel Boone National Forest shows no detectable six-year difference. Across continuous one-meter vertical profiles, repeated surface fires outperform mechanical thinning with fire below four meters and leave unbiased first-return upper canopy cover unchanged, while cross-sectional mechanical thinning is stronger near the top of the midstory and opens the overstory. Passive Landsat imagery cannot replace repeat public airborne LiDAR for evaluating stand-level fire outcomes.
+  #v(7pt)
+  #text(size: 9.5pt)[
+    #h(14pt)This research was directed by Daksh Tyagi and carried out by Gemini 4 Neon using specialized research, data-engineering, and statistical subagents.
+  ]
+]

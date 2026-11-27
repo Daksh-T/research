@@ -1,0 +1,46 @@
+\begin{table}[t!]
+\centering
+\caption{Within-Metro Housing Prices, Crowding, 3+ Generation Living, and Dynamic-Panel Nickell (1981) Bias}
+\label{tab:cpuma_housing}
+\scriptsize
+\setlength{\tabcolsep}{4.0pt}
+\renewcommand{\arraystretch}{1.04}
+\begin{tabular}{lccccc}
+\toprule
+Outcome Specification & Coef. & (SE) & $t$-stat & $N$ & FE / Implied $\hat{\rho}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A: Within-MSA \texttt{CPUMA0010} Unique Households (\texttt{PERNUM}=1, \texttt{HHWT}-Weighted, 2007--2021)}} \\
+Log Gross Rent (Unadjusted) & +0.0006 & (0.0006) & +1.06 & 4,564 & MSA$\times$Yr + CPUMA \\
+Log Gross Rent (Structure-Only, No Rooms) & +0.0003 & (0.0005) & +0.69 & 4,564 & MSA$\times$Yr + CPUMA \\
+Log Gross Rent (Full Hedonic) & +0.0002 & (0.0005) & +0.36 & 4,564 & MSA$\times$Yr + CPUMA \\
+Log Home Value (Structure-Only, No Rooms) & +0.0005 & (0.0011) & +0.44 & 4,564 & MSA$\times$Yr + CPUMA \\
+Log Home Value (Full Hedonic) & +0.0001 & (0.0011) & +0.13 & 4,564 & MSA$\times$Yr + CPUMA \\
+Household Crowding (Persons/Room, All HHs) & +0.0021*** & (0.0002) & +8.52 & 4,564 & MSA$\times$Yr + CPUMA \\
+3+ Generation Households (\texttt{MULTGEN}=3) & +0.0004*** & (0.0001) & +6.26 & 4,564 & MSA$\times$Yr + CPUMA \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel B: U.S.-Born Co-Ethnic Adult Housing Experience in \texttt{CPUMA0010} (\texttt{PERWT}-Weighted, 2007--2021)}} \\
+Co-Ethnic Adult Log Rent (Structure-Only) & -0.0006 & (0.0013) & -0.43 & 74,204 & 3-Way FE \\
+Co-Ethnic Adult Log Rent (Full Hedonic) & -0.0013 & (0.0013) & -0.97 & 74,204 & 3-Way FE \\
+Co-Ethnic Adult Log Value (Structure-Only) & -0.0020 & (0.0031) & -0.64 & 93,690 & 3-Way FE \\
+Co-Ethnic Adult Crowding (Persons/Room) & +0.0028** & (0.0013) & +2.20 & 105,646 & 3-Way FE \\
+Co-Ethnic Adult 3+ Gen Living (\texttt{MULTGEN}=3) & +0.0012 & (0.0008) & +1.51 & 105,646 & 3-Way FE \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel C: Post-COVID 2020-Census \texttt{PUMA} Unique Households (\texttt{PERNUM}=1, \texttt{HHWT}-Weighted, 2022--2024)}} \\
+Log Gross Rent (Structure-Only, No Rooms) & +0.0005 & (0.0004) & +1.14 & 5,607 & MSA$\times$Yr + PUMA \\
+Log Home Value (Structure-Only, No Rooms) & -0.0001 & (0.0006) & -0.22 & 5,607 & MSA$\times$Yr + PUMA \\
+Household Crowding (Persons/Room, All HHs) & +0.0021*** & (0.0003) & +7.50 & 5,607 & MSA$\times$Yr + PUMA \\
+3+ Generation Households (\texttt{MULTGEN}=3) & +0.0004*** & (0.0001) & +3.10 & 5,607 & MSA$\times$Yr + PUMA \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel D: Common-Sample Nickell (1981) Bias Check on Song's Table 7 (1980--2024 Cell Panel)}} \\
+$\Delta \ln(\text{Rent})$: Dynamic FE ($hp_{t-1}$ + 3-Way FE) & +0.0047* & (0.0026) & +1.83 & 12,203 & $\hat{\rho}_{\mathrm{FE}}=-0.31$ ($\hat{\gamma}=-1.31$) \\
+$\Delta \ln(\text{Rent})$: Static FD (No Lag, 3-Way FE) & +0.0013 & (0.0026) & +0.52 & 12,203 & No dynamic lag \\
+$\Delta \ln(\text{Rent})$: Anderson--Hsiao IV ($hp_{t-2}$) & +0.0035* & (0.0020) & +1.70 & 12,203 & $\hat{\rho}_{\mathrm{AH}}=-0.00$ ($F_1=210$) \\
+$\Delta \ln(\text{Value})$: Dynamic FE ($hp_{t-1}$ + 3-Way FE) & -0.0029 & (0.0038) & -0.74 & 14,525 & $\hat{\rho}_{\mathrm{FE}}=-0.25$ ($\hat{\gamma}=-1.25$) \\
+$\Delta \ln(\text{Value})$: Static FD (No Lag, 3-Way FE) & -0.0090** & (0.0037) & -2.44 & 14,525 & No dynamic lag \\
+$\Delta \ln(\text{Value})$: Anderson--Hsiao IV ($hp_{t-2}$) & -0.0049* & (0.0029) & -1.65 & 14,525 & $\hat{\rho}_{\mathrm{AH}}=+0.06$ ($F_1=538$) \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.96\linewidth}
+\footnotesize\textit{Notes:} IPUMS ACS microdata (working-age 18--64, non-school, non-GQ), clustered by MSA. Panels A and C aggregate unique households (\texttt{PERNUM}=1, weighted by \texttt{HHWT}) and define three-or-more-generation households strictly as \texttt{MULTGEN}=3. Panel B averages housing conditions experienced by U.S.-born co-ethnic working-age adults using person weights (\texttt{PERWT}), absorbing Eth$\times$Yr, MSA$\times$Yr, and Eth$\times$CPUMA FEs. Structure-Only omits endogenous room/bedroom counts and controls only for \texttt{BUILTYR2}, \texttt{UNITSSTR}, homeownership, age, and education; Full Hedonic adds mean rooms and bedrooms. Panel D estimates $\Delta hp_{rct}$ on $\Delta \text{Share}_{rct}$ on the exact same non-singleton common cell sample with identical differenced controls ($\Delta\text{Educ}$, $\Delta\ln\text{Wage}$), comparing implied persistence $\hat{\rho}_{\text{FE}} = 1 + \hat{\gamma}$ under Dynamic FE against $\hat{\rho}_{\text{AH}}$ under Anderson--Hsiao IV. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

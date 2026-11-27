@@ -1,0 +1,62 @@
+\begin{table}[htbp]
+\centering
+\caption{ACS Occupational Exposure and Origin Comparison: Individual-Worker and Cell-Grouped Estimates (2015--2024)}
+\label{tab:acs_origin_placebo}
+\footnotesize
+\setlength{\tabcolsep}{4.0pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+Occupation Exposure Index & Non-Eng (Worker) & Cell-Grouped & 80\% MDE & English Origin & DDD Contrast & $p$-value \\
+(Standardized, Mean 0, SD 1) & $\text{Post} \times \text{NonEng} \times T$ & (Non-Eng) & (Worker) & (Comparison) & (NonEng $-$ Eng) & (DDD $= 0$) \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel A: Full Sample (ACS 2015--2024; $N = 6,546,097$ individual workers; $1,774,214$ cells in col.\ 2)}} \\
+\addlinespace[3pt]
+O*NET 31.0 Written-English Intensity & 0.0073** & 0.0074** & 0.0088 & 0.0095 & -0.0021 & 0.689 \\
+ & (0.0031) & (0.0031) & & (0.0058) & (0.0054) & \\
+OpenAI LLM Exposure ($E1 + 0.5\,E2$, Eloundou 2024) & 0.0093*** & 0.0094*** & 0.0046 & 0.0107 & -0.0013 & 0.842 \\
+ & (0.0016) & (0.0016) & & (0.0066) & (0.0066) & \\
+LLM Writing (Raw) & 0.0089*** & --- & 0.0052 & 0.0110 & -0.0021 & 0.757 \\
+ & (0.0019) &  & & (0.0067) & (0.0067) & \\
+LLM Writing (Orthogonalized) & -0.0029 & -0.0029 & 0.0089 & -0.0086 & 0.0057 & 0.317 \\
+ & (0.0032) & (0.0032) & & (0.0058) & (0.0057) & \\
+LLM Coding \& Math (Raw) & 0.0085*** & 0.0086*** & 0.0047 & 0.0115* & -0.0030 & 0.633 \\
+ & (0.0017) & (0.0017) & & (0.0063) & (0.0062) & \\
+LLM Coding \& Math (Orthogonalized) & 0.0071** & --- & 0.0081 & 0.0120** & -0.0050 & 0.346 \\
+ & (0.0029) &  & & (0.0056) & (0.0053) & \\
+Face-to-Face Social Skills (O*NET 31.0) & -0.0012 & -0.0009 & 0.0150 & 0.0036 & -0.0047*** & 0.006 \\
+ & (0.0053) & (0.0053) & & (0.0048) & (0.0017) & \\
+Felten Language-Modeling AIOE (2023) & 0.0077*** & 0.0078*** & 0.0073 & 0.0149** & -0.0072 & 0.177 \\
+ & (0.0026) & (0.0026) & & (0.0057) & (0.0054) & \\
+\midrule
+\multicolumn{7}{l}{\textit{Panel B: Post-COVID Window (ACS 2021--2024; $N = 3,840,043$ individual workers; $1,044,851$ cells in col.\ 2)}} \\
+\addlinespace[3pt]
+O*NET 31.0 Written-English Intensity & 0.0017 & 0.0017 & 0.0084 & 0.0141** & -0.0124* & 0.087 \\
+ & (0.0030) & (0.0030) & & (0.0068) & (0.0072) & \\
+OpenAI LLM Exposure ($E1 + 0.5\,E2$, Eloundou 2024) & 0.0048*** & 0.0048*** & 0.0045 & 0.0121 & -0.0074 & 0.352 \\
+ & (0.0016) & (0.0016) & & (0.0077) & (0.0079) & \\
+LLM Writing (Raw) & 0.0042** & --- & 0.0048 & 0.0138* & -0.0096 & 0.221 \\
+ & (0.0017) &  & & (0.0077) & (0.0078) & \\
+LLM Writing (Orthogonalized) & -0.0005 & -0.0005 & 0.0062 & -0.0084 & 0.0079 & 0.215 \\
+ & (0.0022) & (0.0022) & & (0.0057) & (0.0064) & \\
+LLM Coding \& Math (Raw) & 0.0042** & 0.0042** & 0.0047 & 0.0149** & -0.0107 & 0.149 \\
+ & (0.0017) & (0.0017) & & (0.0073) & (0.0074) & \\
+LLM Coding \& Math (Orthogonalized) & 0.0027 & --- & 0.0062 & 0.0130** & -0.0103 & 0.107 \\
+ & (0.0022) &  & & (0.0058) & (0.0064) & \\
+Face-to-Face Social Skills (O*NET 31.0) & -0.0012 & -0.0011 & 0.0122 & 0.0086** & -0.0097** & 0.011 \\
+ & (0.0044) & (0.0044) & & (0.0034) & (0.0038) & \\
+Felten Language-Modeling AIOE (2023) & 0.0038 & 0.0038 & 0.0068 & 0.0196*** & -0.0158** & 0.011 \\
+ & (0.0024) & (0.0024) & & (0.0067) & (0.0062) & \\
+\midrule
+Fixed Effects & \multicolumn{6}{c}{$\text{OCCSOC}\times\text{Year}$, $\text{State}\times\text{Year}$, $\text{Educ4}\times\text{Year}$, $\text{Origin}\times\text{Year}$, $\text{Sex}\times\text{Year}$} \\
+Individual Controls & \multicolumn{6}{c}{Age, $\text{Age}^2$, Black, Asian, Hispanic} \\
+Clusters (OCCSOC / State) & \multicolumn{6}{c}{594 occupations / 51 states (two-way CRV1 (OCCSOC + state) in all rows)} \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{4pt}
+\begin{minipage}{\textwidth}\scriptsize
+\textit{Notes:} Columns (1) and (3)--(6) report authoritative individual-level worker regressions estimated directly on ACS microdata rows ($N = 6{,}546{,}097$ in Panel A; $N = 3{,}840{,}043$ in Panel B) for all headline exposures; Column (2) reports the corresponding cell-grouped Non-English-origin estimate side by side (rows showing ``---'' in col.\ 2 are cell-grouped auxiliary decompositions). Because exact age, $\text{age}^2$, and race/ethnicity indicators vary within age-band cells, cell aggregation is not lossless, though individual-worker and cell-grouped estimates agree within $\le 0.00025$ log points (and $\le 0.0001$ in 2021--2024). Dependent variable is log real hourly wage (1999 dollars) for FTFY wage-and-salary workers aged 18--64, weighted by \texttt{PERWT}. O*NET 31.0 (2026 release) task scores are refreshed on rolling cycles; Eloundou et al.\ (2024) OpenAI $\beta$ was constructed in early 2023 based on GPT-4 capabilities. Column (3) reports the 80\%-power minimum detectable effect ($2.8016 \times \text{SE}$) for the occupational-exposure wage gradient. $\text{Post} = \mathbf{1}[\text{Year} \ge 2023]$ (note that 2023 ACS \texttt{INCWAGE} covers the preceding 12 months). Standard errors in parentheses. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

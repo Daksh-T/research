@@ -1,0 +1,22 @@
+{
+ "n_samples": 3819,
+ "models": {
+  "elevation_only": {
+   "r2": 0.465,
+   "rmse_days": 3.92
+  },
+  "elev_aspect_slope": {
+   "r2": 0.534,
+   "rmse_days": 3.65
+  },
+  "embeddings_only": {
+   "r2": 0.642,
+   "rmse_days": 3.2
+  },
+  "embeddings_plus_terrain": {
+   "r2": 0.682,
+   "rmse_days": 3.02
+  }
+ },
+ "note": "green-up DOY predicted from a single annual AlphaEarth embedding vs terrain"
+}

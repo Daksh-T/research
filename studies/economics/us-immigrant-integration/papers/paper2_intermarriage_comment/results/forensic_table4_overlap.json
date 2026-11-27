@@ -1,0 +1,42 @@
+{
+  "1980-2010_Clean": {
+    "total_N": 139721,
+    "fs_white_N": 77364,
+    "white_hispanic_overlap_N": 41867,
+    "overlap_pct_of_fs_white": 54.12,
+    "nh_white_clean_N": 35497,
+    "hispanic_N": 73438,
+    "nh_black_N": 5045,
+    "nh_asian_N": 23802
+  },
+  "1980-2024_Clean": {
+    "total_N": 243829,
+    "fs_white_N": 111827,
+    "white_hispanic_overlap_N": 62008,
+    "overlap_pct_of_fs_white": 55.45,
+    "nh_white_clean_N": 49819,
+    "hispanic_N": 127810,
+    "nh_black_N": 9291,
+    "nh_asian_N": 52808
+  },
+  "1980-2010_FS_InclCit1": {
+    "total_N": 158640,
+    "fs_white_N": 92980,
+    "white_hispanic_overlap_N": 43060,
+    "overlap_pct_of_fs_white": 46.31,
+    "nh_white_clean_N": 49920,
+    "hispanic_N": 75259,
+    "nh_black_N": 5669,
+    "nh_asian_N": 24936
+  },
+  "1980-2024_FS_InclCit1": {
+    "total_N": 278125,
+    "fs_white_N": 138114,
+    "white_hispanic_overlap_N": 64132,
+    "overlap_pct_of_fs_white": 46.43,
+    "nh_white_clean_N": 73982,
+    "hispanic_N": 131831,
+    "nh_black_N": 10515,
+    "nh_asian_N": 55193
+  }
+}

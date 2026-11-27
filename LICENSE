@@ -1,0 +1,8 @@
+# Dual Licensing
+
+This repository uses two licenses to match standard open-science practice:
+
+1. **Software, Analysis Scripts, Notebooks & Workflows:** Licensed under the **MIT License** — see [`LICENSE-CODE`](LICENSE-CODE).
+2. **Manuscripts (PDF, LaTeX, Typst, Markdown), Figures, Documentation & Derived Summary Tables:** Licensed under **Creative Commons Attribution 4.0 International (CC-BY-4.0)** — see [`LICENSE-CONTENT`](LICENSE-CONTENT).
+
+Third-party public datasets referenced by acquisition scripts (e.g., IPUMS USA, U.S. Census Bureau CPS, USGS 3DEP, NASA ECOSTRESS, USFS FACTS, O*NET, FHFA, Zillow) remain subject to their respective upstream terms of use and are not redistributed where restricted.

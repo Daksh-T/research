@@ -1,0 +1,47 @@
+\section{Study Region, Data, and Methods}
+\label{sec:methods}
+
+The Southern Cumberland Plateau in south-central Tennessee and northern Alabama is a flat-topped tableland capped by resistant Pennsylvanian sandstone at roughly 545--610~m elevation and deeply dissected into Mississippian limestone valleys descending to 220--385~m. Over roughly two kilometers horizontally, deciduous forests span three geomorphic zones: nearly level sandstone uplands dominated by upland oaks and hickories, steep rocky escarpment slopes, and deep limestone coves. Two cove geometries sit side by side along the escarpment: open-drainage gorges (such as Fiery Gizzard) funnel surface streams and nighttime air freely toward the lowlands, whereas closed karst blind valleys (such as Lost Cove and Sinking Cove) are rimmed by bedrock sills so surface water drains underground while cold air pools behind the rock rim.
+
+\subsection{Internal Decision Criteria and Scope}
+To prevent post-hoc threshold tuning while testing competing physical and optical mechanisms, we defined six internal decision criteria (P1--P6) ahead of our regional profiling runs: these are internal analytical criteria (not an externally timestamped registry), and every partial pass, null, or falsified result is reported verbatim. This research was directed by Daksh Tyagi and carried out by a swarm of Gemini~4~Neon agents. A separate exploratory benchmark comparing AlphaEarth satellite embeddings against raw Sentinel-2 is archived standalone in the repository (\texttt{v2\_\allowbreak alphaearth\_\allowbreak symmetric\_\allowbreak dynamic.py}) and excluded from this manuscript to maintain focus on physical phenology mechanisms.
+
+\begin{readerbox}[Quick Reader Guide: Three Core Metrics]
+\small
+\textbf{SOS, EOS, and GSL:} Start of Season (SOS) and End of Season (EOS) mark the day of year (DOY) when canopy reflectance crosses halfway between winter baseline and summer peak; Growing Season Length is $\text{GSL} = \text{EOS} - \text{SOS}$.\\
+\textbf{NDVI vs.\ Red-Edge NDRE:} Standard NDVI (\texttt{B8}, \texttt{B4}) saturates early in dense canopies and blends understory greening with tree crowns. Red-edge NDRE (\texttt{B8A}, \texttt{B5}) penetrates deeper into canopy chlorophyll.\\
+\textbf{FillDepth vs.\ TPI:} Local 300~m Topographic Position Index (TPI) measures only whether a pixel sits lower than nearby terrain, so open gorges and closed sinkholes appear similar. Priority-Flood \texttt{FillDepth} measures the vertical bedrock sill height ($z_{\text{spill}} - z$) that cold air must surmount to escape: open gorges have $\text{FillDepth} = 0$~m, whereas regional karst blind valleys reach 22--79~m.
+\end{readerbox}
+
+\begin{table}[t]
+\centering
+\begin{threeparttable}
+\caption{\textbf{Multi-sensor open-access data stack.} All datasets are publicly available and analyzed at native spatial scale without proprietary plot data.}
+\label{tab:data_guide}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{} l l l >{\raggedright\arraybackslash}X @{}}
+\toprule
+Dataset / Product & Scale & Period & Role in Analysis \\
+\midrule
+Sentinel-2 L2A (\texttt{SCL=4|5}) & 10--20~m & 2018--2024 & Primary canopy spring (SOS) and autumn (EOS) using NDVI and red-edge NDRE. \\
+NASA HLS v2.0 (\texttt{L30+S30}) & 30~m & 2018--2024 & BRDF-normalized cross-sensor check removing viewing-angle drift \citep{claverie2018}. \\
+Landsat 5/7/8/9 C2 L2 & 30~m & 2000--2024 & 25-year panel testing multi-decadal persistence and weather modulation \citep{roy2016}. \\
+MODIS \texttt{MCD12Q2 v061} & 500~m & 2001--2023 & 50\% \texttt{MidGreenup\_1} vs.\ 15\% \texttt{Greenup\_1} (\texttt{QA$\le$1}, deciduous) lapse baseline. \\
+ECOSTRESS \texttt{v002+v003} & 70~m & 2018--2026 & Nighttime and morning LST (157 in-swath, 52 cloud-leak-filtered nights over Sewanee; 7 coves). \\
+USGS 3DEP DEM & 10--30~m & Static & Elevation, slope, aspect, 300~m TPI, ray-traced shadows, and Priority-Flood \texttt{FillDepth} \citep{barnes2014}. \\
+LANDFIRE EVT \& NLCD & 30~m & 2021--2022 & Deciduous mask (NLCD-41) and forest types (\texttt{EVT 3317} dry oak vs.\ \texttt{EVT 3321} cove). \\
+POLARIS / gNATSGO & 30~m & Static & Modeled soil clay, drainage, hydraulic conductivity, and fragipan classes \citep{chaney2019}. \\
+NOAA \texttt{USC00408184} \& ERA5 & Station / 9~km & 1895--2025 & Raw GHCN-Daily Sewanee temperatures (1944--1999 hiatus) and hourly 10~m wind speeds. \\
+Sewanee LAL Harvests & Polygons & 1950--2020 & 120 public Domain timber-harvest polygons controlling for silvicultural history. \\
+\bottomrule
+\end{tabularx}
+\end{threeparttable}
+\end{table}
+
+\subsection{Phenology Extraction, Optical Controls, and Regional Karst Sampling}
+We fit a six-parameter double-logistic curve to clear-sky observations (\texttt{SCL=4} vegetation or \texttt{SCL=5} bare soil) per stratum and year using two-pass robust outlier screening (rejecting isolated cloud-drop residuals exceeding $-0.15$, capped at 15\% of points) and extracting 50\% amplitude crossings for SOS and EOS \citep{bolton2020}. To test illumination and viewing-angle bias, we apply Sun-Canopy-Sensor plus $C$ (\texttt{SCS+C}) topographic correction \citep{soenen2005} to Sentinel-2 and cross-validate against BRDF-normalized \texttt{HLS v2.0} \citep{claverie2018}. For the 25-year panel (2000--2024), Landsat 5/7 TM/ETM+ NDVI is harmonized to Landsat 8/9 OLI via \citet{roy2016} coefficients and audited against \texttt{HLS v2.0} over 2018--2024.
+
+Across the regional plateau ($34.25^\circ$--$36.15^\circ$N, $86.70^\circ$--$84.95^\circ$W), offline Priority-Flood depression filling \citep{barnes2014} verified with 30~m 3DEP elevation tiles identified 17 closed basins ($\ge 22.5$~m depth, $\ge 0.30~\text{km}^2$). Excluding six basins below 60\% deciduous floor cover left 11~forested closed-karst basins matched 1:1 with adjacent open-drainage gorges. Because open gorges exhibited greater floor-to-rim relief than closed basins, primary regional inference uses 22-site OLS controlling for relief with CR1 pair-clustered standard errors ($\text{df}=10$, checking the $\text{is\_closed} \times \text{relief}$ interaction), corroborated by rim-free $\Delta z_{\text{floor}}$-adjusted floor-vs-floor regressions ($\text{df}=9$ overall; $\text{df}=8$ within identical \texttt{EVT} classes), small-sample $\text{AIC}_c$, and permutation Moran's $I$ on residuals.
+
+\subsection{Thermal Screening and Spatial Block-Clustered Inference}
+We merged NASA \texttt{ECOSTRESS} Collection~2 (\texttt{ECO\_L2T\_LSTE.002}, 2020--2024) with Bayesian cloud-masked Collection~3 (\texttt{ECO\_L2T\_LSTE.003}, 2018--2019 and 2025--2026), applying mandatory QA masks, emissivity checks (\texttt{EmisWB}), low view-zenith sensitivity ($\text{VZA}<25^\circ$), and 10~m ray-traced morning shadow masks. Auditing raw QA-passing scenes against co-located ERA5-Land 2~m air temperature uncovered 8 unflagged cloud-contaminated or calibration-corrupted \texttt{ECOv002} granules ($|\text{LST}-\text{ERA5}_{t2m}| > 10^\circ$C; 0/14 clean \texttt{v003} scenes affected); we apply a physical $|\text{LST}-\text{ERA5}_{t2m}| \le 10^\circ$C screen and report both filtered and unfiltered diagnostics transparently. To bound potential missing-not-at-random fog censoring, we compute \citet{manski1990} worst-case bounds separately for \texttt{v002}, \texttt{v003}, and combined overpasses. Finally, to avoid spatial pseudoreplication in 30~m plateau-cap pixel analyses (\cref{sec:plateau_guild}), all pixel-level regressions use CR1 spatial block-clustered standard errors evaluated across 25 multi-origin grid alignments ($5 \times 5$ offsets) at both 1~km and 2~km block sizes.

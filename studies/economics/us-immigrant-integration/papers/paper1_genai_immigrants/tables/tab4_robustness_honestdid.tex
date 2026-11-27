@@ -1,0 +1,45 @@
+\begin{table}[htbp]
+\centering
+\caption{Exploratory Plug-In LP Pre-Trend Bounds and ACS Heterogeneity (2021--2024)}
+\label{tab:robustness_honestdid}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\multicolumn{5}{l}{\textit{Panel A: Exploratory Plug-In LP Pre-Trend Bounds (Time-Scaled 95\% FLCIs, Non-English Immigrants vs.\ Natives)}} \\
+\addlinespace[3pt]
+Pre-Trend Bound ($\bar{M}$) & ACS OpenAI LLM $\beta$ & ACS LLM Writing (Orth.) & CPS OpenAI $\beta$ (2023--24) & CPS OpenAI $\beta$ (2023--26) \\
+\midrule
+Point Est.\ $\hat{\theta}$ (SE) & 0.0054 (0.0023) & 0.0022 (0.0019) & 0.0063 (0.0087) & 0.0073 (0.0081) \\
+\addlinespace[2pt]
+$\bar{M} = 0.0$ & [+0.0010,\; +0.0099] & [-0.0015,\; +0.0059] & [-0.0108,\; +0.0234] & [-0.0086,\; +0.0233] \\
+$\bar{M} = 0.5$ & [-0.0015,\; +0.0124] & [-0.0049,\; +0.0094] & [-0.0547,\; +0.0672] & [-0.0823,\; +0.0969] \\
+$\bar{M} = 1.0$ & [-0.0048,\; +0.0156] & [-0.0090,\; +0.0134] & [-0.1012,\; +0.1138] & [-0.1585,\; +0.1731] \\
+$\bar{M} = 1.5$ & [-0.0080,\; +0.0189] & [-0.0130,\; +0.0175] & [-0.1478,\; +0.1604] & [-0.2347,\; +0.2494] \\
+$\bar{M} = 2.0$ & [-0.0113,\; +0.0221] & [-0.0171,\; +0.0215] & [-0.1944,\; +0.2070] & [-0.3109,\; +0.3256] \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel B: ACS 2021--2024 Heterogeneity (Non-English-Origin Immigrants vs.\ U.S.\ Natives)}} \\
+\addlinespace[3pt]
+Subgroup & \multicolumn{2}{c}{OpenAI LLM $\beta$ (SE)} & \multicolumn{2}{c}{LLM Writing Orth.\ (SE) / $N$ Workers} \\
+\midrule
+Fluent English (SPEAKENG 3-4) & 0.0055*** & (0.0020) & -0.0016 (0.0021) & 3,553,671 \\
+Non-Fluent English (SPEAKENG 1,5,6) & -0.0008 & (0.0042) & 0.0002 (0.0050) & 3,419,487 \\
+College STEM (DEGFIELD STEM) & 0.0054 & (0.0065) & -0.0002 (0.0057) & 416,175 \\
+College Non-STEM & 0.0093* & (0.0048) & -0.0037 (0.0040) & 1,278,607 \\
+Non-College ($<$ BA) & 0.0029 & (0.0032) & 0.0046 (0.0046) & 2,094,030 \\
+Men & 0.0049* & (0.0025) & 0.0019 (0.0042) & 2,106,999 \\
+Women & 0.0048* & (0.0027) & -0.0025 (0.0028) & 1,681,813 \\
+Young (18-34) & 0.0062*** & (0.0020) & -0.0077 (0.0065) & 1,078,168 \\
+Prime-Age (35-49) & 0.0055* & (0.0030) & 0.0005 (0.0034) & 1,377,941 \\
+Senior (50-64) & 0.0009 & (0.0024) & 0.0017 (0.0058) & 1,332,703 \\
+Recent Arrivals ($<$10 yrs) & 0.0070 & (0.0043) & 0.0023 (0.0065) & 3,307,059 \\
+Established ($\ge$10 yrs) & 0.0028 & (0.0018) & -0.0015 (0.0030) & 3,666,099 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{4pt}
+\begin{minipage}{\textwidth}\scriptsize
+\textit{Notes:} Panel A reports exploratory plug-in pre-trend sensitivity bounds computed via a Python linear program (\texttt{scipy.optimize.linprog}, HiGHS) inspired by \citet{RambachanRoth2023} relative-magnitude restrictions ($\Delta^{\text{RM}}(\bar{M})$), using bias-aware folded-normal critical values $\text{cv}_{0.05}(b_{\max}/\hat{\sigma})$ and explicit per-period time-step scaling for uneven ACS calendar years and quarterly CPS steps (accounting for the omitted 2022 Q4 transition quarter). Because solving the LP at the plug-in maximum pre-trend slope does not account for sampling uncertainty in the estimated pre-trend, these intervals should be read as exploratory sensitivity diagnostics awaiting benchmarking against the official R \texttt{HonestDiD} package. $\bar{M}=0$ imposes exact parallel trends; $\bar{M}=1$ allows post-treatment per-period trend slopes as large as the maximum plug-in pre-treatment per-period slope. Panel B estimates the baseline ACS 2021--2024 specification separately by subgroup with two-way clustered SEs (\texttt{OCCSOC} + state). $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

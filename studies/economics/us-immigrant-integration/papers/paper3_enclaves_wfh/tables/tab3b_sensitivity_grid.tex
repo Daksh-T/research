@@ -1,0 +1,29 @@
+\begin{table}[t!]
+\centering
+\caption{Pre-Specified Sensitivity Grid for High-Enclave Gateway Exits (Coefficients and Webb WCB $p$-Values)}
+\label{tab:sensitivity_grid}
+\footnotesize
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{$P(\text{Enclave Arbitrage})$} & \multicolumn{2}{c}{$P(\text{Enclave Abandonment})$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Sensitivity Specification & Tele $\times$ Post & WFH $\times$ Post & Tele $\times$ Post & WFH $\times$ Post \\
+\midrule
+Gateways: Top 5 ($G=5$) & -0.0185 [0.69] & -0.0144 [0.72] & +0.0150 [0.69] & -0.0420 [0.20] \\
+Gateways: Top 8 (Baseline, $G=8$) & -0.0153 [0.72] & -0.0225 [0.62] & +0.0123 [0.71] & -0.0494 [0.10] \\
+Gateways: Top 12 ($G=12$) & -0.0124 [0.69] & -0.0256 [0.54] & +0.0046 [0.87] & -0.0535 [0.06] \\
+\midrule
+Rent Cutoff: $\ge 5\%$ Cheaper & +0.0047 [0.91] & -0.0189 [0.69] & +0.0131 [0.67] & -0.0331 [0.33] \\
+Rent Cutoff: $\ge 10\%$ (Baseline) & -0.0153 [0.72] & -0.0225 [0.62] & +0.0123 [0.71] & -0.0494 [0.10] \\
+Rent Cutoff: $\ge 15\%$ Cheaper & -0.0179 [0.55] & +0.0118 [0.81] & +0.0079 [0.79] & -0.0371 [0.20] \\
+\midrule
+Co-Ethnic Cutoff: $\ge 0.25$ pp & -0.0206 [0.40] & -0.0626 [0.09] & +0.0176 [0.19] & -0.0094 [0.50] \\
+Co-Ethnic Cutoff: $\ge 0.50$ pp (Base) & -0.0153 [0.72] & -0.0225 [0.62] & +0.0123 [0.71] & -0.0494 [0.10] \\
+Co-Ethnic Cutoff: $\ge 1.00$ pp & +0.0068 [0.83] & -0.0307 [0.33] & -0.0099 [0.67] & -0.0413 [0.14] \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.96\linewidth}
+\footnotesize\textit{Notes:} Each cell reports the DiD coefficient followed by its Webb 6-point wild cluster bootstrap $p$-value ($9{,}999$ draws) in brackets for high-enclave gateway exits (origin co-ethnic share $\ge 1.0$ pp). Top 5: NYC, LA, SF, Chicago, Miami. Top 8 adds DC, Boston, Seattle. Top 12 adds Houston, Dallas--Fort Worth, San Diego, San Jose. Across all nine configurations, no arbitrage estimate is positive and significant, and only Top-12 WFH abandonment reaches $p_{\text{WCB}} = 0.056$.
+\end{minipage}
+\end{table}

@@ -1,0 +1,183 @@
+{
+  "n_onet_occupations": 911,
+  "n_acs_occsoc": 665,
+  "match_levels": {
+    "6-digit": 389,
+    "5-digit": 175,
+    "4-digit": 65,
+    "3-digit": 30,
+    "2-digit": 1,
+    "unmatched": 5
+  },
+  "emp_weighted_teleworkable_share": 0.4271334624291466,
+  "wfh_post_teleworkable": 0.2656359702400767,
+  "wfh_post_nonteleworkable": 0.08768669019028333,
+  "wfh_ratio_tele_to_nontele": 3.0293761762889773,
+  "weighted_corr_bin_vs_wfh_post": 0.6393150183323438,
+  "weighted_corr_score_vs_wfh_post": 0.759842879365094,
+  "weighted_corr_score_vs_wfh_jump": 0.8008571476154182,
+  "top10_occupations": [
+    {
+      "occsoc": "131161",
+      "title": "Market Research Analysts and Marketing Specialists",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.8780257976938461,
+      "wfh_rate_pre": 0.15753845155590607,
+      "wfh_rate_post": 0.4433908918061532
+    },
+    {
+      "occsoc": "132052",
+      "title": "Personal Financial Advisors",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.8716292168182076,
+      "wfh_rate_pre": 0.08925016405055533,
+      "wfh_rate_post": 0.2967904470170577
+    },
+    {
+      "occsoc": "132051",
+      "title": "",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.8577964774303757,
+      "wfh_rate_pre": 0.06707612579721757,
+      "wfh_rate_post": 0.3871336181078522
+    },
+    {
+      "occsoc": "1520XX",
+      "title": "",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.7480990817718336,
+      "wfh_rate_pre": 0.10345307801867384,
+      "wfh_rate_post": 0.51377831711614
+    },
+    {
+      "occsoc": "131051",
+      "title": "Cost Estimators",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.646685742146054,
+      "wfh_rate_pre": 0.043390390836362695,
+      "wfh_rate_post": 0.1707840941206025
+    },
+    {
+      "occsoc": "113031",
+      "title": "Financial Managers",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.5767329989750445,
+      "wfh_rate_pre": 0.04794925717101938,
+      "wfh_rate_post": 0.2650026083190187
+    },
+    {
+      "occsoc": "152031",
+      "title": "Operations Research Analysts",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.5629133699719797,
+      "wfh_rate_pre": 0.06328657410994072,
+      "wfh_rate_post": 0.38779992780073
+    },
+    {
+      "occsoc": "132011",
+      "title": "Accountants and Auditors",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.5429725407281498,
+      "wfh_rate_pre": 0.06216711643766398,
+      "wfh_rate_post": 0.3194914705411768
+    },
+    {
+      "occsoc": "131111",
+      "title": "Management Analysts",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.474029841193474,
+      "wfh_rate_pre": 0.23285189412697938,
+      "wfh_rate_post": 0.5433862073336454
+    },
+    {
+      "occsoc": "151251",
+      "title": "Computer Programmers",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": 1.4499747885967735,
+      "wfh_rate_pre": 0.14285593256237555,
+      "wfh_rate_post": 0.4912471717241796
+    }
+  ],
+  "bottom10_occupations": [
+    {
+      "occsoc": "373011",
+      "title": "Landscaping and Groundskeeping Workers",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.998543806470286,
+      "wfh_rate_pre": 0.04124656890250376,
+      "wfh_rate_post": 0.058984062056179426
+    },
+    {
+      "occsoc": "395092",
+      "title": "Manicurists and Pedicurists",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.641238692679938,
+      "wfh_rate_pre": 0.020123262739907347,
+      "wfh_rate_post": 0.06051682725798452
+    },
+    {
+      "occsoc": "472140",
+      "title": "",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.6188653153547095,
+      "wfh_rate_pre": 0.03828624182908906,
+      "wfh_rate_post": 0.05770037489301687
+    },
+    {
+      "occsoc": "372012",
+      "title": "Maids and Housekeeping Cleaners",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.5876566902082567,
+      "wfh_rate_pre": 0.02913520543524375,
+      "wfh_rate_post": 0.05371107302548665
+    },
+    {
+      "occsoc": "472070",
+      "title": "",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.537580569235535,
+      "wfh_rate_pre": 0.015548889049216039,
+      "wfh_rate_post": 0.04106620190967264
+    },
+    {
+      "occsoc": "359021",
+      "title": "Dishwashers",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.5204875811764087,
+      "wfh_rate_pre": 0.011047418242516089,
+      "wfh_rate_post": 0.03520866572891763
+    },
+    {
+      "occsoc": "353031",
+      "title": "Waiters and Waitresses",
+      "dn_teleworkable_bin": 1.0,
+      "telework_score": -1.4912235516867174,
+      "wfh_rate_pre": 0.01003469539843968,
+      "wfh_rate_post": 0.03552776674405416
+    },
+    {
+      "occsoc": "435052",
+      "title": "Postal Service Mail Carriers",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.4856365465622512,
+      "wfh_rate_pre": 0.00939231857452494,
+      "wfh_rate_post": 0.03784524789736648
+    },
+    {
+      "occsoc": "472181",
+      "title": "Roofers",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.4337715158814734,
+      "wfh_rate_pre": 0.02829293158360543,
+      "wfh_rate_post": 0.045944570321479
+    },
+    {
+      "occsoc": "533030",
+      "title": "",
+      "dn_teleworkable_bin": 0.0,
+      "telework_score": -1.3856911851563574,
+      "wfh_rate_pre": 0.02471825750270517,
+      "wfh_rate_post": 0.05103379001937426
+    }
+  ]
+}

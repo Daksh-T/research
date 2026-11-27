@@ -1,0 +1,9 @@
+{
+ "n": 2290,
+ "day_lapse_C_per_100m": -0.312,
+ "day_r2": 0.331,
+ "night_lapse_C_per_100m": 0.137,
+ "night_r2": 0.033,
+ "inversion_strength_C_per_100m": 0.448,
+ "kemppinen_ref_C_per_100m": "0.5-1.7 (ground, New England)"
+}

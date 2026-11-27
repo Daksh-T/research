@@ -1,0 +1,356 @@
+{
+  "did": [
+    {
+      "spec": "ITT_DiD_TrueRetention_AllMSAs",
+      "variable": "ddd_tele_post_share",
+      "coef": 1.7463350495728976e-05,
+      "se": 7.379174038378512e-05,
+      "tstat": 0.23665725194857098,
+      "pval": 0.8130951243664355,
+      "n": 122637,
+      "r2": 0.2191977594850315,
+      "raw_n": 3309606
+    },
+    {
+      "spec": "ITT_DiD_TrueRetention_PreBase_TeleXShare",
+      "variable": "tele_share",
+      "coef": -0.00011155291136248763,
+      "se": 7.212326236526604e-05,
+      "tstat": -1.5466980791513747,
+      "pval": 0.12306152177748109,
+      "n": 122637,
+      "r2": 0.2191977594850315,
+      "raw_n": 3309606
+    },
+    {
+      "spec": "ITT_DiD_TrueRetention_NonTele_PostXShare",
+      "variable": "share_post",
+      "coef": 0.00010308883235726995,
+      "se": 0.0002075878018787393,
+      "tstat": 0.4966035163158982,
+      "pval": 0.6198569351292877,
+      "n": 122637,
+      "r2": 0.2191977594850315,
+      "raw_n": 3309606
+    },
+    {
+      "spec": "ITT_DiD_GatewayOutMig_TeleXPostXGateway",
+      "variable": "ddd_tele_post_gw",
+      "coef": 0.0018536296596504394,
+      "se": 0.000911659735064664,
+      "tstat": 2.033247261401713,
+      "pval": 0.04296720794298148,
+      "n": 122637,
+      "r2": 0.2191821934003132,
+      "raw_n": 3309606
+    },
+    {
+      "spec": "ITT_DiD_WithinGateways_OutMig_TeleXPostXShare",
+      "variable": "ddd_tele_post_share",
+      "coef": 1.66262182972393e-05,
+      "se": 0.00013524683897263778,
+      "tstat": 0.12293239844668757,
+      "pval": 0.9022491368670782,
+      "n": 7316,
+      "r2": 0.3424730110750087,
+      "raw_n": 828063
+    },
+    {
+      "spec": "ITT_DiD_LogWage_TeleXPostXShare",
+      "variable": "ddd_tele_post_share",
+      "coef": -0.0008313314694511516,
+      "se": 0.0004392164759907086,
+      "tstat": -1.8927602102721166,
+      "pval": 0.059417336921295805,
+      "n": 119308,
+      "r2": 0.7787677369358661,
+      "raw_n": 3365602
+    },
+    {
+      "spec": "ITT_DiD_LogWage_PreBase_TeleXShare",
+      "variable": "tele_share",
+      "coef": -0.0036336639371170095,
+      "se": 0.00046766873027959864,
+      "tstat": -7.769738923841671,
+      "pval": 1.4854784069484595e-13,
+      "n": 119308,
+      "r2": 0.7787677369358661,
+      "raw_n": 3365602
+    },
+    {
+      "spec": "ITT_DiD_RentBurden_TeleXPostXShare",
+      "variable": "ddd_tele_post_share",
+      "coef": 0.0007465088867675031,
+      "se": 0.0003100555707265696,
+      "tstat": 2.407661584722278,
+      "pval": 0.01669963919085138,
+      "n": 78132,
+      "r2": 0.47556831147357137,
+      "raw_n": 3249988
+    },
+    {
+      "spec": "ITT_DiD_RentBurden_PreBase_TeleXShare",
+      "variable": "tele_share",
+      "coef": -6.150450902632552e-05,
+      "se": 0.00023640855996309615,
+      "tstat": -0.2601619376046557,
+      "pval": 0.7949293909401294,
+      "n": 78132,
+      "r2": 0.47556831147357137,
+      "raw_n": 3249988
+    },
+    {
+      "spec": "FirstStage_RealizedWFH_TeleXPost",
+      "variable": "tele_post",
+      "coef": 0.13508315411206798,
+      "se": 0.0038297614413316636,
+      "tstat": 35.27195001083347,
+      "pval": 0.0,
+      "n": 122637,
+      "r2": 0.7056032508759863,
+      "raw_n": 3309606
+    },
+    {
+      "spec": "Pre2019_OrigMetroTele_Post_OutMig",
+      "variable": "pre_metro_post",
+      "coef": 0.057063238898598066,
+      "se": 0.01729341448938442,
+      "tstat": 3.2997092004951596,
+      "pval": 0.001103725497012098,
+      "n": 118392,
+      "r2": 0.1853454938489144,
+      "raw_n": 3280750
+    },
+    {
+      "spec": "Pre2019_OrigMetroTele_PostXGateway_OutMig",
+      "variable": "pre_metro_post_gw",
+      "coef": 0.03307068431182067,
+      "se": 0.057409161723070014,
+      "tstat": 0.5760523811747478,
+      "pval": 0.5650799906081754,
+      "n": 118392,
+      "r2": 0.18544449757893122,
+      "raw_n": 3280750
+    },
+    {
+      "spec": "Pre2019_OrigEthMetroTele_PostXGateway_OutMig",
+      "variable": "pre_eth_post_gw",
+      "coef": 0.009971244784626479,
+      "se": 0.009837512746188081,
+      "tstat": 1.0135940904869696,
+      "pval": 0.3117224183279097,
+      "n": 118392,
+      "r2": 0.20962079597766292,
+      "raw_n": 3280750
+    },
+    {
+      "spec": "Pre2019_OrigEthMetroTele_PostXShare_Retention",
+      "variable": "pre_eth_post_share",
+      "coef": -0.0010633608525164628,
+      "se": 0.0017384063138169332,
+      "tstat": -0.6116871781152783,
+      "pval": 0.5412812952065442,
+      "n": 118392,
+      "r2": 0.2096219718826714,
+      "raw_n": 3280750
+    }
+  ],
+  "event_study": [
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2019,
+      "coef": 0.0,
+      "se": 0.0,
+      "pval": 1.0
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2015,
+      "coef": 4.298630412629492e-05,
+      "se": 0.0001765117643513124,
+      "pval": 0.8077708115733131
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2018,
+      "coef": -0.00023229045116966834,
+      "se": 0.0001748909027438764,
+      "pval": 0.18518913368806933
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2021,
+      "coef": -9.03705371246875e-05,
+      "se": 0.00015744804182820393,
+      "pval": 0.5664468713504052
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2022,
+      "coef": -3.244714459986746e-05,
+      "se": 0.00017527782978675149,
+      "pval": 0.8532697419313895
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2023,
+      "coef": -1.5489913151799947e-05,
+      "se": 0.00013041988185229548,
+      "pval": 0.9055427784960353
+    },
+    {
+      "outcome": "TrueRetention_TeleXShare",
+      "year": 2024,
+      "coef": -5.51180571396516e-05,
+      "se": 0.00013053558613076508,
+      "pval": 0.6731687586145148
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2019,
+      "coef": 0.0,
+      "se": 0.0,
+      "pval": 1.0
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2015,
+      "coef": -0.0010832277048366252,
+      "se": 0.0018485361141031818,
+      "pval": 0.558351141883616
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2018,
+      "coef": 0.002494004204976771,
+      "se": 0.002323939860041619,
+      "pval": 0.28411140378169053
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2021,
+      "coef": 0.005299125072606773,
+      "se": 0.0015943691248826554,
+      "pval": 0.001006350846057824
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2022,
+      "coef": 0.00112104889917005,
+      "se": 0.0019417797229436928,
+      "pval": 0.5641783980418018
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2023,
+      "coef": 0.00047828615506947486,
+      "se": 0.001695107315456312,
+      "pval": 0.7780309376792536
+    },
+    {
+      "outcome": "GatewayOutMig_TeleXGateway",
+      "year": 2024,
+      "coef": 0.002312521957289394,
+      "se": 0.0015489715348240155,
+      "pval": 0.13657474064322273
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2019,
+      "coef": 0.0,
+      "se": 0.0,
+      "pval": 1.0
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2015,
+      "coef": 0.0008905386315920308,
+      "se": 0.0008029100433485095,
+      "pval": 0.26831866709591123
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2018,
+      "coef": -0.00027266289886401286,
+      "se": 0.0007990604779109824,
+      "pval": 0.7331859293351832
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2021,
+      "coef": -0.0006387997256021094,
+      "se": 0.000729042016178444,
+      "pval": 0.38165995533564967
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2022,
+      "coef": -0.0003495267341894385,
+      "se": 0.0006210384628256684,
+      "pval": 0.5740129348831284
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2023,
+      "coef": -0.00042300788241474857,
+      "se": 0.0008854800003300652,
+      "pval": 0.6332238067397868
+    },
+    {
+      "outcome": "LogWage_TeleXShare",
+      "year": 2024,
+      "coef": -0.0011414934535300787,
+      "se": 0.0006627897891455366,
+      "pval": 0.08612355728666676
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2019,
+      "coef": 0.0,
+      "se": 0.0,
+      "pval": 1.0
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2015,
+      "coef": -0.0007117743041262918,
+      "se": 0.0004904866707051086,
+      "pval": 0.14785093724057674
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2018,
+      "coef": 0.00011936064387239963,
+      "se": 0.0004594378534328595,
+      "pval": 0.7952104963291662
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2021,
+      "coef": 0.00028582080098710336,
+      "se": 0.0004276240343922087,
+      "pval": 0.5044315885480612
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2022,
+      "coef": 0.0007582031587178605,
+      "se": 0.0005575911466273009,
+      "pval": 0.17498852680022914
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2023,
+      "coef": 0.0005615016350179776,
+      "se": 0.0005464897523568752,
+      "pval": 0.30508299136152295
+    },
+    {
+      "outcome": "RentBurden_TeleXShare",
+      "year": 2024,
+      "coef": 0.0006292601606265029,
+      "se": 0.0006244945463551985,
+      "pval": 0.3144984423097683
+    }
+  ]
+}

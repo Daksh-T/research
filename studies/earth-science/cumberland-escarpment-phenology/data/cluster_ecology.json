@@ -1,0 +1,74 @@
+{
+ "cluster_env": {
+  "0": {
+   "n": 609,
+   "elev_m": 459.7187,
+   "slope_deg": 17.5808,
+   "northness": 0.718,
+   "mesic": 1.3525,
+   "ndvi_sum": 0.8872,
+   "ndvi_win": 0.3853
+  },
+  "1": {
+   "n": 562,
+   "elev_m": 463.9104,
+   "slope_deg": 16.5157,
+   "northness": -0.2879,
+   "mesic": -0.6186,
+   "ndvi_sum": 0.8893,
+   "ndvi_win": 0.3701
+  },
+  "2": {
+   "n": 1581,
+   "elev_m": 571.5764,
+   "slope_deg": 5.0907,
+   "northness": -0.0567,
+   "mesic": -0.5041,
+   "ndvi_sum": 0.8904,
+   "ndvi_win": 0.3835
+  },
+  "3": {
+   "n": 780,
+   "elev_m": 451.8725,
+   "slope_deg": 15.1239,
+   "northness": -0.3526,
+   "mesic": 0.7485,
+   "ndvi_sum": 0.8922,
+   "ndvi_win": 0.3645
+  },
+  "4": {
+   "n": 182,
+   "elev_m": 569.8861,
+   "slope_deg": 2.9961,
+   "northness": 0.1347,
+   "mesic": -0.3361,
+   "ndvi_sum": 0.5931,
+   "ndvi_win": 0.2946
+  },
+  "5": {
+   "n": 303,
+   "elev_m": 559.475,
+   "slope_deg": 6.4376,
+   "northness": -0.1616,
+   "mesic": -0.3584,
+   "ndvi_sum": 0.8706,
+   "ndvi_win": 0.5274
+  },
+  "6": {
+   "n": 361,
+   "elev_m": 578.8058,
+   "slope_deg": 4.4075,
+   "northness": -0.0403,
+   "mesic": -0.409,
+   "ndvi_sum": 0.7228,
+   "ndvi_win": 0.3817
+  }
+ },
+ "shakerag_sim": {
+  "sim_p50": 0.8946,
+  "sim_p90": 0.9412,
+  "sim_p95": 0.9569,
+  "sim_p99": 0.9724
+ },
+ "frac_like_cove_gt0.9": 0.4476
+}

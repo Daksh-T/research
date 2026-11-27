@@ -1,0 +1,63 @@
+id: "earth-science/cumberland-plateau-lidar-fire"
+slug: "cumberland-plateau-lidar-fire"
+discipline: "earth-science"
+type: "single-paper"
+title: "Seeing Beneath the Canopy: Multi-Epoch Airborne LiDAR Evaluates Leaf-Off Landsat Proxies and Vertical Prescribed-Fire Effects on the Cumberland Plateau"
+authors:
+  - name: "Daksh Tyagi"
+    role: "Author / Research Director"
+provenance:
+  directed_by: "Daksh Tyagi"
+  executed_by: "Gemini 4 Neon agent swarm"
+  peer_review:
+    - "Independent adversarial code and manuscript audit (review/peer_review.md, review/response_to_referee.md)"
+date: "2026-11"
+status: "working-paper"
+license:
+  code: "MIT"
+  content: "CC-BY-4.0"
+repository_path: "studies/earth-science/cumberland-plateau-lidar-fire"
+tags:
+  - airborne-lidar
+  - usgs-3dep
+  - prescribed-fire
+  - mesophication
+  - landsat
+  - forest-structure
+  - remote-sensing
+data_availability: "plot-metrics-included-raw-facts-and-ept-public"
+review_files:
+  - "review/peer_review.md"
+  - "review/response_to_referee.md"
+interactive_explorer: "explorer.html"
+notebooks:
+  - "notebooks/01_optical_audit_and_region.ipynb"
+  - "notebooks/02_lidar_fire_structure.ipynb"
+papers:
+  - id: "cumberland-plateau-lidar-fire"
+    title: "Seeing Beneath the Canopy: Multi-Epoch Airborne LiDAR Evaluates Leaf-Off Landsat Proxies and Vertical Prescribed-Fire Effects on the Cumberland Plateau"
+    pdf: "paper/cumberland_plateau_lidar_fire.pdf"
+    source: "paper/main.typ"
+    abstract: >-
+      Combining a 40-year Landsat Collection 2 radiometric harmonization audit
+      with 689 pure-deciduous USGS 3DEP airborne LiDAR plots and 1,110 official
+      prescribed-fire perimeters across 480 km of the Cumberland Plateau, we test
+      whether leaf-off optical proxies track deciduous midstory change and measure
+      vertical prescribed-fire structure. Empirical overlap harmonization reduces
+      the apparent 40-year winter NDVI trend by 79%, and both winter (r = -0.00)
+      and spring (r = -0.05) Landsat deltas fail to track repeat 3DEP LiDAR
+      midstory change. Exact-date multi-epoch BACI confirms large, density-invariant
+      midstory reductions under repeated burning without opening the >10 m
+      overstory canopy.
+    keywords:
+      - airborne LiDAR
+      - USGS 3DEP
+      - prescribed fire
+      - mesophication
+      - Landsat Collection 2
+      - Cumberland Plateau
+    key_findings:
+      - "Overlap harmonization cuts the apparent 40-year plateau winter Landsat NDVI trend by 79%; winter and spring NDVI deltas fail to track temporal 3D midstory change (r = -0.00, -0.05)."
+      - "In Bankhead NF multi-epoch LiDAR BACI (n = 139), 1 and 2+ inter-epoch burns reduce midstory NRD by -0.066 and -0.076 (d = -0.82, -0.95; p_SUID <= 0.0001)."
+      - "Under 3+ burns (n = 689, G = 359 units), midstory reductions remain significant through 5-6 m while unbiased first-return overstory canopy (>10 m) remains unchanged."
+    doi: null
